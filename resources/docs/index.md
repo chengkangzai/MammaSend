@@ -4,6 +4,8 @@ title: Laravel Documentation
 language_tabs:
 - bash
 - javascript
+- php
+- python
 
 includes:
 - "./prepend.md"
