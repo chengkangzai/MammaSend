@@ -12,6 +12,9 @@ Route::get('/home', function () {
     return redirect()->route('admin.home');
 });
 
+Route::get('/docs', function () {
+    return view('scribe.index');
+});
 Auth::routes();
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'middleware' => ['auth']], function () {
