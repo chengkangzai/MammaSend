@@ -237,6 +237,8 @@ INTRO
     'example_languages' => [
         'bash',
         'javascript',
+        'php',
+        'python'
     ],
 
     /*
