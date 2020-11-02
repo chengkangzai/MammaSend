@@ -10,14 +10,14 @@
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/api/v1/permissions" \
+    -G "https://mamma-send.herokuapp.com/api/v1/permissions" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/permissions"
+    "https://mamma-send.herokuapp.com/api/v1/permissions"
 );
 
 let headers = {
@@ -36,7 +36,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/api/v1/permissions',
+    'https://mamma-send.herokuapp.com/api/v1/permissions',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -52,7 +52,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/permissions'
+url = 'https://mamma-send.herokuapp.com/api/v1/permissions'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -101,16 +101,16 @@ response.json()
 
 ```bash
 curl -X POST \
-    "http://MammaSend.test/api/v1/permissions" \
+    "https://mamma-send.herokuapp.com/api/v1/permissions" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"omnis"}'
+    -d '{"title":"eaque"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/permissions"
+    "https://mamma-send.herokuapp.com/api/v1/permissions"
 );
 
 let headers = {
@@ -119,7 +119,7 @@ let headers = {
 };
 
 let body = {
-    "title": "omnis"
+    "title": "eaque"
 }
 
 fetch(url, {
@@ -133,14 +133,14 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://MammaSend.test/api/v1/permissions',
+    'https://mamma-send.herokuapp.com/api/v1/permissions',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'title' => 'omnis',
+            'title' => 'eaque',
         ],
     ]
 );
@@ -152,9 +152,9 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/permissions'
+url = 'https://mamma-send.herokuapp.com/api/v1/permissions'
 payload = {
-    "title": "omnis"
+    "title": "eaque"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -204,14 +204,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/api/v1/permissions/ut" \
+    -G "https://mamma-send.herokuapp.com/api/v1/permissions/laudantium" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/permissions/ut"
+    "https://mamma-send.herokuapp.com/api/v1/permissions/laudantium"
 );
 
 let headers = {
@@ -230,7 +230,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/api/v1/permissions/ut',
+    'https://mamma-send.herokuapp.com/api/v1/permissions/laudantium',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -246,7 +246,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/permissions/ut'
+url = 'https://mamma-send.herokuapp.com/api/v1/permissions/laudantium'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -301,16 +301,16 @@ response.json()
 
 ```bash
 curl -X PUT \
-    "http://MammaSend.test/api/v1/permissions/suscipit" \
+    "https://mamma-send.herokuapp.com/api/v1/permissions/dolores" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"iusto"}'
+    -d '{"title":"qui"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/permissions/suscipit"
+    "https://mamma-send.herokuapp.com/api/v1/permissions/dolores"
 );
 
 let headers = {
@@ -319,7 +319,7 @@ let headers = {
 };
 
 let body = {
-    "title": "iusto"
+    "title": "qui"
 }
 
 fetch(url, {
@@ -333,14 +333,14 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://MammaSend.test/api/v1/permissions/suscipit',
+    'https://mamma-send.herokuapp.com/api/v1/permissions/dolores',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'title' => 'iusto',
+            'title' => 'qui',
         ],
     ]
 );
@@ -352,9 +352,9 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/permissions/suscipit'
+url = 'https://mamma-send.herokuapp.com/api/v1/permissions/dolores'
 payload = {
-    "title": "iusto"
+    "title": "qui"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -414,14 +414,14 @@ response.json()
 
 ```bash
 curl -X DELETE \
-    "http://MammaSend.test/api/v1/permissions/sed" \
+    "https://mamma-send.herokuapp.com/api/v1/permissions/nihil" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/permissions/sed"
+    "https://mamma-send.herokuapp.com/api/v1/permissions/nihil"
 );
 
 let headers = {
@@ -440,7 +440,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://MammaSend.test/api/v1/permissions/sed',
+    'https://mamma-send.herokuapp.com/api/v1/permissions/nihil',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -456,7 +456,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/permissions/sed'
+url = 'https://mamma-send.herokuapp.com/api/v1/permissions/nihil'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -504,14 +504,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/api/v1/roles" \
+    -G "https://mamma-send.herokuapp.com/api/v1/roles" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/roles"
+    "https://mamma-send.herokuapp.com/api/v1/roles"
 );
 
 let headers = {
@@ -530,7 +530,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/api/v1/roles',
+    'https://mamma-send.herokuapp.com/api/v1/roles',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -546,7 +546,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/roles'
+url = 'https://mamma-send.herokuapp.com/api/v1/roles'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -595,16 +595,16 @@ response.json()
 
 ```bash
 curl -X POST \
-    "http://MammaSend.test/api/v1/roles" \
+    "https://mamma-send.herokuapp.com/api/v1/roles" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"voluptates","permissions":[6,14]}'
+    -d '{"title":"vitae","permissions":[13,12]}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/roles"
+    "https://mamma-send.herokuapp.com/api/v1/roles"
 );
 
 let headers = {
@@ -613,10 +613,10 @@ let headers = {
 };
 
 let body = {
-    "title": "voluptates",
+    "title": "vitae",
     "permissions": [
-        6,
-        14
+        13,
+        12
     ]
 }
 
@@ -631,17 +631,17 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://MammaSend.test/api/v1/roles',
+    'https://mamma-send.herokuapp.com/api/v1/roles',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'title' => 'voluptates',
+            'title' => 'vitae',
             'permissions' => [
-                6,
-                14,
+                13,
+                12,
             ],
         ],
     ]
@@ -654,12 +654,12 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/roles'
+url = 'https://mamma-send.herokuapp.com/api/v1/roles'
 payload = {
-    "title": "voluptates",
+    "title": "vitae",
     "permissions": [
-        6,
-        14
+        13,
+        12
     ]
 }
 headers = {
@@ -716,14 +716,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/api/v1/roles/maiores" \
+    -G "https://mamma-send.herokuapp.com/api/v1/roles/consectetur" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/roles/maiores"
+    "https://mamma-send.herokuapp.com/api/v1/roles/consectetur"
 );
 
 let headers = {
@@ -742,7 +742,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/api/v1/roles/maiores',
+    'https://mamma-send.herokuapp.com/api/v1/roles/consectetur',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -758,7 +758,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/roles/maiores'
+url = 'https://mamma-send.herokuapp.com/api/v1/roles/consectetur'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -813,16 +813,16 @@ response.json()
 
 ```bash
 curl -X PUT \
-    "http://MammaSend.test/api/v1/roles/repellat" \
+    "https://mamma-send.herokuapp.com/api/v1/roles/et" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"quo","permissions":[11,10]}'
+    -d '{"title":"est","permissions":[9,19]}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/roles/repellat"
+    "https://mamma-send.herokuapp.com/api/v1/roles/et"
 );
 
 let headers = {
@@ -831,10 +831,10 @@ let headers = {
 };
 
 let body = {
-    "title": "quo",
+    "title": "est",
     "permissions": [
-        11,
-        10
+        9,
+        19
     ]
 }
 
@@ -849,17 +849,17 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://MammaSend.test/api/v1/roles/repellat',
+    'https://mamma-send.herokuapp.com/api/v1/roles/et',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'title' => 'quo',
+            'title' => 'est',
             'permissions' => [
-                11,
-                10,
+                9,
+                19,
             ],
         ],
     ]
@@ -872,12 +872,12 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/roles/repellat'
+url = 'https://mamma-send.herokuapp.com/api/v1/roles/et'
 payload = {
-    "title": "quo",
+    "title": "est",
     "permissions": [
-        11,
-        10
+        9,
+        19
     ]
 }
 headers = {
@@ -944,14 +944,14 @@ response.json()
 
 ```bash
 curl -X DELETE \
-    "http://MammaSend.test/api/v1/roles/ea" \
+    "https://mamma-send.herokuapp.com/api/v1/roles/ipsa" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/roles/ea"
+    "https://mamma-send.herokuapp.com/api/v1/roles/ipsa"
 );
 
 let headers = {
@@ -970,7 +970,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://MammaSend.test/api/v1/roles/ea',
+    'https://mamma-send.herokuapp.com/api/v1/roles/ipsa',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -986,7 +986,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/roles/ea'
+url = 'https://mamma-send.herokuapp.com/api/v1/roles/ipsa'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -1034,14 +1034,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/api/v1/users" \
+    -G "https://mamma-send.herokuapp.com/api/v1/users" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/users"
+    "https://mamma-send.herokuapp.com/api/v1/users"
 );
 
 let headers = {
@@ -1060,7 +1060,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/api/v1/users',
+    'https://mamma-send.herokuapp.com/api/v1/users',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -1076,7 +1076,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/users'
+url = 'https://mamma-send.herokuapp.com/api/v1/users'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -1125,16 +1125,16 @@ response.json()
 
 ```bash
 curl -X POST \
-    "http://MammaSend.test/api/v1/users" \
+    "https://mamma-send.herokuapp.com/api/v1/users" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"ut","email":"quo","password":"error","roles":[11,2]}'
+    -d '{"name":"itaque","email":"sit","password":"earum","roles":[12,15]}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/users"
+    "https://mamma-send.herokuapp.com/api/v1/users"
 );
 
 let headers = {
@@ -1143,12 +1143,12 @@ let headers = {
 };
 
 let body = {
-    "name": "ut",
-    "email": "quo",
-    "password": "error",
+    "name": "itaque",
+    "email": "sit",
+    "password": "earum",
     "roles": [
-        11,
-        2
+        12,
+        15
     ]
 }
 
@@ -1163,19 +1163,19 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://MammaSend.test/api/v1/users',
+    'https://mamma-send.herokuapp.com/api/v1/users',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'name' => 'ut',
-            'email' => 'quo',
-            'password' => 'error',
+            'name' => 'itaque',
+            'email' => 'sit',
+            'password' => 'earum',
             'roles' => [
-                11,
-                2,
+                12,
+                15,
             ],
         ],
     ]
@@ -1188,14 +1188,14 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/users'
+url = 'https://mamma-send.herokuapp.com/api/v1/users'
 payload = {
-    "name": "ut",
-    "email": "quo",
-    "password": "error",
+    "name": "itaque",
+    "email": "sit",
+    "password": "earum",
     "roles": [
-        11,
-        2
+        12,
+        15
     ]
 }
 headers = {
@@ -1262,14 +1262,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/api/v1/users/rem" \
+    -G "https://mamma-send.herokuapp.com/api/v1/users/consectetur" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/users/rem"
+    "https://mamma-send.herokuapp.com/api/v1/users/consectetur"
 );
 
 let headers = {
@@ -1288,7 +1288,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/api/v1/users/rem',
+    'https://mamma-send.herokuapp.com/api/v1/users/consectetur',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -1304,7 +1304,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/users/rem'
+url = 'https://mamma-send.herokuapp.com/api/v1/users/consectetur'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -1359,14 +1359,14 @@ response.json()
 
 ```bash
 curl -X DELETE \
-    "http://MammaSend.test/api/v1/users/officiis" \
+    "https://mamma-send.herokuapp.com/api/v1/users/minima" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/users/officiis"
+    "https://mamma-send.herokuapp.com/api/v1/users/minima"
 );
 
 let headers = {
@@ -1385,7 +1385,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://MammaSend.test/api/v1/users/officiis',
+    'https://mamma-send.herokuapp.com/api/v1/users/minima',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -1401,7 +1401,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/users/officiis'
+url = 'https://mamma-send.herokuapp.com/api/v1/users/minima'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -1449,14 +1449,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/api/v1/addresses" \
+    -G "https://mamma-send.herokuapp.com/api/v1/addresses" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/addresses"
+    "https://mamma-send.herokuapp.com/api/v1/addresses"
 );
 
 let headers = {
@@ -1475,7 +1475,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/api/v1/addresses',
+    'https://mamma-send.herokuapp.com/api/v1/addresses',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -1491,7 +1491,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/addresses'
+url = 'https://mamma-send.herokuapp.com/api/v1/addresses'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -1540,16 +1540,16 @@ response.json()
 
 ```bash
 curl -X POST \
-    "http://MammaSend.test/api/v1/addresses" \
+    "https://mamma-send.herokuapp.com/api/v1/addresses" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"street":"ut","city":"nulla","state":"illo","zip_code":"ab"}'
+    -d '{"street":"excepturi","city":"unde","state":"dicta","zip_code":"ut"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/addresses"
+    "https://mamma-send.herokuapp.com/api/v1/addresses"
 );
 
 let headers = {
@@ -1558,10 +1558,10 @@ let headers = {
 };
 
 let body = {
-    "street": "ut",
-    "city": "nulla",
-    "state": "illo",
-    "zip_code": "ab"
+    "street": "excepturi",
+    "city": "unde",
+    "state": "dicta",
+    "zip_code": "ut"
 }
 
 fetch(url, {
@@ -1575,17 +1575,17 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://MammaSend.test/api/v1/addresses',
+    'https://mamma-send.herokuapp.com/api/v1/addresses',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'street' => 'ut',
-            'city' => 'nulla',
-            'state' => 'illo',
-            'zip_code' => 'ab',
+            'street' => 'excepturi',
+            'city' => 'unde',
+            'state' => 'dicta',
+            'zip_code' => 'ut',
         ],
     ]
 );
@@ -1597,12 +1597,12 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/addresses'
+url = 'https://mamma-send.herokuapp.com/api/v1/addresses'
 payload = {
-    "street": "ut",
-    "city": "nulla",
-    "state": "illo",
-    "zip_code": "ab"
+    "street": "excepturi",
+    "city": "unde",
+    "state": "dicta",
+    "zip_code": "ut"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -1667,14 +1667,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/api/v1/addresses/id" \
+    -G "https://mamma-send.herokuapp.com/api/v1/addresses/consequuntur" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/addresses/id"
+    "https://mamma-send.herokuapp.com/api/v1/addresses/consequuntur"
 );
 
 let headers = {
@@ -1693,7 +1693,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/api/v1/addresses/id',
+    'https://mamma-send.herokuapp.com/api/v1/addresses/consequuntur',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -1709,7 +1709,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/addresses/id'
+url = 'https://mamma-send.herokuapp.com/api/v1/addresses/consequuntur'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -1764,16 +1764,16 @@ response.json()
 
 ```bash
 curl -X PUT \
-    "http://MammaSend.test/api/v1/addresses/distinctio" \
+    "https://mamma-send.herokuapp.com/api/v1/addresses/sapiente" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"street":"dolor","city":"atque","state":"in","zip_code":"itaque"}'
+    -d '{"street":"consectetur","city":"odit","state":"tenetur","zip_code":"voluptatem"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/addresses/distinctio"
+    "https://mamma-send.herokuapp.com/api/v1/addresses/sapiente"
 );
 
 let headers = {
@@ -1782,10 +1782,10 @@ let headers = {
 };
 
 let body = {
-    "street": "dolor",
-    "city": "atque",
-    "state": "in",
-    "zip_code": "itaque"
+    "street": "consectetur",
+    "city": "odit",
+    "state": "tenetur",
+    "zip_code": "voluptatem"
 }
 
 fetch(url, {
@@ -1799,17 +1799,17 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://MammaSend.test/api/v1/addresses/distinctio',
+    'https://mamma-send.herokuapp.com/api/v1/addresses/sapiente',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'street' => 'dolor',
-            'city' => 'atque',
-            'state' => 'in',
-            'zip_code' => 'itaque',
+            'street' => 'consectetur',
+            'city' => 'odit',
+            'state' => 'tenetur',
+            'zip_code' => 'voluptatem',
         ],
     ]
 );
@@ -1821,12 +1821,12 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/addresses/distinctio'
+url = 'https://mamma-send.herokuapp.com/api/v1/addresses/sapiente'
 payload = {
-    "street": "dolor",
-    "city": "atque",
-    "state": "in",
-    "zip_code": "itaque"
+    "street": "consectetur",
+    "city": "odit",
+    "state": "tenetur",
+    "zip_code": "voluptatem"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -1901,14 +1901,14 @@ response.json()
 
 ```bash
 curl -X DELETE \
-    "http://MammaSend.test/api/v1/addresses/atque" \
+    "https://mamma-send.herokuapp.com/api/v1/addresses/unde" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/addresses/atque"
+    "https://mamma-send.herokuapp.com/api/v1/addresses/unde"
 );
 
 let headers = {
@@ -1927,7 +1927,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://MammaSend.test/api/v1/addresses/atque',
+    'https://mamma-send.herokuapp.com/api/v1/addresses/unde',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -1943,7 +1943,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/addresses/atque'
+url = 'https://mamma-send.herokuapp.com/api/v1/addresses/unde'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -1991,14 +1991,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/api/v1/rides" \
+    -G "https://mamma-send.herokuapp.com/api/v1/rides" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/rides"
+    "https://mamma-send.herokuapp.com/api/v1/rides"
 );
 
 let headers = {
@@ -2017,7 +2017,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/api/v1/rides',
+    'https://mamma-send.herokuapp.com/api/v1/rides',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -2033,7 +2033,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/rides'
+url = 'https://mamma-send.herokuapp.com/api/v1/rides'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -2082,16 +2082,16 @@ response.json()
 
 ```bash
 curl -X POST \
-    "http://MammaSend.test/api/v1/rides" \
+    "https://mamma-send.herokuapp.com/api/v1/rides" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"rider_id":12}'
+    -d '{"rider_id":9}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/rides"
+    "https://mamma-send.herokuapp.com/api/v1/rides"
 );
 
 let headers = {
@@ -2100,7 +2100,7 @@ let headers = {
 };
 
 let body = {
-    "rider_id": 12
+    "rider_id": 9
 }
 
 fetch(url, {
@@ -2114,14 +2114,14 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://MammaSend.test/api/v1/rides',
+    'https://mamma-send.herokuapp.com/api/v1/rides',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'rider_id' => 12,
+            'rider_id' => 9,
         ],
     ]
 );
@@ -2133,9 +2133,9 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/rides'
+url = 'https://mamma-send.herokuapp.com/api/v1/rides'
 payload = {
-    "rider_id": 12
+    "rider_id": 9
 }
 headers = {
   'Content-Type': 'application/json',
@@ -2185,14 +2185,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/api/v1/rides/dolores" \
+    -G "https://mamma-send.herokuapp.com/api/v1/rides/at" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/rides/dolores"
+    "https://mamma-send.herokuapp.com/api/v1/rides/at"
 );
 
 let headers = {
@@ -2211,7 +2211,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/api/v1/rides/dolores',
+    'https://mamma-send.herokuapp.com/api/v1/rides/at',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -2227,7 +2227,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/rides/dolores'
+url = 'https://mamma-send.herokuapp.com/api/v1/rides/at'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -2282,16 +2282,16 @@ response.json()
 
 ```bash
 curl -X PUT \
-    "http://MammaSend.test/api/v1/rides/quibusdam" \
+    "https://mamma-send.herokuapp.com/api/v1/rides/sed" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"rider_id":2}'
+    -d '{"rider_id":14}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/rides/quibusdam"
+    "https://mamma-send.herokuapp.com/api/v1/rides/sed"
 );
 
 let headers = {
@@ -2300,7 +2300,7 @@ let headers = {
 };
 
 let body = {
-    "rider_id": 2
+    "rider_id": 14
 }
 
 fetch(url, {
@@ -2314,14 +2314,14 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://MammaSend.test/api/v1/rides/quibusdam',
+    'https://mamma-send.herokuapp.com/api/v1/rides/sed',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'rider_id' => 2,
+            'rider_id' => 14,
         ],
     ]
 );
@@ -2333,9 +2333,9 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/rides/quibusdam'
+url = 'https://mamma-send.herokuapp.com/api/v1/rides/sed'
 payload = {
-    "rider_id": 2
+    "rider_id": 14
 }
 headers = {
   'Content-Type': 'application/json',
@@ -2395,14 +2395,14 @@ response.json()
 
 ```bash
 curl -X DELETE \
-    "http://MammaSend.test/api/v1/rides/dolorem" \
+    "https://mamma-send.herokuapp.com/api/v1/rides/ullam" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/rides/dolorem"
+    "https://mamma-send.herokuapp.com/api/v1/rides/ullam"
 );
 
 let headers = {
@@ -2421,7 +2421,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://MammaSend.test/api/v1/rides/dolorem',
+    'https://mamma-send.herokuapp.com/api/v1/rides/ullam',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -2437,7 +2437,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/rides/dolorem'
+url = 'https://mamma-send.herokuapp.com/api/v1/rides/ullam'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -2485,14 +2485,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/api/v1/payments" \
+    -G "https://mamma-send.herokuapp.com/api/v1/payments" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/payments"
+    "https://mamma-send.herokuapp.com/api/v1/payments"
 );
 
 let headers = {
@@ -2511,7 +2511,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/api/v1/payments',
+    'https://mamma-send.herokuapp.com/api/v1/payments',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -2527,7 +2527,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/payments'
+url = 'https://mamma-send.herokuapp.com/api/v1/payments'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -2576,16 +2576,16 @@ response.json()
 
 ```bash
 curl -X POST \
-    "http://MammaSend.test/api/v1/payments" \
+    "https://mamma-send.herokuapp.com/api/v1/payments" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"total_received":"porro","rider_received":"laborum","office_received":"voluptas","user_id":11}'
+    -d '{"total_received":"qui","rider_received":"id","office_received":"maiores","user_id":7}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/payments"
+    "https://mamma-send.herokuapp.com/api/v1/payments"
 );
 
 let headers = {
@@ -2594,10 +2594,10 @@ let headers = {
 };
 
 let body = {
-    "total_received": "porro",
-    "rider_received": "laborum",
-    "office_received": "voluptas",
-    "user_id": 11
+    "total_received": "qui",
+    "rider_received": "id",
+    "office_received": "maiores",
+    "user_id": 7
 }
 
 fetch(url, {
@@ -2611,17 +2611,17 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://MammaSend.test/api/v1/payments',
+    'https://mamma-send.herokuapp.com/api/v1/payments',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'total_received' => 'porro',
-            'rider_received' => 'laborum',
-            'office_received' => 'voluptas',
-            'user_id' => 11,
+            'total_received' => 'qui',
+            'rider_received' => 'id',
+            'office_received' => 'maiores',
+            'user_id' => 7,
         ],
     ]
 );
@@ -2633,12 +2633,12 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/payments'
+url = 'https://mamma-send.herokuapp.com/api/v1/payments'
 payload = {
-    "total_received": "porro",
-    "rider_received": "laborum",
-    "office_received": "voluptas",
-    "user_id": 11
+    "total_received": "qui",
+    "rider_received": "id",
+    "office_received": "maiores",
+    "user_id": 7
 }
 headers = {
   'Content-Type': 'application/json',
@@ -2703,14 +2703,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/api/v1/payments/molestias" \
+    -G "https://mamma-send.herokuapp.com/api/v1/payments/quisquam" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/payments/molestias"
+    "https://mamma-send.herokuapp.com/api/v1/payments/quisquam"
 );
 
 let headers = {
@@ -2729,7 +2729,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/api/v1/payments/molestias',
+    'https://mamma-send.herokuapp.com/api/v1/payments/quisquam',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -2745,7 +2745,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/payments/molestias'
+url = 'https://mamma-send.herokuapp.com/api/v1/payments/quisquam'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -2800,16 +2800,16 @@ response.json()
 
 ```bash
 curl -X PUT \
-    "http://MammaSend.test/api/v1/payments/optio" \
+    "https://mamma-send.herokuapp.com/api/v1/payments/reiciendis" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"total_received":"quam","rider_received":"maiores","office_received":"voluptas","user_id":14}'
+    -d '{"total_received":"tempore","rider_received":"provident","office_received":"nemo","user_id":2}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/payments/optio"
+    "https://mamma-send.herokuapp.com/api/v1/payments/reiciendis"
 );
 
 let headers = {
@@ -2818,10 +2818,10 @@ let headers = {
 };
 
 let body = {
-    "total_received": "quam",
-    "rider_received": "maiores",
-    "office_received": "voluptas",
-    "user_id": 14
+    "total_received": "tempore",
+    "rider_received": "provident",
+    "office_received": "nemo",
+    "user_id": 2
 }
 
 fetch(url, {
@@ -2835,17 +2835,17 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://MammaSend.test/api/v1/payments/optio',
+    'https://mamma-send.herokuapp.com/api/v1/payments/reiciendis',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'total_received' => 'quam',
-            'rider_received' => 'maiores',
-            'office_received' => 'voluptas',
-            'user_id' => 14,
+            'total_received' => 'tempore',
+            'rider_received' => 'provident',
+            'office_received' => 'nemo',
+            'user_id' => 2,
         ],
     ]
 );
@@ -2857,12 +2857,12 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/payments/optio'
+url = 'https://mamma-send.herokuapp.com/api/v1/payments/reiciendis'
 payload = {
-    "total_received": "quam",
-    "rider_received": "maiores",
-    "office_received": "voluptas",
-    "user_id": 14
+    "total_received": "tempore",
+    "rider_received": "provident",
+    "office_received": "nemo",
+    "user_id": 2
 }
 headers = {
   'Content-Type': 'application/json',
@@ -2937,14 +2937,14 @@ response.json()
 
 ```bash
 curl -X DELETE \
-    "http://MammaSend.test/api/v1/payments/provident" \
+    "https://mamma-send.herokuapp.com/api/v1/payments/nihil" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/payments/provident"
+    "https://mamma-send.herokuapp.com/api/v1/payments/nihil"
 );
 
 let headers = {
@@ -2963,7 +2963,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://MammaSend.test/api/v1/payments/provident',
+    'https://mamma-send.herokuapp.com/api/v1/payments/nihil',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -2979,7 +2979,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/payments/provident'
+url = 'https://mamma-send.herokuapp.com/api/v1/payments/nihil'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -3027,14 +3027,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/api/v1/faq-categories" \
+    -G "https://mamma-send.herokuapp.com/api/v1/faq-categories" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/faq-categories"
+    "https://mamma-send.herokuapp.com/api/v1/faq-categories"
 );
 
 let headers = {
@@ -3053,7 +3053,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/api/v1/faq-categories',
+    'https://mamma-send.herokuapp.com/api/v1/faq-categories',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -3069,7 +3069,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/faq-categories'
+url = 'https://mamma-send.herokuapp.com/api/v1/faq-categories'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -3118,16 +3118,16 @@ response.json()
 
 ```bash
 curl -X POST \
-    "http://MammaSend.test/api/v1/faq-categories" \
+    "https://mamma-send.herokuapp.com/api/v1/faq-categories" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"category":"perferendis"}'
+    -d '{"category":"labore"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/faq-categories"
+    "https://mamma-send.herokuapp.com/api/v1/faq-categories"
 );
 
 let headers = {
@@ -3136,7 +3136,7 @@ let headers = {
 };
 
 let body = {
-    "category": "perferendis"
+    "category": "labore"
 }
 
 fetch(url, {
@@ -3150,14 +3150,14 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://MammaSend.test/api/v1/faq-categories',
+    'https://mamma-send.herokuapp.com/api/v1/faq-categories',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'category' => 'perferendis',
+            'category' => 'labore',
         ],
     ]
 );
@@ -3169,9 +3169,9 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/faq-categories'
+url = 'https://mamma-send.herokuapp.com/api/v1/faq-categories'
 payload = {
-    "category": "perferendis"
+    "category": "labore"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -3221,14 +3221,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/api/v1/faq-categories/dignissimos" \
+    -G "https://mamma-send.herokuapp.com/api/v1/faq-categories/animi" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/faq-categories/dignissimos"
+    "https://mamma-send.herokuapp.com/api/v1/faq-categories/animi"
 );
 
 let headers = {
@@ -3247,7 +3247,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/api/v1/faq-categories/dignissimos',
+    'https://mamma-send.herokuapp.com/api/v1/faq-categories/animi',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -3263,7 +3263,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/faq-categories/dignissimos'
+url = 'https://mamma-send.herokuapp.com/api/v1/faq-categories/animi'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -3318,16 +3318,16 @@ response.json()
 
 ```bash
 curl -X PUT \
-    "http://MammaSend.test/api/v1/faq-categories/dicta" \
+    "https://mamma-send.herokuapp.com/api/v1/faq-categories/exercitationem" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"category":"repudiandae"}'
+    -d '{"category":"dolore"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/faq-categories/dicta"
+    "https://mamma-send.herokuapp.com/api/v1/faq-categories/exercitationem"
 );
 
 let headers = {
@@ -3336,7 +3336,7 @@ let headers = {
 };
 
 let body = {
-    "category": "repudiandae"
+    "category": "dolore"
 }
 
 fetch(url, {
@@ -3350,14 +3350,14 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://MammaSend.test/api/v1/faq-categories/dicta',
+    'https://mamma-send.herokuapp.com/api/v1/faq-categories/exercitationem',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'category' => 'repudiandae',
+            'category' => 'dolore',
         ],
     ]
 );
@@ -3369,9 +3369,9 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/faq-categories/dicta'
+url = 'https://mamma-send.herokuapp.com/api/v1/faq-categories/exercitationem'
 payload = {
-    "category": "repudiandae"
+    "category": "dolore"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -3431,14 +3431,14 @@ response.json()
 
 ```bash
 curl -X DELETE \
-    "http://MammaSend.test/api/v1/faq-categories/fuga" \
+    "https://mamma-send.herokuapp.com/api/v1/faq-categories/non" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/faq-categories/fuga"
+    "https://mamma-send.herokuapp.com/api/v1/faq-categories/non"
 );
 
 let headers = {
@@ -3457,7 +3457,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://MammaSend.test/api/v1/faq-categories/fuga',
+    'https://mamma-send.herokuapp.com/api/v1/faq-categories/non',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -3473,7 +3473,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/faq-categories/fuga'
+url = 'https://mamma-send.herokuapp.com/api/v1/faq-categories/non'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -3521,14 +3521,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/api/v1/faq-questions" \
+    -G "https://mamma-send.herokuapp.com/api/v1/faq-questions" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/faq-questions"
+    "https://mamma-send.herokuapp.com/api/v1/faq-questions"
 );
 
 let headers = {
@@ -3547,7 +3547,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/api/v1/faq-questions',
+    'https://mamma-send.herokuapp.com/api/v1/faq-questions',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -3563,7 +3563,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/faq-questions'
+url = 'https://mamma-send.herokuapp.com/api/v1/faq-questions'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -3612,16 +3612,16 @@ response.json()
 
 ```bash
 curl -X POST \
-    "http://MammaSend.test/api/v1/faq-questions" \
+    "https://mamma-send.herokuapp.com/api/v1/faq-questions" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"category_id":11,"question":"quo","answer":"eius"}'
+    -d '{"category_id":18,"question":"minima","answer":"eveniet"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/faq-questions"
+    "https://mamma-send.herokuapp.com/api/v1/faq-questions"
 );
 
 let headers = {
@@ -3630,9 +3630,9 @@ let headers = {
 };
 
 let body = {
-    "category_id": 11,
-    "question": "quo",
-    "answer": "eius"
+    "category_id": 18,
+    "question": "minima",
+    "answer": "eveniet"
 }
 
 fetch(url, {
@@ -3646,16 +3646,16 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://MammaSend.test/api/v1/faq-questions',
+    'https://mamma-send.herokuapp.com/api/v1/faq-questions',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'category_id' => 11,
-            'question' => 'quo',
-            'answer' => 'eius',
+            'category_id' => 18,
+            'question' => 'minima',
+            'answer' => 'eveniet',
         ],
     ]
 );
@@ -3667,11 +3667,11 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/faq-questions'
+url = 'https://mamma-send.herokuapp.com/api/v1/faq-questions'
 payload = {
-    "category_id": 11,
-    "question": "quo",
-    "answer": "eius"
+    "category_id": 18,
+    "question": "minima",
+    "answer": "eveniet"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -3731,14 +3731,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/api/v1/faq-questions/cupiditate" \
+    -G "https://mamma-send.herokuapp.com/api/v1/faq-questions/ut" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/faq-questions/cupiditate"
+    "https://mamma-send.herokuapp.com/api/v1/faq-questions/ut"
 );
 
 let headers = {
@@ -3757,7 +3757,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/api/v1/faq-questions/cupiditate',
+    'https://mamma-send.herokuapp.com/api/v1/faq-questions/ut',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -3773,7 +3773,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/faq-questions/cupiditate'
+url = 'https://mamma-send.herokuapp.com/api/v1/faq-questions/ut'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -3828,16 +3828,16 @@ response.json()
 
 ```bash
 curl -X PUT \
-    "http://MammaSend.test/api/v1/faq-questions/voluptas" \
+    "https://mamma-send.herokuapp.com/api/v1/faq-questions/id" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"category_id":19,"question":"aperiam","answer":"reprehenderit"}'
+    -d '{"category_id":15,"question":"cum","answer":"et"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/faq-questions/voluptas"
+    "https://mamma-send.herokuapp.com/api/v1/faq-questions/id"
 );
 
 let headers = {
@@ -3846,9 +3846,9 @@ let headers = {
 };
 
 let body = {
-    "category_id": 19,
-    "question": "aperiam",
-    "answer": "reprehenderit"
+    "category_id": 15,
+    "question": "cum",
+    "answer": "et"
 }
 
 fetch(url, {
@@ -3862,16 +3862,16 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://MammaSend.test/api/v1/faq-questions/voluptas',
+    'https://mamma-send.herokuapp.com/api/v1/faq-questions/id',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'category_id' => 19,
-            'question' => 'aperiam',
-            'answer' => 'reprehenderit',
+            'category_id' => 15,
+            'question' => 'cum',
+            'answer' => 'et',
         ],
     ]
 );
@@ -3883,11 +3883,11 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/faq-questions/voluptas'
+url = 'https://mamma-send.herokuapp.com/api/v1/faq-questions/id'
 payload = {
-    "category_id": 19,
-    "question": "aperiam",
-    "answer": "reprehenderit"
+    "category_id": 15,
+    "question": "cum",
+    "answer": "et"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -3957,14 +3957,14 @@ response.json()
 
 ```bash
 curl -X DELETE \
-    "http://MammaSend.test/api/v1/faq-questions/nobis" \
+    "https://mamma-send.herokuapp.com/api/v1/faq-questions/sint" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/api/v1/faq-questions/nobis"
+    "https://mamma-send.herokuapp.com/api/v1/faq-questions/sint"
 );
 
 let headers = {
@@ -3983,7 +3983,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://MammaSend.test/api/v1/faq-questions/nobis',
+    'https://mamma-send.herokuapp.com/api/v1/faq-questions/sint',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -3999,7 +3999,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/api/v1/faq-questions/nobis'
+url = 'https://mamma-send.herokuapp.com/api/v1/faq-questions/sint'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -4047,14 +4047,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/" \
+    -G "https://mamma-send.herokuapp.com/" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/"
+    "https://mamma-send.herokuapp.com/"
 );
 
 let headers = {
@@ -4073,7 +4073,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/',
+    'https://mamma-send.herokuapp.com/',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -4089,7 +4089,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test//'
+url = 'https://mamma-send.herokuapp.com//'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -4168,14 +4168,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/home" \
+    -G "https://mamma-send.herokuapp.com/home" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/home"
+    "https://mamma-send.herokuapp.com/home"
 );
 
 let headers = {
@@ -4194,7 +4194,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/home',
+    'https://mamma-send.herokuapp.com/home',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -4210,7 +4210,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/home'
+url = 'https://mamma-send.herokuapp.com/home'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -4229,12 +4229,12 @@ response.json()
 <html>
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="refresh" content="0;url='http://MammaSend.test/admin'" />
+        <meta http-equiv="refresh" content="0;url='http://mamma-send.herokuapp.com/admin'" />
 
-        <title>Redirecting to http://MammaSend.test/admin</title>
+        <title>Redirecting to http://mamma-send.herokuapp.com/admin</title>
     </head>
     <body>
-        Redirecting to <a href="http://MammaSend.test/admin">http://MammaSend.test/admin</a>.
+        Redirecting to <a href="http://mamma-send.herokuapp.com/admin">http://mamma-send.herokuapp.com/admin</a>.
     </body>
 </html>
 ```
@@ -4269,14 +4269,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/login" \
+    -G "https://mamma-send.herokuapp.com/login" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/login"
+    "https://mamma-send.herokuapp.com/login"
 );
 
 let headers = {
@@ -4295,7 +4295,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/login',
+    'https://mamma-send.herokuapp.com/login',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -4311,7 +4311,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/login'
+url = 'https://mamma-send.herokuapp.com/login'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -4333,7 +4333,7 @@ response.json()
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="csrf-token" content="RVcHl2Bbv9qGVtqFH8sbGpKEgfQk8IuuPobtxFcX">
+    <meta name="csrf-token" content="8N6jdgouQoyDhaxqsXAeMN7VJwqmWD2Z7E7JA9iS">
 
     <title>MammaSend</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
@@ -4345,7 +4345,7 @@ response.json()
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/min/dropzone.min.css" rel="stylesheet" />
-    <link href="http://MammaSend.test/css/custom.css" rel="stylesheet" />
+    <link href="http://mamma-send.herokuapp.com/css/custom.css" rel="stylesheet" />
     </head>
 
 <body class="header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden login-page">
@@ -4360,8 +4360,8 @@ response.json()
                     <p class="text-muted">Login</p>
 
                     
-                    <form method="POST" action="http://MammaSend.test/login">
-                        <input type="hidden" name="_token" value="RVcHl2Bbv9qGVtqFH8sbGpKEgfQk8IuuPobtxFcX">
+                    <form method="POST" action="http://mamma-send.herokuapp.com/login">
+                        <input type="hidden" name="_token" value="8N6jdgouQoyDhaxqsXAeMN7VJwqmWD2Z7E7JA9iS">
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                             <span class="input-group-text">
@@ -4398,10 +4398,10 @@ response.json()
                                 </button>
                             </div>
                             <div class="col-6 text-right">
-                                                                    <a class="btn btn-link px-0" href="http://MammaSend.test/password/reset">
+                                                                    <a class="btn btn-link px-0" href="http://mamma-send.herokuapp.com/password/reset">
                                         Forgot your password?
                                     </a><br>
-                                                                <a class="btn btn-link px-0" href="http://MammaSend.test/register">
+                                                                <a class="btn btn-link px-0" href="http://mamma-send.herokuapp.com/register">
                                     Register
                                 </a>
                             </div>
@@ -4449,14 +4449,14 @@ response.json()
 
 ```bash
 curl -X POST \
-    "http://MammaSend.test/login" \
+    "https://mamma-send.herokuapp.com/login" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/login"
+    "https://mamma-send.herokuapp.com/login"
 );
 
 let headers = {
@@ -4475,7 +4475,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://MammaSend.test/login',
+    'https://mamma-send.herokuapp.com/login',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -4491,7 +4491,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/login'
+url = 'https://mamma-send.herokuapp.com/login'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -4533,14 +4533,14 @@ response.json()
 
 ```bash
 curl -X POST \
-    "http://MammaSend.test/logout" \
+    "https://mamma-send.herokuapp.com/logout" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/logout"
+    "https://mamma-send.herokuapp.com/logout"
 );
 
 let headers = {
@@ -4559,7 +4559,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://MammaSend.test/logout',
+    'https://mamma-send.herokuapp.com/logout',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -4575,7 +4575,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/logout'
+url = 'https://mamma-send.herokuapp.com/logout'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -4617,14 +4617,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/register" \
+    -G "https://mamma-send.herokuapp.com/register" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/register"
+    "https://mamma-send.herokuapp.com/register"
 );
 
 let headers = {
@@ -4643,7 +4643,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/register',
+    'https://mamma-send.herokuapp.com/register',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -4659,7 +4659,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/register'
+url = 'https://mamma-send.herokuapp.com/register'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -4681,7 +4681,7 @@ response.json()
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="csrf-token" content="RVcHl2Bbv9qGVtqFH8sbGpKEgfQk8IuuPobtxFcX">
+    <meta name="csrf-token" content="8N6jdgouQoyDhaxqsXAeMN7VJwqmWD2Z7E7JA9iS">
 
     <title>MammaSend</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
@@ -4693,7 +4693,7 @@ response.json()
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/min/dropzone.min.css" rel="stylesheet" />
-    <link href="http://MammaSend.test/css/custom.css" rel="stylesheet" />
+    <link href="http://mamma-send.herokuapp.com/css/custom.css" rel="stylesheet" />
     </head>
 
 <body class="header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden login-page">
@@ -4706,8 +4706,8 @@ response.json()
                 <div class="card-header">Register</div>
 
                 <div class="card-body">
-                    <form method="POST" action="http://MammaSend.test/register">
-                        <input type="hidden" name="_token" value="RVcHl2Bbv9qGVtqFH8sbGpKEgfQk8IuuPobtxFcX">
+                    <form method="POST" action="http://mamma-send.herokuapp.com/register">
+                        <input type="hidden" name="_token" value="8N6jdgouQoyDhaxqsXAeMN7VJwqmWD2Z7E7JA9iS">
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">Name</label>
 
@@ -4794,14 +4794,14 @@ response.json()
 
 ```bash
 curl -X POST \
-    "http://MammaSend.test/register" \
+    "https://mamma-send.herokuapp.com/register" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/register"
+    "https://mamma-send.herokuapp.com/register"
 );
 
 let headers = {
@@ -4820,7 +4820,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://MammaSend.test/register',
+    'https://mamma-send.herokuapp.com/register',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -4836,7 +4836,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/register'
+url = 'https://mamma-send.herokuapp.com/register'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -4878,14 +4878,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/password/reset" \
+    -G "https://mamma-send.herokuapp.com/password/reset" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/password/reset"
+    "https://mamma-send.herokuapp.com/password/reset"
 );
 
 let headers = {
@@ -4904,7 +4904,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/password/reset',
+    'https://mamma-send.herokuapp.com/password/reset',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -4920,7 +4920,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/password/reset'
+url = 'https://mamma-send.herokuapp.com/password/reset'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -4942,7 +4942,7 @@ response.json()
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="csrf-token" content="RVcHl2Bbv9qGVtqFH8sbGpKEgfQk8IuuPobtxFcX">
+    <meta name="csrf-token" content="8N6jdgouQoyDhaxqsXAeMN7VJwqmWD2Z7E7JA9iS">
 
     <title>MammaSend</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
@@ -4954,7 +4954,7 @@ response.json()
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/min/dropzone.min.css" rel="stylesheet" />
-    <link href="http://MammaSend.test/css/custom.css" rel="stylesheet" />
+    <link href="http://mamma-send.herokuapp.com/css/custom.css" rel="stylesheet" />
     </head>
 
 <body class="header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden login-page">
@@ -4968,8 +4968,8 @@ response.json()
 
                 <div class="card-body">
                     
-                    <form method="POST" action="http://MammaSend.test/password/email">
-                        <input type="hidden" name="_token" value="RVcHl2Bbv9qGVtqFH8sbGpKEgfQk8IuuPobtxFcX">
+                    <form method="POST" action="http://mamma-send.herokuapp.com/password/email">
+                        <input type="hidden" name="_token" value="8N6jdgouQoyDhaxqsXAeMN7VJwqmWD2Z7E7JA9iS">
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
 
@@ -5030,14 +5030,14 @@ response.json()
 
 ```bash
 curl -X POST \
-    "http://MammaSend.test/password/email" \
+    "https://mamma-send.herokuapp.com/password/email" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/password/email"
+    "https://mamma-send.herokuapp.com/password/email"
 );
 
 let headers = {
@@ -5056,7 +5056,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://MammaSend.test/password/email',
+    'https://mamma-send.herokuapp.com/password/email',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -5072,7 +5072,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/password/email'
+url = 'https://mamma-send.herokuapp.com/password/email'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -5114,14 +5114,14 @@ If no token is present, display the link request form.
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/password/reset/est" \
+    -G "https://mamma-send.herokuapp.com/password/reset/ut" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/password/reset/est"
+    "https://mamma-send.herokuapp.com/password/reset/ut"
 );
 
 let headers = {
@@ -5140,7 +5140,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/password/reset/est',
+    'https://mamma-send.herokuapp.com/password/reset/ut',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -5156,7 +5156,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/password/reset/est'
+url = 'https://mamma-send.herokuapp.com/password/reset/ut'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -5178,7 +5178,7 @@ response.json()
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="csrf-token" content="RVcHl2Bbv9qGVtqFH8sbGpKEgfQk8IuuPobtxFcX">
+    <meta name="csrf-token" content="8N6jdgouQoyDhaxqsXAeMN7VJwqmWD2Z7E7JA9iS">
 
     <title>MammaSend</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
@@ -5190,7 +5190,7 @@ response.json()
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/min/dropzone.min.css" rel="stylesheet" />
-    <link href="http://MammaSend.test/css/custom.css" rel="stylesheet" />
+    <link href="http://mamma-send.herokuapp.com/css/custom.css" rel="stylesheet" />
     </head>
 
 <body class="header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden login-page">
@@ -5203,9 +5203,9 @@ response.json()
                 <div class="card-header">Reset Password</div>
 
                 <div class="card-body">
-                    <form method="POST" action="http://MammaSend.test/password/reset">
-                        <input type="hidden" name="_token" value="RVcHl2Bbv9qGVtqFH8sbGpKEgfQk8IuuPobtxFcX">
-                        <input type="hidden" name="token" value="est">
+                    <form method="POST" action="http://mamma-send.herokuapp.com/password/reset">
+                        <input type="hidden" name="_token" value="8N6jdgouQoyDhaxqsXAeMN7VJwqmWD2Z7E7JA9iS">
+                        <input type="hidden" name="token" value="ut">
 
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
@@ -5290,14 +5290,14 @@ response.json()
 
 ```bash
 curl -X POST \
-    "http://MammaSend.test/password/reset" \
+    "https://mamma-send.herokuapp.com/password/reset" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/password/reset"
+    "https://mamma-send.herokuapp.com/password/reset"
 );
 
 let headers = {
@@ -5316,7 +5316,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://MammaSend.test/password/reset',
+    'https://mamma-send.herokuapp.com/password/reset',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -5332,7 +5332,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/password/reset'
+url = 'https://mamma-send.herokuapp.com/password/reset'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -5374,14 +5374,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/password/confirm" \
+    -G "https://mamma-send.herokuapp.com/password/confirm" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/password/confirm"
+    "https://mamma-send.herokuapp.com/password/confirm"
 );
 
 let headers = {
@@ -5400,7 +5400,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/password/confirm',
+    'https://mamma-send.herokuapp.com/password/confirm',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -5416,7 +5416,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/password/confirm'
+url = 'https://mamma-send.herokuapp.com/password/confirm'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -5465,14 +5465,14 @@ response.json()
 
 ```bash
 curl -X POST \
-    "http://MammaSend.test/password/confirm" \
+    "https://mamma-send.herokuapp.com/password/confirm" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/password/confirm"
+    "https://mamma-send.herokuapp.com/password/confirm"
 );
 
 let headers = {
@@ -5491,7 +5491,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://MammaSend.test/password/confirm',
+    'https://mamma-send.herokuapp.com/password/confirm',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -5507,7 +5507,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/password/confirm'
+url = 'https://mamma-send.herokuapp.com/password/confirm'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -5549,14 +5549,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin" \
+    -G "https://mamma-send.herokuapp.com/admin" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin"
+    "https://mamma-send.herokuapp.com/admin"
 );
 
 let headers = {
@@ -5575,7 +5575,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin',
+    'https://mamma-send.herokuapp.com/admin',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -5591,7 +5591,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin'
+url = 'https://mamma-send.herokuapp.com/admin'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -5640,14 +5640,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin/permissions" \
+    -G "https://mamma-send.herokuapp.com/admin/permissions" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/permissions"
+    "https://mamma-send.herokuapp.com/admin/permissions"
 );
 
 let headers = {
@@ -5666,7 +5666,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin/permissions',
+    'https://mamma-send.herokuapp.com/admin/permissions',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -5682,7 +5682,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/permissions'
+url = 'https://mamma-send.herokuapp.com/admin/permissions'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -5731,14 +5731,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin/permissions/create" \
+    -G "https://mamma-send.herokuapp.com/admin/permissions/create" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/permissions/create"
+    "https://mamma-send.herokuapp.com/admin/permissions/create"
 );
 
 let headers = {
@@ -5757,7 +5757,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin/permissions/create',
+    'https://mamma-send.herokuapp.com/admin/permissions/create',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -5773,7 +5773,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/permissions/create'
+url = 'https://mamma-send.herokuapp.com/admin/permissions/create'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -5822,16 +5822,16 @@ response.json()
 
 ```bash
 curl -X POST \
-    "http://MammaSend.test/admin/permissions" \
+    "https://mamma-send.herokuapp.com/admin/permissions" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"qui"}'
+    -d '{"title":"fuga"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/permissions"
+    "https://mamma-send.herokuapp.com/admin/permissions"
 );
 
 let headers = {
@@ -5840,7 +5840,7 @@ let headers = {
 };
 
 let body = {
-    "title": "qui"
+    "title": "fuga"
 }
 
 fetch(url, {
@@ -5854,14 +5854,14 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://MammaSend.test/admin/permissions',
+    'https://mamma-send.herokuapp.com/admin/permissions',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'title' => 'qui',
+            'title' => 'fuga',
         ],
     ]
 );
@@ -5873,9 +5873,9 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/permissions'
+url = 'https://mamma-send.herokuapp.com/admin/permissions'
 payload = {
-    "title": "qui"
+    "title": "fuga"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -5925,14 +5925,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin/permissions/ullam" \
+    -G "https://mamma-send.herokuapp.com/admin/permissions/veritatis" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/permissions/ullam"
+    "https://mamma-send.herokuapp.com/admin/permissions/veritatis"
 );
 
 let headers = {
@@ -5951,7 +5951,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin/permissions/ullam',
+    'https://mamma-send.herokuapp.com/admin/permissions/veritatis',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -5967,7 +5967,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/permissions/ullam'
+url = 'https://mamma-send.herokuapp.com/admin/permissions/veritatis'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -6022,14 +6022,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin/permissions/saepe/edit" \
+    -G "https://mamma-send.herokuapp.com/admin/permissions/est/edit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/permissions/saepe/edit"
+    "https://mamma-send.herokuapp.com/admin/permissions/est/edit"
 );
 
 let headers = {
@@ -6048,7 +6048,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin/permissions/saepe/edit',
+    'https://mamma-send.herokuapp.com/admin/permissions/est/edit',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -6064,7 +6064,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/permissions/saepe/edit'
+url = 'https://mamma-send.herokuapp.com/admin/permissions/est/edit'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -6119,16 +6119,16 @@ response.json()
 
 ```bash
 curl -X PUT \
-    "http://MammaSend.test/admin/permissions/eveniet" \
+    "https://mamma-send.herokuapp.com/admin/permissions/molestiae" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"deserunt"}'
+    -d '{"title":"sapiente"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/permissions/eveniet"
+    "https://mamma-send.herokuapp.com/admin/permissions/molestiae"
 );
 
 let headers = {
@@ -6137,7 +6137,7 @@ let headers = {
 };
 
 let body = {
-    "title": "deserunt"
+    "title": "sapiente"
 }
 
 fetch(url, {
@@ -6151,14 +6151,14 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://MammaSend.test/admin/permissions/eveniet',
+    'https://mamma-send.herokuapp.com/admin/permissions/molestiae',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'title' => 'deserunt',
+            'title' => 'sapiente',
         ],
     ]
 );
@@ -6170,9 +6170,9 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/permissions/eveniet'
+url = 'https://mamma-send.herokuapp.com/admin/permissions/molestiae'
 payload = {
-    "title": "deserunt"
+    "title": "sapiente"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -6232,14 +6232,14 @@ response.json()
 
 ```bash
 curl -X DELETE \
-    "http://MammaSend.test/admin/permissions/veniam" \
+    "https://mamma-send.herokuapp.com/admin/permissions/ipsum" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/permissions/veniam"
+    "https://mamma-send.herokuapp.com/admin/permissions/ipsum"
 );
 
 let headers = {
@@ -6258,7 +6258,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://MammaSend.test/admin/permissions/veniam',
+    'https://mamma-send.herokuapp.com/admin/permissions/ipsum',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -6274,7 +6274,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/permissions/veniam'
+url = 'https://mamma-send.herokuapp.com/admin/permissions/ipsum'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -6322,14 +6322,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin/roles" \
+    -G "https://mamma-send.herokuapp.com/admin/roles" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/roles"
+    "https://mamma-send.herokuapp.com/admin/roles"
 );
 
 let headers = {
@@ -6348,7 +6348,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin/roles',
+    'https://mamma-send.herokuapp.com/admin/roles',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -6364,7 +6364,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/roles'
+url = 'https://mamma-send.herokuapp.com/admin/roles'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -6413,14 +6413,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin/roles/create" \
+    -G "https://mamma-send.herokuapp.com/admin/roles/create" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/roles/create"
+    "https://mamma-send.herokuapp.com/admin/roles/create"
 );
 
 let headers = {
@@ -6439,7 +6439,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin/roles/create',
+    'https://mamma-send.herokuapp.com/admin/roles/create',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -6455,7 +6455,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/roles/create'
+url = 'https://mamma-send.herokuapp.com/admin/roles/create'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -6504,16 +6504,16 @@ response.json()
 
 ```bash
 curl -X POST \
-    "http://MammaSend.test/admin/roles" \
+    "https://mamma-send.herokuapp.com/admin/roles" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"ipsa","permissions":[3,1]}'
+    -d '{"title":"illo","permissions":[5,13]}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/roles"
+    "https://mamma-send.herokuapp.com/admin/roles"
 );
 
 let headers = {
@@ -6522,10 +6522,10 @@ let headers = {
 };
 
 let body = {
-    "title": "ipsa",
+    "title": "illo",
     "permissions": [
-        3,
-        1
+        5,
+        13
     ]
 }
 
@@ -6540,17 +6540,17 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://MammaSend.test/admin/roles',
+    'https://mamma-send.herokuapp.com/admin/roles',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'title' => 'ipsa',
+            'title' => 'illo',
             'permissions' => [
-                3,
-                1,
+                5,
+                13,
             ],
         ],
     ]
@@ -6563,12 +6563,12 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/roles'
+url = 'https://mamma-send.herokuapp.com/admin/roles'
 payload = {
-    "title": "ipsa",
+    "title": "illo",
     "permissions": [
-        3,
-        1
+        5,
+        13
     ]
 }
 headers = {
@@ -6625,14 +6625,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin/roles/quis" \
+    -G "https://mamma-send.herokuapp.com/admin/roles/totam" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/roles/quis"
+    "https://mamma-send.herokuapp.com/admin/roles/totam"
 );
 
 let headers = {
@@ -6651,7 +6651,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin/roles/quis',
+    'https://mamma-send.herokuapp.com/admin/roles/totam',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -6667,7 +6667,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/roles/quis'
+url = 'https://mamma-send.herokuapp.com/admin/roles/totam'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -6722,14 +6722,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin/roles/cum/edit" \
+    -G "https://mamma-send.herokuapp.com/admin/roles/amet/edit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/roles/cum/edit"
+    "https://mamma-send.herokuapp.com/admin/roles/amet/edit"
 );
 
 let headers = {
@@ -6748,7 +6748,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin/roles/cum/edit',
+    'https://mamma-send.herokuapp.com/admin/roles/amet/edit',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -6764,7 +6764,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/roles/cum/edit'
+url = 'https://mamma-send.herokuapp.com/admin/roles/amet/edit'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -6819,16 +6819,16 @@ response.json()
 
 ```bash
 curl -X PUT \
-    "http://MammaSend.test/admin/roles/error" \
+    "https://mamma-send.herokuapp.com/admin/roles/autem" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"eos","permissions":[1,10]}'
+    -d '{"title":"aut","permissions":[13,3]}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/roles/error"
+    "https://mamma-send.herokuapp.com/admin/roles/autem"
 );
 
 let headers = {
@@ -6837,10 +6837,10 @@ let headers = {
 };
 
 let body = {
-    "title": "eos",
+    "title": "aut",
     "permissions": [
-        1,
-        10
+        13,
+        3
     ]
 }
 
@@ -6855,17 +6855,17 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://MammaSend.test/admin/roles/error',
+    'https://mamma-send.herokuapp.com/admin/roles/autem',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'title' => 'eos',
+            'title' => 'aut',
             'permissions' => [
-                1,
-                10,
+                13,
+                3,
             ],
         ],
     ]
@@ -6878,12 +6878,12 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/roles/error'
+url = 'https://mamma-send.herokuapp.com/admin/roles/autem'
 payload = {
-    "title": "eos",
+    "title": "aut",
     "permissions": [
-        1,
-        10
+        13,
+        3
     ]
 }
 headers = {
@@ -6950,14 +6950,14 @@ response.json()
 
 ```bash
 curl -X DELETE \
-    "http://MammaSend.test/admin/roles/dicta" \
+    "https://mamma-send.herokuapp.com/admin/roles/sunt" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/roles/dicta"
+    "https://mamma-send.herokuapp.com/admin/roles/sunt"
 );
 
 let headers = {
@@ -6976,7 +6976,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://MammaSend.test/admin/roles/dicta',
+    'https://mamma-send.herokuapp.com/admin/roles/sunt',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -6992,7 +6992,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/roles/dicta'
+url = 'https://mamma-send.herokuapp.com/admin/roles/sunt'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -7040,14 +7040,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin/users" \
+    -G "https://mamma-send.herokuapp.com/admin/users" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/users"
+    "https://mamma-send.herokuapp.com/admin/users"
 );
 
 let headers = {
@@ -7066,7 +7066,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin/users',
+    'https://mamma-send.herokuapp.com/admin/users',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -7082,7 +7082,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/users'
+url = 'https://mamma-send.herokuapp.com/admin/users'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -7131,14 +7131,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin/users/create" \
+    -G "https://mamma-send.herokuapp.com/admin/users/create" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/users/create"
+    "https://mamma-send.herokuapp.com/admin/users/create"
 );
 
 let headers = {
@@ -7157,7 +7157,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin/users/create',
+    'https://mamma-send.herokuapp.com/admin/users/create',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -7173,7 +7173,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/users/create'
+url = 'https://mamma-send.herokuapp.com/admin/users/create'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -7222,16 +7222,16 @@ response.json()
 
 ```bash
 curl -X POST \
-    "http://MammaSend.test/admin/users" \
+    "https://mamma-send.herokuapp.com/admin/users" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"doloremque","email":"unde","password":"neque","roles":[16,3]}'
+    -d '{"name":"culpa","email":"dignissimos","password":"vitae","roles":[17,16]}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/users"
+    "https://mamma-send.herokuapp.com/admin/users"
 );
 
 let headers = {
@@ -7240,12 +7240,12 @@ let headers = {
 };
 
 let body = {
-    "name": "doloremque",
-    "email": "unde",
-    "password": "neque",
+    "name": "culpa",
+    "email": "dignissimos",
+    "password": "vitae",
     "roles": [
-        16,
-        3
+        17,
+        16
     ]
 }
 
@@ -7260,19 +7260,19 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://MammaSend.test/admin/users',
+    'https://mamma-send.herokuapp.com/admin/users',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'name' => 'doloremque',
-            'email' => 'unde',
-            'password' => 'neque',
+            'name' => 'culpa',
+            'email' => 'dignissimos',
+            'password' => 'vitae',
             'roles' => [
+                17,
                 16,
-                3,
             ],
         ],
     ]
@@ -7285,14 +7285,14 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/users'
+url = 'https://mamma-send.herokuapp.com/admin/users'
 payload = {
-    "name": "doloremque",
-    "email": "unde",
-    "password": "neque",
+    "name": "culpa",
+    "email": "dignissimos",
+    "password": "vitae",
     "roles": [
-        16,
-        3
+        17,
+        16
     ]
 }
 headers = {
@@ -7359,14 +7359,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin/users/eligendi" \
+    -G "https://mamma-send.herokuapp.com/admin/users/temporibus" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/users/eligendi"
+    "https://mamma-send.herokuapp.com/admin/users/temporibus"
 );
 
 let headers = {
@@ -7385,7 +7385,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin/users/eligendi',
+    'https://mamma-send.herokuapp.com/admin/users/temporibus',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -7401,7 +7401,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/users/eligendi'
+url = 'https://mamma-send.herokuapp.com/admin/users/temporibus'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -7456,14 +7456,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin/users/rem/edit" \
+    -G "https://mamma-send.herokuapp.com/admin/users/dolor/edit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/users/rem/edit"
+    "https://mamma-send.herokuapp.com/admin/users/dolor/edit"
 );
 
 let headers = {
@@ -7482,7 +7482,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin/users/rem/edit',
+    'https://mamma-send.herokuapp.com/admin/users/dolor/edit',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -7498,7 +7498,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/users/rem/edit'
+url = 'https://mamma-send.herokuapp.com/admin/users/dolor/edit'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -7553,14 +7553,14 @@ response.json()
 
 ```bash
 curl -X DELETE \
-    "http://MammaSend.test/admin/users/aut" \
+    "https://mamma-send.herokuapp.com/admin/users/enim" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/users/aut"
+    "https://mamma-send.herokuapp.com/admin/users/enim"
 );
 
 let headers = {
@@ -7579,7 +7579,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://MammaSend.test/admin/users/aut',
+    'https://mamma-send.herokuapp.com/admin/users/enim',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -7595,7 +7595,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/users/aut'
+url = 'https://mamma-send.herokuapp.com/admin/users/enim'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -7643,14 +7643,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin/addresses" \
+    -G "https://mamma-send.herokuapp.com/admin/addresses" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/addresses"
+    "https://mamma-send.herokuapp.com/admin/addresses"
 );
 
 let headers = {
@@ -7669,7 +7669,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin/addresses',
+    'https://mamma-send.herokuapp.com/admin/addresses',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -7685,7 +7685,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/addresses'
+url = 'https://mamma-send.herokuapp.com/admin/addresses'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -7734,14 +7734,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin/addresses/create" \
+    -G "https://mamma-send.herokuapp.com/admin/addresses/create" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/addresses/create"
+    "https://mamma-send.herokuapp.com/admin/addresses/create"
 );
 
 let headers = {
@@ -7760,7 +7760,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin/addresses/create',
+    'https://mamma-send.herokuapp.com/admin/addresses/create',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -7776,7 +7776,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/addresses/create'
+url = 'https://mamma-send.herokuapp.com/admin/addresses/create'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -7825,16 +7825,16 @@ response.json()
 
 ```bash
 curl -X POST \
-    "http://MammaSend.test/admin/addresses" \
+    "https://mamma-send.herokuapp.com/admin/addresses" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"street":"sunt","city":"occaecati","state":"sed","zip_code":"ea"}'
+    -d '{"street":"sit","city":"qui","state":"dolores","zip_code":"iste"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/addresses"
+    "https://mamma-send.herokuapp.com/admin/addresses"
 );
 
 let headers = {
@@ -7843,10 +7843,10 @@ let headers = {
 };
 
 let body = {
-    "street": "sunt",
-    "city": "occaecati",
-    "state": "sed",
-    "zip_code": "ea"
+    "street": "sit",
+    "city": "qui",
+    "state": "dolores",
+    "zip_code": "iste"
 }
 
 fetch(url, {
@@ -7860,17 +7860,17 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://MammaSend.test/admin/addresses',
+    'https://mamma-send.herokuapp.com/admin/addresses',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'street' => 'sunt',
-            'city' => 'occaecati',
-            'state' => 'sed',
-            'zip_code' => 'ea',
+            'street' => 'sit',
+            'city' => 'qui',
+            'state' => 'dolores',
+            'zip_code' => 'iste',
         ],
     ]
 );
@@ -7882,12 +7882,12 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/addresses'
+url = 'https://mamma-send.herokuapp.com/admin/addresses'
 payload = {
-    "street": "sunt",
-    "city": "occaecati",
-    "state": "sed",
-    "zip_code": "ea"
+    "street": "sit",
+    "city": "qui",
+    "state": "dolores",
+    "zip_code": "iste"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -7952,14 +7952,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin/addresses/est" \
+    -G "https://mamma-send.herokuapp.com/admin/addresses/quibusdam" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/addresses/est"
+    "https://mamma-send.herokuapp.com/admin/addresses/quibusdam"
 );
 
 let headers = {
@@ -7978,7 +7978,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin/addresses/est',
+    'https://mamma-send.herokuapp.com/admin/addresses/quibusdam',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -7994,7 +7994,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/addresses/est'
+url = 'https://mamma-send.herokuapp.com/admin/addresses/quibusdam'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -8049,14 +8049,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin/addresses/quasi/edit" \
+    -G "https://mamma-send.herokuapp.com/admin/addresses/necessitatibus/edit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/addresses/quasi/edit"
+    "https://mamma-send.herokuapp.com/admin/addresses/necessitatibus/edit"
 );
 
 let headers = {
@@ -8075,7 +8075,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin/addresses/quasi/edit',
+    'https://mamma-send.herokuapp.com/admin/addresses/necessitatibus/edit',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -8091,7 +8091,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/addresses/quasi/edit'
+url = 'https://mamma-send.herokuapp.com/admin/addresses/necessitatibus/edit'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -8146,16 +8146,16 @@ response.json()
 
 ```bash
 curl -X PUT \
-    "http://MammaSend.test/admin/addresses/qui" \
+    "https://mamma-send.herokuapp.com/admin/addresses/aperiam" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"street":"consequatur","city":"odit","state":"eum","zip_code":"quia"}'
+    -d '{"street":"esse","city":"earum","state":"explicabo","zip_code":"et"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/addresses/qui"
+    "https://mamma-send.herokuapp.com/admin/addresses/aperiam"
 );
 
 let headers = {
@@ -8164,10 +8164,10 @@ let headers = {
 };
 
 let body = {
-    "street": "consequatur",
-    "city": "odit",
-    "state": "eum",
-    "zip_code": "quia"
+    "street": "esse",
+    "city": "earum",
+    "state": "explicabo",
+    "zip_code": "et"
 }
 
 fetch(url, {
@@ -8181,17 +8181,17 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://MammaSend.test/admin/addresses/qui',
+    'https://mamma-send.herokuapp.com/admin/addresses/aperiam',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'street' => 'consequatur',
-            'city' => 'odit',
-            'state' => 'eum',
-            'zip_code' => 'quia',
+            'street' => 'esse',
+            'city' => 'earum',
+            'state' => 'explicabo',
+            'zip_code' => 'et',
         ],
     ]
 );
@@ -8203,12 +8203,12 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/addresses/qui'
+url = 'https://mamma-send.herokuapp.com/admin/addresses/aperiam'
 payload = {
-    "street": "consequatur",
-    "city": "odit",
-    "state": "eum",
-    "zip_code": "quia"
+    "street": "esse",
+    "city": "earum",
+    "state": "explicabo",
+    "zip_code": "et"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -8283,14 +8283,14 @@ response.json()
 
 ```bash
 curl -X DELETE \
-    "http://MammaSend.test/admin/addresses/omnis" \
+    "https://mamma-send.herokuapp.com/admin/addresses/occaecati" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/addresses/omnis"
+    "https://mamma-send.herokuapp.com/admin/addresses/occaecati"
 );
 
 let headers = {
@@ -8309,7 +8309,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://MammaSend.test/admin/addresses/omnis',
+    'https://mamma-send.herokuapp.com/admin/addresses/occaecati',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -8325,7 +8325,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/addresses/omnis'
+url = 'https://mamma-send.herokuapp.com/admin/addresses/occaecati'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -8373,14 +8373,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin/rides" \
+    -G "https://mamma-send.herokuapp.com/admin/rides" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/rides"
+    "https://mamma-send.herokuapp.com/admin/rides"
 );
 
 let headers = {
@@ -8399,7 +8399,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin/rides',
+    'https://mamma-send.herokuapp.com/admin/rides',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -8415,7 +8415,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/rides'
+url = 'https://mamma-send.herokuapp.com/admin/rides'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -8464,14 +8464,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin/rides/create" \
+    -G "https://mamma-send.herokuapp.com/admin/rides/create" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/rides/create"
+    "https://mamma-send.herokuapp.com/admin/rides/create"
 );
 
 let headers = {
@@ -8490,7 +8490,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin/rides/create',
+    'https://mamma-send.herokuapp.com/admin/rides/create',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -8506,7 +8506,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/rides/create'
+url = 'https://mamma-send.herokuapp.com/admin/rides/create'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -8555,16 +8555,16 @@ response.json()
 
 ```bash
 curl -X POST \
-    "http://MammaSend.test/admin/rides" \
+    "https://mamma-send.herokuapp.com/admin/rides" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"rider_id":9}'
+    -d '{"rider_id":16}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/rides"
+    "https://mamma-send.herokuapp.com/admin/rides"
 );
 
 let headers = {
@@ -8573,7 +8573,7 @@ let headers = {
 };
 
 let body = {
-    "rider_id": 9
+    "rider_id": 16
 }
 
 fetch(url, {
@@ -8587,14 +8587,14 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://MammaSend.test/admin/rides',
+    'https://mamma-send.herokuapp.com/admin/rides',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'rider_id' => 9,
+            'rider_id' => 16,
         ],
     ]
 );
@@ -8606,9 +8606,9 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/rides'
+url = 'https://mamma-send.herokuapp.com/admin/rides'
 payload = {
-    "rider_id": 9
+    "rider_id": 16
 }
 headers = {
   'Content-Type': 'application/json',
@@ -8658,14 +8658,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin/rides/quas" \
+    -G "https://mamma-send.herokuapp.com/admin/rides/ullam" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/rides/quas"
+    "https://mamma-send.herokuapp.com/admin/rides/ullam"
 );
 
 let headers = {
@@ -8684,7 +8684,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin/rides/quas',
+    'https://mamma-send.herokuapp.com/admin/rides/ullam',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -8700,7 +8700,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/rides/quas'
+url = 'https://mamma-send.herokuapp.com/admin/rides/ullam'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -8755,14 +8755,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin/rides/tenetur/edit" \
+    -G "https://mamma-send.herokuapp.com/admin/rides/rerum/edit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/rides/tenetur/edit"
+    "https://mamma-send.herokuapp.com/admin/rides/rerum/edit"
 );
 
 let headers = {
@@ -8781,7 +8781,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin/rides/tenetur/edit',
+    'https://mamma-send.herokuapp.com/admin/rides/rerum/edit',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -8797,7 +8797,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/rides/tenetur/edit'
+url = 'https://mamma-send.herokuapp.com/admin/rides/rerum/edit'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -8852,16 +8852,16 @@ response.json()
 
 ```bash
 curl -X PUT \
-    "http://MammaSend.test/admin/rides/tenetur" \
+    "https://mamma-send.herokuapp.com/admin/rides/mollitia" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"rider_id":9}'
+    -d '{"rider_id":14}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/rides/tenetur"
+    "https://mamma-send.herokuapp.com/admin/rides/mollitia"
 );
 
 let headers = {
@@ -8870,7 +8870,7 @@ let headers = {
 };
 
 let body = {
-    "rider_id": 9
+    "rider_id": 14
 }
 
 fetch(url, {
@@ -8884,14 +8884,14 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://MammaSend.test/admin/rides/tenetur',
+    'https://mamma-send.herokuapp.com/admin/rides/mollitia',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'rider_id' => 9,
+            'rider_id' => 14,
         ],
     ]
 );
@@ -8903,9 +8903,9 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/rides/tenetur'
+url = 'https://mamma-send.herokuapp.com/admin/rides/mollitia'
 payload = {
-    "rider_id": 9
+    "rider_id": 14
 }
 headers = {
   'Content-Type': 'application/json',
@@ -8965,14 +8965,14 @@ response.json()
 
 ```bash
 curl -X DELETE \
-    "http://MammaSend.test/admin/rides/sint" \
+    "https://mamma-send.herokuapp.com/admin/rides/eligendi" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/rides/sint"
+    "https://mamma-send.herokuapp.com/admin/rides/eligendi"
 );
 
 let headers = {
@@ -8991,7 +8991,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://MammaSend.test/admin/rides/sint',
+    'https://mamma-send.herokuapp.com/admin/rides/eligendi',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -9007,7 +9007,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/rides/sint'
+url = 'https://mamma-send.herokuapp.com/admin/rides/eligendi'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -9055,14 +9055,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin/payments" \
+    -G "https://mamma-send.herokuapp.com/admin/payments" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/payments"
+    "https://mamma-send.herokuapp.com/admin/payments"
 );
 
 let headers = {
@@ -9081,7 +9081,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin/payments',
+    'https://mamma-send.herokuapp.com/admin/payments',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -9097,7 +9097,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/payments'
+url = 'https://mamma-send.herokuapp.com/admin/payments'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -9146,14 +9146,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin/payments/create" \
+    -G "https://mamma-send.herokuapp.com/admin/payments/create" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/payments/create"
+    "https://mamma-send.herokuapp.com/admin/payments/create"
 );
 
 let headers = {
@@ -9172,7 +9172,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin/payments/create',
+    'https://mamma-send.herokuapp.com/admin/payments/create',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -9188,7 +9188,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/payments/create'
+url = 'https://mamma-send.herokuapp.com/admin/payments/create'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -9237,16 +9237,16 @@ response.json()
 
 ```bash
 curl -X POST \
-    "http://MammaSend.test/admin/payments" \
+    "https://mamma-send.herokuapp.com/admin/payments" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"total_received":"incidunt","rider_received":"praesentium","office_received":"laudantium","user_id":18}'
+    -d '{"total_received":"voluptatem","rider_received":"ipsam","office_received":"dolorem","user_id":17}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/payments"
+    "https://mamma-send.herokuapp.com/admin/payments"
 );
 
 let headers = {
@@ -9255,10 +9255,10 @@ let headers = {
 };
 
 let body = {
-    "total_received": "incidunt",
-    "rider_received": "praesentium",
-    "office_received": "laudantium",
-    "user_id": 18
+    "total_received": "voluptatem",
+    "rider_received": "ipsam",
+    "office_received": "dolorem",
+    "user_id": 17
 }
 
 fetch(url, {
@@ -9272,17 +9272,17 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://MammaSend.test/admin/payments',
+    'https://mamma-send.herokuapp.com/admin/payments',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'total_received' => 'incidunt',
-            'rider_received' => 'praesentium',
-            'office_received' => 'laudantium',
-            'user_id' => 18,
+            'total_received' => 'voluptatem',
+            'rider_received' => 'ipsam',
+            'office_received' => 'dolorem',
+            'user_id' => 17,
         ],
     ]
 );
@@ -9294,12 +9294,12 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/payments'
+url = 'https://mamma-send.herokuapp.com/admin/payments'
 payload = {
-    "total_received": "incidunt",
-    "rider_received": "praesentium",
-    "office_received": "laudantium",
-    "user_id": 18
+    "total_received": "voluptatem",
+    "rider_received": "ipsam",
+    "office_received": "dolorem",
+    "user_id": 17
 }
 headers = {
   'Content-Type': 'application/json',
@@ -9364,14 +9364,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin/payments/mollitia" \
+    -G "https://mamma-send.herokuapp.com/admin/payments/quis" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/payments/mollitia"
+    "https://mamma-send.herokuapp.com/admin/payments/quis"
 );
 
 let headers = {
@@ -9390,7 +9390,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin/payments/mollitia',
+    'https://mamma-send.herokuapp.com/admin/payments/quis',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -9406,7 +9406,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/payments/mollitia'
+url = 'https://mamma-send.herokuapp.com/admin/payments/quis'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -9461,14 +9461,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin/payments/sit/edit" \
+    -G "https://mamma-send.herokuapp.com/admin/payments/sequi/edit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/payments/sit/edit"
+    "https://mamma-send.herokuapp.com/admin/payments/sequi/edit"
 );
 
 let headers = {
@@ -9487,7 +9487,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin/payments/sit/edit',
+    'https://mamma-send.herokuapp.com/admin/payments/sequi/edit',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -9503,7 +9503,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/payments/sit/edit'
+url = 'https://mamma-send.herokuapp.com/admin/payments/sequi/edit'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -9558,16 +9558,16 @@ response.json()
 
 ```bash
 curl -X PUT \
-    "http://MammaSend.test/admin/payments/eos" \
+    "https://mamma-send.herokuapp.com/admin/payments/culpa" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"total_received":"totam","rider_received":"aut","office_received":"sed","user_id":2}'
+    -d '{"total_received":"illo","rider_received":"et","office_received":"quo","user_id":12}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/payments/eos"
+    "https://mamma-send.herokuapp.com/admin/payments/culpa"
 );
 
 let headers = {
@@ -9576,10 +9576,10 @@ let headers = {
 };
 
 let body = {
-    "total_received": "totam",
-    "rider_received": "aut",
-    "office_received": "sed",
-    "user_id": 2
+    "total_received": "illo",
+    "rider_received": "et",
+    "office_received": "quo",
+    "user_id": 12
 }
 
 fetch(url, {
@@ -9593,17 +9593,17 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://MammaSend.test/admin/payments/eos',
+    'https://mamma-send.herokuapp.com/admin/payments/culpa',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'total_received' => 'totam',
-            'rider_received' => 'aut',
-            'office_received' => 'sed',
-            'user_id' => 2,
+            'total_received' => 'illo',
+            'rider_received' => 'et',
+            'office_received' => 'quo',
+            'user_id' => 12,
         ],
     ]
 );
@@ -9615,12 +9615,12 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/payments/eos'
+url = 'https://mamma-send.herokuapp.com/admin/payments/culpa'
 payload = {
-    "total_received": "totam",
-    "rider_received": "aut",
-    "office_received": "sed",
-    "user_id": 2
+    "total_received": "illo",
+    "rider_received": "et",
+    "office_received": "quo",
+    "user_id": 12
 }
 headers = {
   'Content-Type': 'application/json',
@@ -9695,14 +9695,14 @@ response.json()
 
 ```bash
 curl -X DELETE \
-    "http://MammaSend.test/admin/payments/quos" \
+    "https://mamma-send.herokuapp.com/admin/payments/debitis" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/payments/quos"
+    "https://mamma-send.herokuapp.com/admin/payments/debitis"
 );
 
 let headers = {
@@ -9721,7 +9721,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://MammaSend.test/admin/payments/quos',
+    'https://mamma-send.herokuapp.com/admin/payments/debitis',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -9737,7 +9737,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/payments/quos'
+url = 'https://mamma-send.herokuapp.com/admin/payments/debitis'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -9785,14 +9785,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin/faq-categories" \
+    -G "https://mamma-send.herokuapp.com/admin/faq-categories" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/faq-categories"
+    "https://mamma-send.herokuapp.com/admin/faq-categories"
 );
 
 let headers = {
@@ -9811,7 +9811,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin/faq-categories',
+    'https://mamma-send.herokuapp.com/admin/faq-categories',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -9827,7 +9827,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/faq-categories'
+url = 'https://mamma-send.herokuapp.com/admin/faq-categories'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -9876,14 +9876,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin/faq-categories/create" \
+    -G "https://mamma-send.herokuapp.com/admin/faq-categories/create" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/faq-categories/create"
+    "https://mamma-send.herokuapp.com/admin/faq-categories/create"
 );
 
 let headers = {
@@ -9902,7 +9902,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin/faq-categories/create',
+    'https://mamma-send.herokuapp.com/admin/faq-categories/create',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -9918,7 +9918,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/faq-categories/create'
+url = 'https://mamma-send.herokuapp.com/admin/faq-categories/create'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -9967,16 +9967,16 @@ response.json()
 
 ```bash
 curl -X POST \
-    "http://MammaSend.test/admin/faq-categories" \
+    "https://mamma-send.herokuapp.com/admin/faq-categories" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"category":"pariatur"}'
+    -d '{"category":"velit"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/faq-categories"
+    "https://mamma-send.herokuapp.com/admin/faq-categories"
 );
 
 let headers = {
@@ -9985,7 +9985,7 @@ let headers = {
 };
 
 let body = {
-    "category": "pariatur"
+    "category": "velit"
 }
 
 fetch(url, {
@@ -9999,14 +9999,14 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://MammaSend.test/admin/faq-categories',
+    'https://mamma-send.herokuapp.com/admin/faq-categories',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'category' => 'pariatur',
+            'category' => 'velit',
         ],
     ]
 );
@@ -10018,9 +10018,9 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/faq-categories'
+url = 'https://mamma-send.herokuapp.com/admin/faq-categories'
 payload = {
-    "category": "pariatur"
+    "category": "velit"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -10070,14 +10070,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin/faq-categories/ducimus" \
+    -G "https://mamma-send.herokuapp.com/admin/faq-categories/id" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/faq-categories/ducimus"
+    "https://mamma-send.herokuapp.com/admin/faq-categories/id"
 );
 
 let headers = {
@@ -10096,7 +10096,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin/faq-categories/ducimus',
+    'https://mamma-send.herokuapp.com/admin/faq-categories/id',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -10112,7 +10112,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/faq-categories/ducimus'
+url = 'https://mamma-send.herokuapp.com/admin/faq-categories/id'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -10167,14 +10167,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin/faq-categories/porro/edit" \
+    -G "https://mamma-send.herokuapp.com/admin/faq-categories/pariatur/edit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/faq-categories/porro/edit"
+    "https://mamma-send.herokuapp.com/admin/faq-categories/pariatur/edit"
 );
 
 let headers = {
@@ -10193,7 +10193,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin/faq-categories/porro/edit',
+    'https://mamma-send.herokuapp.com/admin/faq-categories/pariatur/edit',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -10209,7 +10209,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/faq-categories/porro/edit'
+url = 'https://mamma-send.herokuapp.com/admin/faq-categories/pariatur/edit'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -10264,16 +10264,16 @@ response.json()
 
 ```bash
 curl -X PUT \
-    "http://MammaSend.test/admin/faq-categories/dicta" \
+    "https://mamma-send.herokuapp.com/admin/faq-categories/natus" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"category":"laboriosam"}'
+    -d '{"category":"delectus"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/faq-categories/dicta"
+    "https://mamma-send.herokuapp.com/admin/faq-categories/natus"
 );
 
 let headers = {
@@ -10282,7 +10282,7 @@ let headers = {
 };
 
 let body = {
-    "category": "laboriosam"
+    "category": "delectus"
 }
 
 fetch(url, {
@@ -10296,14 +10296,14 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://MammaSend.test/admin/faq-categories/dicta',
+    'https://mamma-send.herokuapp.com/admin/faq-categories/natus',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'category' => 'laboriosam',
+            'category' => 'delectus',
         ],
     ]
 );
@@ -10315,9 +10315,9 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/faq-categories/dicta'
+url = 'https://mamma-send.herokuapp.com/admin/faq-categories/natus'
 payload = {
-    "category": "laboriosam"
+    "category": "delectus"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -10377,14 +10377,14 @@ response.json()
 
 ```bash
 curl -X DELETE \
-    "http://MammaSend.test/admin/faq-categories/occaecati" \
+    "https://mamma-send.herokuapp.com/admin/faq-categories/nisi" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/faq-categories/occaecati"
+    "https://mamma-send.herokuapp.com/admin/faq-categories/nisi"
 );
 
 let headers = {
@@ -10403,7 +10403,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://MammaSend.test/admin/faq-categories/occaecati',
+    'https://mamma-send.herokuapp.com/admin/faq-categories/nisi',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -10419,7 +10419,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/faq-categories/occaecati'
+url = 'https://mamma-send.herokuapp.com/admin/faq-categories/nisi'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -10467,14 +10467,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin/faq-questions" \
+    -G "https://mamma-send.herokuapp.com/admin/faq-questions" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/faq-questions"
+    "https://mamma-send.herokuapp.com/admin/faq-questions"
 );
 
 let headers = {
@@ -10493,7 +10493,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin/faq-questions',
+    'https://mamma-send.herokuapp.com/admin/faq-questions',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -10509,7 +10509,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/faq-questions'
+url = 'https://mamma-send.herokuapp.com/admin/faq-questions'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -10558,14 +10558,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin/faq-questions/create" \
+    -G "https://mamma-send.herokuapp.com/admin/faq-questions/create" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/faq-questions/create"
+    "https://mamma-send.herokuapp.com/admin/faq-questions/create"
 );
 
 let headers = {
@@ -10584,7 +10584,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin/faq-questions/create',
+    'https://mamma-send.herokuapp.com/admin/faq-questions/create',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -10600,7 +10600,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/faq-questions/create'
+url = 'https://mamma-send.herokuapp.com/admin/faq-questions/create'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -10649,16 +10649,16 @@ response.json()
 
 ```bash
 curl -X POST \
-    "http://MammaSend.test/admin/faq-questions" \
+    "https://mamma-send.herokuapp.com/admin/faq-questions" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"category_id":3,"question":"sit","answer":"voluptatibus"}'
+    -d '{"category_id":4,"question":"suscipit","answer":"sint"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/faq-questions"
+    "https://mamma-send.herokuapp.com/admin/faq-questions"
 );
 
 let headers = {
@@ -10667,9 +10667,9 @@ let headers = {
 };
 
 let body = {
-    "category_id": 3,
-    "question": "sit",
-    "answer": "voluptatibus"
+    "category_id": 4,
+    "question": "suscipit",
+    "answer": "sint"
 }
 
 fetch(url, {
@@ -10683,16 +10683,16 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://MammaSend.test/admin/faq-questions',
+    'https://mamma-send.herokuapp.com/admin/faq-questions',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'category_id' => 3,
-            'question' => 'sit',
-            'answer' => 'voluptatibus',
+            'category_id' => 4,
+            'question' => 'suscipit',
+            'answer' => 'sint',
         ],
     ]
 );
@@ -10704,11 +10704,11 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/faq-questions'
+url = 'https://mamma-send.herokuapp.com/admin/faq-questions'
 payload = {
-    "category_id": 3,
-    "question": "sit",
-    "answer": "voluptatibus"
+    "category_id": 4,
+    "question": "suscipit",
+    "answer": "sint"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -10768,14 +10768,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin/faq-questions/commodi" \
+    -G "https://mamma-send.herokuapp.com/admin/faq-questions/expedita" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/faq-questions/commodi"
+    "https://mamma-send.herokuapp.com/admin/faq-questions/expedita"
 );
 
 let headers = {
@@ -10794,7 +10794,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin/faq-questions/commodi',
+    'https://mamma-send.herokuapp.com/admin/faq-questions/expedita',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -10810,7 +10810,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/faq-questions/commodi'
+url = 'https://mamma-send.herokuapp.com/admin/faq-questions/expedita'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -10865,14 +10865,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/admin/faq-questions/provident/edit" \
+    -G "https://mamma-send.herokuapp.com/admin/faq-questions/laboriosam/edit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/faq-questions/provident/edit"
+    "https://mamma-send.herokuapp.com/admin/faq-questions/laboriosam/edit"
 );
 
 let headers = {
@@ -10891,7 +10891,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/admin/faq-questions/provident/edit',
+    'https://mamma-send.herokuapp.com/admin/faq-questions/laboriosam/edit',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -10907,7 +10907,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/faq-questions/provident/edit'
+url = 'https://mamma-send.herokuapp.com/admin/faq-questions/laboriosam/edit'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -10962,16 +10962,16 @@ response.json()
 
 ```bash
 curl -X PUT \
-    "http://MammaSend.test/admin/faq-questions/eos" \
+    "https://mamma-send.herokuapp.com/admin/faq-questions/dignissimos" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"category_id":13,"question":"corrupti","answer":"enim"}'
+    -d '{"category_id":8,"question":"consequatur","answer":"et"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/faq-questions/eos"
+    "https://mamma-send.herokuapp.com/admin/faq-questions/dignissimos"
 );
 
 let headers = {
@@ -10980,9 +10980,9 @@ let headers = {
 };
 
 let body = {
-    "category_id": 13,
-    "question": "corrupti",
-    "answer": "enim"
+    "category_id": 8,
+    "question": "consequatur",
+    "answer": "et"
 }
 
 fetch(url, {
@@ -10996,16 +10996,16 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'http://MammaSend.test/admin/faq-questions/eos',
+    'https://mamma-send.herokuapp.com/admin/faq-questions/dignissimos',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'category_id' => 13,
-            'question' => 'corrupti',
-            'answer' => 'enim',
+            'category_id' => 8,
+            'question' => 'consequatur',
+            'answer' => 'et',
         ],
     ]
 );
@@ -11017,11 +11017,11 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/faq-questions/eos'
+url = 'https://mamma-send.herokuapp.com/admin/faq-questions/dignissimos'
 payload = {
-    "category_id": 13,
-    "question": "corrupti",
-    "answer": "enim"
+    "category_id": 8,
+    "question": "consequatur",
+    "answer": "et"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -11091,14 +11091,14 @@ response.json()
 
 ```bash
 curl -X DELETE \
-    "http://MammaSend.test/admin/faq-questions/quaerat" \
+    "https://mamma-send.herokuapp.com/admin/faq-questions/rerum" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/admin/faq-questions/quaerat"
+    "https://mamma-send.herokuapp.com/admin/faq-questions/rerum"
 );
 
 let headers = {
@@ -11117,7 +11117,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'http://MammaSend.test/admin/faq-questions/quaerat',
+    'https://mamma-send.herokuapp.com/admin/faq-questions/rerum',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -11133,7 +11133,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/admin/faq-questions/quaerat'
+url = 'https://mamma-send.herokuapp.com/admin/faq-questions/rerum'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -11181,14 +11181,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "http://MammaSend.test/profile/password" \
+    -G "https://mamma-send.herokuapp.com/profile/password" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/profile/password"
+    "https://mamma-send.herokuapp.com/profile/password"
 );
 
 let headers = {
@@ -11207,7 +11207,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'http://MammaSend.test/profile/password',
+    'https://mamma-send.herokuapp.com/profile/password',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -11223,7 +11223,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/profile/password'
+url = 'https://mamma-send.herokuapp.com/profile/password'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -11272,16 +11272,16 @@ response.json()
 
 ```bash
 curl -X POST \
-    "http://MammaSend.test/profile/password" \
+    "https://mamma-send.herokuapp.com/profile/password" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"password":"incidunt"}'
+    -d '{"password":"voluptatum"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/profile/password"
+    "https://mamma-send.herokuapp.com/profile/password"
 );
 
 let headers = {
@@ -11290,7 +11290,7 @@ let headers = {
 };
 
 let body = {
-    "password": "incidunt"
+    "password": "voluptatum"
 }
 
 fetch(url, {
@@ -11304,14 +11304,14 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://MammaSend.test/profile/password',
+    'https://mamma-send.herokuapp.com/profile/password',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'password' => 'incidunt',
+            'password' => 'voluptatum',
         ],
     ]
 );
@@ -11323,9 +11323,9 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/profile/password'
+url = 'https://mamma-send.herokuapp.com/profile/password'
 payload = {
-    "password": "incidunt"
+    "password": "voluptatum"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -11375,16 +11375,16 @@ response.json()
 
 ```bash
 curl -X POST \
-    "http://MammaSend.test/profile/profile" \
+    "https://mamma-send.herokuapp.com/profile/profile" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"optio","email":"natasha85@example.org"}'
+    -d '{"name":"mollitia","email":"eve.orn@example.org"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/profile/profile"
+    "https://mamma-send.herokuapp.com/profile/profile"
 );
 
 let headers = {
@@ -11393,8 +11393,8 @@ let headers = {
 };
 
 let body = {
-    "name": "optio",
-    "email": "natasha85@example.org"
+    "name": "mollitia",
+    "email": "eve.orn@example.org"
 }
 
 fetch(url, {
@@ -11408,15 +11408,15 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://MammaSend.test/profile/profile',
+    'https://mamma-send.herokuapp.com/profile/profile',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'name' => 'optio',
-            'email' => 'natasha85@example.org',
+            'name' => 'mollitia',
+            'email' => 'eve.orn@example.org',
         ],
     ]
 );
@@ -11428,10 +11428,10 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/profile/profile'
+url = 'https://mamma-send.herokuapp.com/profile/profile'
 payload = {
-    "name": "optio",
-    "email": "natasha85@example.org"
+    "name": "mollitia",
+    "email": "eve.orn@example.org"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -11486,14 +11486,14 @@ The value must be a valid email address.</p>
 
 ```bash
 curl -X POST \
-    "http://MammaSend.test/profile/profile/destroy" \
+    "https://mamma-send.herokuapp.com/profile/profile/destroy" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://MammaSend.test/profile/profile/destroy"
+    "https://mamma-send.herokuapp.com/profile/profile/destroy"
 );
 
 let headers = {
@@ -11512,7 +11512,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'http://MammaSend.test/profile/profile/destroy',
+    'https://mamma-send.herokuapp.com/profile/profile/destroy',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -11528,7 +11528,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'http://MammaSend.test/profile/profile/destroy'
+url = 'https://mamma-send.herokuapp.com/profile/profile/destroy'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'

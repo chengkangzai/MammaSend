@@ -34,12 +34,12 @@ You can switch the language used with the tabs at the top right (or from the nav
 
 <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
 <script>
-    var baseUrl = "http://MammaSend.test";
+    var baseUrl = "https://mamma-send.herokuapp.com/";
 </script>
 <script src="js/tryitout.js"></script>
 
 > Base URL
 
 ```yaml
-http://MammaSend.test
+https://mamma-send.herokuapp.com/
 ```
