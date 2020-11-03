@@ -36,6 +36,7 @@ class User extends Authenticatable
         'email',
         'email_verified_at',
         'password',
+        'api_token',
         'remember_token',
         'pickup_address_id',
         'created_at',

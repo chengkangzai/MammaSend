@@ -71,7 +71,7 @@ paths:
                                 title:
                                     type: string
                                     description: ''
-                                    example: eaque
+                                    example: modi
                             required:
                                 - title
             security: []
@@ -139,7 +139,7 @@ paths:
                                 title:
                                     type: string
                                     description: ''
-                                    example: qui
+                                    example: voluptatum
                             required:
                                 - title
             security: []
@@ -170,7 +170,7 @@ paths:
                 in: path
                 name: permission
                 description: ''
-                example: laudantium
+                example: autem
                 required: true
                 schema:
                     type: string
@@ -238,11 +238,11 @@ paths:
                                 title:
                                     type: string
                                     description: ''
-                                    example: vitae
+                                    example: omnis
                                 permissions:
                                     type: array
                                     description: ''
-                                    example: [13, 12]
+                                    example: [15, 2]
                                     items: { type: integer }
                             required:
                                 - title
@@ -311,11 +311,11 @@ paths:
                                 title:
                                     type: string
                                     description: ''
-                                    example: est
+                                    example: laboriosam
                                 permissions:
                                     type: array
                                     description: ''
-                                    example: [9, 19]
+                                    example: [2, 1]
                                     items: { type: integer }
                             required:
                                 - title
@@ -347,7 +347,7 @@ paths:
                 in: path
                 name: role
                 description: ''
-                example: consectetur
+                example: voluptatibus
                 required: true
                 schema:
                     type: string
@@ -415,19 +415,19 @@ paths:
                                 name:
                                     type: string
                                     description: ''
-                                    example: itaque
+                                    example: veritatis
                                 email:
                                     type: string
                                     description: ''
-                                    example: sit
+                                    example: illo
                                 password:
                                     type: string
                                     description: ''
-                                    example: earum
+                                    example: dolores
                                 roles:
                                     type: array
                                     description: ''
-                                    example: [12, 15]
+                                    example: [5, 7]
                                     items: { type: integer }
                             required:
                                 - name
@@ -494,7 +494,7 @@ paths:
                 in: path
                 name: user
                 description: ''
-                example: consectetur
+                example: id
                 required: true
                 schema:
                     type: string
@@ -562,19 +562,19 @@ paths:
                                 street:
                                     type: string
                                     description: ''
-                                    example: excepturi
+                                    example: cupiditate
                                 city:
                                     type: string
                                     description: ''
-                                    example: unde
+                                    example: omnis
                                 state:
                                     type: string
                                     description: ''
-                                    example: dicta
+                                    example: cum
                                 zip_code:
                                     type: string
                                     description: ''
-                                    example: ut
+                                    example: ipsa
                             required:
                                 - street
                                 - city
@@ -645,19 +645,19 @@ paths:
                                 street:
                                     type: string
                                     description: ''
-                                    example: consectetur
+                                    example: recusandae
                                 city:
                                     type: string
                                     description: ''
-                                    example: odit
+                                    example: sit
                                 state:
                                     type: string
                                     description: ''
-                                    example: tenetur
+                                    example: quia
                                 zip_code:
                                     type: string
                                     description: ''
-                                    example: voluptatem
+                                    example: sequi
                             required:
                                 - street
                                 - city
@@ -691,7 +691,7 @@ paths:
                 in: path
                 name: address
                 description: ''
-                example: consequuntur
+                example: explicabo
                 required: true
                 schema:
                     type: string
@@ -759,7 +759,7 @@ paths:
                                 rider_id:
                                     type: integer
                                     description: ''
-                                    example: 9
+                                    example: 3
                             required:
                                 - rider_id
             security: []
@@ -827,7 +827,7 @@ paths:
                                 rider_id:
                                     type: integer
                                     description: ''
-                                    example: 14
+                                    example: 1
                             required:
                                 - rider_id
             security: []
@@ -858,7 +858,7 @@ paths:
                 in: path
                 name: ride
                 description: ''
-                example: at
+                example: dolores
                 required: true
                 schema:
                     type: string
@@ -926,19 +926,19 @@ paths:
                                 total_received:
                                     type: string
                                     description: ''
-                                    example: qui
+                                    example: officia
                                 rider_received:
                                     type: string
                                     description: ''
-                                    example: id
+                                    example: excepturi
                                 office_received:
                                     type: string
                                     description: ''
-                                    example: maiores
+                                    example: sit
                                 user_id:
                                     type: integer
                                     description: ''
-                                    example: 7
+                                    example: 16
                             required:
                                 - total_received
                                 - rider_received
@@ -1009,15 +1009,15 @@ paths:
                                 total_received:
                                     type: string
                                     description: ''
-                                    example: tempore
+                                    example: ullam
                                 rider_received:
                                     type: string
                                     description: ''
-                                    example: provident
+                                    example: illum
                                 office_received:
                                     type: string
                                     description: ''
-                                    example: nemo
+                                    example: debitis
                                 user_id:
                                     type: integer
                                     description: ''
@@ -1055,7 +1055,7 @@ paths:
                 in: path
                 name: payment
                 description: ''
-                example: quisquam
+                example: quo
                 required: true
                 schema:
                     type: string
@@ -1123,7 +1123,7 @@ paths:
                                 category:
                                     type: string
                                     description: ''
-                                    example: labore
+                                    example: aspernatur
                             required:
                                 - category
             security: []
@@ -1191,7 +1191,7 @@ paths:
                                 category:
                                     type: string
                                     description: ''
-                                    example: dolore
+                                    example: nemo
                             required:
                                 - category
             security: []
@@ -1222,7 +1222,7 @@ paths:
                 in: path
                 name: faq_category
                 description: ''
-                example: animi
+                example: et
                 required: true
                 schema:
                     type: string
@@ -1290,15 +1290,15 @@ paths:
                                 category_id:
                                     type: integer
                                     description: ''
-                                    example: 18
+                                    example: 12
                                 question:
                                     type: string
                                     description: ''
-                                    example: minima
+                                    example: ipsum
                                 answer:
                                     type: string
                                     description: ''
-                                    example: eveniet
+                                    example: fugiat
                             required:
                                 - category_id
                                 - question
@@ -1368,15 +1368,15 @@ paths:
                                 category_id:
                                     type: integer
                                     description: ''
-                                    example: 15
+                                    example: 12
                                 question:
                                     type: string
                                     description: ''
-                                    example: cum
+                                    example: voluptas
                                 answer:
                                     type: string
                                     description: ''
-                                    example: et
+                                    example: rerum
                             required:
                                 - category_id
                                 - question
@@ -1409,13 +1409,13 @@ paths:
                 in: path
                 name: faq_question
                 description: ''
-                example: ut
+                example: eum
                 required: true
                 schema:
                     type: string
     /:
         get:
-            summary: 'Invoke the controller method.'
+            summary: 'Show the application dashboard.'
             description: ''
             parameters:
                 -
@@ -1433,13 +1433,16 @@ paths:
                     schema:
                         type: string
             responses:
-                302:
+                401:
                     description: ''
                     content:
-                        text/plain:
+                        application/json:
                             schema:
-                                type: string
-                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='/login'\" />\n\n        <title>Redirecting to /login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"/login\">/login</a>.\n    </body>\n</html>"
+                                type: object
+                                example:
+                                    message: Unauthenticated.
+                                properties:
+                                    message: { type: string, example: Unauthenticated. }
             tags:
                 - Endpoints
             security: []
@@ -1469,7 +1472,7 @@ paths:
                         text/plain:
                             schema:
                                 type: string
-                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://mamma-send.herokuapp.com/admin'\" />\n\n        <title>Redirecting to http://mamma-send.herokuapp.com/admin</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://mamma-send.herokuapp.com/admin\">http://mamma-send.herokuapp.com/admin</a>.\n    </body>\n</html>"
+                                example: "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='http://mamma-send.herokuapp.com'\" />\n\n        <title>Redirecting to http://mamma-send.herokuapp.com</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"http://mamma-send.herokuapp.com\">http://mamma-send.herokuapp.com</a>.\n    </body>\n</html>"
             tags:
                 - Endpoints
             security: []
@@ -1499,7 +1502,7 @@ paths:
                         text/plain:
                             schema:
                                 type: string
-                                example: "<!DOCTYPE html>\n<html>\n\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <meta name=\"csrf-token\" content=\"8N6jdgouQoyDhaxqsXAeMN7VJwqmWD2Z7E7JA9iS\">\n\n    <title>MammaSend</title>\n    <link href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://unpkg.com/@coreui/coreui@3.2/dist/css/coreui.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css\" rel=\"stylesheet\" />\n    <link href=\"https://use.fontawesome.com/releases/v5.2.0/css/all.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/min/dropzone.min.css\" rel=\"stylesheet\" />\n    <link href=\"http://mamma-send.herokuapp.com/css/custom.css\" rel=\"stylesheet\" />\n    </head>\n\n<body class=\"header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden login-page\">\n<div class=\"c-app flex-row align-items-center\">\n    <div class=\"container\">\n            <div class=\"row justify-content-center\">\n        <div class=\"col-md-6\">\n            <div class=\"card mx-4\">\n                <div class=\"card-body p-4\">\n                    <h1>MammaSend</h1>\n\n                    <p class=\"text-muted\">Login</p>\n\n                    \n                    <form method=\"POST\" action=\"http://mamma-send.herokuapp.com/login\">\n                        <input type=\"hidden\" name=\"_token\" value=\"8N6jdgouQoyDhaxqsXAeMN7VJwqmWD2Z7E7JA9iS\">\n                        <div class=\"input-group mb-3\">\n                            <div class=\"input-group-prepend\">\n                            <span class=\"input-group-text\">\n                                <i class=\"fa fa-user\"></i>\n                            </span>\n                            </div>\n\n                            <input id=\"email\" name=\"email\" type=\"text\" class=\"form-control\" required autocomplete=\"email\" autofocus placeholder=\"Email\" value=\"\">\n\n                                                    </div>\n\n                        <div class=\"input-group mb-3\">\n                            <div class=\"input-group-prepend\">\n                                <span class=\"input-group-text\"><i class=\"fa fa-lock\"></i></span>\n                            </div>\n\n                            <input id=\"password\" name=\"password\" type=\"password\" class=\"form-control\" required placeholder=\"Password\">\n\n                                                    </div>\n\n                        <div class=\"input-group mb-4\">\n                            <div class=\"form-check checkbox\">\n                                <input class=\"form-check-input\" name=\"remember\" type=\"checkbox\" id=\"remember\" style=\"vertical-align: middle;\" />\n                                <label class=\"form-check-label\" for=\"remember\" style=\"vertical-align: middle;\">\n                                    Remember me\n                                </label>\n                            </div>\n                        </div>\n\n                        <div class=\"row\">\n                            <div class=\"col-6\">\n                                <button type=\"submit\" class=\"btn btn-primary px-4\">\n                                    Login\n                                </button>\n                            </div>\n                            <div class=\"col-6 text-right\">\n                                                                    <a class=\"btn btn-link px-0\" href=\"http://mamma-send.herokuapp.com/password/reset\">\n                                        Forgot your password?\n                                    </a><br>\n                                                                <a class=\"btn btn-link px-0\" href=\"http://mamma-send.herokuapp.com/register\">\n                                    Register\n                                </a>\n                            </div>\n                        </div>\n                    </form>\n                </div>\n            </div>\n        </div>\n    </div>\n    </div>\n</div>\n</body>\n\n</html>\n"
+                                example: "<!DOCTYPE html>\n<html>\n\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <meta name=\"csrf-token\" content=\"Pebvzc2A2vMCK88tTEV4HhlKITCCwNDm6s5BhWaE\">\n\n    <title>MammaSend</title>\n    <link href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://unpkg.com/@coreui/coreui@3.2/dist/css/coreui.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css\" rel=\"stylesheet\" />\n    <link href=\"https://use.fontawesome.com/releases/v5.2.0/css/all.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/min/dropzone.min.css\" rel=\"stylesheet\" />\n    <link href=\"http://mamma-send.herokuapp.com/css/custom.css\" rel=\"stylesheet\" />\n    </head>\n\n<body class=\"header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden login-page\">\n<div class=\"c-app flex-row align-items-center\">\n    <div class=\"container\">\n            <div class=\"row justify-content-center\">\n        <div class=\"col-md-6\">\n            <div class=\"card mx-4\">\n                <div class=\"card-body p-4\">\n                    <h1>MammaSend</h1>\n\n                    <p class=\"text-muted\">Login</p>\n\n                    \n                    <form method=\"POST\" action=\"http://mamma-send.herokuapp.com/login\">\n                        <input type=\"hidden\" name=\"_token\" value=\"Pebvzc2A2vMCK88tTEV4HhlKITCCwNDm6s5BhWaE\">\n                        <div class=\"input-group mb-3\">\n                            <div class=\"input-group-prepend\">\n                            <span class=\"input-group-text\">\n                                <i class=\"fa fa-user\"></i>\n                            </span>\n                            </div>\n\n                            <input id=\"email\" name=\"email\" type=\"text\" class=\"form-control\" required autocomplete=\"email\" autofocus placeholder=\"Email\" value=\"\">\n\n                                                    </div>\n\n                        <div class=\"input-group mb-3\">\n                            <div class=\"input-group-prepend\">\n                                <span class=\"input-group-text\"><i class=\"fa fa-lock\"></i></span>\n                            </div>\n\n                            <input id=\"password\" name=\"password\" type=\"password\" class=\"form-control\" required placeholder=\"Password\">\n\n                                                    </div>\n\n                        <div class=\"input-group mb-4\">\n                            <div class=\"form-check checkbox\">\n                                <input class=\"form-check-input\" name=\"remember\" type=\"checkbox\" id=\"remember\" style=\"vertical-align: middle;\" />\n                                <label class=\"form-check-label\" for=\"remember\" style=\"vertical-align: middle;\">\n                                    Remember me\n                                </label>\n                            </div>\n                        </div>\n\n                        <div class=\"row\">\n                            <div class=\"col-6\">\n                                <button type=\"submit\" class=\"btn btn-primary px-4\">\n                                    Login\n                                </button>\n                            </div>\n                            <div class=\"col-6 text-right\">\n                                                                    <a class=\"btn btn-link px-0\" href=\"http://mamma-send.herokuapp.com/password/reset\">\n                                        Forgot your password?\n                                    </a><br>\n                                                                <a class=\"btn btn-link px-0\" href=\"http://mamma-send.herokuapp.com/register\">\n                                    Register\n                                </a>\n                            </div>\n                        </div>\n                    </form>\n                </div>\n            </div>\n        </div>\n    </div>\n    </div>\n</div>\n</body>\n\n</html>\n"
             tags:
                 - Endpoints
             security: []
@@ -1574,7 +1577,7 @@ paths:
                         text/plain:
                             schema:
                                 type: string
-                                example: "<!DOCTYPE html>\n<html>\n\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <meta name=\"csrf-token\" content=\"8N6jdgouQoyDhaxqsXAeMN7VJwqmWD2Z7E7JA9iS\">\n\n    <title>MammaSend</title>\n    <link href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://unpkg.com/@coreui/coreui@3.2/dist/css/coreui.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css\" rel=\"stylesheet\" />\n    <link href=\"https://use.fontawesome.com/releases/v5.2.0/css/all.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/min/dropzone.min.css\" rel=\"stylesheet\" />\n    <link href=\"http://mamma-send.herokuapp.com/css/custom.css\" rel=\"stylesheet\" />\n    </head>\n\n<body class=\"header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden login-page\">\n<div class=\"c-app flex-row align-items-center\">\n    <div class=\"container\">\n        <div class=\"container\">\n    <div class=\"row justify-content-center\">\n        <div class=\"col-md-8\">\n            <div class=\"card\">\n                <div class=\"card-header\">Register</div>\n\n                <div class=\"card-body\">\n                    <form method=\"POST\" action=\"http://mamma-send.herokuapp.com/register\">\n                        <input type=\"hidden\" name=\"_token\" value=\"8N6jdgouQoyDhaxqsXAeMN7VJwqmWD2Z7E7JA9iS\">\n                        <div class=\"form-group row\">\n                            <label for=\"name\" class=\"col-md-4 col-form-label text-md-right\">Name</label>\n\n                            <div class=\"col-md-6\">\n                                <input id=\"name\" type=\"text\" class=\"form-control \" name=\"name\" value=\"\" required autocomplete=\"name\" autofocus>\n\n                                                            </div>\n                        </div>\n\n                        <div class=\"form-group row\">\n                            <label for=\"email\" class=\"col-md-4 col-form-label text-md-right\">E-Mail Address</label>\n\n                            <div class=\"col-md-6\">\n                                <input id=\"email\" type=\"email\" class=\"form-control \" name=\"email\" value=\"\" required autocomplete=\"email\">\n\n                                                            </div>\n                        </div>\n\n                        <div class=\"form-group row\">\n                            <label for=\"password\" class=\"col-md-4 col-form-label text-md-right\">Password</label>\n\n                            <div class=\"col-md-6\">\n                                <input id=\"password\" type=\"password\" class=\"form-control \" name=\"password\" required autocomplete=\"new-password\">\n\n                                                            </div>\n                        </div>\n\n                        <div class=\"form-group row\">\n                            <label for=\"password-confirm\" class=\"col-md-4 col-form-label text-md-right\">Confirm Password</label>\n\n                            <div class=\"col-md-6\">\n                                <input id=\"password-confirm\" type=\"password\" class=\"form-control\" name=\"password_confirmation\" required autocomplete=\"new-password\">\n                            </div>\n                        </div>\n\n                        <div class=\"form-group row mb-0\">\n                            <div class=\"col-md-6 offset-md-4\">\n                                <button type=\"submit\" class=\"btn btn-primary\">\n                                    Register\n                                </button>\n                            </div>\n                        </div>\n                    </form>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n    </div>\n</div>\n</body>\n\n</html>\n"
+                                example: "<!DOCTYPE html>\n<html>\n\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <meta name=\"csrf-token\" content=\"Pebvzc2A2vMCK88tTEV4HhlKITCCwNDm6s5BhWaE\">\n\n    <title>MammaSend</title>\n    <link href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://unpkg.com/@coreui/coreui@3.2/dist/css/coreui.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css\" rel=\"stylesheet\" />\n    <link href=\"https://use.fontawesome.com/releases/v5.2.0/css/all.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/min/dropzone.min.css\" rel=\"stylesheet\" />\n    <link href=\"http://mamma-send.herokuapp.com/css/custom.css\" rel=\"stylesheet\" />\n    </head>\n\n<body class=\"header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden login-page\">\n<div class=\"c-app flex-row align-items-center\">\n    <div class=\"container\">\n        <div class=\"container\">\n    <div class=\"row justify-content-center\">\n        <div class=\"col-md-8\">\n            <div class=\"card\">\n                <div class=\"card-header\">Register</div>\n\n                <div class=\"card-body\">\n                    <form method=\"POST\" action=\"http://mamma-send.herokuapp.com/register\">\n                        <input type=\"hidden\" name=\"_token\" value=\"Pebvzc2A2vMCK88tTEV4HhlKITCCwNDm6s5BhWaE\">\n                        <div class=\"form-group row\">\n                            <label for=\"name\" class=\"col-md-4 col-form-label text-md-right\">Name</label>\n\n                            <div class=\"col-md-6\">\n                                <input id=\"name\" type=\"text\" class=\"form-control \" name=\"name\" value=\"\" required autocomplete=\"name\" autofocus>\n\n                                                            </div>\n                        </div>\n\n                        <div class=\"form-group row\">\n                            <label for=\"email\" class=\"col-md-4 col-form-label text-md-right\">E-Mail Address</label>\n\n                            <div class=\"col-md-6\">\n                                <input id=\"email\" type=\"email\" class=\"form-control \" name=\"email\" value=\"\" required autocomplete=\"email\">\n\n                                                            </div>\n                        </div>\n\n                        <div class=\"form-group row\">\n                            <label for=\"password\" class=\"col-md-4 col-form-label text-md-right\">Password</label>\n\n                            <div class=\"col-md-6\">\n                                <input id=\"password\" type=\"password\" class=\"form-control \" name=\"password\" required autocomplete=\"new-password\">\n\n                                                            </div>\n                        </div>\n\n                        <div class=\"form-group row\">\n                            <label for=\"password-confirm\" class=\"col-md-4 col-form-label text-md-right\">Confirm Password</label>\n\n                            <div class=\"col-md-6\">\n                                <input id=\"password-confirm\" type=\"password\" class=\"form-control\" name=\"password_confirmation\" required autocomplete=\"new-password\">\n                            </div>\n                        </div>\n\n                        <div class=\"form-group row mb-0\">\n                            <div class=\"col-md-6 offset-md-4\">\n                                <button type=\"submit\" class=\"btn btn-primary\">\n                                    Register\n                                </button>\n                            </div>\n                        </div>\n                    </form>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n    </div>\n</div>\n</body>\n\n</html>\n"
             tags:
                 - Endpoints
             security: []
@@ -1626,7 +1629,7 @@ paths:
                         text/plain:
                             schema:
                                 type: string
-                                example: "<!DOCTYPE html>\n<html>\n\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <meta name=\"csrf-token\" content=\"8N6jdgouQoyDhaxqsXAeMN7VJwqmWD2Z7E7JA9iS\">\n\n    <title>MammaSend</title>\n    <link href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://unpkg.com/@coreui/coreui@3.2/dist/css/coreui.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css\" rel=\"stylesheet\" />\n    <link href=\"https://use.fontawesome.com/releases/v5.2.0/css/all.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/min/dropzone.min.css\" rel=\"stylesheet\" />\n    <link href=\"http://mamma-send.herokuapp.com/css/custom.css\" rel=\"stylesheet\" />\n    </head>\n\n<body class=\"header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden login-page\">\n<div class=\"c-app flex-row align-items-center\">\n    <div class=\"container\">\n        <div class=\"container\">\n    <div class=\"row justify-content-center\">\n        <div class=\"col-md-8\">\n            <div class=\"card\">\n                <div class=\"card-header\">Reset Password</div>\n\n                <div class=\"card-body\">\n                    \n                    <form method=\"POST\" action=\"http://mamma-send.herokuapp.com/password/email\">\n                        <input type=\"hidden\" name=\"_token\" value=\"8N6jdgouQoyDhaxqsXAeMN7VJwqmWD2Z7E7JA9iS\">\n                        <div class=\"form-group row\">\n                            <label for=\"email\" class=\"col-md-4 col-form-label text-md-right\">E-Mail Address</label>\n\n                            <div class=\"col-md-6\">\n                                <input id=\"email\" type=\"email\" class=\"form-control \" name=\"email\" value=\"\" required autocomplete=\"email\" autofocus>\n\n                                                            </div>\n                        </div>\n\n                        <div class=\"form-group row mb-0\">\n                            <div class=\"col-md-6 offset-md-4\">\n                                <button type=\"submit\" class=\"btn btn-primary\">\n                                    Send Password Reset Link\n                                </button>\n                            </div>\n                        </div>\n                    </form>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n    </div>\n</div>\n</body>\n\n</html>\n"
+                                example: "<!DOCTYPE html>\n<html>\n\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <meta name=\"csrf-token\" content=\"Pebvzc2A2vMCK88tTEV4HhlKITCCwNDm6s5BhWaE\">\n\n    <title>MammaSend</title>\n    <link href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://unpkg.com/@coreui/coreui@3.2/dist/css/coreui.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css\" rel=\"stylesheet\" />\n    <link href=\"https://use.fontawesome.com/releases/v5.2.0/css/all.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/min/dropzone.min.css\" rel=\"stylesheet\" />\n    <link href=\"http://mamma-send.herokuapp.com/css/custom.css\" rel=\"stylesheet\" />\n    </head>\n\n<body class=\"header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden login-page\">\n<div class=\"c-app flex-row align-items-center\">\n    <div class=\"container\">\n        <div class=\"container\">\n    <div class=\"row justify-content-center\">\n        <div class=\"col-md-8\">\n            <div class=\"card\">\n                <div class=\"card-header\">Reset Password</div>\n\n                <div class=\"card-body\">\n                    \n                    <form method=\"POST\" action=\"http://mamma-send.herokuapp.com/password/email\">\n                        <input type=\"hidden\" name=\"_token\" value=\"Pebvzc2A2vMCK88tTEV4HhlKITCCwNDm6s5BhWaE\">\n                        <div class=\"form-group row\">\n                            <label for=\"email\" class=\"col-md-4 col-form-label text-md-right\">E-Mail Address</label>\n\n                            <div class=\"col-md-6\">\n                                <input id=\"email\" type=\"email\" class=\"form-control \" name=\"email\" value=\"\" required autocomplete=\"email\" autofocus>\n\n                                                            </div>\n                        </div>\n\n                        <div class=\"form-group row mb-0\">\n                            <div class=\"col-md-6 offset-md-4\">\n                                <button type=\"submit\" class=\"btn btn-primary\">\n                                    Send Password Reset Link\n                                </button>\n                            </div>\n                        </div>\n                    </form>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n    </div>\n</div>\n</body>\n\n</html>\n"
             tags:
                 - Endpoints
             security: []
@@ -1701,7 +1704,7 @@ paths:
                         text/plain:
                             schema:
                                 type: string
-                                example: "<!DOCTYPE html>\n<html>\n\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <meta name=\"csrf-token\" content=\"8N6jdgouQoyDhaxqsXAeMN7VJwqmWD2Z7E7JA9iS\">\n\n    <title>MammaSend</title>\n    <link href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://unpkg.com/@coreui/coreui@3.2/dist/css/coreui.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css\" rel=\"stylesheet\" />\n    <link href=\"https://use.fontawesome.com/releases/v5.2.0/css/all.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/min/dropzone.min.css\" rel=\"stylesheet\" />\n    <link href=\"http://mamma-send.herokuapp.com/css/custom.css\" rel=\"stylesheet\" />\n    </head>\n\n<body class=\"header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden login-page\">\n<div class=\"c-app flex-row align-items-center\">\n    <div class=\"container\">\n        <div class=\"container\">\n    <div class=\"row justify-content-center\">\n        <div class=\"col-md-8\">\n            <div class=\"card\">\n                <div class=\"card-header\">Reset Password</div>\n\n                <div class=\"card-body\">\n                    <form method=\"POST\" action=\"http://mamma-send.herokuapp.com/password/reset\">\n                        <input type=\"hidden\" name=\"_token\" value=\"8N6jdgouQoyDhaxqsXAeMN7VJwqmWD2Z7E7JA9iS\">\n                        <input type=\"hidden\" name=\"token\" value=\"ut\">\n\n                        <div class=\"form-group row\">\n                            <label for=\"email\" class=\"col-md-4 col-form-label text-md-right\">E-Mail Address</label>\n\n                            <div class=\"col-md-6\">\n                                <input id=\"email\" type=\"email\" class=\"form-control \" name=\"email\" value=\"\" required autocomplete=\"email\" autofocus>\n\n                                                            </div>\n                        </div>\n\n                        <div class=\"form-group row\">\n                            <label for=\"password\" class=\"col-md-4 col-form-label text-md-right\">Password</label>\n\n                            <div class=\"col-md-6\">\n                                <input id=\"password\" type=\"password\" class=\"form-control \" name=\"password\" required autocomplete=\"new-password\">\n\n                                                            </div>\n                        </div>\n\n                        <div class=\"form-group row\">\n                            <label for=\"password-confirm\" class=\"col-md-4 col-form-label text-md-right\">Confirm Password</label>\n\n                            <div class=\"col-md-6\">\n                                <input id=\"password-confirm\" type=\"password\" class=\"form-control\" name=\"password_confirmation\" required autocomplete=\"new-password\">\n                            </div>\n                        </div>\n\n                        <div class=\"form-group row mb-0\">\n                            <div class=\"col-md-6 offset-md-4\">\n                                <button type=\"submit\" class=\"btn btn-primary\">\n                                    Reset Password\n                                </button>\n                            </div>\n                        </div>\n                    </form>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n    </div>\n</div>\n</body>\n\n</html>\n"
+                                example: "<!DOCTYPE html>\n<html>\n\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <meta name=\"csrf-token\" content=\"Pebvzc2A2vMCK88tTEV4HhlKITCCwNDm6s5BhWaE\">\n\n    <title>MammaSend</title>\n    <link href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://unpkg.com/@coreui/coreui@3.2/dist/css/coreui.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css\" rel=\"stylesheet\" />\n    <link href=\"https://use.fontawesome.com/releases/v5.2.0/css/all.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css\" rel=\"stylesheet\" />\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/min/dropzone.min.css\" rel=\"stylesheet\" />\n    <link href=\"http://mamma-send.herokuapp.com/css/custom.css\" rel=\"stylesheet\" />\n    </head>\n\n<body class=\"header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden login-page\">\n<div class=\"c-app flex-row align-items-center\">\n    <div class=\"container\">\n        <div class=\"container\">\n    <div class=\"row justify-content-center\">\n        <div class=\"col-md-8\">\n            <div class=\"card\">\n                <div class=\"card-header\">Reset Password</div>\n\n                <div class=\"card-body\">\n                    <form method=\"POST\" action=\"http://mamma-send.herokuapp.com/password/reset\">\n                        <input type=\"hidden\" name=\"_token\" value=\"Pebvzc2A2vMCK88tTEV4HhlKITCCwNDm6s5BhWaE\">\n                        <input type=\"hidden\" name=\"token\" value=\"voluptas\">\n\n                        <div class=\"form-group row\">\n                            <label for=\"email\" class=\"col-md-4 col-form-label text-md-right\">E-Mail Address</label>\n\n                            <div class=\"col-md-6\">\n                                <input id=\"email\" type=\"email\" class=\"form-control \" name=\"email\" value=\"\" required autocomplete=\"email\" autofocus>\n\n                                                            </div>\n                        </div>\n\n                        <div class=\"form-group row\">\n                            <label for=\"password\" class=\"col-md-4 col-form-label text-md-right\">Password</label>\n\n                            <div class=\"col-md-6\">\n                                <input id=\"password\" type=\"password\" class=\"form-control \" name=\"password\" required autocomplete=\"new-password\">\n\n                                                            </div>\n                        </div>\n\n                        <div class=\"form-group row\">\n                            <label for=\"password-confirm\" class=\"col-md-4 col-form-label text-md-right\">Confirm Password</label>\n\n                            <div class=\"col-md-6\">\n                                <input id=\"password-confirm\" type=\"password\" class=\"form-control\" name=\"password_confirmation\" required autocomplete=\"new-password\">\n                            </div>\n                        </div>\n\n                        <div class=\"form-group row mb-0\">\n                            <div class=\"col-md-6 offset-md-4\">\n                                <button type=\"submit\" class=\"btn btn-primary\">\n                                    Reset Password\n                                </button>\n                            </div>\n                        </div>\n                    </form>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n    </div>\n</div>\n</body>\n\n</html>\n"
             tags:
                 - Endpoints
             security: []
@@ -1710,7 +1713,7 @@ paths:
                 in: path
                 name: token
                 description: ''
-                example: ut
+                example: voluptas
                 required: true
                 schema:
                     type: string
@@ -1769,40 +1772,7 @@ paths:
             tags:
                 - Endpoints
             security: []
-    /admin:
-        get:
-            summary: 'Show the application dashboard.'
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-            responses:
-                401:
-                    description: ''
-                    content:
-                        application/json:
-                            schema:
-                                type: object
-                                example:
-                                    message: Unauthenticated.
-                                properties:
-                                    message: { type: string, example: Unauthenticated. }
-            tags:
-                - Endpoints
-            security: []
-    /admin/permissions:
+    /permissions:
         get:
             summary: ''
             description: ''
@@ -1866,11 +1836,11 @@ paths:
                                 title:
                                     type: string
                                     description: ''
-                                    example: fuga
+                                    example: dolor
                             required:
                                 - title
             security: []
-    /admin/permissions/create:
+    /permissions/create:
         get:
             summary: ''
             description: ''
@@ -1903,7 +1873,7 @@ paths:
             tags:
                 - Endpoints
             security: []
-    '/admin/permissions/{permission}':
+    '/permissions/{permission}':
         get:
             summary: ''
             description: ''
@@ -1967,7 +1937,7 @@ paths:
                                 title:
                                     type: string
                                     description: ''
-                                    example: sapiente
+                                    example: nam
                             required:
                                 - title
             security: []
@@ -1998,11 +1968,11 @@ paths:
                 in: path
                 name: permission
                 description: ''
-                example: veritatis
+                example: necessitatibus
                 required: true
                 schema:
                     type: string
-    '/admin/permissions/{permission}/edit':
+    '/permissions/{permission}/edit':
         get:
             summary: ''
             description: ''
@@ -2040,11 +2010,11 @@ paths:
                 in: path
                 name: permission
                 description: ''
-                example: est
+                example: ducimus
                 required: true
                 schema:
                     type: string
-    /admin/roles:
+    /roles:
         get:
             summary: ''
             description: ''
@@ -2108,16 +2078,16 @@ paths:
                                 title:
                                     type: string
                                     description: ''
-                                    example: illo
+                                    example: ut
                                 permissions:
                                     type: array
                                     description: ''
-                                    example: [5, 13]
+                                    example: [10, 12]
                                     items: { type: integer }
                             required:
                                 - title
             security: []
-    /admin/roles/create:
+    /roles/create:
         get:
             summary: ''
             description: ''
@@ -2150,7 +2120,7 @@ paths:
             tags:
                 - Endpoints
             security: []
-    '/admin/roles/{role}':
+    '/roles/{role}':
         get:
             summary: ''
             description: ''
@@ -2214,11 +2184,11 @@ paths:
                                 title:
                                     type: string
                                     description: ''
-                                    example: aut
+                                    example: sed
                                 permissions:
                                     type: array
                                     description: ''
-                                    example: [13, 3]
+                                    example: [4, 10]
                                     items: { type: integer }
                             required:
                                 - title
@@ -2250,11 +2220,11 @@ paths:
                 in: path
                 name: role
                 description: ''
-                example: totam
+                example: corrupti
                 required: true
                 schema:
                     type: string
-    '/admin/roles/{role}/edit':
+    '/roles/{role}/edit':
         get:
             summary: ''
             description: ''
@@ -2292,11 +2262,11 @@ paths:
                 in: path
                 name: role
                 description: ''
-                example: amet
+                example: iusto
                 required: true
                 schema:
                     type: string
-    /admin/users:
+    /users:
         get:
             summary: ''
             description: ''
@@ -2360,26 +2330,26 @@ paths:
                                 name:
                                     type: string
                                     description: ''
-                                    example: culpa
+                                    example: consequatur
                                 email:
                                     type: string
                                     description: ''
-                                    example: dignissimos
+                                    example: quae
                                 password:
                                     type: string
                                     description: ''
-                                    example: vitae
+                                    example: placeat
                                 roles:
                                     type: array
                                     description: ''
-                                    example: [17, 16]
+                                    example: [11, 6]
                                     items: { type: integer }
                             required:
                                 - name
                                 - email
                                 - password
             security: []
-    /admin/users/create:
+    /users/create:
         get:
             summary: ''
             description: ''
@@ -2412,7 +2382,7 @@ paths:
             tags:
                 - Endpoints
             security: []
-    '/admin/users/{user}':
+    '/users/{user}':
         get:
             summary: ''
             description: ''
@@ -2472,11 +2442,11 @@ paths:
                 in: path
                 name: user
                 description: ''
-                example: temporibus
+                example: dolorem
                 required: true
                 schema:
                     type: string
-    '/admin/users/{user}/edit':
+    '/users/{user}/edit':
         get:
             summary: ''
             description: ''
@@ -2514,11 +2484,11 @@ paths:
                 in: path
                 name: user
                 description: ''
-                example: dolor
+                example: ut
                 required: true
                 schema:
                     type: string
-    /admin/addresses:
+    /addresses:
         get:
             summary: ''
             description: ''
@@ -2582,26 +2552,26 @@ paths:
                                 street:
                                     type: string
                                     description: ''
-                                    example: sit
+                                    example: inventore
                                 city:
                                     type: string
                                     description: ''
-                                    example: qui
+                                    example: distinctio
                                 state:
                                     type: string
                                     description: ''
-                                    example: dolores
+                                    example: ex
                                 zip_code:
                                     type: string
                                     description: ''
-                                    example: iste
+                                    example: fugiat
                             required:
                                 - street
                                 - city
                                 - state
                                 - zip_code
             security: []
-    /admin/addresses/create:
+    /addresses/create:
         get:
             summary: ''
             description: ''
@@ -2634,7 +2604,7 @@ paths:
             tags:
                 - Endpoints
             security: []
-    '/admin/addresses/{address}':
+    '/addresses/{address}':
         get:
             summary: ''
             description: ''
@@ -2698,19 +2668,19 @@ paths:
                                 street:
                                     type: string
                                     description: ''
-                                    example: esse
+                                    example: magni
                                 city:
                                     type: string
                                     description: ''
-                                    example: earum
+                                    example: reiciendis
                                 state:
                                     type: string
                                     description: ''
-                                    example: explicabo
+                                    example: assumenda
                                 zip_code:
                                     type: string
                                     description: ''
-                                    example: et
+                                    example: deserunt
                             required:
                                 - street
                                 - city
@@ -2744,11 +2714,11 @@ paths:
                 in: path
                 name: address
                 description: ''
-                example: quibusdam
+                example: eum
                 required: true
                 schema:
                     type: string
-    '/admin/addresses/{address}/edit':
+    '/addresses/{address}/edit':
         get:
             summary: ''
             description: ''
@@ -2786,11 +2756,11 @@ paths:
                 in: path
                 name: address
                 description: ''
-                example: necessitatibus
+                example: iste
                 required: true
                 schema:
                     type: string
-    /admin/rides:
+    /rides:
         get:
             summary: ''
             description: ''
@@ -2854,11 +2824,11 @@ paths:
                                 rider_id:
                                     type: integer
                                     description: ''
-                                    example: 16
+                                    example: 2
                             required:
                                 - rider_id
             security: []
-    /admin/rides/create:
+    /rides/create:
         get:
             summary: ''
             description: ''
@@ -2891,7 +2861,7 @@ paths:
             tags:
                 - Endpoints
             security: []
-    '/admin/rides/{ride}':
+    '/rides/{ride}':
         get:
             summary: ''
             description: ''
@@ -2955,7 +2925,7 @@ paths:
                                 rider_id:
                                     type: integer
                                     description: ''
-                                    example: 14
+                                    example: 15
                             required:
                                 - rider_id
             security: []
@@ -2986,11 +2956,11 @@ paths:
                 in: path
                 name: ride
                 description: ''
-                example: ullam
+                example: doloribus
                 required: true
                 schema:
                     type: string
-    '/admin/rides/{ride}/edit':
+    '/rides/{ride}/edit':
         get:
             summary: ''
             description: ''
@@ -3028,11 +2998,11 @@ paths:
                 in: path
                 name: ride
                 description: ''
-                example: rerum
+                example: facilis
                 required: true
                 schema:
                     type: string
-    /admin/payments:
+    /payments:
         get:
             summary: ''
             description: ''
@@ -3096,26 +3066,26 @@ paths:
                                 total_received:
                                     type: string
                                     description: ''
-                                    example: voluptatem
+                                    example: labore
                                 rider_received:
                                     type: string
                                     description: ''
-                                    example: ipsam
+                                    example: dolore
                                 office_received:
                                     type: string
                                     description: ''
-                                    example: dolorem
+                                    example: vero
                                 user_id:
                                     type: integer
                                     description: ''
-                                    example: 17
+                                    example: 20
                             required:
                                 - total_received
                                 - rider_received
                                 - office_received
                                 - user_id
             security: []
-    /admin/payments/create:
+    /payments/create:
         get:
             summary: ''
             description: ''
@@ -3148,7 +3118,7 @@ paths:
             tags:
                 - Endpoints
             security: []
-    '/admin/payments/{payment}':
+    '/payments/{payment}':
         get:
             summary: ''
             description: ''
@@ -3210,169 +3180,59 @@ paths:
                             type: object
                             properties:
                                 total_received:
-                                    type: string
-                                    description: ''
-                                    example: illo
-                                rider_received:
-                                    type: string
-                                    description: ''
-                                    example: et
-                                office_received:
-                                    type: string
-                                    description: ''
-                                    example: quo
-                                user_id:
-                                    type: integer
-                                    description: ''
-                                    example: 12
-                            required:
-                                - total_received
-                                - rider_received
-                                - office_received
-                                - user_id
-            security: []
-        delete:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-            responses: {  }
-            tags:
-                - Endpoints
-            security: []
-        parameters:
-            -
-                in: path
-                name: payment
-                description: ''
-                example: quis
-                required: true
-                schema:
-                    type: string
-    '/admin/payments/{payment}/edit':
-        get:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-            responses:
-                401:
-                    description: ''
-                    content:
-                        application/json:
-                            schema:
-                                type: object
-                                example:
-                                    message: Unauthenticated.
-                                properties:
-                                    message: { type: string, example: Unauthenticated. }
-            tags:
-                - Endpoints
-            security: []
-        parameters:
-            -
-                in: path
-                name: payment
-                description: ''
-                example: sequi
-                required: true
-                schema:
-                    type: string
-    /admin/faq-categories:
-        get:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-            responses:
-                401:
-                    description: ''
-                    content:
-                        application/json:
-                            schema:
-                                type: object
-                                example:
-                                    message: Unauthenticated.
-                                properties:
-                                    message: { type: string, example: Unauthenticated. }
-            tags:
-                - Endpoints
-            security: []
-        post:
-            summary: ''
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-            responses: {  }
-            tags:
-                - Endpoints
-            requestBody:
-                required: true
-                content:
-                    application/json:
-                        schema:
-                            type: object
-                            properties:
-                                category:
                                     type: string
                                     description: ''
                                     example: velit
+                                rider_received:
+                                    type: string
+                                    description: ''
+                                    example: est
+                                office_received:
+                                    type: string
+                                    description: ''
+                                    example: voluptas
+                                user_id:
+                                    type: integer
+                                    description: ''
+                                    example: 10
                             required:
-                                - category
+                                - total_received
+                                - rider_received
+                                - office_received
+                                - user_id
             security: []
-    /admin/faq-categories/create:
+        delete:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+            responses: {  }
+            tags:
+                - Endpoints
+            security: []
+        parameters:
+            -
+                in: path
+                name: payment
+                description: ''
+                example: reiciendis
+                required: true
+                schema:
+                    type: string
+    '/payments/{payment}/edit':
         get:
             summary: ''
             description: ''
@@ -3405,7 +3265,117 @@ paths:
             tags:
                 - Endpoints
             security: []
-    '/admin/faq-categories/{faq_category}':
+        parameters:
+            -
+                in: path
+                name: payment
+                description: ''
+                example: consectetur
+                required: true
+                schema:
+                    type: string
+    /faq-categories:
+        get:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+            responses:
+                401:
+                    description: ''
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                example:
+                                    message: Unauthenticated.
+                                properties:
+                                    message: { type: string, example: Unauthenticated. }
+            tags:
+                - Endpoints
+            security: []
+        post:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+            responses: {  }
+            tags:
+                - Endpoints
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            type: object
+                            properties:
+                                category:
+                                    type: string
+                                    description: ''
+                                    example: reiciendis
+                            required:
+                                - category
+            security: []
+    /faq-categories/create:
+        get:
+            summary: ''
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+            responses:
+                401:
+                    description: ''
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                example:
+                                    message: Unauthenticated.
+                                properties:
+                                    message: { type: string, example: Unauthenticated. }
+            tags:
+                - Endpoints
+            security: []
+    '/faq-categories/{faq_category}':
         get:
             summary: ''
             description: ''
@@ -3469,7 +3439,7 @@ paths:
                                 category:
                                     type: string
                                     description: ''
-                                    example: delectus
+                                    example: sunt
                             required:
                                 - category
             security: []
@@ -3500,11 +3470,11 @@ paths:
                 in: path
                 name: faq_category
                 description: ''
-                example: id
+                example: aperiam
                 required: true
                 schema:
                     type: string
-    '/admin/faq-categories/{faq_category}/edit':
+    '/faq-categories/{faq_category}/edit':
         get:
             summary: ''
             description: ''
@@ -3542,11 +3512,11 @@ paths:
                 in: path
                 name: faq_category
                 description: ''
-                example: pariatur
+                example: molestiae
                 required: true
                 schema:
                     type: string
-    /admin/faq-questions:
+    /faq-questions:
         get:
             summary: ''
             description: ''
@@ -3610,21 +3580,21 @@ paths:
                                 category_id:
                                     type: integer
                                     description: ''
-                                    example: 4
+                                    example: 13
                                 question:
                                     type: string
                                     description: ''
-                                    example: suscipit
+                                    example: esse
                                 answer:
                                     type: string
                                     description: ''
-                                    example: sint
+                                    example: in
                             required:
                                 - category_id
                                 - question
                                 - answer
             security: []
-    /admin/faq-questions/create:
+    /faq-questions/create:
         get:
             summary: ''
             description: ''
@@ -3657,7 +3627,7 @@ paths:
             tags:
                 - Endpoints
             security: []
-    '/admin/faq-questions/{faq_question}':
+    '/faq-questions/{faq_question}':
         get:
             summary: ''
             description: ''
@@ -3721,15 +3691,15 @@ paths:
                                 category_id:
                                     type: integer
                                     description: ''
-                                    example: 8
+                                    example: 13
                                 question:
                                     type: string
                                     description: ''
-                                    example: consequatur
+                                    example: asperiores
                                 answer:
                                     type: string
                                     description: ''
-                                    example: et
+                                    example: sapiente
                             required:
                                 - category_id
                                 - question
@@ -3762,11 +3732,11 @@ paths:
                 in: path
                 name: faq_question
                 description: ''
-                example: expedita
+                example: nulla
                 required: true
                 schema:
                     type: string
-    '/admin/faq-questions/{faq_question}/edit':
+    '/faq-questions/{faq_question}/edit':
         get:
             summary: ''
             description: ''
@@ -3804,7 +3774,7 @@ paths:
                 in: path
                 name: faq_question
                 description: ''
-                example: laboriosam
+                example: quam
                 required: true
                 schema:
                     type: string
@@ -3872,7 +3842,7 @@ paths:
                                 password:
                                     type: string
                                     description: ''
-                                    example: voluptatum
+                                    example: nihil
                             required:
                                 - password
             security: []
@@ -3908,11 +3878,11 @@ paths:
                                 name:
                                     type: string
                                     description: ''
-                                    example: mollitia
+                                    example: omnis
                                 email:
                                     type: string
                                     description: 'The value must be a valid email address.'
-                                    example: eve.orn@example.org
+                                    example: stephan59@example.org
                             required:
                                 - name
                                 - email
@@ -3940,3 +3910,12 @@ paths:
             tags:
                 - Endpoints
             security: []
+components:
+    securitySchemes:
+        default:
+            type: http
+            scheme: bearer
+            description: ''
+security:
+    -
+        default: []

@@ -104,7 +104,7 @@ curl -X POST \
     "https://mamma-send.herokuapp.com/api/v1/permissions" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"eaque"}'
+    -d '{"title":"modi"}'
 
 ```
 
@@ -119,7 +119,7 @@ let headers = {
 };
 
 let body = {
-    "title": "eaque"
+    "title": "modi"
 }
 
 fetch(url, {
@@ -140,7 +140,7 @@ $response = $client->post(
             'Accept' => 'application/json',
         ],
         'json' => [
-            'title' => 'eaque',
+            'title' => 'modi',
         ],
     ]
 );
@@ -154,7 +154,7 @@ import json
 
 url = 'https://mamma-send.herokuapp.com/api/v1/permissions'
 payload = {
-    "title": "eaque"
+    "title": "modi"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -204,14 +204,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/api/v1/permissions/laudantium" \
+    -G "https://mamma-send.herokuapp.com/api/v1/permissions/autem" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/api/v1/permissions/laudantium"
+    "https://mamma-send.herokuapp.com/api/v1/permissions/autem"
 );
 
 let headers = {
@@ -230,7 +230,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/api/v1/permissions/laudantium',
+    'https://mamma-send.herokuapp.com/api/v1/permissions/autem',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -246,7 +246,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/api/v1/permissions/laudantium'
+url = 'https://mamma-send.herokuapp.com/api/v1/permissions/autem'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -301,16 +301,16 @@ response.json()
 
 ```bash
 curl -X PUT \
-    "https://mamma-send.herokuapp.com/api/v1/permissions/dolores" \
+    "https://mamma-send.herokuapp.com/api/v1/permissions/repellat" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"qui"}'
+    -d '{"title":"voluptatum"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/api/v1/permissions/dolores"
+    "https://mamma-send.herokuapp.com/api/v1/permissions/repellat"
 );
 
 let headers = {
@@ -319,7 +319,7 @@ let headers = {
 };
 
 let body = {
-    "title": "qui"
+    "title": "voluptatum"
 }
 
 fetch(url, {
@@ -333,14 +333,14 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'https://mamma-send.herokuapp.com/api/v1/permissions/dolores',
+    'https://mamma-send.herokuapp.com/api/v1/permissions/repellat',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'title' => 'qui',
+            'title' => 'voluptatum',
         ],
     ]
 );
@@ -352,9 +352,9 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/api/v1/permissions/dolores'
+url = 'https://mamma-send.herokuapp.com/api/v1/permissions/repellat'
 payload = {
-    "title": "qui"
+    "title": "voluptatum"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -414,14 +414,14 @@ response.json()
 
 ```bash
 curl -X DELETE \
-    "https://mamma-send.herokuapp.com/api/v1/permissions/nihil" \
+    "https://mamma-send.herokuapp.com/api/v1/permissions/corrupti" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/api/v1/permissions/nihil"
+    "https://mamma-send.herokuapp.com/api/v1/permissions/corrupti"
 );
 
 let headers = {
@@ -440,7 +440,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'https://mamma-send.herokuapp.com/api/v1/permissions/nihil',
+    'https://mamma-send.herokuapp.com/api/v1/permissions/corrupti',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -456,7 +456,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/api/v1/permissions/nihil'
+url = 'https://mamma-send.herokuapp.com/api/v1/permissions/corrupti'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -598,7 +598,7 @@ curl -X POST \
     "https://mamma-send.herokuapp.com/api/v1/roles" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"vitae","permissions":[13,12]}'
+    -d '{"title":"omnis","permissions":[15,2]}'
 
 ```
 
@@ -613,10 +613,10 @@ let headers = {
 };
 
 let body = {
-    "title": "vitae",
+    "title": "omnis",
     "permissions": [
-        13,
-        12
+        15,
+        2
     ]
 }
 
@@ -638,10 +638,10 @@ $response = $client->post(
             'Accept' => 'application/json',
         ],
         'json' => [
-            'title' => 'vitae',
+            'title' => 'omnis',
             'permissions' => [
-                13,
-                12,
+                15,
+                2,
             ],
         ],
     ]
@@ -656,10 +656,10 @@ import json
 
 url = 'https://mamma-send.herokuapp.com/api/v1/roles'
 payload = {
-    "title": "vitae",
+    "title": "omnis",
     "permissions": [
-        13,
-        12
+        15,
+        2
     ]
 }
 headers = {
@@ -716,14 +716,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/api/v1/roles/consectetur" \
+    -G "https://mamma-send.herokuapp.com/api/v1/roles/voluptatibus" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/api/v1/roles/consectetur"
+    "https://mamma-send.herokuapp.com/api/v1/roles/voluptatibus"
 );
 
 let headers = {
@@ -742,7 +742,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/api/v1/roles/consectetur',
+    'https://mamma-send.herokuapp.com/api/v1/roles/voluptatibus',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -758,7 +758,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/api/v1/roles/consectetur'
+url = 'https://mamma-send.herokuapp.com/api/v1/roles/voluptatibus'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -813,16 +813,16 @@ response.json()
 
 ```bash
 curl -X PUT \
-    "https://mamma-send.herokuapp.com/api/v1/roles/et" \
+    "https://mamma-send.herokuapp.com/api/v1/roles/molestiae" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"est","permissions":[9,19]}'
+    -d '{"title":"laboriosam","permissions":[2,1]}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/api/v1/roles/et"
+    "https://mamma-send.herokuapp.com/api/v1/roles/molestiae"
 );
 
 let headers = {
@@ -831,10 +831,10 @@ let headers = {
 };
 
 let body = {
-    "title": "est",
+    "title": "laboriosam",
     "permissions": [
-        9,
-        19
+        2,
+        1
     ]
 }
 
@@ -849,17 +849,17 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'https://mamma-send.herokuapp.com/api/v1/roles/et',
+    'https://mamma-send.herokuapp.com/api/v1/roles/molestiae',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'title' => 'est',
+            'title' => 'laboriosam',
             'permissions' => [
-                9,
-                19,
+                2,
+                1,
             ],
         ],
     ]
@@ -872,12 +872,12 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/api/v1/roles/et'
+url = 'https://mamma-send.herokuapp.com/api/v1/roles/molestiae'
 payload = {
-    "title": "est",
+    "title": "laboriosam",
     "permissions": [
-        9,
-        19
+        2,
+        1
     ]
 }
 headers = {
@@ -944,14 +944,14 @@ response.json()
 
 ```bash
 curl -X DELETE \
-    "https://mamma-send.herokuapp.com/api/v1/roles/ipsa" \
+    "https://mamma-send.herokuapp.com/api/v1/roles/provident" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/api/v1/roles/ipsa"
+    "https://mamma-send.herokuapp.com/api/v1/roles/provident"
 );
 
 let headers = {
@@ -970,7 +970,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'https://mamma-send.herokuapp.com/api/v1/roles/ipsa',
+    'https://mamma-send.herokuapp.com/api/v1/roles/provident',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -986,7 +986,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/api/v1/roles/ipsa'
+url = 'https://mamma-send.herokuapp.com/api/v1/roles/provident'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -1128,7 +1128,7 @@ curl -X POST \
     "https://mamma-send.herokuapp.com/api/v1/users" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"itaque","email":"sit","password":"earum","roles":[12,15]}'
+    -d '{"name":"veritatis","email":"illo","password":"dolores","roles":[5,7]}'
 
 ```
 
@@ -1143,12 +1143,12 @@ let headers = {
 };
 
 let body = {
-    "name": "itaque",
-    "email": "sit",
-    "password": "earum",
+    "name": "veritatis",
+    "email": "illo",
+    "password": "dolores",
     "roles": [
-        12,
-        15
+        5,
+        7
     ]
 }
 
@@ -1170,12 +1170,12 @@ $response = $client->post(
             'Accept' => 'application/json',
         ],
         'json' => [
-            'name' => 'itaque',
-            'email' => 'sit',
-            'password' => 'earum',
+            'name' => 'veritatis',
+            'email' => 'illo',
+            'password' => 'dolores',
             'roles' => [
-                12,
-                15,
+                5,
+                7,
             ],
         ],
     ]
@@ -1190,12 +1190,12 @@ import json
 
 url = 'https://mamma-send.herokuapp.com/api/v1/users'
 payload = {
-    "name": "itaque",
-    "email": "sit",
-    "password": "earum",
+    "name": "veritatis",
+    "email": "illo",
+    "password": "dolores",
     "roles": [
-        12,
-        15
+        5,
+        7
     ]
 }
 headers = {
@@ -1262,14 +1262,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/api/v1/users/consectetur" \
+    -G "https://mamma-send.herokuapp.com/api/v1/users/id" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/api/v1/users/consectetur"
+    "https://mamma-send.herokuapp.com/api/v1/users/id"
 );
 
 let headers = {
@@ -1288,7 +1288,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/api/v1/users/consectetur',
+    'https://mamma-send.herokuapp.com/api/v1/users/id',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -1304,7 +1304,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/api/v1/users/consectetur'
+url = 'https://mamma-send.herokuapp.com/api/v1/users/id'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -1359,14 +1359,14 @@ response.json()
 
 ```bash
 curl -X DELETE \
-    "https://mamma-send.herokuapp.com/api/v1/users/minima" \
+    "https://mamma-send.herokuapp.com/api/v1/users/quia" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/api/v1/users/minima"
+    "https://mamma-send.herokuapp.com/api/v1/users/quia"
 );
 
 let headers = {
@@ -1385,7 +1385,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'https://mamma-send.herokuapp.com/api/v1/users/minima',
+    'https://mamma-send.herokuapp.com/api/v1/users/quia',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -1401,7 +1401,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/api/v1/users/minima'
+url = 'https://mamma-send.herokuapp.com/api/v1/users/quia'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -1543,7 +1543,7 @@ curl -X POST \
     "https://mamma-send.herokuapp.com/api/v1/addresses" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"street":"excepturi","city":"unde","state":"dicta","zip_code":"ut"}'
+    -d '{"street":"cupiditate","city":"omnis","state":"cum","zip_code":"ipsa"}'
 
 ```
 
@@ -1558,10 +1558,10 @@ let headers = {
 };
 
 let body = {
-    "street": "excepturi",
-    "city": "unde",
-    "state": "dicta",
-    "zip_code": "ut"
+    "street": "cupiditate",
+    "city": "omnis",
+    "state": "cum",
+    "zip_code": "ipsa"
 }
 
 fetch(url, {
@@ -1582,10 +1582,10 @@ $response = $client->post(
             'Accept' => 'application/json',
         ],
         'json' => [
-            'street' => 'excepturi',
-            'city' => 'unde',
-            'state' => 'dicta',
-            'zip_code' => 'ut',
+            'street' => 'cupiditate',
+            'city' => 'omnis',
+            'state' => 'cum',
+            'zip_code' => 'ipsa',
         ],
     ]
 );
@@ -1599,10 +1599,10 @@ import json
 
 url = 'https://mamma-send.herokuapp.com/api/v1/addresses'
 payload = {
-    "street": "excepturi",
-    "city": "unde",
-    "state": "dicta",
-    "zip_code": "ut"
+    "street": "cupiditate",
+    "city": "omnis",
+    "state": "cum",
+    "zip_code": "ipsa"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -1667,14 +1667,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/api/v1/addresses/consequuntur" \
+    -G "https://mamma-send.herokuapp.com/api/v1/addresses/explicabo" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/api/v1/addresses/consequuntur"
+    "https://mamma-send.herokuapp.com/api/v1/addresses/explicabo"
 );
 
 let headers = {
@@ -1693,7 +1693,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/api/v1/addresses/consequuntur',
+    'https://mamma-send.herokuapp.com/api/v1/addresses/explicabo',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -1709,7 +1709,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/api/v1/addresses/consequuntur'
+url = 'https://mamma-send.herokuapp.com/api/v1/addresses/explicabo'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -1764,16 +1764,16 @@ response.json()
 
 ```bash
 curl -X PUT \
-    "https://mamma-send.herokuapp.com/api/v1/addresses/sapiente" \
+    "https://mamma-send.herokuapp.com/api/v1/addresses/repellendus" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"street":"consectetur","city":"odit","state":"tenetur","zip_code":"voluptatem"}'
+    -d '{"street":"recusandae","city":"sit","state":"quia","zip_code":"sequi"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/api/v1/addresses/sapiente"
+    "https://mamma-send.herokuapp.com/api/v1/addresses/repellendus"
 );
 
 let headers = {
@@ -1782,10 +1782,10 @@ let headers = {
 };
 
 let body = {
-    "street": "consectetur",
-    "city": "odit",
-    "state": "tenetur",
-    "zip_code": "voluptatem"
+    "street": "recusandae",
+    "city": "sit",
+    "state": "quia",
+    "zip_code": "sequi"
 }
 
 fetch(url, {
@@ -1799,17 +1799,17 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'https://mamma-send.herokuapp.com/api/v1/addresses/sapiente',
+    'https://mamma-send.herokuapp.com/api/v1/addresses/repellendus',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'street' => 'consectetur',
-            'city' => 'odit',
-            'state' => 'tenetur',
-            'zip_code' => 'voluptatem',
+            'street' => 'recusandae',
+            'city' => 'sit',
+            'state' => 'quia',
+            'zip_code' => 'sequi',
         ],
     ]
 );
@@ -1821,12 +1821,12 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/api/v1/addresses/sapiente'
+url = 'https://mamma-send.herokuapp.com/api/v1/addresses/repellendus'
 payload = {
-    "street": "consectetur",
-    "city": "odit",
-    "state": "tenetur",
-    "zip_code": "voluptatem"
+    "street": "recusandae",
+    "city": "sit",
+    "state": "quia",
+    "zip_code": "sequi"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -1901,14 +1901,14 @@ response.json()
 
 ```bash
 curl -X DELETE \
-    "https://mamma-send.herokuapp.com/api/v1/addresses/unde" \
+    "https://mamma-send.herokuapp.com/api/v1/addresses/officiis" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/api/v1/addresses/unde"
+    "https://mamma-send.herokuapp.com/api/v1/addresses/officiis"
 );
 
 let headers = {
@@ -1927,7 +1927,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'https://mamma-send.herokuapp.com/api/v1/addresses/unde',
+    'https://mamma-send.herokuapp.com/api/v1/addresses/officiis',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -1943,7 +1943,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/api/v1/addresses/unde'
+url = 'https://mamma-send.herokuapp.com/api/v1/addresses/officiis'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -2085,7 +2085,7 @@ curl -X POST \
     "https://mamma-send.herokuapp.com/api/v1/rides" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"rider_id":9}'
+    -d '{"rider_id":3}'
 
 ```
 
@@ -2100,7 +2100,7 @@ let headers = {
 };
 
 let body = {
-    "rider_id": 9
+    "rider_id": 3
 }
 
 fetch(url, {
@@ -2121,7 +2121,7 @@ $response = $client->post(
             'Accept' => 'application/json',
         ],
         'json' => [
-            'rider_id' => 9,
+            'rider_id' => 3,
         ],
     ]
 );
@@ -2135,7 +2135,7 @@ import json
 
 url = 'https://mamma-send.herokuapp.com/api/v1/rides'
 payload = {
-    "rider_id": 9
+    "rider_id": 3
 }
 headers = {
   'Content-Type': 'application/json',
@@ -2185,14 +2185,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/api/v1/rides/at" \
+    -G "https://mamma-send.herokuapp.com/api/v1/rides/dolores" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/api/v1/rides/at"
+    "https://mamma-send.herokuapp.com/api/v1/rides/dolores"
 );
 
 let headers = {
@@ -2211,7 +2211,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/api/v1/rides/at',
+    'https://mamma-send.herokuapp.com/api/v1/rides/dolores',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -2227,7 +2227,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/api/v1/rides/at'
+url = 'https://mamma-send.herokuapp.com/api/v1/rides/dolores'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -2282,16 +2282,16 @@ response.json()
 
 ```bash
 curl -X PUT \
-    "https://mamma-send.herokuapp.com/api/v1/rides/sed" \
+    "https://mamma-send.herokuapp.com/api/v1/rides/ad" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"rider_id":14}'
+    -d '{"rider_id":1}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/api/v1/rides/sed"
+    "https://mamma-send.herokuapp.com/api/v1/rides/ad"
 );
 
 let headers = {
@@ -2300,7 +2300,7 @@ let headers = {
 };
 
 let body = {
-    "rider_id": 14
+    "rider_id": 1
 }
 
 fetch(url, {
@@ -2314,14 +2314,14 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'https://mamma-send.herokuapp.com/api/v1/rides/sed',
+    'https://mamma-send.herokuapp.com/api/v1/rides/ad',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'rider_id' => 14,
+            'rider_id' => 1,
         ],
     ]
 );
@@ -2333,9 +2333,9 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/api/v1/rides/sed'
+url = 'https://mamma-send.herokuapp.com/api/v1/rides/ad'
 payload = {
-    "rider_id": 14
+    "rider_id": 1
 }
 headers = {
   'Content-Type': 'application/json',
@@ -2395,14 +2395,14 @@ response.json()
 
 ```bash
 curl -X DELETE \
-    "https://mamma-send.herokuapp.com/api/v1/rides/ullam" \
+    "https://mamma-send.herokuapp.com/api/v1/rides/necessitatibus" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/api/v1/rides/ullam"
+    "https://mamma-send.herokuapp.com/api/v1/rides/necessitatibus"
 );
 
 let headers = {
@@ -2421,7 +2421,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'https://mamma-send.herokuapp.com/api/v1/rides/ullam',
+    'https://mamma-send.herokuapp.com/api/v1/rides/necessitatibus',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -2437,7 +2437,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/api/v1/rides/ullam'
+url = 'https://mamma-send.herokuapp.com/api/v1/rides/necessitatibus'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -2579,7 +2579,7 @@ curl -X POST \
     "https://mamma-send.herokuapp.com/api/v1/payments" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"total_received":"qui","rider_received":"id","office_received":"maiores","user_id":7}'
+    -d '{"total_received":"officia","rider_received":"excepturi","office_received":"sit","user_id":16}'
 
 ```
 
@@ -2594,10 +2594,10 @@ let headers = {
 };
 
 let body = {
-    "total_received": "qui",
-    "rider_received": "id",
-    "office_received": "maiores",
-    "user_id": 7
+    "total_received": "officia",
+    "rider_received": "excepturi",
+    "office_received": "sit",
+    "user_id": 16
 }
 
 fetch(url, {
@@ -2618,10 +2618,10 @@ $response = $client->post(
             'Accept' => 'application/json',
         ],
         'json' => [
-            'total_received' => 'qui',
-            'rider_received' => 'id',
-            'office_received' => 'maiores',
-            'user_id' => 7,
+            'total_received' => 'officia',
+            'rider_received' => 'excepturi',
+            'office_received' => 'sit',
+            'user_id' => 16,
         ],
     ]
 );
@@ -2635,10 +2635,10 @@ import json
 
 url = 'https://mamma-send.herokuapp.com/api/v1/payments'
 payload = {
-    "total_received": "qui",
-    "rider_received": "id",
-    "office_received": "maiores",
-    "user_id": 7
+    "total_received": "officia",
+    "rider_received": "excepturi",
+    "office_received": "sit",
+    "user_id": 16
 }
 headers = {
   'Content-Type': 'application/json',
@@ -2703,14 +2703,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/api/v1/payments/quisquam" \
+    -G "https://mamma-send.herokuapp.com/api/v1/payments/quo" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/api/v1/payments/quisquam"
+    "https://mamma-send.herokuapp.com/api/v1/payments/quo"
 );
 
 let headers = {
@@ -2729,7 +2729,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/api/v1/payments/quisquam',
+    'https://mamma-send.herokuapp.com/api/v1/payments/quo',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -2745,7 +2745,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/api/v1/payments/quisquam'
+url = 'https://mamma-send.herokuapp.com/api/v1/payments/quo'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -2800,16 +2800,16 @@ response.json()
 
 ```bash
 curl -X PUT \
-    "https://mamma-send.herokuapp.com/api/v1/payments/reiciendis" \
+    "https://mamma-send.herokuapp.com/api/v1/payments/quidem" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"total_received":"tempore","rider_received":"provident","office_received":"nemo","user_id":2}'
+    -d '{"total_received":"ullam","rider_received":"illum","office_received":"debitis","user_id":2}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/api/v1/payments/reiciendis"
+    "https://mamma-send.herokuapp.com/api/v1/payments/quidem"
 );
 
 let headers = {
@@ -2818,9 +2818,9 @@ let headers = {
 };
 
 let body = {
-    "total_received": "tempore",
-    "rider_received": "provident",
-    "office_received": "nemo",
+    "total_received": "ullam",
+    "rider_received": "illum",
+    "office_received": "debitis",
     "user_id": 2
 }
 
@@ -2835,16 +2835,16 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'https://mamma-send.herokuapp.com/api/v1/payments/reiciendis',
+    'https://mamma-send.herokuapp.com/api/v1/payments/quidem',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'total_received' => 'tempore',
-            'rider_received' => 'provident',
-            'office_received' => 'nemo',
+            'total_received' => 'ullam',
+            'rider_received' => 'illum',
+            'office_received' => 'debitis',
             'user_id' => 2,
         ],
     ]
@@ -2857,11 +2857,11 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/api/v1/payments/reiciendis'
+url = 'https://mamma-send.herokuapp.com/api/v1/payments/quidem'
 payload = {
-    "total_received": "tempore",
-    "rider_received": "provident",
-    "office_received": "nemo",
+    "total_received": "ullam",
+    "rider_received": "illum",
+    "office_received": "debitis",
     "user_id": 2
 }
 headers = {
@@ -2937,14 +2937,14 @@ response.json()
 
 ```bash
 curl -X DELETE \
-    "https://mamma-send.herokuapp.com/api/v1/payments/nihil" \
+    "https://mamma-send.herokuapp.com/api/v1/payments/dolorum" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/api/v1/payments/nihil"
+    "https://mamma-send.herokuapp.com/api/v1/payments/dolorum"
 );
 
 let headers = {
@@ -2963,7 +2963,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'https://mamma-send.herokuapp.com/api/v1/payments/nihil',
+    'https://mamma-send.herokuapp.com/api/v1/payments/dolorum',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -2979,7 +2979,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/api/v1/payments/nihil'
+url = 'https://mamma-send.herokuapp.com/api/v1/payments/dolorum'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -3121,7 +3121,7 @@ curl -X POST \
     "https://mamma-send.herokuapp.com/api/v1/faq-categories" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"category":"labore"}'
+    -d '{"category":"aspernatur"}'
 
 ```
 
@@ -3136,7 +3136,7 @@ let headers = {
 };
 
 let body = {
-    "category": "labore"
+    "category": "aspernatur"
 }
 
 fetch(url, {
@@ -3157,7 +3157,7 @@ $response = $client->post(
             'Accept' => 'application/json',
         ],
         'json' => [
-            'category' => 'labore',
+            'category' => 'aspernatur',
         ],
     ]
 );
@@ -3171,7 +3171,7 @@ import json
 
 url = 'https://mamma-send.herokuapp.com/api/v1/faq-categories'
 payload = {
-    "category": "labore"
+    "category": "aspernatur"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -3221,14 +3221,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/api/v1/faq-categories/animi" \
+    -G "https://mamma-send.herokuapp.com/api/v1/faq-categories/et" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/api/v1/faq-categories/animi"
+    "https://mamma-send.herokuapp.com/api/v1/faq-categories/et"
 );
 
 let headers = {
@@ -3247,7 +3247,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/api/v1/faq-categories/animi',
+    'https://mamma-send.herokuapp.com/api/v1/faq-categories/et',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -3263,7 +3263,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/api/v1/faq-categories/animi'
+url = 'https://mamma-send.herokuapp.com/api/v1/faq-categories/et'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -3318,16 +3318,16 @@ response.json()
 
 ```bash
 curl -X PUT \
-    "https://mamma-send.herokuapp.com/api/v1/faq-categories/exercitationem" \
+    "https://mamma-send.herokuapp.com/api/v1/faq-categories/perferendis" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"category":"dolore"}'
+    -d '{"category":"nemo"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/api/v1/faq-categories/exercitationem"
+    "https://mamma-send.herokuapp.com/api/v1/faq-categories/perferendis"
 );
 
 let headers = {
@@ -3336,7 +3336,7 @@ let headers = {
 };
 
 let body = {
-    "category": "dolore"
+    "category": "nemo"
 }
 
 fetch(url, {
@@ -3350,14 +3350,14 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'https://mamma-send.herokuapp.com/api/v1/faq-categories/exercitationem',
+    'https://mamma-send.herokuapp.com/api/v1/faq-categories/perferendis',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'category' => 'dolore',
+            'category' => 'nemo',
         ],
     ]
 );
@@ -3369,9 +3369,9 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/api/v1/faq-categories/exercitationem'
+url = 'https://mamma-send.herokuapp.com/api/v1/faq-categories/perferendis'
 payload = {
-    "category": "dolore"
+    "category": "nemo"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -3431,14 +3431,14 @@ response.json()
 
 ```bash
 curl -X DELETE \
-    "https://mamma-send.herokuapp.com/api/v1/faq-categories/non" \
+    "https://mamma-send.herokuapp.com/api/v1/faq-categories/vel" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/api/v1/faq-categories/non"
+    "https://mamma-send.herokuapp.com/api/v1/faq-categories/vel"
 );
 
 let headers = {
@@ -3457,7 +3457,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'https://mamma-send.herokuapp.com/api/v1/faq-categories/non',
+    'https://mamma-send.herokuapp.com/api/v1/faq-categories/vel',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -3473,7 +3473,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/api/v1/faq-categories/non'
+url = 'https://mamma-send.herokuapp.com/api/v1/faq-categories/vel'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -3615,7 +3615,7 @@ curl -X POST \
     "https://mamma-send.herokuapp.com/api/v1/faq-questions" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"category_id":18,"question":"minima","answer":"eveniet"}'
+    -d '{"category_id":12,"question":"ipsum","answer":"fugiat"}'
 
 ```
 
@@ -3630,9 +3630,9 @@ let headers = {
 };
 
 let body = {
-    "category_id": 18,
-    "question": "minima",
-    "answer": "eveniet"
+    "category_id": 12,
+    "question": "ipsum",
+    "answer": "fugiat"
 }
 
 fetch(url, {
@@ -3653,9 +3653,9 @@ $response = $client->post(
             'Accept' => 'application/json',
         ],
         'json' => [
-            'category_id' => 18,
-            'question' => 'minima',
-            'answer' => 'eveniet',
+            'category_id' => 12,
+            'question' => 'ipsum',
+            'answer' => 'fugiat',
         ],
     ]
 );
@@ -3669,9 +3669,9 @@ import json
 
 url = 'https://mamma-send.herokuapp.com/api/v1/faq-questions'
 payload = {
-    "category_id": 18,
-    "question": "minima",
-    "answer": "eveniet"
+    "category_id": 12,
+    "question": "ipsum",
+    "answer": "fugiat"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -3731,14 +3731,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/api/v1/faq-questions/ut" \
+    -G "https://mamma-send.herokuapp.com/api/v1/faq-questions/eum" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/api/v1/faq-questions/ut"
+    "https://mamma-send.herokuapp.com/api/v1/faq-questions/eum"
 );
 
 let headers = {
@@ -3757,7 +3757,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/api/v1/faq-questions/ut',
+    'https://mamma-send.herokuapp.com/api/v1/faq-questions/eum',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -3773,7 +3773,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/api/v1/faq-questions/ut'
+url = 'https://mamma-send.herokuapp.com/api/v1/faq-questions/eum'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -3828,16 +3828,16 @@ response.json()
 
 ```bash
 curl -X PUT \
-    "https://mamma-send.herokuapp.com/api/v1/faq-questions/id" \
+    "https://mamma-send.herokuapp.com/api/v1/faq-questions/debitis" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"category_id":15,"question":"cum","answer":"et"}'
+    -d '{"category_id":12,"question":"voluptas","answer":"rerum"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/api/v1/faq-questions/id"
+    "https://mamma-send.herokuapp.com/api/v1/faq-questions/debitis"
 );
 
 let headers = {
@@ -3846,9 +3846,9 @@ let headers = {
 };
 
 let body = {
-    "category_id": 15,
-    "question": "cum",
-    "answer": "et"
+    "category_id": 12,
+    "question": "voluptas",
+    "answer": "rerum"
 }
 
 fetch(url, {
@@ -3862,16 +3862,16 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'https://mamma-send.herokuapp.com/api/v1/faq-questions/id',
+    'https://mamma-send.herokuapp.com/api/v1/faq-questions/debitis',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'category_id' => 15,
-            'question' => 'cum',
-            'answer' => 'et',
+            'category_id' => 12,
+            'question' => 'voluptas',
+            'answer' => 'rerum',
         ],
     ]
 );
@@ -3883,11 +3883,11 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/api/v1/faq-questions/id'
+url = 'https://mamma-send.herokuapp.com/api/v1/faq-questions/debitis'
 payload = {
-    "category_id": 15,
-    "question": "cum",
-    "answer": "et"
+    "category_id": 12,
+    "question": "voluptas",
+    "answer": "rerum"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -3957,14 +3957,14 @@ response.json()
 
 ```bash
 curl -X DELETE \
-    "https://mamma-send.herokuapp.com/api/v1/faq-questions/sint" \
+    "https://mamma-send.herokuapp.com/api/v1/faq-questions/necessitatibus" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/api/v1/faq-questions/sint"
+    "https://mamma-send.herokuapp.com/api/v1/faq-questions/necessitatibus"
 );
 
 let headers = {
@@ -3983,7 +3983,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'https://mamma-send.herokuapp.com/api/v1/faq-questions/sint',
+    'https://mamma-send.herokuapp.com/api/v1/faq-questions/necessitatibus',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -3999,7 +3999,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/api/v1/faq-questions/sint'
+url = 'https://mamma-send.herokuapp.com/api/v1/faq-questions/necessitatibus'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -4100,22 +4100,12 @@ response.json()
 ```
 
 
-> Example response (302):
+> Example response (401):
 
 ```json
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="refresh" content="0;url='/login'" />
-
-        <title>Redirecting to /login</title>
-    </head>
-    <body>
-        Redirecting to <a href="/login">/login</a>.
-    </body>
-</html>
+{
+    "message": "Unauthenticated."
+}
 ```
 <div id="execution-results-GET-" hidden>
     <blockquote>Received response<span id="execution-response-status-GET-"></span>:</blockquote>
@@ -4229,12 +4219,12 @@ response.json()
 <html>
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="refresh" content="0;url='http://mamma-send.herokuapp.com/admin'" />
+        <meta http-equiv="refresh" content="0;url='http://mamma-send.herokuapp.com'" />
 
-        <title>Redirecting to http://mamma-send.herokuapp.com/admin</title>
+        <title>Redirecting to http://mamma-send.herokuapp.com</title>
     </head>
     <body>
-        Redirecting to <a href="http://mamma-send.herokuapp.com/admin">http://mamma-send.herokuapp.com/admin</a>.
+        Redirecting to <a href="http://mamma-send.herokuapp.com">http://mamma-send.herokuapp.com</a>.
     </body>
 </html>
 ```
@@ -4333,7 +4323,7 @@ response.json()
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="csrf-token" content="8N6jdgouQoyDhaxqsXAeMN7VJwqmWD2Z7E7JA9iS">
+    <meta name="csrf-token" content="Pebvzc2A2vMCK88tTEV4HhlKITCCwNDm6s5BhWaE">
 
     <title>MammaSend</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
@@ -4361,7 +4351,7 @@ response.json()
 
                     
                     <form method="POST" action="http://mamma-send.herokuapp.com/login">
-                        <input type="hidden" name="_token" value="8N6jdgouQoyDhaxqsXAeMN7VJwqmWD2Z7E7JA9iS">
+                        <input type="hidden" name="_token" value="Pebvzc2A2vMCK88tTEV4HhlKITCCwNDm6s5BhWaE">
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                             <span class="input-group-text">
@@ -4681,7 +4671,7 @@ response.json()
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="csrf-token" content="8N6jdgouQoyDhaxqsXAeMN7VJwqmWD2Z7E7JA9iS">
+    <meta name="csrf-token" content="Pebvzc2A2vMCK88tTEV4HhlKITCCwNDm6s5BhWaE">
 
     <title>MammaSend</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
@@ -4707,7 +4697,7 @@ response.json()
 
                 <div class="card-body">
                     <form method="POST" action="http://mamma-send.herokuapp.com/register">
-                        <input type="hidden" name="_token" value="8N6jdgouQoyDhaxqsXAeMN7VJwqmWD2Z7E7JA9iS">
+                        <input type="hidden" name="_token" value="Pebvzc2A2vMCK88tTEV4HhlKITCCwNDm6s5BhWaE">
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">Name</label>
 
@@ -4942,7 +4932,7 @@ response.json()
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="csrf-token" content="8N6jdgouQoyDhaxqsXAeMN7VJwqmWD2Z7E7JA9iS">
+    <meta name="csrf-token" content="Pebvzc2A2vMCK88tTEV4HhlKITCCwNDm6s5BhWaE">
 
     <title>MammaSend</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
@@ -4969,7 +4959,7 @@ response.json()
                 <div class="card-body">
                     
                     <form method="POST" action="http://mamma-send.herokuapp.com/password/email">
-                        <input type="hidden" name="_token" value="8N6jdgouQoyDhaxqsXAeMN7VJwqmWD2Z7E7JA9iS">
+                        <input type="hidden" name="_token" value="Pebvzc2A2vMCK88tTEV4HhlKITCCwNDm6s5BhWaE">
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
 
@@ -5114,14 +5104,14 @@ If no token is present, display the link request form.
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/password/reset/ut" \
+    -G "https://mamma-send.herokuapp.com/password/reset/voluptas" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/password/reset/ut"
+    "https://mamma-send.herokuapp.com/password/reset/voluptas"
 );
 
 let headers = {
@@ -5140,7 +5130,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/password/reset/ut',
+    'https://mamma-send.herokuapp.com/password/reset/voluptas',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -5156,7 +5146,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/password/reset/ut'
+url = 'https://mamma-send.herokuapp.com/password/reset/voluptas'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -5178,7 +5168,7 @@ response.json()
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="csrf-token" content="8N6jdgouQoyDhaxqsXAeMN7VJwqmWD2Z7E7JA9iS">
+    <meta name="csrf-token" content="Pebvzc2A2vMCK88tTEV4HhlKITCCwNDm6s5BhWaE">
 
     <title>MammaSend</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
@@ -5204,8 +5194,8 @@ response.json()
 
                 <div class="card-body">
                     <form method="POST" action="http://mamma-send.herokuapp.com/password/reset">
-                        <input type="hidden" name="_token" value="8N6jdgouQoyDhaxqsXAeMN7VJwqmWD2Z7E7JA9iS">
-                        <input type="hidden" name="token" value="ut">
+                        <input type="hidden" name="_token" value="Pebvzc2A2vMCK88tTEV4HhlKITCCwNDm6s5BhWaE">
+                        <input type="hidden" name="token" value="voluptas">
 
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
@@ -5549,14 +5539,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin" \
+    -G "https://mamma-send.herokuapp.com/" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin"
+    "https://mamma-send.herokuapp.com/"
 );
 
 let headers = {
@@ -5575,7 +5565,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin',
+    'https://mamma-send.herokuapp.com/',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -5591,7 +5581,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin'
+url = 'https://mamma-send.herokuapp.com//'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -5609,29 +5599,29 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin"></code></pre>
+<div id="execution-results-GET-" hidden>
+    <blockquote>Received response<span id="execution-response-status-GET-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GET-"></code></pre>
 </div>
-<div id="execution-error-GETadmin" hidden>
+<div id="execution-error-GET-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin"></code></pre>
+    <pre><code id="execution-error-message-GET-"></code></pre>
 </div>
-<form id="form-GETadmin" data-method="GET" data-path="admin" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin', this);">
+<form id="form-GET-" data-method="GET" data-path="/" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GET-', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin" onclick="tryItOut('GETadmin');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin" onclick="cancelTryOut('GETadmin');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GET-" onclick="tryItOut('GET-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GET-" onclick="cancelTryOut('GET-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GET-" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin</code></b>
+ <b><code>/</code></b>
 </p>
 </form>
 
 
-## admin/permissions
+## permissions
 
 
 
@@ -5640,14 +5630,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin/permissions" \
+    -G "https://mamma-send.herokuapp.com/permissions" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/permissions"
+    "https://mamma-send.herokuapp.com/permissions"
 );
 
 let headers = {
@@ -5666,7 +5656,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin/permissions',
+    'https://mamma-send.herokuapp.com/permissions',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -5682,7 +5672,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/permissions'
+url = 'https://mamma-send.herokuapp.com/permissions'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -5700,29 +5690,29 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin-permissions" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin-permissions"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin-permissions"></code></pre>
+<div id="execution-results-GETpermissions" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETpermissions"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETpermissions"></code></pre>
 </div>
-<div id="execution-error-GETadmin-permissions" hidden>
+<div id="execution-error-GETpermissions" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin-permissions"></code></pre>
+    <pre><code id="execution-error-message-GETpermissions"></code></pre>
 </div>
-<form id="form-GETadmin-permissions" data-method="GET" data-path="admin/permissions" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin-permissions', this);">
+<form id="form-GETpermissions" data-method="GET" data-path="permissions" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETpermissions', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin-permissions" onclick="tryItOut('GETadmin-permissions');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin-permissions" onclick="cancelTryOut('GETadmin-permissions');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin-permissions" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETpermissions" onclick="tryItOut('GETpermissions');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETpermissions" onclick="cancelTryOut('GETpermissions');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETpermissions" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin/permissions</code></b>
+ <b><code>permissions</code></b>
 </p>
 </form>
 
 
-## admin/permissions/create
+## permissions/create
 
 
 
@@ -5731,14 +5721,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin/permissions/create" \
+    -G "https://mamma-send.herokuapp.com/permissions/create" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/permissions/create"
+    "https://mamma-send.herokuapp.com/permissions/create"
 );
 
 let headers = {
@@ -5757,7 +5747,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin/permissions/create',
+    'https://mamma-send.herokuapp.com/permissions/create',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -5773,7 +5763,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/permissions/create'
+url = 'https://mamma-send.herokuapp.com/permissions/create'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -5791,29 +5781,29 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin-permissions-create" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin-permissions-create"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin-permissions-create"></code></pre>
+<div id="execution-results-GETpermissions-create" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETpermissions-create"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETpermissions-create"></code></pre>
 </div>
-<div id="execution-error-GETadmin-permissions-create" hidden>
+<div id="execution-error-GETpermissions-create" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin-permissions-create"></code></pre>
+    <pre><code id="execution-error-message-GETpermissions-create"></code></pre>
 </div>
-<form id="form-GETadmin-permissions-create" data-method="GET" data-path="admin/permissions/create" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin-permissions-create', this);">
+<form id="form-GETpermissions-create" data-method="GET" data-path="permissions/create" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETpermissions-create', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin-permissions-create" onclick="tryItOut('GETadmin-permissions-create');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin-permissions-create" onclick="cancelTryOut('GETadmin-permissions-create');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin-permissions-create" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETpermissions-create" onclick="tryItOut('GETpermissions-create');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETpermissions-create" onclick="cancelTryOut('GETpermissions-create');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETpermissions-create" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin/permissions/create</code></b>
+ <b><code>permissions/create</code></b>
 </p>
 </form>
 
 
-## admin/permissions
+## permissions
 
 
 
@@ -5822,16 +5812,16 @@ response.json()
 
 ```bash
 curl -X POST \
-    "https://mamma-send.herokuapp.com/admin/permissions" \
+    "https://mamma-send.herokuapp.com/permissions" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"fuga"}'
+    -d '{"title":"dolor"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/permissions"
+    "https://mamma-send.herokuapp.com/permissions"
 );
 
 let headers = {
@@ -5840,7 +5830,7 @@ let headers = {
 };
 
 let body = {
-    "title": "fuga"
+    "title": "dolor"
 }
 
 fetch(url, {
@@ -5854,14 +5844,14 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'https://mamma-send.herokuapp.com/admin/permissions',
+    'https://mamma-send.herokuapp.com/permissions',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'title' => 'fuga',
+            'title' => 'dolor',
         ],
     ]
 );
@@ -5873,9 +5863,9 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/permissions'
+url = 'https://mamma-send.herokuapp.com/permissions'
 payload = {
-    "title": "fuga"
+    "title": "dolor"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -5887,36 +5877,36 @@ response.json()
 ```
 
 
-<div id="execution-results-POSTadmin-permissions" hidden>
-    <blockquote>Received response<span id="execution-response-status-POSTadmin-permissions"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-POSTadmin-permissions"></code></pre>
+<div id="execution-results-POSTpermissions" hidden>
+    <blockquote>Received response<span id="execution-response-status-POSTpermissions"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-POSTpermissions"></code></pre>
 </div>
-<div id="execution-error-POSTadmin-permissions" hidden>
+<div id="execution-error-POSTpermissions" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTadmin-permissions"></code></pre>
+    <pre><code id="execution-error-message-POSTpermissions"></code></pre>
 </div>
-<form id="form-POSTadmin-permissions" data-method="POST" data-path="admin/permissions" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTadmin-permissions', this);">
+<form id="form-POSTpermissions" data-method="POST" data-path="permissions" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTpermissions', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTadmin-permissions" onclick="tryItOut('POSTadmin-permissions');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTadmin-permissions" onclick="cancelTryOut('POSTadmin-permissions');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTadmin-permissions" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTpermissions" onclick="tryItOut('POSTpermissions');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTpermissions" onclick="cancelTryOut('POSTpermissions');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTpermissions" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-black">POST</small>
- <b><code>admin/permissions</code></b>
+ <b><code>permissions</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
 <p>
 <b><code>title</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="title" data-endpoint="POSTadmin-permissions" data-component="body" required  hidden>
+<input type="text" name="title" data-endpoint="POSTpermissions" data-component="body" required  hidden>
 <br>
 </p>
 
 </form>
 
 
-## admin/permissions/{permission}
+## permissions/{permission}
 
 
 
@@ -5925,14 +5915,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin/permissions/veritatis" \
+    -G "https://mamma-send.herokuapp.com/permissions/necessitatibus" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/permissions/veritatis"
+    "https://mamma-send.herokuapp.com/permissions/necessitatibus"
 );
 
 let headers = {
@@ -5951,7 +5941,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin/permissions/veritatis',
+    'https://mamma-send.herokuapp.com/permissions/necessitatibus',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -5967,7 +5957,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/permissions/veritatis'
+url = 'https://mamma-send.herokuapp.com/permissions/necessitatibus'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -5985,35 +5975,35 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin-permissions--permission-" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin-permissions--permission-"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin-permissions--permission-"></code></pre>
+<div id="execution-results-GETpermissions--permission-" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETpermissions--permission-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETpermissions--permission-"></code></pre>
 </div>
-<div id="execution-error-GETadmin-permissions--permission-" hidden>
+<div id="execution-error-GETpermissions--permission-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin-permissions--permission-"></code></pre>
+    <pre><code id="execution-error-message-GETpermissions--permission-"></code></pre>
 </div>
-<form id="form-GETadmin-permissions--permission-" data-method="GET" data-path="admin/permissions/{permission}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin-permissions--permission-', this);">
+<form id="form-GETpermissions--permission-" data-method="GET" data-path="permissions/{permission}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETpermissions--permission-', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin-permissions--permission-" onclick="tryItOut('GETadmin-permissions--permission-');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin-permissions--permission-" onclick="cancelTryOut('GETadmin-permissions--permission-');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin-permissions--permission-" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETpermissions--permission-" onclick="tryItOut('GETpermissions--permission-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETpermissions--permission-" onclick="cancelTryOut('GETpermissions--permission-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETpermissions--permission-" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin/permissions/{permission}</code></b>
+ <b><code>permissions/{permission}</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
 <p>
 <b><code>permission</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="permission" data-endpoint="GETadmin-permissions--permission-" data-component="url" required  hidden>
+<input type="text" name="permission" data-endpoint="GETpermissions--permission-" data-component="url" required  hidden>
 <br>
 </p>
 </form>
 
 
-## admin/permissions/{permission}/edit
+## permissions/{permission}/edit
 
 
 
@@ -6022,14 +6012,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin/permissions/est/edit" \
+    -G "https://mamma-send.herokuapp.com/permissions/ducimus/edit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/permissions/est/edit"
+    "https://mamma-send.herokuapp.com/permissions/ducimus/edit"
 );
 
 let headers = {
@@ -6048,7 +6038,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin/permissions/est/edit',
+    'https://mamma-send.herokuapp.com/permissions/ducimus/edit',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -6064,7 +6054,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/permissions/est/edit'
+url = 'https://mamma-send.herokuapp.com/permissions/ducimus/edit'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -6082,35 +6072,35 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin-permissions--permission--edit" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin-permissions--permission--edit"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin-permissions--permission--edit"></code></pre>
+<div id="execution-results-GETpermissions--permission--edit" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETpermissions--permission--edit"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETpermissions--permission--edit"></code></pre>
 </div>
-<div id="execution-error-GETadmin-permissions--permission--edit" hidden>
+<div id="execution-error-GETpermissions--permission--edit" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin-permissions--permission--edit"></code></pre>
+    <pre><code id="execution-error-message-GETpermissions--permission--edit"></code></pre>
 </div>
-<form id="form-GETadmin-permissions--permission--edit" data-method="GET" data-path="admin/permissions/{permission}/edit" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin-permissions--permission--edit', this);">
+<form id="form-GETpermissions--permission--edit" data-method="GET" data-path="permissions/{permission}/edit" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETpermissions--permission--edit', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin-permissions--permission--edit" onclick="tryItOut('GETadmin-permissions--permission--edit');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin-permissions--permission--edit" onclick="cancelTryOut('GETadmin-permissions--permission--edit');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin-permissions--permission--edit" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETpermissions--permission--edit" onclick="tryItOut('GETpermissions--permission--edit');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETpermissions--permission--edit" onclick="cancelTryOut('GETpermissions--permission--edit');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETpermissions--permission--edit" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin/permissions/{permission}/edit</code></b>
+ <b><code>permissions/{permission}/edit</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
 <p>
 <b><code>permission</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="permission" data-endpoint="GETadmin-permissions--permission--edit" data-component="url" required  hidden>
+<input type="text" name="permission" data-endpoint="GETpermissions--permission--edit" data-component="url" required  hidden>
 <br>
 </p>
 </form>
 
 
-## admin/permissions/{permission}
+## permissions/{permission}
 
 
 
@@ -6119,16 +6109,16 @@ response.json()
 
 ```bash
 curl -X PUT \
-    "https://mamma-send.herokuapp.com/admin/permissions/molestiae" \
+    "https://mamma-send.herokuapp.com/permissions/ratione" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"sapiente"}'
+    -d '{"title":"nam"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/permissions/molestiae"
+    "https://mamma-send.herokuapp.com/permissions/ratione"
 );
 
 let headers = {
@@ -6137,7 +6127,7 @@ let headers = {
 };
 
 let body = {
-    "title": "sapiente"
+    "title": "nam"
 }
 
 fetch(url, {
@@ -6151,14 +6141,14 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'https://mamma-send.herokuapp.com/admin/permissions/molestiae',
+    'https://mamma-send.herokuapp.com/permissions/ratione',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'title' => 'sapiente',
+            'title' => 'nam',
         ],
     ]
 );
@@ -6170,9 +6160,9 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/permissions/molestiae'
+url = 'https://mamma-send.herokuapp.com/permissions/ratione'
 payload = {
-    "title": "sapiente"
+    "title": "nam"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -6184,46 +6174,46 @@ response.json()
 ```
 
 
-<div id="execution-results-PUTadmin-permissions--permission-" hidden>
-    <blockquote>Received response<span id="execution-response-status-PUTadmin-permissions--permission-"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-PUTadmin-permissions--permission-"></code></pre>
+<div id="execution-results-PUTpermissions--permission-" hidden>
+    <blockquote>Received response<span id="execution-response-status-PUTpermissions--permission-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-PUTpermissions--permission-"></code></pre>
 </div>
-<div id="execution-error-PUTadmin-permissions--permission-" hidden>
+<div id="execution-error-PUTpermissions--permission-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-PUTadmin-permissions--permission-"></code></pre>
+    <pre><code id="execution-error-message-PUTpermissions--permission-"></code></pre>
 </div>
-<form id="form-PUTadmin-permissions--permission-" data-method="PUT" data-path="admin/permissions/{permission}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('PUTadmin-permissions--permission-', this);">
+<form id="form-PUTpermissions--permission-" data-method="PUT" data-path="permissions/{permission}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('PUTpermissions--permission-', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-PUTadmin-permissions--permission-" onclick="tryItOut('PUTadmin-permissions--permission-');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-PUTadmin-permissions--permission-" onclick="cancelTryOut('PUTadmin-permissions--permission-');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-PUTadmin-permissions--permission-" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-PUTpermissions--permission-" onclick="tryItOut('PUTpermissions--permission-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-PUTpermissions--permission-" onclick="cancelTryOut('PUTpermissions--permission-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-PUTpermissions--permission-" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-darkblue">PUT</small>
- <b><code>admin/permissions/{permission}</code></b>
+ <b><code>permissions/{permission}</code></b>
 </p>
 <p>
 <small class="badge badge-purple">PATCH</small>
- <b><code>admin/permissions/{permission}</code></b>
+ <b><code>permissions/{permission}</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
 <p>
 <b><code>permission</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="permission" data-endpoint="PUTadmin-permissions--permission-" data-component="url" required  hidden>
+<input type="text" name="permission" data-endpoint="PUTpermissions--permission-" data-component="url" required  hidden>
 <br>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
 <p>
 <b><code>title</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="title" data-endpoint="PUTadmin-permissions--permission-" data-component="body" required  hidden>
+<input type="text" name="title" data-endpoint="PUTpermissions--permission-" data-component="body" required  hidden>
 <br>
 </p>
 
 </form>
 
 
-## admin/permissions/{permission}
+## permissions/{permission}
 
 
 
@@ -6232,14 +6222,14 @@ response.json()
 
 ```bash
 curl -X DELETE \
-    "https://mamma-send.herokuapp.com/admin/permissions/ipsum" \
+    "https://mamma-send.herokuapp.com/permissions/sequi" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/permissions/ipsum"
+    "https://mamma-send.herokuapp.com/permissions/sequi"
 );
 
 let headers = {
@@ -6258,7 +6248,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'https://mamma-send.herokuapp.com/admin/permissions/ipsum',
+    'https://mamma-send.herokuapp.com/permissions/sequi',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -6274,7 +6264,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/permissions/ipsum'
+url = 'https://mamma-send.herokuapp.com/permissions/sequi'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -6285,35 +6275,35 @@ response.json()
 ```
 
 
-<div id="execution-results-DELETEadmin-permissions--permission-" hidden>
-    <blockquote>Received response<span id="execution-response-status-DELETEadmin-permissions--permission-"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-DELETEadmin-permissions--permission-"></code></pre>
+<div id="execution-results-DELETEpermissions--permission-" hidden>
+    <blockquote>Received response<span id="execution-response-status-DELETEpermissions--permission-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEpermissions--permission-"></code></pre>
 </div>
-<div id="execution-error-DELETEadmin-permissions--permission-" hidden>
+<div id="execution-error-DELETEpermissions--permission-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-DELETEadmin-permissions--permission-"></code></pre>
+    <pre><code id="execution-error-message-DELETEpermissions--permission-"></code></pre>
 </div>
-<form id="form-DELETEadmin-permissions--permission-" data-method="DELETE" data-path="admin/permissions/{permission}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('DELETEadmin-permissions--permission-', this);">
+<form id="form-DELETEpermissions--permission-" data-method="DELETE" data-path="permissions/{permission}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('DELETEpermissions--permission-', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-DELETEadmin-permissions--permission-" onclick="tryItOut('DELETEadmin-permissions--permission-');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-DELETEadmin-permissions--permission-" onclick="cancelTryOut('DELETEadmin-permissions--permission-');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-DELETEadmin-permissions--permission-" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-DELETEpermissions--permission-" onclick="tryItOut('DELETEpermissions--permission-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-DELETEpermissions--permission-" onclick="cancelTryOut('DELETEpermissions--permission-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-DELETEpermissions--permission-" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-red">DELETE</small>
- <b><code>admin/permissions/{permission}</code></b>
+ <b><code>permissions/{permission}</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
 <p>
 <b><code>permission</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="permission" data-endpoint="DELETEadmin-permissions--permission-" data-component="url" required  hidden>
+<input type="text" name="permission" data-endpoint="DELETEpermissions--permission-" data-component="url" required  hidden>
 <br>
 </p>
 </form>
 
 
-## admin/roles
+## roles
 
 
 
@@ -6322,14 +6312,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin/roles" \
+    -G "https://mamma-send.herokuapp.com/roles" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/roles"
+    "https://mamma-send.herokuapp.com/roles"
 );
 
 let headers = {
@@ -6348,7 +6338,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin/roles',
+    'https://mamma-send.herokuapp.com/roles',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -6364,7 +6354,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/roles'
+url = 'https://mamma-send.herokuapp.com/roles'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -6382,29 +6372,29 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin-roles" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin-roles"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin-roles"></code></pre>
+<div id="execution-results-GETroles" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETroles"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETroles"></code></pre>
 </div>
-<div id="execution-error-GETadmin-roles" hidden>
+<div id="execution-error-GETroles" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin-roles"></code></pre>
+    <pre><code id="execution-error-message-GETroles"></code></pre>
 </div>
-<form id="form-GETadmin-roles" data-method="GET" data-path="admin/roles" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin-roles', this);">
+<form id="form-GETroles" data-method="GET" data-path="roles" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETroles', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin-roles" onclick="tryItOut('GETadmin-roles');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin-roles" onclick="cancelTryOut('GETadmin-roles');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin-roles" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETroles" onclick="tryItOut('GETroles');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETroles" onclick="cancelTryOut('GETroles');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETroles" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin/roles</code></b>
+ <b><code>roles</code></b>
 </p>
 </form>
 
 
-## admin/roles/create
+## roles/create
 
 
 
@@ -6413,14 +6403,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin/roles/create" \
+    -G "https://mamma-send.herokuapp.com/roles/create" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/roles/create"
+    "https://mamma-send.herokuapp.com/roles/create"
 );
 
 let headers = {
@@ -6439,7 +6429,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin/roles/create',
+    'https://mamma-send.herokuapp.com/roles/create',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -6455,7 +6445,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/roles/create'
+url = 'https://mamma-send.herokuapp.com/roles/create'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -6473,29 +6463,29 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin-roles-create" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin-roles-create"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin-roles-create"></code></pre>
+<div id="execution-results-GETroles-create" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETroles-create"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETroles-create"></code></pre>
 </div>
-<div id="execution-error-GETadmin-roles-create" hidden>
+<div id="execution-error-GETroles-create" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin-roles-create"></code></pre>
+    <pre><code id="execution-error-message-GETroles-create"></code></pre>
 </div>
-<form id="form-GETadmin-roles-create" data-method="GET" data-path="admin/roles/create" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin-roles-create', this);">
+<form id="form-GETroles-create" data-method="GET" data-path="roles/create" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETroles-create', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin-roles-create" onclick="tryItOut('GETadmin-roles-create');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin-roles-create" onclick="cancelTryOut('GETadmin-roles-create');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin-roles-create" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETroles-create" onclick="tryItOut('GETroles-create');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETroles-create" onclick="cancelTryOut('GETroles-create');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETroles-create" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin/roles/create</code></b>
+ <b><code>roles/create</code></b>
 </p>
 </form>
 
 
-## admin/roles
+## roles
 
 
 
@@ -6504,16 +6494,16 @@ response.json()
 
 ```bash
 curl -X POST \
-    "https://mamma-send.herokuapp.com/admin/roles" \
+    "https://mamma-send.herokuapp.com/roles" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"illo","permissions":[5,13]}'
+    -d '{"title":"ut","permissions":[10,12]}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/roles"
+    "https://mamma-send.herokuapp.com/roles"
 );
 
 let headers = {
@@ -6522,10 +6512,10 @@ let headers = {
 };
 
 let body = {
-    "title": "illo",
+    "title": "ut",
     "permissions": [
-        5,
-        13
+        10,
+        12
     ]
 }
 
@@ -6540,17 +6530,17 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'https://mamma-send.herokuapp.com/admin/roles',
+    'https://mamma-send.herokuapp.com/roles',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'title' => 'illo',
+            'title' => 'ut',
             'permissions' => [
-                5,
-                13,
+                10,
+                12,
             ],
         ],
     ]
@@ -6563,12 +6553,12 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/roles'
+url = 'https://mamma-send.herokuapp.com/roles'
 payload = {
-    "title": "illo",
+    "title": "ut",
     "permissions": [
-        5,
-        13
+        10,
+        12
     ]
 }
 headers = {
@@ -6581,42 +6571,42 @@ response.json()
 ```
 
 
-<div id="execution-results-POSTadmin-roles" hidden>
-    <blockquote>Received response<span id="execution-response-status-POSTadmin-roles"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-POSTadmin-roles"></code></pre>
+<div id="execution-results-POSTroles" hidden>
+    <blockquote>Received response<span id="execution-response-status-POSTroles"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-POSTroles"></code></pre>
 </div>
-<div id="execution-error-POSTadmin-roles" hidden>
+<div id="execution-error-POSTroles" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTadmin-roles"></code></pre>
+    <pre><code id="execution-error-message-POSTroles"></code></pre>
 </div>
-<form id="form-POSTadmin-roles" data-method="POST" data-path="admin/roles" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTadmin-roles', this);">
+<form id="form-POSTroles" data-method="POST" data-path="roles" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTroles', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTadmin-roles" onclick="tryItOut('POSTadmin-roles');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTadmin-roles" onclick="cancelTryOut('POSTadmin-roles');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTadmin-roles" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTroles" onclick="tryItOut('POSTroles');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTroles" onclick="cancelTryOut('POSTroles');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTroles" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-black">POST</small>
- <b><code>admin/roles</code></b>
+ <b><code>roles</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
 <p>
 <b><code>title</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="title" data-endpoint="POSTadmin-roles" data-component="body" required  hidden>
+<input type="text" name="title" data-endpoint="POSTroles" data-component="body" required  hidden>
 <br>
 </p>
 <p>
 <b><code>permissions</code></b>&nbsp;&nbsp;<small>integer[]</small>     <i>optional</i> &nbsp;
-<input type="number" name="permissions.0" data-endpoint="POSTadmin-roles" data-component="body"  hidden>
-<input type="number" name="permissions.1" data-endpoint="POSTadmin-roles" data-component="body" hidden>
+<input type="number" name="permissions.0" data-endpoint="POSTroles" data-component="body"  hidden>
+<input type="number" name="permissions.1" data-endpoint="POSTroles" data-component="body" hidden>
 <br>
 </p>
 
 </form>
 
 
-## admin/roles/{role}
+## roles/{role}
 
 
 
@@ -6625,14 +6615,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin/roles/totam" \
+    -G "https://mamma-send.herokuapp.com/roles/corrupti" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/roles/totam"
+    "https://mamma-send.herokuapp.com/roles/corrupti"
 );
 
 let headers = {
@@ -6651,7 +6641,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin/roles/totam',
+    'https://mamma-send.herokuapp.com/roles/corrupti',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -6667,7 +6657,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/roles/totam'
+url = 'https://mamma-send.herokuapp.com/roles/corrupti'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -6685,35 +6675,35 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin-roles--role-" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin-roles--role-"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin-roles--role-"></code></pre>
+<div id="execution-results-GETroles--role-" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETroles--role-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETroles--role-"></code></pre>
 </div>
-<div id="execution-error-GETadmin-roles--role-" hidden>
+<div id="execution-error-GETroles--role-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin-roles--role-"></code></pre>
+    <pre><code id="execution-error-message-GETroles--role-"></code></pre>
 </div>
-<form id="form-GETadmin-roles--role-" data-method="GET" data-path="admin/roles/{role}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin-roles--role-', this);">
+<form id="form-GETroles--role-" data-method="GET" data-path="roles/{role}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETroles--role-', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin-roles--role-" onclick="tryItOut('GETadmin-roles--role-');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin-roles--role-" onclick="cancelTryOut('GETadmin-roles--role-');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin-roles--role-" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETroles--role-" onclick="tryItOut('GETroles--role-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETroles--role-" onclick="cancelTryOut('GETroles--role-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETroles--role-" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin/roles/{role}</code></b>
+ <b><code>roles/{role}</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
 <p>
 <b><code>role</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="role" data-endpoint="GETadmin-roles--role-" data-component="url" required  hidden>
+<input type="text" name="role" data-endpoint="GETroles--role-" data-component="url" required  hidden>
 <br>
 </p>
 </form>
 
 
-## admin/roles/{role}/edit
+## roles/{role}/edit
 
 
 
@@ -6722,14 +6712,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin/roles/amet/edit" \
+    -G "https://mamma-send.herokuapp.com/roles/iusto/edit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/roles/amet/edit"
+    "https://mamma-send.herokuapp.com/roles/iusto/edit"
 );
 
 let headers = {
@@ -6748,7 +6738,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin/roles/amet/edit',
+    'https://mamma-send.herokuapp.com/roles/iusto/edit',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -6764,7 +6754,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/roles/amet/edit'
+url = 'https://mamma-send.herokuapp.com/roles/iusto/edit'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -6782,35 +6772,35 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin-roles--role--edit" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin-roles--role--edit"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin-roles--role--edit"></code></pre>
+<div id="execution-results-GETroles--role--edit" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETroles--role--edit"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETroles--role--edit"></code></pre>
 </div>
-<div id="execution-error-GETadmin-roles--role--edit" hidden>
+<div id="execution-error-GETroles--role--edit" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin-roles--role--edit"></code></pre>
+    <pre><code id="execution-error-message-GETroles--role--edit"></code></pre>
 </div>
-<form id="form-GETadmin-roles--role--edit" data-method="GET" data-path="admin/roles/{role}/edit" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin-roles--role--edit', this);">
+<form id="form-GETroles--role--edit" data-method="GET" data-path="roles/{role}/edit" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETroles--role--edit', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin-roles--role--edit" onclick="tryItOut('GETadmin-roles--role--edit');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin-roles--role--edit" onclick="cancelTryOut('GETadmin-roles--role--edit');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin-roles--role--edit" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETroles--role--edit" onclick="tryItOut('GETroles--role--edit');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETroles--role--edit" onclick="cancelTryOut('GETroles--role--edit');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETroles--role--edit" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin/roles/{role}/edit</code></b>
+ <b><code>roles/{role}/edit</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
 <p>
 <b><code>role</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="role" data-endpoint="GETadmin-roles--role--edit" data-component="url" required  hidden>
+<input type="text" name="role" data-endpoint="GETroles--role--edit" data-component="url" required  hidden>
 <br>
 </p>
 </form>
 
 
-## admin/roles/{role}
+## roles/{role}
 
 
 
@@ -6819,16 +6809,16 @@ response.json()
 
 ```bash
 curl -X PUT \
-    "https://mamma-send.herokuapp.com/admin/roles/autem" \
+    "https://mamma-send.herokuapp.com/roles/nulla" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"aut","permissions":[13,3]}'
+    -d '{"title":"sed","permissions":[4,10]}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/roles/autem"
+    "https://mamma-send.herokuapp.com/roles/nulla"
 );
 
 let headers = {
@@ -6837,10 +6827,10 @@ let headers = {
 };
 
 let body = {
-    "title": "aut",
+    "title": "sed",
     "permissions": [
-        13,
-        3
+        4,
+        10
     ]
 }
 
@@ -6855,17 +6845,17 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'https://mamma-send.herokuapp.com/admin/roles/autem',
+    'https://mamma-send.herokuapp.com/roles/nulla',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'title' => 'aut',
+            'title' => 'sed',
             'permissions' => [
-                13,
-                3,
+                4,
+                10,
             ],
         ],
     ]
@@ -6878,12 +6868,12 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/roles/autem'
+url = 'https://mamma-send.herokuapp.com/roles/nulla'
 payload = {
-    "title": "aut",
+    "title": "sed",
     "permissions": [
-        13,
-        3
+        4,
+        10
     ]
 }
 headers = {
@@ -6896,52 +6886,52 @@ response.json()
 ```
 
 
-<div id="execution-results-PUTadmin-roles--role-" hidden>
-    <blockquote>Received response<span id="execution-response-status-PUTadmin-roles--role-"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-PUTadmin-roles--role-"></code></pre>
+<div id="execution-results-PUTroles--role-" hidden>
+    <blockquote>Received response<span id="execution-response-status-PUTroles--role-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-PUTroles--role-"></code></pre>
 </div>
-<div id="execution-error-PUTadmin-roles--role-" hidden>
+<div id="execution-error-PUTroles--role-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-PUTadmin-roles--role-"></code></pre>
+    <pre><code id="execution-error-message-PUTroles--role-"></code></pre>
 </div>
-<form id="form-PUTadmin-roles--role-" data-method="PUT" data-path="admin/roles/{role}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('PUTadmin-roles--role-', this);">
+<form id="form-PUTroles--role-" data-method="PUT" data-path="roles/{role}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('PUTroles--role-', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-PUTadmin-roles--role-" onclick="tryItOut('PUTadmin-roles--role-');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-PUTadmin-roles--role-" onclick="cancelTryOut('PUTadmin-roles--role-');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-PUTadmin-roles--role-" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-PUTroles--role-" onclick="tryItOut('PUTroles--role-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-PUTroles--role-" onclick="cancelTryOut('PUTroles--role-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-PUTroles--role-" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-darkblue">PUT</small>
- <b><code>admin/roles/{role}</code></b>
+ <b><code>roles/{role}</code></b>
 </p>
 <p>
 <small class="badge badge-purple">PATCH</small>
- <b><code>admin/roles/{role}</code></b>
+ <b><code>roles/{role}</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
 <p>
 <b><code>role</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="role" data-endpoint="PUTadmin-roles--role-" data-component="url" required  hidden>
+<input type="text" name="role" data-endpoint="PUTroles--role-" data-component="url" required  hidden>
 <br>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
 <p>
 <b><code>title</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="title" data-endpoint="PUTadmin-roles--role-" data-component="body" required  hidden>
+<input type="text" name="title" data-endpoint="PUTroles--role-" data-component="body" required  hidden>
 <br>
 </p>
 <p>
 <b><code>permissions</code></b>&nbsp;&nbsp;<small>integer[]</small>     <i>optional</i> &nbsp;
-<input type="number" name="permissions.0" data-endpoint="PUTadmin-roles--role-" data-component="body"  hidden>
-<input type="number" name="permissions.1" data-endpoint="PUTadmin-roles--role-" data-component="body" hidden>
+<input type="number" name="permissions.0" data-endpoint="PUTroles--role-" data-component="body"  hidden>
+<input type="number" name="permissions.1" data-endpoint="PUTroles--role-" data-component="body" hidden>
 <br>
 </p>
 
 </form>
 
 
-## admin/roles/{role}
+## roles/{role}
 
 
 
@@ -6950,14 +6940,14 @@ response.json()
 
 ```bash
 curl -X DELETE \
-    "https://mamma-send.herokuapp.com/admin/roles/sunt" \
+    "https://mamma-send.herokuapp.com/roles/minus" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/roles/sunt"
+    "https://mamma-send.herokuapp.com/roles/minus"
 );
 
 let headers = {
@@ -6976,7 +6966,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'https://mamma-send.herokuapp.com/admin/roles/sunt',
+    'https://mamma-send.herokuapp.com/roles/minus',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -6992,7 +6982,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/roles/sunt'
+url = 'https://mamma-send.herokuapp.com/roles/minus'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -7003,35 +6993,35 @@ response.json()
 ```
 
 
-<div id="execution-results-DELETEadmin-roles--role-" hidden>
-    <blockquote>Received response<span id="execution-response-status-DELETEadmin-roles--role-"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-DELETEadmin-roles--role-"></code></pre>
+<div id="execution-results-DELETEroles--role-" hidden>
+    <blockquote>Received response<span id="execution-response-status-DELETEroles--role-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEroles--role-"></code></pre>
 </div>
-<div id="execution-error-DELETEadmin-roles--role-" hidden>
+<div id="execution-error-DELETEroles--role-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-DELETEadmin-roles--role-"></code></pre>
+    <pre><code id="execution-error-message-DELETEroles--role-"></code></pre>
 </div>
-<form id="form-DELETEadmin-roles--role-" data-method="DELETE" data-path="admin/roles/{role}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('DELETEadmin-roles--role-', this);">
+<form id="form-DELETEroles--role-" data-method="DELETE" data-path="roles/{role}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('DELETEroles--role-', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-DELETEadmin-roles--role-" onclick="tryItOut('DELETEadmin-roles--role-');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-DELETEadmin-roles--role-" onclick="cancelTryOut('DELETEadmin-roles--role-');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-DELETEadmin-roles--role-" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-DELETEroles--role-" onclick="tryItOut('DELETEroles--role-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-DELETEroles--role-" onclick="cancelTryOut('DELETEroles--role-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-DELETEroles--role-" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-red">DELETE</small>
- <b><code>admin/roles/{role}</code></b>
+ <b><code>roles/{role}</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
 <p>
 <b><code>role</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="role" data-endpoint="DELETEadmin-roles--role-" data-component="url" required  hidden>
+<input type="text" name="role" data-endpoint="DELETEroles--role-" data-component="url" required  hidden>
 <br>
 </p>
 </form>
 
 
-## admin/users
+## users
 
 
 
@@ -7040,14 +7030,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin/users" \
+    -G "https://mamma-send.herokuapp.com/users" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/users"
+    "https://mamma-send.herokuapp.com/users"
 );
 
 let headers = {
@@ -7066,7 +7056,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin/users',
+    'https://mamma-send.herokuapp.com/users',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -7082,7 +7072,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/users'
+url = 'https://mamma-send.herokuapp.com/users'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -7100,29 +7090,29 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin-users" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin-users"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin-users"></code></pre>
+<div id="execution-results-GETusers" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETusers"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETusers"></code></pre>
 </div>
-<div id="execution-error-GETadmin-users" hidden>
+<div id="execution-error-GETusers" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin-users"></code></pre>
+    <pre><code id="execution-error-message-GETusers"></code></pre>
 </div>
-<form id="form-GETadmin-users" data-method="GET" data-path="admin/users" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin-users', this);">
+<form id="form-GETusers" data-method="GET" data-path="users" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETusers', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin-users" onclick="tryItOut('GETadmin-users');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin-users" onclick="cancelTryOut('GETadmin-users');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin-users" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETusers" onclick="tryItOut('GETusers');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETusers" onclick="cancelTryOut('GETusers');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETusers" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin/users</code></b>
+ <b><code>users</code></b>
 </p>
 </form>
 
 
-## admin/users/create
+## users/create
 
 
 
@@ -7131,14 +7121,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin/users/create" \
+    -G "https://mamma-send.herokuapp.com/users/create" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/users/create"
+    "https://mamma-send.herokuapp.com/users/create"
 );
 
 let headers = {
@@ -7157,7 +7147,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin/users/create',
+    'https://mamma-send.herokuapp.com/users/create',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -7173,7 +7163,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/users/create'
+url = 'https://mamma-send.herokuapp.com/users/create'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -7191,29 +7181,29 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin-users-create" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin-users-create"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin-users-create"></code></pre>
+<div id="execution-results-GETusers-create" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETusers-create"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETusers-create"></code></pre>
 </div>
-<div id="execution-error-GETadmin-users-create" hidden>
+<div id="execution-error-GETusers-create" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin-users-create"></code></pre>
+    <pre><code id="execution-error-message-GETusers-create"></code></pre>
 </div>
-<form id="form-GETadmin-users-create" data-method="GET" data-path="admin/users/create" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin-users-create', this);">
+<form id="form-GETusers-create" data-method="GET" data-path="users/create" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETusers-create', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin-users-create" onclick="tryItOut('GETadmin-users-create');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin-users-create" onclick="cancelTryOut('GETadmin-users-create');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin-users-create" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETusers-create" onclick="tryItOut('GETusers-create');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETusers-create" onclick="cancelTryOut('GETusers-create');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETusers-create" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin/users/create</code></b>
+ <b><code>users/create</code></b>
 </p>
 </form>
 
 
-## admin/users
+## users
 
 
 
@@ -7222,16 +7212,16 @@ response.json()
 
 ```bash
 curl -X POST \
-    "https://mamma-send.herokuapp.com/admin/users" \
+    "https://mamma-send.herokuapp.com/users" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"culpa","email":"dignissimos","password":"vitae","roles":[17,16]}'
+    -d '{"name":"consequatur","email":"quae","password":"placeat","roles":[11,6]}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/users"
+    "https://mamma-send.herokuapp.com/users"
 );
 
 let headers = {
@@ -7240,12 +7230,12 @@ let headers = {
 };
 
 let body = {
-    "name": "culpa",
-    "email": "dignissimos",
-    "password": "vitae",
+    "name": "consequatur",
+    "email": "quae",
+    "password": "placeat",
     "roles": [
-        17,
-        16
+        11,
+        6
     ]
 }
 
@@ -7260,19 +7250,19 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'https://mamma-send.herokuapp.com/admin/users',
+    'https://mamma-send.herokuapp.com/users',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'name' => 'culpa',
-            'email' => 'dignissimos',
-            'password' => 'vitae',
+            'name' => 'consequatur',
+            'email' => 'quae',
+            'password' => 'placeat',
             'roles' => [
-                17,
-                16,
+                11,
+                6,
             ],
         ],
     ]
@@ -7285,14 +7275,14 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/users'
+url = 'https://mamma-send.herokuapp.com/users'
 payload = {
-    "name": "culpa",
-    "email": "dignissimos",
-    "password": "vitae",
+    "name": "consequatur",
+    "email": "quae",
+    "password": "placeat",
     "roles": [
-        17,
-        16
+        11,
+        6
     ]
 }
 headers = {
@@ -7305,52 +7295,52 @@ response.json()
 ```
 
 
-<div id="execution-results-POSTadmin-users" hidden>
-    <blockquote>Received response<span id="execution-response-status-POSTadmin-users"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-POSTadmin-users"></code></pre>
+<div id="execution-results-POSTusers" hidden>
+    <blockquote>Received response<span id="execution-response-status-POSTusers"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-POSTusers"></code></pre>
 </div>
-<div id="execution-error-POSTadmin-users" hidden>
+<div id="execution-error-POSTusers" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTadmin-users"></code></pre>
+    <pre><code id="execution-error-message-POSTusers"></code></pre>
 </div>
-<form id="form-POSTadmin-users" data-method="POST" data-path="admin/users" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTadmin-users', this);">
+<form id="form-POSTusers" data-method="POST" data-path="users" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTusers', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTadmin-users" onclick="tryItOut('POSTadmin-users');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTadmin-users" onclick="cancelTryOut('POSTadmin-users');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTadmin-users" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTusers" onclick="tryItOut('POSTusers');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTusers" onclick="cancelTryOut('POSTusers');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTusers" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-black">POST</small>
- <b><code>admin/users</code></b>
+ <b><code>users</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
 <p>
 <b><code>name</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="name" data-endpoint="POSTadmin-users" data-component="body" required  hidden>
+<input type="text" name="name" data-endpoint="POSTusers" data-component="body" required  hidden>
 <br>
 </p>
 <p>
 <b><code>email</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="email" data-endpoint="POSTadmin-users" data-component="body" required  hidden>
+<input type="text" name="email" data-endpoint="POSTusers" data-component="body" required  hidden>
 <br>
 </p>
 <p>
 <b><code>password</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="password" data-endpoint="POSTadmin-users" data-component="body" required  hidden>
+<input type="text" name="password" data-endpoint="POSTusers" data-component="body" required  hidden>
 <br>
 </p>
 <p>
 <b><code>roles</code></b>&nbsp;&nbsp;<small>integer[]</small>     <i>optional</i> &nbsp;
-<input type="number" name="roles.0" data-endpoint="POSTadmin-users" data-component="body"  hidden>
-<input type="number" name="roles.1" data-endpoint="POSTadmin-users" data-component="body" hidden>
+<input type="number" name="roles.0" data-endpoint="POSTusers" data-component="body"  hidden>
+<input type="number" name="roles.1" data-endpoint="POSTusers" data-component="body" hidden>
 <br>
 </p>
 
 </form>
 
 
-## admin/users/{user}
+## users/{user}
 
 
 
@@ -7359,14 +7349,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin/users/temporibus" \
+    -G "https://mamma-send.herokuapp.com/users/dolorem" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/users/temporibus"
+    "https://mamma-send.herokuapp.com/users/dolorem"
 );
 
 let headers = {
@@ -7385,7 +7375,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin/users/temporibus',
+    'https://mamma-send.herokuapp.com/users/dolorem',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -7401,7 +7391,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/users/temporibus'
+url = 'https://mamma-send.herokuapp.com/users/dolorem'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -7419,35 +7409,35 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin-users--user-" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin-users--user-"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin-users--user-"></code></pre>
+<div id="execution-results-GETusers--user-" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETusers--user-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETusers--user-"></code></pre>
 </div>
-<div id="execution-error-GETadmin-users--user-" hidden>
+<div id="execution-error-GETusers--user-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin-users--user-"></code></pre>
+    <pre><code id="execution-error-message-GETusers--user-"></code></pre>
 </div>
-<form id="form-GETadmin-users--user-" data-method="GET" data-path="admin/users/{user}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin-users--user-', this);">
+<form id="form-GETusers--user-" data-method="GET" data-path="users/{user}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETusers--user-', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin-users--user-" onclick="tryItOut('GETadmin-users--user-');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin-users--user-" onclick="cancelTryOut('GETadmin-users--user-');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin-users--user-" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETusers--user-" onclick="tryItOut('GETusers--user-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETusers--user-" onclick="cancelTryOut('GETusers--user-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETusers--user-" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin/users/{user}</code></b>
+ <b><code>users/{user}</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
 <p>
 <b><code>user</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="user" data-endpoint="GETadmin-users--user-" data-component="url" required  hidden>
+<input type="text" name="user" data-endpoint="GETusers--user-" data-component="url" required  hidden>
 <br>
 </p>
 </form>
 
 
-## admin/users/{user}/edit
+## users/{user}/edit
 
 
 
@@ -7456,14 +7446,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin/users/dolor/edit" \
+    -G "https://mamma-send.herokuapp.com/users/ut/edit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/users/dolor/edit"
+    "https://mamma-send.herokuapp.com/users/ut/edit"
 );
 
 let headers = {
@@ -7482,7 +7472,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin/users/dolor/edit',
+    'https://mamma-send.herokuapp.com/users/ut/edit',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -7498,7 +7488,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/users/dolor/edit'
+url = 'https://mamma-send.herokuapp.com/users/ut/edit'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -7516,35 +7506,35 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin-users--user--edit" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin-users--user--edit"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin-users--user--edit"></code></pre>
+<div id="execution-results-GETusers--user--edit" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETusers--user--edit"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETusers--user--edit"></code></pre>
 </div>
-<div id="execution-error-GETadmin-users--user--edit" hidden>
+<div id="execution-error-GETusers--user--edit" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin-users--user--edit"></code></pre>
+    <pre><code id="execution-error-message-GETusers--user--edit"></code></pre>
 </div>
-<form id="form-GETadmin-users--user--edit" data-method="GET" data-path="admin/users/{user}/edit" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin-users--user--edit', this);">
+<form id="form-GETusers--user--edit" data-method="GET" data-path="users/{user}/edit" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETusers--user--edit', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin-users--user--edit" onclick="tryItOut('GETadmin-users--user--edit');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin-users--user--edit" onclick="cancelTryOut('GETadmin-users--user--edit');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin-users--user--edit" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETusers--user--edit" onclick="tryItOut('GETusers--user--edit');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETusers--user--edit" onclick="cancelTryOut('GETusers--user--edit');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETusers--user--edit" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin/users/{user}/edit</code></b>
+ <b><code>users/{user}/edit</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
 <p>
 <b><code>user</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="user" data-endpoint="GETadmin-users--user--edit" data-component="url" required  hidden>
+<input type="text" name="user" data-endpoint="GETusers--user--edit" data-component="url" required  hidden>
 <br>
 </p>
 </form>
 
 
-## admin/users/{user}
+## users/{user}
 
 
 
@@ -7553,14 +7543,14 @@ response.json()
 
 ```bash
 curl -X DELETE \
-    "https://mamma-send.herokuapp.com/admin/users/enim" \
+    "https://mamma-send.herokuapp.com/users/est" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/users/enim"
+    "https://mamma-send.herokuapp.com/users/est"
 );
 
 let headers = {
@@ -7579,7 +7569,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'https://mamma-send.herokuapp.com/admin/users/enim',
+    'https://mamma-send.herokuapp.com/users/est',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -7595,7 +7585,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/users/enim'
+url = 'https://mamma-send.herokuapp.com/users/est'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -7606,35 +7596,35 @@ response.json()
 ```
 
 
-<div id="execution-results-DELETEadmin-users--user-" hidden>
-    <blockquote>Received response<span id="execution-response-status-DELETEadmin-users--user-"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-DELETEadmin-users--user-"></code></pre>
+<div id="execution-results-DELETEusers--user-" hidden>
+    <blockquote>Received response<span id="execution-response-status-DELETEusers--user-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEusers--user-"></code></pre>
 </div>
-<div id="execution-error-DELETEadmin-users--user-" hidden>
+<div id="execution-error-DELETEusers--user-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-DELETEadmin-users--user-"></code></pre>
+    <pre><code id="execution-error-message-DELETEusers--user-"></code></pre>
 </div>
-<form id="form-DELETEadmin-users--user-" data-method="DELETE" data-path="admin/users/{user}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('DELETEadmin-users--user-', this);">
+<form id="form-DELETEusers--user-" data-method="DELETE" data-path="users/{user}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('DELETEusers--user-', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-DELETEadmin-users--user-" onclick="tryItOut('DELETEadmin-users--user-');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-DELETEadmin-users--user-" onclick="cancelTryOut('DELETEadmin-users--user-');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-DELETEadmin-users--user-" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-DELETEusers--user-" onclick="tryItOut('DELETEusers--user-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-DELETEusers--user-" onclick="cancelTryOut('DELETEusers--user-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-DELETEusers--user-" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-red">DELETE</small>
- <b><code>admin/users/{user}</code></b>
+ <b><code>users/{user}</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
 <p>
 <b><code>user</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="user" data-endpoint="DELETEadmin-users--user-" data-component="url" required  hidden>
+<input type="text" name="user" data-endpoint="DELETEusers--user-" data-component="url" required  hidden>
 <br>
 </p>
 </form>
 
 
-## admin/addresses
+## addresses
 
 
 
@@ -7643,14 +7633,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin/addresses" \
+    -G "https://mamma-send.herokuapp.com/addresses" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/addresses"
+    "https://mamma-send.herokuapp.com/addresses"
 );
 
 let headers = {
@@ -7669,7 +7659,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin/addresses',
+    'https://mamma-send.herokuapp.com/addresses',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -7685,7 +7675,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/addresses'
+url = 'https://mamma-send.herokuapp.com/addresses'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -7703,29 +7693,29 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin-addresses" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin-addresses"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin-addresses"></code></pre>
+<div id="execution-results-GETaddresses" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETaddresses"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETaddresses"></code></pre>
 </div>
-<div id="execution-error-GETadmin-addresses" hidden>
+<div id="execution-error-GETaddresses" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin-addresses"></code></pre>
+    <pre><code id="execution-error-message-GETaddresses"></code></pre>
 </div>
-<form id="form-GETadmin-addresses" data-method="GET" data-path="admin/addresses" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin-addresses', this);">
+<form id="form-GETaddresses" data-method="GET" data-path="addresses" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETaddresses', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin-addresses" onclick="tryItOut('GETadmin-addresses');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin-addresses" onclick="cancelTryOut('GETadmin-addresses');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin-addresses" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETaddresses" onclick="tryItOut('GETaddresses');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETaddresses" onclick="cancelTryOut('GETaddresses');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETaddresses" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin/addresses</code></b>
+ <b><code>addresses</code></b>
 </p>
 </form>
 
 
-## admin/addresses/create
+## addresses/create
 
 
 
@@ -7734,14 +7724,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin/addresses/create" \
+    -G "https://mamma-send.herokuapp.com/addresses/create" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/addresses/create"
+    "https://mamma-send.herokuapp.com/addresses/create"
 );
 
 let headers = {
@@ -7760,7 +7750,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin/addresses/create',
+    'https://mamma-send.herokuapp.com/addresses/create',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -7776,7 +7766,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/addresses/create'
+url = 'https://mamma-send.herokuapp.com/addresses/create'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -7794,29 +7784,29 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin-addresses-create" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin-addresses-create"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin-addresses-create"></code></pre>
+<div id="execution-results-GETaddresses-create" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETaddresses-create"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETaddresses-create"></code></pre>
 </div>
-<div id="execution-error-GETadmin-addresses-create" hidden>
+<div id="execution-error-GETaddresses-create" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin-addresses-create"></code></pre>
+    <pre><code id="execution-error-message-GETaddresses-create"></code></pre>
 </div>
-<form id="form-GETadmin-addresses-create" data-method="GET" data-path="admin/addresses/create" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin-addresses-create', this);">
+<form id="form-GETaddresses-create" data-method="GET" data-path="addresses/create" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETaddresses-create', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin-addresses-create" onclick="tryItOut('GETadmin-addresses-create');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin-addresses-create" onclick="cancelTryOut('GETadmin-addresses-create');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin-addresses-create" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETaddresses-create" onclick="tryItOut('GETaddresses-create');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETaddresses-create" onclick="cancelTryOut('GETaddresses-create');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETaddresses-create" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin/addresses/create</code></b>
+ <b><code>addresses/create</code></b>
 </p>
 </form>
 
 
-## admin/addresses
+## addresses
 
 
 
@@ -7825,16 +7815,16 @@ response.json()
 
 ```bash
 curl -X POST \
-    "https://mamma-send.herokuapp.com/admin/addresses" \
+    "https://mamma-send.herokuapp.com/addresses" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"street":"sit","city":"qui","state":"dolores","zip_code":"iste"}'
+    -d '{"street":"inventore","city":"distinctio","state":"ex","zip_code":"fugiat"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/addresses"
+    "https://mamma-send.herokuapp.com/addresses"
 );
 
 let headers = {
@@ -7843,10 +7833,10 @@ let headers = {
 };
 
 let body = {
-    "street": "sit",
-    "city": "qui",
-    "state": "dolores",
-    "zip_code": "iste"
+    "street": "inventore",
+    "city": "distinctio",
+    "state": "ex",
+    "zip_code": "fugiat"
 }
 
 fetch(url, {
@@ -7860,17 +7850,17 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'https://mamma-send.herokuapp.com/admin/addresses',
+    'https://mamma-send.herokuapp.com/addresses',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'street' => 'sit',
-            'city' => 'qui',
-            'state' => 'dolores',
-            'zip_code' => 'iste',
+            'street' => 'inventore',
+            'city' => 'distinctio',
+            'state' => 'ex',
+            'zip_code' => 'fugiat',
         ],
     ]
 );
@@ -7882,12 +7872,12 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/addresses'
+url = 'https://mamma-send.herokuapp.com/addresses'
 payload = {
-    "street": "sit",
-    "city": "qui",
-    "state": "dolores",
-    "zip_code": "iste"
+    "street": "inventore",
+    "city": "distinctio",
+    "state": "ex",
+    "zip_code": "fugiat"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -7899,51 +7889,51 @@ response.json()
 ```
 
 
-<div id="execution-results-POSTadmin-addresses" hidden>
-    <blockquote>Received response<span id="execution-response-status-POSTadmin-addresses"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-POSTadmin-addresses"></code></pre>
+<div id="execution-results-POSTaddresses" hidden>
+    <blockquote>Received response<span id="execution-response-status-POSTaddresses"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-POSTaddresses"></code></pre>
 </div>
-<div id="execution-error-POSTadmin-addresses" hidden>
+<div id="execution-error-POSTaddresses" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTadmin-addresses"></code></pre>
+    <pre><code id="execution-error-message-POSTaddresses"></code></pre>
 </div>
-<form id="form-POSTadmin-addresses" data-method="POST" data-path="admin/addresses" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTadmin-addresses', this);">
+<form id="form-POSTaddresses" data-method="POST" data-path="addresses" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTaddresses', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTadmin-addresses" onclick="tryItOut('POSTadmin-addresses');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTadmin-addresses" onclick="cancelTryOut('POSTadmin-addresses');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTadmin-addresses" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTaddresses" onclick="tryItOut('POSTaddresses');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTaddresses" onclick="cancelTryOut('POSTaddresses');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTaddresses" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-black">POST</small>
- <b><code>admin/addresses</code></b>
+ <b><code>addresses</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
 <p>
 <b><code>street</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="street" data-endpoint="POSTadmin-addresses" data-component="body" required  hidden>
+<input type="text" name="street" data-endpoint="POSTaddresses" data-component="body" required  hidden>
 <br>
 </p>
 <p>
 <b><code>city</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="city" data-endpoint="POSTadmin-addresses" data-component="body" required  hidden>
+<input type="text" name="city" data-endpoint="POSTaddresses" data-component="body" required  hidden>
 <br>
 </p>
 <p>
 <b><code>state</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="state" data-endpoint="POSTadmin-addresses" data-component="body" required  hidden>
+<input type="text" name="state" data-endpoint="POSTaddresses" data-component="body" required  hidden>
 <br>
 </p>
 <p>
 <b><code>zip_code</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="zip_code" data-endpoint="POSTadmin-addresses" data-component="body" required  hidden>
+<input type="text" name="zip_code" data-endpoint="POSTaddresses" data-component="body" required  hidden>
 <br>
 </p>
 
 </form>
 
 
-## admin/addresses/{address}
+## addresses/{address}
 
 
 
@@ -7952,14 +7942,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin/addresses/quibusdam" \
+    -G "https://mamma-send.herokuapp.com/addresses/eum" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/addresses/quibusdam"
+    "https://mamma-send.herokuapp.com/addresses/eum"
 );
 
 let headers = {
@@ -7978,7 +7968,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin/addresses/quibusdam',
+    'https://mamma-send.herokuapp.com/addresses/eum',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -7994,7 +7984,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/addresses/quibusdam'
+url = 'https://mamma-send.herokuapp.com/addresses/eum'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -8012,35 +8002,35 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin-addresses--address-" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin-addresses--address-"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin-addresses--address-"></code></pre>
+<div id="execution-results-GETaddresses--address-" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETaddresses--address-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETaddresses--address-"></code></pre>
 </div>
-<div id="execution-error-GETadmin-addresses--address-" hidden>
+<div id="execution-error-GETaddresses--address-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin-addresses--address-"></code></pre>
+    <pre><code id="execution-error-message-GETaddresses--address-"></code></pre>
 </div>
-<form id="form-GETadmin-addresses--address-" data-method="GET" data-path="admin/addresses/{address}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin-addresses--address-', this);">
+<form id="form-GETaddresses--address-" data-method="GET" data-path="addresses/{address}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETaddresses--address-', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin-addresses--address-" onclick="tryItOut('GETadmin-addresses--address-');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin-addresses--address-" onclick="cancelTryOut('GETadmin-addresses--address-');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin-addresses--address-" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETaddresses--address-" onclick="tryItOut('GETaddresses--address-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETaddresses--address-" onclick="cancelTryOut('GETaddresses--address-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETaddresses--address-" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin/addresses/{address}</code></b>
+ <b><code>addresses/{address}</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
 <p>
 <b><code>address</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="address" data-endpoint="GETadmin-addresses--address-" data-component="url" required  hidden>
+<input type="text" name="address" data-endpoint="GETaddresses--address-" data-component="url" required  hidden>
 <br>
 </p>
 </form>
 
 
-## admin/addresses/{address}/edit
+## addresses/{address}/edit
 
 
 
@@ -8049,14 +8039,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin/addresses/necessitatibus/edit" \
+    -G "https://mamma-send.herokuapp.com/addresses/iste/edit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/addresses/necessitatibus/edit"
+    "https://mamma-send.herokuapp.com/addresses/iste/edit"
 );
 
 let headers = {
@@ -8075,7 +8065,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin/addresses/necessitatibus/edit',
+    'https://mamma-send.herokuapp.com/addresses/iste/edit',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -8091,7 +8081,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/addresses/necessitatibus/edit'
+url = 'https://mamma-send.herokuapp.com/addresses/iste/edit'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -8109,35 +8099,35 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin-addresses--address--edit" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin-addresses--address--edit"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin-addresses--address--edit"></code></pre>
+<div id="execution-results-GETaddresses--address--edit" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETaddresses--address--edit"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETaddresses--address--edit"></code></pre>
 </div>
-<div id="execution-error-GETadmin-addresses--address--edit" hidden>
+<div id="execution-error-GETaddresses--address--edit" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin-addresses--address--edit"></code></pre>
+    <pre><code id="execution-error-message-GETaddresses--address--edit"></code></pre>
 </div>
-<form id="form-GETadmin-addresses--address--edit" data-method="GET" data-path="admin/addresses/{address}/edit" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin-addresses--address--edit', this);">
+<form id="form-GETaddresses--address--edit" data-method="GET" data-path="addresses/{address}/edit" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETaddresses--address--edit', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin-addresses--address--edit" onclick="tryItOut('GETadmin-addresses--address--edit');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin-addresses--address--edit" onclick="cancelTryOut('GETadmin-addresses--address--edit');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin-addresses--address--edit" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETaddresses--address--edit" onclick="tryItOut('GETaddresses--address--edit');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETaddresses--address--edit" onclick="cancelTryOut('GETaddresses--address--edit');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETaddresses--address--edit" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin/addresses/{address}/edit</code></b>
+ <b><code>addresses/{address}/edit</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
 <p>
 <b><code>address</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="address" data-endpoint="GETadmin-addresses--address--edit" data-component="url" required  hidden>
+<input type="text" name="address" data-endpoint="GETaddresses--address--edit" data-component="url" required  hidden>
 <br>
 </p>
 </form>
 
 
-## admin/addresses/{address}
+## addresses/{address}
 
 
 
@@ -8146,16 +8136,16 @@ response.json()
 
 ```bash
 curl -X PUT \
-    "https://mamma-send.herokuapp.com/admin/addresses/aperiam" \
+    "https://mamma-send.herokuapp.com/addresses/magni" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"street":"esse","city":"earum","state":"explicabo","zip_code":"et"}'
+    -d '{"street":"magni","city":"reiciendis","state":"assumenda","zip_code":"deserunt"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/addresses/aperiam"
+    "https://mamma-send.herokuapp.com/addresses/magni"
 );
 
 let headers = {
@@ -8164,10 +8154,10 @@ let headers = {
 };
 
 let body = {
-    "street": "esse",
-    "city": "earum",
-    "state": "explicabo",
-    "zip_code": "et"
+    "street": "magni",
+    "city": "reiciendis",
+    "state": "assumenda",
+    "zip_code": "deserunt"
 }
 
 fetch(url, {
@@ -8181,17 +8171,17 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'https://mamma-send.herokuapp.com/admin/addresses/aperiam',
+    'https://mamma-send.herokuapp.com/addresses/magni',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'street' => 'esse',
-            'city' => 'earum',
-            'state' => 'explicabo',
-            'zip_code' => 'et',
+            'street' => 'magni',
+            'city' => 'reiciendis',
+            'state' => 'assumenda',
+            'zip_code' => 'deserunt',
         ],
     ]
 );
@@ -8203,12 +8193,12 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/addresses/aperiam'
+url = 'https://mamma-send.herokuapp.com/addresses/magni'
 payload = {
-    "street": "esse",
-    "city": "earum",
-    "state": "explicabo",
-    "zip_code": "et"
+    "street": "magni",
+    "city": "reiciendis",
+    "state": "assumenda",
+    "zip_code": "deserunt"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -8220,61 +8210,61 @@ response.json()
 ```
 
 
-<div id="execution-results-PUTadmin-addresses--address-" hidden>
-    <blockquote>Received response<span id="execution-response-status-PUTadmin-addresses--address-"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-PUTadmin-addresses--address-"></code></pre>
+<div id="execution-results-PUTaddresses--address-" hidden>
+    <blockquote>Received response<span id="execution-response-status-PUTaddresses--address-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-PUTaddresses--address-"></code></pre>
 </div>
-<div id="execution-error-PUTadmin-addresses--address-" hidden>
+<div id="execution-error-PUTaddresses--address-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-PUTadmin-addresses--address-"></code></pre>
+    <pre><code id="execution-error-message-PUTaddresses--address-"></code></pre>
 </div>
-<form id="form-PUTadmin-addresses--address-" data-method="PUT" data-path="admin/addresses/{address}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('PUTadmin-addresses--address-', this);">
+<form id="form-PUTaddresses--address-" data-method="PUT" data-path="addresses/{address}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('PUTaddresses--address-', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-PUTadmin-addresses--address-" onclick="tryItOut('PUTadmin-addresses--address-');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-PUTadmin-addresses--address-" onclick="cancelTryOut('PUTadmin-addresses--address-');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-PUTadmin-addresses--address-" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-PUTaddresses--address-" onclick="tryItOut('PUTaddresses--address-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-PUTaddresses--address-" onclick="cancelTryOut('PUTaddresses--address-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-PUTaddresses--address-" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-darkblue">PUT</small>
- <b><code>admin/addresses/{address}</code></b>
+ <b><code>addresses/{address}</code></b>
 </p>
 <p>
 <small class="badge badge-purple">PATCH</small>
- <b><code>admin/addresses/{address}</code></b>
+ <b><code>addresses/{address}</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
 <p>
 <b><code>address</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="address" data-endpoint="PUTadmin-addresses--address-" data-component="url" required  hidden>
+<input type="text" name="address" data-endpoint="PUTaddresses--address-" data-component="url" required  hidden>
 <br>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
 <p>
 <b><code>street</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="street" data-endpoint="PUTadmin-addresses--address-" data-component="body" required  hidden>
+<input type="text" name="street" data-endpoint="PUTaddresses--address-" data-component="body" required  hidden>
 <br>
 </p>
 <p>
 <b><code>city</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="city" data-endpoint="PUTadmin-addresses--address-" data-component="body" required  hidden>
+<input type="text" name="city" data-endpoint="PUTaddresses--address-" data-component="body" required  hidden>
 <br>
 </p>
 <p>
 <b><code>state</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="state" data-endpoint="PUTadmin-addresses--address-" data-component="body" required  hidden>
+<input type="text" name="state" data-endpoint="PUTaddresses--address-" data-component="body" required  hidden>
 <br>
 </p>
 <p>
 <b><code>zip_code</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="zip_code" data-endpoint="PUTadmin-addresses--address-" data-component="body" required  hidden>
+<input type="text" name="zip_code" data-endpoint="PUTaddresses--address-" data-component="body" required  hidden>
 <br>
 </p>
 
 </form>
 
 
-## admin/addresses/{address}
+## addresses/{address}
 
 
 
@@ -8283,14 +8273,14 @@ response.json()
 
 ```bash
 curl -X DELETE \
-    "https://mamma-send.herokuapp.com/admin/addresses/occaecati" \
+    "https://mamma-send.herokuapp.com/addresses/assumenda" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/addresses/occaecati"
+    "https://mamma-send.herokuapp.com/addresses/assumenda"
 );
 
 let headers = {
@@ -8309,7 +8299,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'https://mamma-send.herokuapp.com/admin/addresses/occaecati',
+    'https://mamma-send.herokuapp.com/addresses/assumenda',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -8325,7 +8315,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/addresses/occaecati'
+url = 'https://mamma-send.herokuapp.com/addresses/assumenda'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -8336,35 +8326,35 @@ response.json()
 ```
 
 
-<div id="execution-results-DELETEadmin-addresses--address-" hidden>
-    <blockquote>Received response<span id="execution-response-status-DELETEadmin-addresses--address-"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-DELETEadmin-addresses--address-"></code></pre>
+<div id="execution-results-DELETEaddresses--address-" hidden>
+    <blockquote>Received response<span id="execution-response-status-DELETEaddresses--address-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEaddresses--address-"></code></pre>
 </div>
-<div id="execution-error-DELETEadmin-addresses--address-" hidden>
+<div id="execution-error-DELETEaddresses--address-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-DELETEadmin-addresses--address-"></code></pre>
+    <pre><code id="execution-error-message-DELETEaddresses--address-"></code></pre>
 </div>
-<form id="form-DELETEadmin-addresses--address-" data-method="DELETE" data-path="admin/addresses/{address}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('DELETEadmin-addresses--address-', this);">
+<form id="form-DELETEaddresses--address-" data-method="DELETE" data-path="addresses/{address}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('DELETEaddresses--address-', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-DELETEadmin-addresses--address-" onclick="tryItOut('DELETEadmin-addresses--address-');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-DELETEadmin-addresses--address-" onclick="cancelTryOut('DELETEadmin-addresses--address-');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-DELETEadmin-addresses--address-" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-DELETEaddresses--address-" onclick="tryItOut('DELETEaddresses--address-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-DELETEaddresses--address-" onclick="cancelTryOut('DELETEaddresses--address-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-DELETEaddresses--address-" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-red">DELETE</small>
- <b><code>admin/addresses/{address}</code></b>
+ <b><code>addresses/{address}</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
 <p>
 <b><code>address</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="address" data-endpoint="DELETEadmin-addresses--address-" data-component="url" required  hidden>
+<input type="text" name="address" data-endpoint="DELETEaddresses--address-" data-component="url" required  hidden>
 <br>
 </p>
 </form>
 
 
-## admin/rides
+## rides
 
 
 
@@ -8373,14 +8363,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin/rides" \
+    -G "https://mamma-send.herokuapp.com/rides" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/rides"
+    "https://mamma-send.herokuapp.com/rides"
 );
 
 let headers = {
@@ -8399,7 +8389,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin/rides',
+    'https://mamma-send.herokuapp.com/rides',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -8415,7 +8405,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/rides'
+url = 'https://mamma-send.herokuapp.com/rides'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -8433,29 +8423,29 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin-rides" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin-rides"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin-rides"></code></pre>
+<div id="execution-results-GETrides" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETrides"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETrides"></code></pre>
 </div>
-<div id="execution-error-GETadmin-rides" hidden>
+<div id="execution-error-GETrides" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin-rides"></code></pre>
+    <pre><code id="execution-error-message-GETrides"></code></pre>
 </div>
-<form id="form-GETadmin-rides" data-method="GET" data-path="admin/rides" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin-rides', this);">
+<form id="form-GETrides" data-method="GET" data-path="rides" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETrides', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin-rides" onclick="tryItOut('GETadmin-rides');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin-rides" onclick="cancelTryOut('GETadmin-rides');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin-rides" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETrides" onclick="tryItOut('GETrides');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETrides" onclick="cancelTryOut('GETrides');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETrides" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin/rides</code></b>
+ <b><code>rides</code></b>
 </p>
 </form>
 
 
-## admin/rides/create
+## rides/create
 
 
 
@@ -8464,14 +8454,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin/rides/create" \
+    -G "https://mamma-send.herokuapp.com/rides/create" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/rides/create"
+    "https://mamma-send.herokuapp.com/rides/create"
 );
 
 let headers = {
@@ -8490,7 +8480,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin/rides/create',
+    'https://mamma-send.herokuapp.com/rides/create',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -8506,7 +8496,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/rides/create'
+url = 'https://mamma-send.herokuapp.com/rides/create'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -8524,29 +8514,29 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin-rides-create" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin-rides-create"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin-rides-create"></code></pre>
+<div id="execution-results-GETrides-create" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETrides-create"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETrides-create"></code></pre>
 </div>
-<div id="execution-error-GETadmin-rides-create" hidden>
+<div id="execution-error-GETrides-create" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin-rides-create"></code></pre>
+    <pre><code id="execution-error-message-GETrides-create"></code></pre>
 </div>
-<form id="form-GETadmin-rides-create" data-method="GET" data-path="admin/rides/create" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin-rides-create', this);">
+<form id="form-GETrides-create" data-method="GET" data-path="rides/create" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETrides-create', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin-rides-create" onclick="tryItOut('GETadmin-rides-create');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin-rides-create" onclick="cancelTryOut('GETadmin-rides-create');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin-rides-create" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETrides-create" onclick="tryItOut('GETrides-create');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETrides-create" onclick="cancelTryOut('GETrides-create');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETrides-create" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin/rides/create</code></b>
+ <b><code>rides/create</code></b>
 </p>
 </form>
 
 
-## admin/rides
+## rides
 
 
 
@@ -8555,16 +8545,16 @@ response.json()
 
 ```bash
 curl -X POST \
-    "https://mamma-send.herokuapp.com/admin/rides" \
+    "https://mamma-send.herokuapp.com/rides" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"rider_id":16}'
+    -d '{"rider_id":2}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/rides"
+    "https://mamma-send.herokuapp.com/rides"
 );
 
 let headers = {
@@ -8573,7 +8563,7 @@ let headers = {
 };
 
 let body = {
-    "rider_id": 16
+    "rider_id": 2
 }
 
 fetch(url, {
@@ -8587,14 +8577,14 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'https://mamma-send.herokuapp.com/admin/rides',
+    'https://mamma-send.herokuapp.com/rides',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'rider_id' => 16,
+            'rider_id' => 2,
         ],
     ]
 );
@@ -8606,9 +8596,9 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/rides'
+url = 'https://mamma-send.herokuapp.com/rides'
 payload = {
-    "rider_id": 16
+    "rider_id": 2
 }
 headers = {
   'Content-Type': 'application/json',
@@ -8620,36 +8610,36 @@ response.json()
 ```
 
 
-<div id="execution-results-POSTadmin-rides" hidden>
-    <blockquote>Received response<span id="execution-response-status-POSTadmin-rides"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-POSTadmin-rides"></code></pre>
+<div id="execution-results-POSTrides" hidden>
+    <blockquote>Received response<span id="execution-response-status-POSTrides"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-POSTrides"></code></pre>
 </div>
-<div id="execution-error-POSTadmin-rides" hidden>
+<div id="execution-error-POSTrides" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTadmin-rides"></code></pre>
+    <pre><code id="execution-error-message-POSTrides"></code></pre>
 </div>
-<form id="form-POSTadmin-rides" data-method="POST" data-path="admin/rides" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTadmin-rides', this);">
+<form id="form-POSTrides" data-method="POST" data-path="rides" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTrides', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTadmin-rides" onclick="tryItOut('POSTadmin-rides');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTadmin-rides" onclick="cancelTryOut('POSTadmin-rides');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTadmin-rides" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTrides" onclick="tryItOut('POSTrides');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTrides" onclick="cancelTryOut('POSTrides');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTrides" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-black">POST</small>
- <b><code>admin/rides</code></b>
+ <b><code>rides</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
 <p>
 <b><code>rider_id</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
-<input type="number" name="rider_id" data-endpoint="POSTadmin-rides" data-component="body" required  hidden>
+<input type="number" name="rider_id" data-endpoint="POSTrides" data-component="body" required  hidden>
 <br>
 </p>
 
 </form>
 
 
-## admin/rides/{ride}
+## rides/{ride}
 
 
 
@@ -8658,14 +8648,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin/rides/ullam" \
+    -G "https://mamma-send.herokuapp.com/rides/doloribus" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/rides/ullam"
+    "https://mamma-send.herokuapp.com/rides/doloribus"
 );
 
 let headers = {
@@ -8684,7 +8674,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin/rides/ullam',
+    'https://mamma-send.herokuapp.com/rides/doloribus',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -8700,7 +8690,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/rides/ullam'
+url = 'https://mamma-send.herokuapp.com/rides/doloribus'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -8718,35 +8708,35 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin-rides--ride-" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin-rides--ride-"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin-rides--ride-"></code></pre>
+<div id="execution-results-GETrides--ride-" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETrides--ride-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETrides--ride-"></code></pre>
 </div>
-<div id="execution-error-GETadmin-rides--ride-" hidden>
+<div id="execution-error-GETrides--ride-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin-rides--ride-"></code></pre>
+    <pre><code id="execution-error-message-GETrides--ride-"></code></pre>
 </div>
-<form id="form-GETadmin-rides--ride-" data-method="GET" data-path="admin/rides/{ride}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin-rides--ride-', this);">
+<form id="form-GETrides--ride-" data-method="GET" data-path="rides/{ride}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETrides--ride-', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin-rides--ride-" onclick="tryItOut('GETadmin-rides--ride-');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin-rides--ride-" onclick="cancelTryOut('GETadmin-rides--ride-');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin-rides--ride-" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETrides--ride-" onclick="tryItOut('GETrides--ride-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETrides--ride-" onclick="cancelTryOut('GETrides--ride-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETrides--ride-" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin/rides/{ride}</code></b>
+ <b><code>rides/{ride}</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
 <p>
 <b><code>ride</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="ride" data-endpoint="GETadmin-rides--ride-" data-component="url" required  hidden>
+<input type="text" name="ride" data-endpoint="GETrides--ride-" data-component="url" required  hidden>
 <br>
 </p>
 </form>
 
 
-## admin/rides/{ride}/edit
+## rides/{ride}/edit
 
 
 
@@ -8755,14 +8745,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin/rides/rerum/edit" \
+    -G "https://mamma-send.herokuapp.com/rides/facilis/edit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/rides/rerum/edit"
+    "https://mamma-send.herokuapp.com/rides/facilis/edit"
 );
 
 let headers = {
@@ -8781,7 +8771,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin/rides/rerum/edit',
+    'https://mamma-send.herokuapp.com/rides/facilis/edit',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -8797,7 +8787,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/rides/rerum/edit'
+url = 'https://mamma-send.herokuapp.com/rides/facilis/edit'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -8815,35 +8805,35 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin-rides--ride--edit" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin-rides--ride--edit"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin-rides--ride--edit"></code></pre>
+<div id="execution-results-GETrides--ride--edit" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETrides--ride--edit"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETrides--ride--edit"></code></pre>
 </div>
-<div id="execution-error-GETadmin-rides--ride--edit" hidden>
+<div id="execution-error-GETrides--ride--edit" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin-rides--ride--edit"></code></pre>
+    <pre><code id="execution-error-message-GETrides--ride--edit"></code></pre>
 </div>
-<form id="form-GETadmin-rides--ride--edit" data-method="GET" data-path="admin/rides/{ride}/edit" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin-rides--ride--edit', this);">
+<form id="form-GETrides--ride--edit" data-method="GET" data-path="rides/{ride}/edit" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETrides--ride--edit', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin-rides--ride--edit" onclick="tryItOut('GETadmin-rides--ride--edit');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin-rides--ride--edit" onclick="cancelTryOut('GETadmin-rides--ride--edit');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin-rides--ride--edit" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETrides--ride--edit" onclick="tryItOut('GETrides--ride--edit');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETrides--ride--edit" onclick="cancelTryOut('GETrides--ride--edit');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETrides--ride--edit" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin/rides/{ride}/edit</code></b>
+ <b><code>rides/{ride}/edit</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
 <p>
 <b><code>ride</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="ride" data-endpoint="GETadmin-rides--ride--edit" data-component="url" required  hidden>
+<input type="text" name="ride" data-endpoint="GETrides--ride--edit" data-component="url" required  hidden>
 <br>
 </p>
 </form>
 
 
-## admin/rides/{ride}
+## rides/{ride}
 
 
 
@@ -8852,16 +8842,16 @@ response.json()
 
 ```bash
 curl -X PUT \
-    "https://mamma-send.herokuapp.com/admin/rides/mollitia" \
+    "https://mamma-send.herokuapp.com/rides/similique" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"rider_id":14}'
+    -d '{"rider_id":15}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/rides/mollitia"
+    "https://mamma-send.herokuapp.com/rides/similique"
 );
 
 let headers = {
@@ -8870,7 +8860,7 @@ let headers = {
 };
 
 let body = {
-    "rider_id": 14
+    "rider_id": 15
 }
 
 fetch(url, {
@@ -8884,14 +8874,14 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'https://mamma-send.herokuapp.com/admin/rides/mollitia',
+    'https://mamma-send.herokuapp.com/rides/similique',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'rider_id' => 14,
+            'rider_id' => 15,
         ],
     ]
 );
@@ -8903,9 +8893,9 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/rides/mollitia'
+url = 'https://mamma-send.herokuapp.com/rides/similique'
 payload = {
-    "rider_id": 14
+    "rider_id": 15
 }
 headers = {
   'Content-Type': 'application/json',
@@ -8917,46 +8907,46 @@ response.json()
 ```
 
 
-<div id="execution-results-PUTadmin-rides--ride-" hidden>
-    <blockquote>Received response<span id="execution-response-status-PUTadmin-rides--ride-"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-PUTadmin-rides--ride-"></code></pre>
+<div id="execution-results-PUTrides--ride-" hidden>
+    <blockquote>Received response<span id="execution-response-status-PUTrides--ride-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-PUTrides--ride-"></code></pre>
 </div>
-<div id="execution-error-PUTadmin-rides--ride-" hidden>
+<div id="execution-error-PUTrides--ride-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-PUTadmin-rides--ride-"></code></pre>
+    <pre><code id="execution-error-message-PUTrides--ride-"></code></pre>
 </div>
-<form id="form-PUTadmin-rides--ride-" data-method="PUT" data-path="admin/rides/{ride}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('PUTadmin-rides--ride-', this);">
+<form id="form-PUTrides--ride-" data-method="PUT" data-path="rides/{ride}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('PUTrides--ride-', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-PUTadmin-rides--ride-" onclick="tryItOut('PUTadmin-rides--ride-');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-PUTadmin-rides--ride-" onclick="cancelTryOut('PUTadmin-rides--ride-');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-PUTadmin-rides--ride-" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-PUTrides--ride-" onclick="tryItOut('PUTrides--ride-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-PUTrides--ride-" onclick="cancelTryOut('PUTrides--ride-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-PUTrides--ride-" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-darkblue">PUT</small>
- <b><code>admin/rides/{ride}</code></b>
+ <b><code>rides/{ride}</code></b>
 </p>
 <p>
 <small class="badge badge-purple">PATCH</small>
- <b><code>admin/rides/{ride}</code></b>
+ <b><code>rides/{ride}</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
 <p>
 <b><code>ride</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="ride" data-endpoint="PUTadmin-rides--ride-" data-component="url" required  hidden>
+<input type="text" name="ride" data-endpoint="PUTrides--ride-" data-component="url" required  hidden>
 <br>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
 <p>
 <b><code>rider_id</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
-<input type="number" name="rider_id" data-endpoint="PUTadmin-rides--ride-" data-component="body" required  hidden>
+<input type="number" name="rider_id" data-endpoint="PUTrides--ride-" data-component="body" required  hidden>
 <br>
 </p>
 
 </form>
 
 
-## admin/rides/{ride}
+## rides/{ride}
 
 
 
@@ -8965,14 +8955,14 @@ response.json()
 
 ```bash
 curl -X DELETE \
-    "https://mamma-send.herokuapp.com/admin/rides/eligendi" \
+    "https://mamma-send.herokuapp.com/rides/iure" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/rides/eligendi"
+    "https://mamma-send.herokuapp.com/rides/iure"
 );
 
 let headers = {
@@ -8991,7 +8981,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'https://mamma-send.herokuapp.com/admin/rides/eligendi',
+    'https://mamma-send.herokuapp.com/rides/iure',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -9007,7 +8997,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/rides/eligendi'
+url = 'https://mamma-send.herokuapp.com/rides/iure'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -9018,35 +9008,35 @@ response.json()
 ```
 
 
-<div id="execution-results-DELETEadmin-rides--ride-" hidden>
-    <blockquote>Received response<span id="execution-response-status-DELETEadmin-rides--ride-"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-DELETEadmin-rides--ride-"></code></pre>
+<div id="execution-results-DELETErides--ride-" hidden>
+    <blockquote>Received response<span id="execution-response-status-DELETErides--ride-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-DELETErides--ride-"></code></pre>
 </div>
-<div id="execution-error-DELETEadmin-rides--ride-" hidden>
+<div id="execution-error-DELETErides--ride-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-DELETEadmin-rides--ride-"></code></pre>
+    <pre><code id="execution-error-message-DELETErides--ride-"></code></pre>
 </div>
-<form id="form-DELETEadmin-rides--ride-" data-method="DELETE" data-path="admin/rides/{ride}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('DELETEadmin-rides--ride-', this);">
+<form id="form-DELETErides--ride-" data-method="DELETE" data-path="rides/{ride}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('DELETErides--ride-', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-DELETEadmin-rides--ride-" onclick="tryItOut('DELETEadmin-rides--ride-');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-DELETEadmin-rides--ride-" onclick="cancelTryOut('DELETEadmin-rides--ride-');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-DELETEadmin-rides--ride-" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-DELETErides--ride-" onclick="tryItOut('DELETErides--ride-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-DELETErides--ride-" onclick="cancelTryOut('DELETErides--ride-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-DELETErides--ride-" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-red">DELETE</small>
- <b><code>admin/rides/{ride}</code></b>
+ <b><code>rides/{ride}</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
 <p>
 <b><code>ride</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="ride" data-endpoint="DELETEadmin-rides--ride-" data-component="url" required  hidden>
+<input type="text" name="ride" data-endpoint="DELETErides--ride-" data-component="url" required  hidden>
 <br>
 </p>
 </form>
 
 
-## admin/payments
+## payments
 
 
 
@@ -9055,14 +9045,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin/payments" \
+    -G "https://mamma-send.herokuapp.com/payments" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/payments"
+    "https://mamma-send.herokuapp.com/payments"
 );
 
 let headers = {
@@ -9081,7 +9071,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin/payments',
+    'https://mamma-send.herokuapp.com/payments',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -9097,7 +9087,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/payments'
+url = 'https://mamma-send.herokuapp.com/payments'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -9115,29 +9105,29 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin-payments" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin-payments"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin-payments"></code></pre>
+<div id="execution-results-GETpayments" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETpayments"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETpayments"></code></pre>
 </div>
-<div id="execution-error-GETadmin-payments" hidden>
+<div id="execution-error-GETpayments" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin-payments"></code></pre>
+    <pre><code id="execution-error-message-GETpayments"></code></pre>
 </div>
-<form id="form-GETadmin-payments" data-method="GET" data-path="admin/payments" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin-payments', this);">
+<form id="form-GETpayments" data-method="GET" data-path="payments" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETpayments', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin-payments" onclick="tryItOut('GETadmin-payments');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin-payments" onclick="cancelTryOut('GETadmin-payments');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin-payments" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETpayments" onclick="tryItOut('GETpayments');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETpayments" onclick="cancelTryOut('GETpayments');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETpayments" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin/payments</code></b>
+ <b><code>payments</code></b>
 </p>
 </form>
 
 
-## admin/payments/create
+## payments/create
 
 
 
@@ -9146,14 +9136,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin/payments/create" \
+    -G "https://mamma-send.herokuapp.com/payments/create" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/payments/create"
+    "https://mamma-send.herokuapp.com/payments/create"
 );
 
 let headers = {
@@ -9172,7 +9162,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin/payments/create',
+    'https://mamma-send.herokuapp.com/payments/create',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -9188,7 +9178,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/payments/create'
+url = 'https://mamma-send.herokuapp.com/payments/create'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -9206,29 +9196,29 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin-payments-create" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin-payments-create"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin-payments-create"></code></pre>
+<div id="execution-results-GETpayments-create" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETpayments-create"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETpayments-create"></code></pre>
 </div>
-<div id="execution-error-GETadmin-payments-create" hidden>
+<div id="execution-error-GETpayments-create" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin-payments-create"></code></pre>
+    <pre><code id="execution-error-message-GETpayments-create"></code></pre>
 </div>
-<form id="form-GETadmin-payments-create" data-method="GET" data-path="admin/payments/create" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin-payments-create', this);">
+<form id="form-GETpayments-create" data-method="GET" data-path="payments/create" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETpayments-create', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin-payments-create" onclick="tryItOut('GETadmin-payments-create');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin-payments-create" onclick="cancelTryOut('GETadmin-payments-create');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin-payments-create" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETpayments-create" onclick="tryItOut('GETpayments-create');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETpayments-create" onclick="cancelTryOut('GETpayments-create');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETpayments-create" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin/payments/create</code></b>
+ <b><code>payments/create</code></b>
 </p>
 </form>
 
 
-## admin/payments
+## payments
 
 
 
@@ -9237,16 +9227,16 @@ response.json()
 
 ```bash
 curl -X POST \
-    "https://mamma-send.herokuapp.com/admin/payments" \
+    "https://mamma-send.herokuapp.com/payments" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"total_received":"voluptatem","rider_received":"ipsam","office_received":"dolorem","user_id":17}'
+    -d '{"total_received":"labore","rider_received":"dolore","office_received":"vero","user_id":20}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/payments"
+    "https://mamma-send.herokuapp.com/payments"
 );
 
 let headers = {
@@ -9255,10 +9245,10 @@ let headers = {
 };
 
 let body = {
-    "total_received": "voluptatem",
-    "rider_received": "ipsam",
-    "office_received": "dolorem",
-    "user_id": 17
+    "total_received": "labore",
+    "rider_received": "dolore",
+    "office_received": "vero",
+    "user_id": 20
 }
 
 fetch(url, {
@@ -9272,17 +9262,17 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'https://mamma-send.herokuapp.com/admin/payments',
+    'https://mamma-send.herokuapp.com/payments',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'total_received' => 'voluptatem',
-            'rider_received' => 'ipsam',
-            'office_received' => 'dolorem',
-            'user_id' => 17,
+            'total_received' => 'labore',
+            'rider_received' => 'dolore',
+            'office_received' => 'vero',
+            'user_id' => 20,
         ],
     ]
 );
@@ -9294,12 +9284,12 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/payments'
+url = 'https://mamma-send.herokuapp.com/payments'
 payload = {
-    "total_received": "voluptatem",
-    "rider_received": "ipsam",
-    "office_received": "dolorem",
-    "user_id": 17
+    "total_received": "labore",
+    "rider_received": "dolore",
+    "office_received": "vero",
+    "user_id": 20
 }
 headers = {
   'Content-Type': 'application/json',
@@ -9311,51 +9301,51 @@ response.json()
 ```
 
 
-<div id="execution-results-POSTadmin-payments" hidden>
-    <blockquote>Received response<span id="execution-response-status-POSTadmin-payments"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-POSTadmin-payments"></code></pre>
+<div id="execution-results-POSTpayments" hidden>
+    <blockquote>Received response<span id="execution-response-status-POSTpayments"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-POSTpayments"></code></pre>
 </div>
-<div id="execution-error-POSTadmin-payments" hidden>
+<div id="execution-error-POSTpayments" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTadmin-payments"></code></pre>
+    <pre><code id="execution-error-message-POSTpayments"></code></pre>
 </div>
-<form id="form-POSTadmin-payments" data-method="POST" data-path="admin/payments" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTadmin-payments', this);">
+<form id="form-POSTpayments" data-method="POST" data-path="payments" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTpayments', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTadmin-payments" onclick="tryItOut('POSTadmin-payments');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTadmin-payments" onclick="cancelTryOut('POSTadmin-payments');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTadmin-payments" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTpayments" onclick="tryItOut('POSTpayments');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTpayments" onclick="cancelTryOut('POSTpayments');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTpayments" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-black">POST</small>
- <b><code>admin/payments</code></b>
+ <b><code>payments</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
 <p>
 <b><code>total_received</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="total_received" data-endpoint="POSTadmin-payments" data-component="body" required  hidden>
+<input type="text" name="total_received" data-endpoint="POSTpayments" data-component="body" required  hidden>
 <br>
 </p>
 <p>
 <b><code>rider_received</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="rider_received" data-endpoint="POSTadmin-payments" data-component="body" required  hidden>
+<input type="text" name="rider_received" data-endpoint="POSTpayments" data-component="body" required  hidden>
 <br>
 </p>
 <p>
 <b><code>office_received</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="office_received" data-endpoint="POSTadmin-payments" data-component="body" required  hidden>
+<input type="text" name="office_received" data-endpoint="POSTpayments" data-component="body" required  hidden>
 <br>
 </p>
 <p>
 <b><code>user_id</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
-<input type="number" name="user_id" data-endpoint="POSTadmin-payments" data-component="body" required  hidden>
+<input type="number" name="user_id" data-endpoint="POSTpayments" data-component="body" required  hidden>
 <br>
 </p>
 
 </form>
 
 
-## admin/payments/{payment}
+## payments/{payment}
 
 
 
@@ -9364,14 +9354,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin/payments/quis" \
+    -G "https://mamma-send.herokuapp.com/payments/reiciendis" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/payments/quis"
+    "https://mamma-send.herokuapp.com/payments/reiciendis"
 );
 
 let headers = {
@@ -9390,7 +9380,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin/payments/quis',
+    'https://mamma-send.herokuapp.com/payments/reiciendis',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -9406,7 +9396,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/payments/quis'
+url = 'https://mamma-send.herokuapp.com/payments/reiciendis'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -9424,35 +9414,35 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin-payments--payment-" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin-payments--payment-"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin-payments--payment-"></code></pre>
+<div id="execution-results-GETpayments--payment-" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETpayments--payment-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETpayments--payment-"></code></pre>
 </div>
-<div id="execution-error-GETadmin-payments--payment-" hidden>
+<div id="execution-error-GETpayments--payment-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin-payments--payment-"></code></pre>
+    <pre><code id="execution-error-message-GETpayments--payment-"></code></pre>
 </div>
-<form id="form-GETadmin-payments--payment-" data-method="GET" data-path="admin/payments/{payment}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin-payments--payment-', this);">
+<form id="form-GETpayments--payment-" data-method="GET" data-path="payments/{payment}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETpayments--payment-', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin-payments--payment-" onclick="tryItOut('GETadmin-payments--payment-');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin-payments--payment-" onclick="cancelTryOut('GETadmin-payments--payment-');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin-payments--payment-" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETpayments--payment-" onclick="tryItOut('GETpayments--payment-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETpayments--payment-" onclick="cancelTryOut('GETpayments--payment-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETpayments--payment-" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin/payments/{payment}</code></b>
+ <b><code>payments/{payment}</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
 <p>
 <b><code>payment</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="payment" data-endpoint="GETadmin-payments--payment-" data-component="url" required  hidden>
+<input type="text" name="payment" data-endpoint="GETpayments--payment-" data-component="url" required  hidden>
 <br>
 </p>
 </form>
 
 
-## admin/payments/{payment}/edit
+## payments/{payment}/edit
 
 
 
@@ -9461,14 +9451,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin/payments/sequi/edit" \
+    -G "https://mamma-send.herokuapp.com/payments/consectetur/edit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/payments/sequi/edit"
+    "https://mamma-send.herokuapp.com/payments/consectetur/edit"
 );
 
 let headers = {
@@ -9487,7 +9477,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin/payments/sequi/edit',
+    'https://mamma-send.herokuapp.com/payments/consectetur/edit',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -9503,7 +9493,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/payments/sequi/edit'
+url = 'https://mamma-send.herokuapp.com/payments/consectetur/edit'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -9521,35 +9511,35 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin-payments--payment--edit" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin-payments--payment--edit"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin-payments--payment--edit"></code></pre>
+<div id="execution-results-GETpayments--payment--edit" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETpayments--payment--edit"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETpayments--payment--edit"></code></pre>
 </div>
-<div id="execution-error-GETadmin-payments--payment--edit" hidden>
+<div id="execution-error-GETpayments--payment--edit" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin-payments--payment--edit"></code></pre>
+    <pre><code id="execution-error-message-GETpayments--payment--edit"></code></pre>
 </div>
-<form id="form-GETadmin-payments--payment--edit" data-method="GET" data-path="admin/payments/{payment}/edit" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin-payments--payment--edit', this);">
+<form id="form-GETpayments--payment--edit" data-method="GET" data-path="payments/{payment}/edit" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETpayments--payment--edit', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin-payments--payment--edit" onclick="tryItOut('GETadmin-payments--payment--edit');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin-payments--payment--edit" onclick="cancelTryOut('GETadmin-payments--payment--edit');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin-payments--payment--edit" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETpayments--payment--edit" onclick="tryItOut('GETpayments--payment--edit');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETpayments--payment--edit" onclick="cancelTryOut('GETpayments--payment--edit');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETpayments--payment--edit" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin/payments/{payment}/edit</code></b>
+ <b><code>payments/{payment}/edit</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
 <p>
 <b><code>payment</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="payment" data-endpoint="GETadmin-payments--payment--edit" data-component="url" required  hidden>
+<input type="text" name="payment" data-endpoint="GETpayments--payment--edit" data-component="url" required  hidden>
 <br>
 </p>
 </form>
 
 
-## admin/payments/{payment}
+## payments/{payment}
 
 
 
@@ -9558,16 +9548,16 @@ response.json()
 
 ```bash
 curl -X PUT \
-    "https://mamma-send.herokuapp.com/admin/payments/culpa" \
+    "https://mamma-send.herokuapp.com/payments/modi" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"total_received":"illo","rider_received":"et","office_received":"quo","user_id":12}'
+    -d '{"total_received":"velit","rider_received":"est","office_received":"voluptas","user_id":10}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/payments/culpa"
+    "https://mamma-send.herokuapp.com/payments/modi"
 );
 
 let headers = {
@@ -9576,10 +9566,10 @@ let headers = {
 };
 
 let body = {
-    "total_received": "illo",
-    "rider_received": "et",
-    "office_received": "quo",
-    "user_id": 12
+    "total_received": "velit",
+    "rider_received": "est",
+    "office_received": "voluptas",
+    "user_id": 10
 }
 
 fetch(url, {
@@ -9593,17 +9583,17 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'https://mamma-send.herokuapp.com/admin/payments/culpa',
+    'https://mamma-send.herokuapp.com/payments/modi',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'total_received' => 'illo',
-            'rider_received' => 'et',
-            'office_received' => 'quo',
-            'user_id' => 12,
+            'total_received' => 'velit',
+            'rider_received' => 'est',
+            'office_received' => 'voluptas',
+            'user_id' => 10,
         ],
     ]
 );
@@ -9615,12 +9605,12 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/payments/culpa'
+url = 'https://mamma-send.herokuapp.com/payments/modi'
 payload = {
-    "total_received": "illo",
-    "rider_received": "et",
-    "office_received": "quo",
-    "user_id": 12
+    "total_received": "velit",
+    "rider_received": "est",
+    "office_received": "voluptas",
+    "user_id": 10
 }
 headers = {
   'Content-Type': 'application/json',
@@ -9632,61 +9622,61 @@ response.json()
 ```
 
 
-<div id="execution-results-PUTadmin-payments--payment-" hidden>
-    <blockquote>Received response<span id="execution-response-status-PUTadmin-payments--payment-"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-PUTadmin-payments--payment-"></code></pre>
+<div id="execution-results-PUTpayments--payment-" hidden>
+    <blockquote>Received response<span id="execution-response-status-PUTpayments--payment-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-PUTpayments--payment-"></code></pre>
 </div>
-<div id="execution-error-PUTadmin-payments--payment-" hidden>
+<div id="execution-error-PUTpayments--payment-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-PUTadmin-payments--payment-"></code></pre>
+    <pre><code id="execution-error-message-PUTpayments--payment-"></code></pre>
 </div>
-<form id="form-PUTadmin-payments--payment-" data-method="PUT" data-path="admin/payments/{payment}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('PUTadmin-payments--payment-', this);">
+<form id="form-PUTpayments--payment-" data-method="PUT" data-path="payments/{payment}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('PUTpayments--payment-', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-PUTadmin-payments--payment-" onclick="tryItOut('PUTadmin-payments--payment-');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-PUTadmin-payments--payment-" onclick="cancelTryOut('PUTadmin-payments--payment-');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-PUTadmin-payments--payment-" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-PUTpayments--payment-" onclick="tryItOut('PUTpayments--payment-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-PUTpayments--payment-" onclick="cancelTryOut('PUTpayments--payment-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-PUTpayments--payment-" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-darkblue">PUT</small>
- <b><code>admin/payments/{payment}</code></b>
+ <b><code>payments/{payment}</code></b>
 </p>
 <p>
 <small class="badge badge-purple">PATCH</small>
- <b><code>admin/payments/{payment}</code></b>
+ <b><code>payments/{payment}</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
 <p>
 <b><code>payment</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="payment" data-endpoint="PUTadmin-payments--payment-" data-component="url" required  hidden>
+<input type="text" name="payment" data-endpoint="PUTpayments--payment-" data-component="url" required  hidden>
 <br>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
 <p>
 <b><code>total_received</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="total_received" data-endpoint="PUTadmin-payments--payment-" data-component="body" required  hidden>
+<input type="text" name="total_received" data-endpoint="PUTpayments--payment-" data-component="body" required  hidden>
 <br>
 </p>
 <p>
 <b><code>rider_received</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="rider_received" data-endpoint="PUTadmin-payments--payment-" data-component="body" required  hidden>
+<input type="text" name="rider_received" data-endpoint="PUTpayments--payment-" data-component="body" required  hidden>
 <br>
 </p>
 <p>
 <b><code>office_received</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="office_received" data-endpoint="PUTadmin-payments--payment-" data-component="body" required  hidden>
+<input type="text" name="office_received" data-endpoint="PUTpayments--payment-" data-component="body" required  hidden>
 <br>
 </p>
 <p>
 <b><code>user_id</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
-<input type="number" name="user_id" data-endpoint="PUTadmin-payments--payment-" data-component="body" required  hidden>
+<input type="number" name="user_id" data-endpoint="PUTpayments--payment-" data-component="body" required  hidden>
 <br>
 </p>
 
 </form>
 
 
-## admin/payments/{payment}
+## payments/{payment}
 
 
 
@@ -9695,14 +9685,14 @@ response.json()
 
 ```bash
 curl -X DELETE \
-    "https://mamma-send.herokuapp.com/admin/payments/debitis" \
+    "https://mamma-send.herokuapp.com/payments/voluptatem" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/payments/debitis"
+    "https://mamma-send.herokuapp.com/payments/voluptatem"
 );
 
 let headers = {
@@ -9721,7 +9711,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'https://mamma-send.herokuapp.com/admin/payments/debitis',
+    'https://mamma-send.herokuapp.com/payments/voluptatem',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -9737,7 +9727,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/payments/debitis'
+url = 'https://mamma-send.herokuapp.com/payments/voluptatem'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -9748,35 +9738,35 @@ response.json()
 ```
 
 
-<div id="execution-results-DELETEadmin-payments--payment-" hidden>
-    <blockquote>Received response<span id="execution-response-status-DELETEadmin-payments--payment-"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-DELETEadmin-payments--payment-"></code></pre>
+<div id="execution-results-DELETEpayments--payment-" hidden>
+    <blockquote>Received response<span id="execution-response-status-DELETEpayments--payment-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEpayments--payment-"></code></pre>
 </div>
-<div id="execution-error-DELETEadmin-payments--payment-" hidden>
+<div id="execution-error-DELETEpayments--payment-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-DELETEadmin-payments--payment-"></code></pre>
+    <pre><code id="execution-error-message-DELETEpayments--payment-"></code></pre>
 </div>
-<form id="form-DELETEadmin-payments--payment-" data-method="DELETE" data-path="admin/payments/{payment}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('DELETEadmin-payments--payment-', this);">
+<form id="form-DELETEpayments--payment-" data-method="DELETE" data-path="payments/{payment}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('DELETEpayments--payment-', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-DELETEadmin-payments--payment-" onclick="tryItOut('DELETEadmin-payments--payment-');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-DELETEadmin-payments--payment-" onclick="cancelTryOut('DELETEadmin-payments--payment-');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-DELETEadmin-payments--payment-" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-DELETEpayments--payment-" onclick="tryItOut('DELETEpayments--payment-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-DELETEpayments--payment-" onclick="cancelTryOut('DELETEpayments--payment-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-DELETEpayments--payment-" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-red">DELETE</small>
- <b><code>admin/payments/{payment}</code></b>
+ <b><code>payments/{payment}</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
 <p>
 <b><code>payment</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="payment" data-endpoint="DELETEadmin-payments--payment-" data-component="url" required  hidden>
+<input type="text" name="payment" data-endpoint="DELETEpayments--payment-" data-component="url" required  hidden>
 <br>
 </p>
 </form>
 
 
-## admin/faq-categories
+## faq-categories
 
 
 
@@ -9785,14 +9775,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin/faq-categories" \
+    -G "https://mamma-send.herokuapp.com/faq-categories" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/faq-categories"
+    "https://mamma-send.herokuapp.com/faq-categories"
 );
 
 let headers = {
@@ -9811,7 +9801,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin/faq-categories',
+    'https://mamma-send.herokuapp.com/faq-categories',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -9827,7 +9817,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/faq-categories'
+url = 'https://mamma-send.herokuapp.com/faq-categories'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -9845,29 +9835,29 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin-faq-categories" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin-faq-categories"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin-faq-categories"></code></pre>
+<div id="execution-results-GETfaq-categories" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETfaq-categories"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETfaq-categories"></code></pre>
 </div>
-<div id="execution-error-GETadmin-faq-categories" hidden>
+<div id="execution-error-GETfaq-categories" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin-faq-categories"></code></pre>
+    <pre><code id="execution-error-message-GETfaq-categories"></code></pre>
 </div>
-<form id="form-GETadmin-faq-categories" data-method="GET" data-path="admin/faq-categories" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin-faq-categories', this);">
+<form id="form-GETfaq-categories" data-method="GET" data-path="faq-categories" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETfaq-categories', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin-faq-categories" onclick="tryItOut('GETadmin-faq-categories');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin-faq-categories" onclick="cancelTryOut('GETadmin-faq-categories');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin-faq-categories" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETfaq-categories" onclick="tryItOut('GETfaq-categories');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETfaq-categories" onclick="cancelTryOut('GETfaq-categories');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETfaq-categories" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin/faq-categories</code></b>
+ <b><code>faq-categories</code></b>
 </p>
 </form>
 
 
-## admin/faq-categories/create
+## faq-categories/create
 
 
 
@@ -9876,14 +9866,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin/faq-categories/create" \
+    -G "https://mamma-send.herokuapp.com/faq-categories/create" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/faq-categories/create"
+    "https://mamma-send.herokuapp.com/faq-categories/create"
 );
 
 let headers = {
@@ -9902,7 +9892,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin/faq-categories/create',
+    'https://mamma-send.herokuapp.com/faq-categories/create',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -9918,7 +9908,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/faq-categories/create'
+url = 'https://mamma-send.herokuapp.com/faq-categories/create'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -9936,29 +9926,29 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin-faq-categories-create" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin-faq-categories-create"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin-faq-categories-create"></code></pre>
+<div id="execution-results-GETfaq-categories-create" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETfaq-categories-create"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETfaq-categories-create"></code></pre>
 </div>
-<div id="execution-error-GETadmin-faq-categories-create" hidden>
+<div id="execution-error-GETfaq-categories-create" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin-faq-categories-create"></code></pre>
+    <pre><code id="execution-error-message-GETfaq-categories-create"></code></pre>
 </div>
-<form id="form-GETadmin-faq-categories-create" data-method="GET" data-path="admin/faq-categories/create" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin-faq-categories-create', this);">
+<form id="form-GETfaq-categories-create" data-method="GET" data-path="faq-categories/create" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETfaq-categories-create', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin-faq-categories-create" onclick="tryItOut('GETadmin-faq-categories-create');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin-faq-categories-create" onclick="cancelTryOut('GETadmin-faq-categories-create');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin-faq-categories-create" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETfaq-categories-create" onclick="tryItOut('GETfaq-categories-create');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETfaq-categories-create" onclick="cancelTryOut('GETfaq-categories-create');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETfaq-categories-create" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin/faq-categories/create</code></b>
+ <b><code>faq-categories/create</code></b>
 </p>
 </form>
 
 
-## admin/faq-categories
+## faq-categories
 
 
 
@@ -9967,16 +9957,16 @@ response.json()
 
 ```bash
 curl -X POST \
-    "https://mamma-send.herokuapp.com/admin/faq-categories" \
+    "https://mamma-send.herokuapp.com/faq-categories" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"category":"velit"}'
+    -d '{"category":"reiciendis"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/faq-categories"
+    "https://mamma-send.herokuapp.com/faq-categories"
 );
 
 let headers = {
@@ -9985,7 +9975,7 @@ let headers = {
 };
 
 let body = {
-    "category": "velit"
+    "category": "reiciendis"
 }
 
 fetch(url, {
@@ -9999,14 +9989,14 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'https://mamma-send.herokuapp.com/admin/faq-categories',
+    'https://mamma-send.herokuapp.com/faq-categories',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'category' => 'velit',
+            'category' => 'reiciendis',
         ],
     ]
 );
@@ -10018,9 +10008,9 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/faq-categories'
+url = 'https://mamma-send.herokuapp.com/faq-categories'
 payload = {
-    "category": "velit"
+    "category": "reiciendis"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -10032,36 +10022,36 @@ response.json()
 ```
 
 
-<div id="execution-results-POSTadmin-faq-categories" hidden>
-    <blockquote>Received response<span id="execution-response-status-POSTadmin-faq-categories"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-POSTadmin-faq-categories"></code></pre>
+<div id="execution-results-POSTfaq-categories" hidden>
+    <blockquote>Received response<span id="execution-response-status-POSTfaq-categories"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-POSTfaq-categories"></code></pre>
 </div>
-<div id="execution-error-POSTadmin-faq-categories" hidden>
+<div id="execution-error-POSTfaq-categories" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTadmin-faq-categories"></code></pre>
+    <pre><code id="execution-error-message-POSTfaq-categories"></code></pre>
 </div>
-<form id="form-POSTadmin-faq-categories" data-method="POST" data-path="admin/faq-categories" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTadmin-faq-categories', this);">
+<form id="form-POSTfaq-categories" data-method="POST" data-path="faq-categories" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTfaq-categories', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTadmin-faq-categories" onclick="tryItOut('POSTadmin-faq-categories');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTadmin-faq-categories" onclick="cancelTryOut('POSTadmin-faq-categories');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTadmin-faq-categories" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTfaq-categories" onclick="tryItOut('POSTfaq-categories');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTfaq-categories" onclick="cancelTryOut('POSTfaq-categories');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTfaq-categories" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-black">POST</small>
- <b><code>admin/faq-categories</code></b>
+ <b><code>faq-categories</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
 <p>
 <b><code>category</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="category" data-endpoint="POSTadmin-faq-categories" data-component="body" required  hidden>
+<input type="text" name="category" data-endpoint="POSTfaq-categories" data-component="body" required  hidden>
 <br>
 </p>
 
 </form>
 
 
-## admin/faq-categories/{faq_category}
+## faq-categories/{faq_category}
 
 
 
@@ -10070,14 +10060,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin/faq-categories/id" \
+    -G "https://mamma-send.herokuapp.com/faq-categories/aperiam" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/faq-categories/id"
+    "https://mamma-send.herokuapp.com/faq-categories/aperiam"
 );
 
 let headers = {
@@ -10096,7 +10086,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin/faq-categories/id',
+    'https://mamma-send.herokuapp.com/faq-categories/aperiam',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -10112,7 +10102,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/faq-categories/id'
+url = 'https://mamma-send.herokuapp.com/faq-categories/aperiam'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -10130,35 +10120,35 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin-faq-categories--faq_category-" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin-faq-categories--faq_category-"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin-faq-categories--faq_category-"></code></pre>
+<div id="execution-results-GETfaq-categories--faq_category-" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETfaq-categories--faq_category-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETfaq-categories--faq_category-"></code></pre>
 </div>
-<div id="execution-error-GETadmin-faq-categories--faq_category-" hidden>
+<div id="execution-error-GETfaq-categories--faq_category-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin-faq-categories--faq_category-"></code></pre>
+    <pre><code id="execution-error-message-GETfaq-categories--faq_category-"></code></pre>
 </div>
-<form id="form-GETadmin-faq-categories--faq_category-" data-method="GET" data-path="admin/faq-categories/{faq_category}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin-faq-categories--faq_category-', this);">
+<form id="form-GETfaq-categories--faq_category-" data-method="GET" data-path="faq-categories/{faq_category}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETfaq-categories--faq_category-', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin-faq-categories--faq_category-" onclick="tryItOut('GETadmin-faq-categories--faq_category-');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin-faq-categories--faq_category-" onclick="cancelTryOut('GETadmin-faq-categories--faq_category-');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin-faq-categories--faq_category-" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETfaq-categories--faq_category-" onclick="tryItOut('GETfaq-categories--faq_category-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETfaq-categories--faq_category-" onclick="cancelTryOut('GETfaq-categories--faq_category-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETfaq-categories--faq_category-" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin/faq-categories/{faq_category}</code></b>
+ <b><code>faq-categories/{faq_category}</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
 <p>
 <b><code>faq_category</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="faq_category" data-endpoint="GETadmin-faq-categories--faq_category-" data-component="url" required  hidden>
+<input type="text" name="faq_category" data-endpoint="GETfaq-categories--faq_category-" data-component="url" required  hidden>
 <br>
 </p>
 </form>
 
 
-## admin/faq-categories/{faq_category}/edit
+## faq-categories/{faq_category}/edit
 
 
 
@@ -10167,14 +10157,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin/faq-categories/pariatur/edit" \
+    -G "https://mamma-send.herokuapp.com/faq-categories/molestiae/edit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/faq-categories/pariatur/edit"
+    "https://mamma-send.herokuapp.com/faq-categories/molestiae/edit"
 );
 
 let headers = {
@@ -10193,7 +10183,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin/faq-categories/pariatur/edit',
+    'https://mamma-send.herokuapp.com/faq-categories/molestiae/edit',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -10209,7 +10199,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/faq-categories/pariatur/edit'
+url = 'https://mamma-send.herokuapp.com/faq-categories/molestiae/edit'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -10227,35 +10217,35 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin-faq-categories--faq_category--edit" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin-faq-categories--faq_category--edit"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin-faq-categories--faq_category--edit"></code></pre>
+<div id="execution-results-GETfaq-categories--faq_category--edit" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETfaq-categories--faq_category--edit"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETfaq-categories--faq_category--edit"></code></pre>
 </div>
-<div id="execution-error-GETadmin-faq-categories--faq_category--edit" hidden>
+<div id="execution-error-GETfaq-categories--faq_category--edit" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin-faq-categories--faq_category--edit"></code></pre>
+    <pre><code id="execution-error-message-GETfaq-categories--faq_category--edit"></code></pre>
 </div>
-<form id="form-GETadmin-faq-categories--faq_category--edit" data-method="GET" data-path="admin/faq-categories/{faq_category}/edit" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin-faq-categories--faq_category--edit', this);">
+<form id="form-GETfaq-categories--faq_category--edit" data-method="GET" data-path="faq-categories/{faq_category}/edit" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETfaq-categories--faq_category--edit', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin-faq-categories--faq_category--edit" onclick="tryItOut('GETadmin-faq-categories--faq_category--edit');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin-faq-categories--faq_category--edit" onclick="cancelTryOut('GETadmin-faq-categories--faq_category--edit');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin-faq-categories--faq_category--edit" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETfaq-categories--faq_category--edit" onclick="tryItOut('GETfaq-categories--faq_category--edit');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETfaq-categories--faq_category--edit" onclick="cancelTryOut('GETfaq-categories--faq_category--edit');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETfaq-categories--faq_category--edit" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin/faq-categories/{faq_category}/edit</code></b>
+ <b><code>faq-categories/{faq_category}/edit</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
 <p>
 <b><code>faq_category</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="faq_category" data-endpoint="GETadmin-faq-categories--faq_category--edit" data-component="url" required  hidden>
+<input type="text" name="faq_category" data-endpoint="GETfaq-categories--faq_category--edit" data-component="url" required  hidden>
 <br>
 </p>
 </form>
 
 
-## admin/faq-categories/{faq_category}
+## faq-categories/{faq_category}
 
 
 
@@ -10264,16 +10254,16 @@ response.json()
 
 ```bash
 curl -X PUT \
-    "https://mamma-send.herokuapp.com/admin/faq-categories/natus" \
+    "https://mamma-send.herokuapp.com/faq-categories/enim" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"category":"delectus"}'
+    -d '{"category":"sunt"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/faq-categories/natus"
+    "https://mamma-send.herokuapp.com/faq-categories/enim"
 );
 
 let headers = {
@@ -10282,7 +10272,7 @@ let headers = {
 };
 
 let body = {
-    "category": "delectus"
+    "category": "sunt"
 }
 
 fetch(url, {
@@ -10296,14 +10286,14 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'https://mamma-send.herokuapp.com/admin/faq-categories/natus',
+    'https://mamma-send.herokuapp.com/faq-categories/enim',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'category' => 'delectus',
+            'category' => 'sunt',
         ],
     ]
 );
@@ -10315,9 +10305,9 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/faq-categories/natus'
+url = 'https://mamma-send.herokuapp.com/faq-categories/enim'
 payload = {
-    "category": "delectus"
+    "category": "sunt"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -10329,46 +10319,46 @@ response.json()
 ```
 
 
-<div id="execution-results-PUTadmin-faq-categories--faq_category-" hidden>
-    <blockquote>Received response<span id="execution-response-status-PUTadmin-faq-categories--faq_category-"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-PUTadmin-faq-categories--faq_category-"></code></pre>
+<div id="execution-results-PUTfaq-categories--faq_category-" hidden>
+    <blockquote>Received response<span id="execution-response-status-PUTfaq-categories--faq_category-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-PUTfaq-categories--faq_category-"></code></pre>
 </div>
-<div id="execution-error-PUTadmin-faq-categories--faq_category-" hidden>
+<div id="execution-error-PUTfaq-categories--faq_category-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-PUTadmin-faq-categories--faq_category-"></code></pre>
+    <pre><code id="execution-error-message-PUTfaq-categories--faq_category-"></code></pre>
 </div>
-<form id="form-PUTadmin-faq-categories--faq_category-" data-method="PUT" data-path="admin/faq-categories/{faq_category}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('PUTadmin-faq-categories--faq_category-', this);">
+<form id="form-PUTfaq-categories--faq_category-" data-method="PUT" data-path="faq-categories/{faq_category}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('PUTfaq-categories--faq_category-', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-PUTadmin-faq-categories--faq_category-" onclick="tryItOut('PUTadmin-faq-categories--faq_category-');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-PUTadmin-faq-categories--faq_category-" onclick="cancelTryOut('PUTadmin-faq-categories--faq_category-');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-PUTadmin-faq-categories--faq_category-" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-PUTfaq-categories--faq_category-" onclick="tryItOut('PUTfaq-categories--faq_category-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-PUTfaq-categories--faq_category-" onclick="cancelTryOut('PUTfaq-categories--faq_category-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-PUTfaq-categories--faq_category-" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-darkblue">PUT</small>
- <b><code>admin/faq-categories/{faq_category}</code></b>
+ <b><code>faq-categories/{faq_category}</code></b>
 </p>
 <p>
 <small class="badge badge-purple">PATCH</small>
- <b><code>admin/faq-categories/{faq_category}</code></b>
+ <b><code>faq-categories/{faq_category}</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
 <p>
 <b><code>faq_category</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="faq_category" data-endpoint="PUTadmin-faq-categories--faq_category-" data-component="url" required  hidden>
+<input type="text" name="faq_category" data-endpoint="PUTfaq-categories--faq_category-" data-component="url" required  hidden>
 <br>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
 <p>
 <b><code>category</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="category" data-endpoint="PUTadmin-faq-categories--faq_category-" data-component="body" required  hidden>
+<input type="text" name="category" data-endpoint="PUTfaq-categories--faq_category-" data-component="body" required  hidden>
 <br>
 </p>
 
 </form>
 
 
-## admin/faq-categories/{faq_category}
+## faq-categories/{faq_category}
 
 
 
@@ -10377,14 +10367,14 @@ response.json()
 
 ```bash
 curl -X DELETE \
-    "https://mamma-send.herokuapp.com/admin/faq-categories/nisi" \
+    "https://mamma-send.herokuapp.com/faq-categories/rem" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/faq-categories/nisi"
+    "https://mamma-send.herokuapp.com/faq-categories/rem"
 );
 
 let headers = {
@@ -10403,7 +10393,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'https://mamma-send.herokuapp.com/admin/faq-categories/nisi',
+    'https://mamma-send.herokuapp.com/faq-categories/rem',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -10419,7 +10409,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/faq-categories/nisi'
+url = 'https://mamma-send.herokuapp.com/faq-categories/rem'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -10430,35 +10420,35 @@ response.json()
 ```
 
 
-<div id="execution-results-DELETEadmin-faq-categories--faq_category-" hidden>
-    <blockquote>Received response<span id="execution-response-status-DELETEadmin-faq-categories--faq_category-"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-DELETEadmin-faq-categories--faq_category-"></code></pre>
+<div id="execution-results-DELETEfaq-categories--faq_category-" hidden>
+    <blockquote>Received response<span id="execution-response-status-DELETEfaq-categories--faq_category-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEfaq-categories--faq_category-"></code></pre>
 </div>
-<div id="execution-error-DELETEadmin-faq-categories--faq_category-" hidden>
+<div id="execution-error-DELETEfaq-categories--faq_category-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-DELETEadmin-faq-categories--faq_category-"></code></pre>
+    <pre><code id="execution-error-message-DELETEfaq-categories--faq_category-"></code></pre>
 </div>
-<form id="form-DELETEadmin-faq-categories--faq_category-" data-method="DELETE" data-path="admin/faq-categories/{faq_category}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('DELETEadmin-faq-categories--faq_category-', this);">
+<form id="form-DELETEfaq-categories--faq_category-" data-method="DELETE" data-path="faq-categories/{faq_category}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('DELETEfaq-categories--faq_category-', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-DELETEadmin-faq-categories--faq_category-" onclick="tryItOut('DELETEadmin-faq-categories--faq_category-');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-DELETEadmin-faq-categories--faq_category-" onclick="cancelTryOut('DELETEadmin-faq-categories--faq_category-');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-DELETEadmin-faq-categories--faq_category-" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-DELETEfaq-categories--faq_category-" onclick="tryItOut('DELETEfaq-categories--faq_category-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-DELETEfaq-categories--faq_category-" onclick="cancelTryOut('DELETEfaq-categories--faq_category-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-DELETEfaq-categories--faq_category-" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-red">DELETE</small>
- <b><code>admin/faq-categories/{faq_category}</code></b>
+ <b><code>faq-categories/{faq_category}</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
 <p>
 <b><code>faq_category</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="faq_category" data-endpoint="DELETEadmin-faq-categories--faq_category-" data-component="url" required  hidden>
+<input type="text" name="faq_category" data-endpoint="DELETEfaq-categories--faq_category-" data-component="url" required  hidden>
 <br>
 </p>
 </form>
 
 
-## admin/faq-questions
+## faq-questions
 
 
 
@@ -10467,14 +10457,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin/faq-questions" \
+    -G "https://mamma-send.herokuapp.com/faq-questions" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/faq-questions"
+    "https://mamma-send.herokuapp.com/faq-questions"
 );
 
 let headers = {
@@ -10493,7 +10483,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin/faq-questions',
+    'https://mamma-send.herokuapp.com/faq-questions',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -10509,7 +10499,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/faq-questions'
+url = 'https://mamma-send.herokuapp.com/faq-questions'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -10527,29 +10517,29 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin-faq-questions" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin-faq-questions"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin-faq-questions"></code></pre>
+<div id="execution-results-GETfaq-questions" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETfaq-questions"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETfaq-questions"></code></pre>
 </div>
-<div id="execution-error-GETadmin-faq-questions" hidden>
+<div id="execution-error-GETfaq-questions" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin-faq-questions"></code></pre>
+    <pre><code id="execution-error-message-GETfaq-questions"></code></pre>
 </div>
-<form id="form-GETadmin-faq-questions" data-method="GET" data-path="admin/faq-questions" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin-faq-questions', this);">
+<form id="form-GETfaq-questions" data-method="GET" data-path="faq-questions" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETfaq-questions', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin-faq-questions" onclick="tryItOut('GETadmin-faq-questions');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin-faq-questions" onclick="cancelTryOut('GETadmin-faq-questions');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin-faq-questions" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETfaq-questions" onclick="tryItOut('GETfaq-questions');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETfaq-questions" onclick="cancelTryOut('GETfaq-questions');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETfaq-questions" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin/faq-questions</code></b>
+ <b><code>faq-questions</code></b>
 </p>
 </form>
 
 
-## admin/faq-questions/create
+## faq-questions/create
 
 
 
@@ -10558,14 +10548,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin/faq-questions/create" \
+    -G "https://mamma-send.herokuapp.com/faq-questions/create" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/faq-questions/create"
+    "https://mamma-send.herokuapp.com/faq-questions/create"
 );
 
 let headers = {
@@ -10584,7 +10574,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin/faq-questions/create',
+    'https://mamma-send.herokuapp.com/faq-questions/create',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -10600,7 +10590,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/faq-questions/create'
+url = 'https://mamma-send.herokuapp.com/faq-questions/create'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -10618,29 +10608,29 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin-faq-questions-create" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin-faq-questions-create"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin-faq-questions-create"></code></pre>
+<div id="execution-results-GETfaq-questions-create" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETfaq-questions-create"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETfaq-questions-create"></code></pre>
 </div>
-<div id="execution-error-GETadmin-faq-questions-create" hidden>
+<div id="execution-error-GETfaq-questions-create" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin-faq-questions-create"></code></pre>
+    <pre><code id="execution-error-message-GETfaq-questions-create"></code></pre>
 </div>
-<form id="form-GETadmin-faq-questions-create" data-method="GET" data-path="admin/faq-questions/create" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin-faq-questions-create', this);">
+<form id="form-GETfaq-questions-create" data-method="GET" data-path="faq-questions/create" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETfaq-questions-create', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin-faq-questions-create" onclick="tryItOut('GETadmin-faq-questions-create');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin-faq-questions-create" onclick="cancelTryOut('GETadmin-faq-questions-create');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin-faq-questions-create" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETfaq-questions-create" onclick="tryItOut('GETfaq-questions-create');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETfaq-questions-create" onclick="cancelTryOut('GETfaq-questions-create');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETfaq-questions-create" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin/faq-questions/create</code></b>
+ <b><code>faq-questions/create</code></b>
 </p>
 </form>
 
 
-## admin/faq-questions
+## faq-questions
 
 
 
@@ -10649,16 +10639,16 @@ response.json()
 
 ```bash
 curl -X POST \
-    "https://mamma-send.herokuapp.com/admin/faq-questions" \
+    "https://mamma-send.herokuapp.com/faq-questions" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"category_id":4,"question":"suscipit","answer":"sint"}'
+    -d '{"category_id":13,"question":"esse","answer":"in"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/faq-questions"
+    "https://mamma-send.herokuapp.com/faq-questions"
 );
 
 let headers = {
@@ -10667,9 +10657,9 @@ let headers = {
 };
 
 let body = {
-    "category_id": 4,
-    "question": "suscipit",
-    "answer": "sint"
+    "category_id": 13,
+    "question": "esse",
+    "answer": "in"
 }
 
 fetch(url, {
@@ -10683,16 +10673,16 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->post(
-    'https://mamma-send.herokuapp.com/admin/faq-questions',
+    'https://mamma-send.herokuapp.com/faq-questions',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'category_id' => 4,
-            'question' => 'suscipit',
-            'answer' => 'sint',
+            'category_id' => 13,
+            'question' => 'esse',
+            'answer' => 'in',
         ],
     ]
 );
@@ -10704,11 +10694,11 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/faq-questions'
+url = 'https://mamma-send.herokuapp.com/faq-questions'
 payload = {
-    "category_id": 4,
-    "question": "suscipit",
-    "answer": "sint"
+    "category_id": 13,
+    "question": "esse",
+    "answer": "in"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -10720,46 +10710,46 @@ response.json()
 ```
 
 
-<div id="execution-results-POSTadmin-faq-questions" hidden>
-    <blockquote>Received response<span id="execution-response-status-POSTadmin-faq-questions"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-POSTadmin-faq-questions"></code></pre>
+<div id="execution-results-POSTfaq-questions" hidden>
+    <blockquote>Received response<span id="execution-response-status-POSTfaq-questions"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-POSTfaq-questions"></code></pre>
 </div>
-<div id="execution-error-POSTadmin-faq-questions" hidden>
+<div id="execution-error-POSTfaq-questions" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTadmin-faq-questions"></code></pre>
+    <pre><code id="execution-error-message-POSTfaq-questions"></code></pre>
 </div>
-<form id="form-POSTadmin-faq-questions" data-method="POST" data-path="admin/faq-questions" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTadmin-faq-questions', this);">
+<form id="form-POSTfaq-questions" data-method="POST" data-path="faq-questions" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTfaq-questions', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTadmin-faq-questions" onclick="tryItOut('POSTadmin-faq-questions');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTadmin-faq-questions" onclick="cancelTryOut('POSTadmin-faq-questions');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTadmin-faq-questions" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTfaq-questions" onclick="tryItOut('POSTfaq-questions');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTfaq-questions" onclick="cancelTryOut('POSTfaq-questions');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTfaq-questions" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-black">POST</small>
- <b><code>admin/faq-questions</code></b>
+ <b><code>faq-questions</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
 <p>
 <b><code>category_id</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
-<input type="number" name="category_id" data-endpoint="POSTadmin-faq-questions" data-component="body" required  hidden>
+<input type="number" name="category_id" data-endpoint="POSTfaq-questions" data-component="body" required  hidden>
 <br>
 </p>
 <p>
 <b><code>question</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="question" data-endpoint="POSTadmin-faq-questions" data-component="body" required  hidden>
+<input type="text" name="question" data-endpoint="POSTfaq-questions" data-component="body" required  hidden>
 <br>
 </p>
 <p>
 <b><code>answer</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="answer" data-endpoint="POSTadmin-faq-questions" data-component="body" required  hidden>
+<input type="text" name="answer" data-endpoint="POSTfaq-questions" data-component="body" required  hidden>
 <br>
 </p>
 
 </form>
 
 
-## admin/faq-questions/{faq_question}
+## faq-questions/{faq_question}
 
 
 
@@ -10768,14 +10758,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin/faq-questions/expedita" \
+    -G "https://mamma-send.herokuapp.com/faq-questions/nulla" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/faq-questions/expedita"
+    "https://mamma-send.herokuapp.com/faq-questions/nulla"
 );
 
 let headers = {
@@ -10794,7 +10784,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin/faq-questions/expedita',
+    'https://mamma-send.herokuapp.com/faq-questions/nulla',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -10810,7 +10800,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/faq-questions/expedita'
+url = 'https://mamma-send.herokuapp.com/faq-questions/nulla'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -10828,35 +10818,35 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin-faq-questions--faq_question-" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin-faq-questions--faq_question-"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin-faq-questions--faq_question-"></code></pre>
+<div id="execution-results-GETfaq-questions--faq_question-" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETfaq-questions--faq_question-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETfaq-questions--faq_question-"></code></pre>
 </div>
-<div id="execution-error-GETadmin-faq-questions--faq_question-" hidden>
+<div id="execution-error-GETfaq-questions--faq_question-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin-faq-questions--faq_question-"></code></pre>
+    <pre><code id="execution-error-message-GETfaq-questions--faq_question-"></code></pre>
 </div>
-<form id="form-GETadmin-faq-questions--faq_question-" data-method="GET" data-path="admin/faq-questions/{faq_question}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin-faq-questions--faq_question-', this);">
+<form id="form-GETfaq-questions--faq_question-" data-method="GET" data-path="faq-questions/{faq_question}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETfaq-questions--faq_question-', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin-faq-questions--faq_question-" onclick="tryItOut('GETadmin-faq-questions--faq_question-');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin-faq-questions--faq_question-" onclick="cancelTryOut('GETadmin-faq-questions--faq_question-');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin-faq-questions--faq_question-" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETfaq-questions--faq_question-" onclick="tryItOut('GETfaq-questions--faq_question-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETfaq-questions--faq_question-" onclick="cancelTryOut('GETfaq-questions--faq_question-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETfaq-questions--faq_question-" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin/faq-questions/{faq_question}</code></b>
+ <b><code>faq-questions/{faq_question}</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
 <p>
 <b><code>faq_question</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="faq_question" data-endpoint="GETadmin-faq-questions--faq_question-" data-component="url" required  hidden>
+<input type="text" name="faq_question" data-endpoint="GETfaq-questions--faq_question-" data-component="url" required  hidden>
 <br>
 </p>
 </form>
 
 
-## admin/faq-questions/{faq_question}/edit
+## faq-questions/{faq_question}/edit
 
 
 
@@ -10865,14 +10855,14 @@ response.json()
 
 ```bash
 curl -X GET \
-    -G "https://mamma-send.herokuapp.com/admin/faq-questions/laboriosam/edit" \
+    -G "https://mamma-send.herokuapp.com/faq-questions/quam/edit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/faq-questions/laboriosam/edit"
+    "https://mamma-send.herokuapp.com/faq-questions/quam/edit"
 );
 
 let headers = {
@@ -10891,7 +10881,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->get(
-    'https://mamma-send.herokuapp.com/admin/faq-questions/laboriosam/edit',
+    'https://mamma-send.herokuapp.com/faq-questions/quam/edit',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -10907,7 +10897,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/faq-questions/laboriosam/edit'
+url = 'https://mamma-send.herokuapp.com/faq-questions/quam/edit'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -10925,35 +10915,35 @@ response.json()
     "message": "Unauthenticated."
 }
 ```
-<div id="execution-results-GETadmin-faq-questions--faq_question--edit" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETadmin-faq-questions--faq_question--edit"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETadmin-faq-questions--faq_question--edit"></code></pre>
+<div id="execution-results-GETfaq-questions--faq_question--edit" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETfaq-questions--faq_question--edit"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETfaq-questions--faq_question--edit"></code></pre>
 </div>
-<div id="execution-error-GETadmin-faq-questions--faq_question--edit" hidden>
+<div id="execution-error-GETfaq-questions--faq_question--edit" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETadmin-faq-questions--faq_question--edit"></code></pre>
+    <pre><code id="execution-error-message-GETfaq-questions--faq_question--edit"></code></pre>
 </div>
-<form id="form-GETadmin-faq-questions--faq_question--edit" data-method="GET" data-path="admin/faq-questions/{faq_question}/edit" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETadmin-faq-questions--faq_question--edit', this);">
+<form id="form-GETfaq-questions--faq_question--edit" data-method="GET" data-path="faq-questions/{faq_question}/edit" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETfaq-questions--faq_question--edit', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETadmin-faq-questions--faq_question--edit" onclick="tryItOut('GETadmin-faq-questions--faq_question--edit');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETadmin-faq-questions--faq_question--edit" onclick="cancelTryOut('GETadmin-faq-questions--faq_question--edit');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETadmin-faq-questions--faq_question--edit" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETfaq-questions--faq_question--edit" onclick="tryItOut('GETfaq-questions--faq_question--edit');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETfaq-questions--faq_question--edit" onclick="cancelTryOut('GETfaq-questions--faq_question--edit');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETfaq-questions--faq_question--edit" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-green">GET</small>
- <b><code>admin/faq-questions/{faq_question}/edit</code></b>
+ <b><code>faq-questions/{faq_question}/edit</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
 <p>
 <b><code>faq_question</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="faq_question" data-endpoint="GETadmin-faq-questions--faq_question--edit" data-component="url" required  hidden>
+<input type="text" name="faq_question" data-endpoint="GETfaq-questions--faq_question--edit" data-component="url" required  hidden>
 <br>
 </p>
 </form>
 
 
-## admin/faq-questions/{faq_question}
+## faq-questions/{faq_question}
 
 
 
@@ -10962,16 +10952,16 @@ response.json()
 
 ```bash
 curl -X PUT \
-    "https://mamma-send.herokuapp.com/admin/faq-questions/dignissimos" \
+    "https://mamma-send.herokuapp.com/faq-questions/excepturi" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"category_id":8,"question":"consequatur","answer":"et"}'
+    -d '{"category_id":13,"question":"asperiores","answer":"sapiente"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/faq-questions/dignissimos"
+    "https://mamma-send.herokuapp.com/faq-questions/excepturi"
 );
 
 let headers = {
@@ -10980,9 +10970,9 @@ let headers = {
 };
 
 let body = {
-    "category_id": 8,
-    "question": "consequatur",
-    "answer": "et"
+    "category_id": 13,
+    "question": "asperiores",
+    "answer": "sapiente"
 }
 
 fetch(url, {
@@ -10996,16 +10986,16 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->put(
-    'https://mamma-send.herokuapp.com/admin/faq-questions/dignissimos',
+    'https://mamma-send.herokuapp.com/faq-questions/excepturi',
     [
         'headers' => [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ],
         'json' => [
-            'category_id' => 8,
-            'question' => 'consequatur',
-            'answer' => 'et',
+            'category_id' => 13,
+            'question' => 'asperiores',
+            'answer' => 'sapiente',
         ],
     ]
 );
@@ -11017,11 +11007,11 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/faq-questions/dignissimos'
+url = 'https://mamma-send.herokuapp.com/faq-questions/excepturi'
 payload = {
-    "category_id": 8,
-    "question": "consequatur",
-    "answer": "et"
+    "category_id": 13,
+    "question": "asperiores",
+    "answer": "sapiente"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -11033,56 +11023,56 @@ response.json()
 ```
 
 
-<div id="execution-results-PUTadmin-faq-questions--faq_question-" hidden>
-    <blockquote>Received response<span id="execution-response-status-PUTadmin-faq-questions--faq_question-"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-PUTadmin-faq-questions--faq_question-"></code></pre>
+<div id="execution-results-PUTfaq-questions--faq_question-" hidden>
+    <blockquote>Received response<span id="execution-response-status-PUTfaq-questions--faq_question-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-PUTfaq-questions--faq_question-"></code></pre>
 </div>
-<div id="execution-error-PUTadmin-faq-questions--faq_question-" hidden>
+<div id="execution-error-PUTfaq-questions--faq_question-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-PUTadmin-faq-questions--faq_question-"></code></pre>
+    <pre><code id="execution-error-message-PUTfaq-questions--faq_question-"></code></pre>
 </div>
-<form id="form-PUTadmin-faq-questions--faq_question-" data-method="PUT" data-path="admin/faq-questions/{faq_question}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('PUTadmin-faq-questions--faq_question-', this);">
+<form id="form-PUTfaq-questions--faq_question-" data-method="PUT" data-path="faq-questions/{faq_question}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('PUTfaq-questions--faq_question-', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-PUTadmin-faq-questions--faq_question-" onclick="tryItOut('PUTadmin-faq-questions--faq_question-');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-PUTadmin-faq-questions--faq_question-" onclick="cancelTryOut('PUTadmin-faq-questions--faq_question-');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-PUTadmin-faq-questions--faq_question-" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-PUTfaq-questions--faq_question-" onclick="tryItOut('PUTfaq-questions--faq_question-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-PUTfaq-questions--faq_question-" onclick="cancelTryOut('PUTfaq-questions--faq_question-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-PUTfaq-questions--faq_question-" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-darkblue">PUT</small>
- <b><code>admin/faq-questions/{faq_question}</code></b>
+ <b><code>faq-questions/{faq_question}</code></b>
 </p>
 <p>
 <small class="badge badge-purple">PATCH</small>
- <b><code>admin/faq-questions/{faq_question}</code></b>
+ <b><code>faq-questions/{faq_question}</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
 <p>
 <b><code>faq_question</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="faq_question" data-endpoint="PUTadmin-faq-questions--faq_question-" data-component="url" required  hidden>
+<input type="text" name="faq_question" data-endpoint="PUTfaq-questions--faq_question-" data-component="url" required  hidden>
 <br>
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
 <p>
 <b><code>category_id</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
-<input type="number" name="category_id" data-endpoint="PUTadmin-faq-questions--faq_question-" data-component="body" required  hidden>
+<input type="number" name="category_id" data-endpoint="PUTfaq-questions--faq_question-" data-component="body" required  hidden>
 <br>
 </p>
 <p>
 <b><code>question</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="question" data-endpoint="PUTadmin-faq-questions--faq_question-" data-component="body" required  hidden>
+<input type="text" name="question" data-endpoint="PUTfaq-questions--faq_question-" data-component="body" required  hidden>
 <br>
 </p>
 <p>
 <b><code>answer</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="answer" data-endpoint="PUTadmin-faq-questions--faq_question-" data-component="body" required  hidden>
+<input type="text" name="answer" data-endpoint="PUTfaq-questions--faq_question-" data-component="body" required  hidden>
 <br>
 </p>
 
 </form>
 
 
-## admin/faq-questions/{faq_question}
+## faq-questions/{faq_question}
 
 
 
@@ -11091,14 +11081,14 @@ response.json()
 
 ```bash
 curl -X DELETE \
-    "https://mamma-send.herokuapp.com/admin/faq-questions/rerum" \
+    "https://mamma-send.herokuapp.com/faq-questions/libero" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://mamma-send.herokuapp.com/admin/faq-questions/rerum"
+    "https://mamma-send.herokuapp.com/faq-questions/libero"
 );
 
 let headers = {
@@ -11117,7 +11107,7 @@ fetch(url, {
 
 $client = new \GuzzleHttp\Client();
 $response = $client->delete(
-    'https://mamma-send.herokuapp.com/admin/faq-questions/rerum',
+    'https://mamma-send.herokuapp.com/faq-questions/libero',
     [
         'headers' => [
             'Content-Type' => 'application/json',
@@ -11133,7 +11123,7 @@ print_r(json_decode((string) $body));
 import requests
 import json
 
-url = 'https://mamma-send.herokuapp.com/admin/faq-questions/rerum'
+url = 'https://mamma-send.herokuapp.com/faq-questions/libero'
 headers = {
   'Content-Type': 'application/json',
   'Accept': 'application/json'
@@ -11144,29 +11134,29 @@ response.json()
 ```
 
 
-<div id="execution-results-DELETEadmin-faq-questions--faq_question-" hidden>
-    <blockquote>Received response<span id="execution-response-status-DELETEadmin-faq-questions--faq_question-"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-DELETEadmin-faq-questions--faq_question-"></code></pre>
+<div id="execution-results-DELETEfaq-questions--faq_question-" hidden>
+    <blockquote>Received response<span id="execution-response-status-DELETEfaq-questions--faq_question-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEfaq-questions--faq_question-"></code></pre>
 </div>
-<div id="execution-error-DELETEadmin-faq-questions--faq_question-" hidden>
+<div id="execution-error-DELETEfaq-questions--faq_question-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-DELETEadmin-faq-questions--faq_question-"></code></pre>
+    <pre><code id="execution-error-message-DELETEfaq-questions--faq_question-"></code></pre>
 </div>
-<form id="form-DELETEadmin-faq-questions--faq_question-" data-method="DELETE" data-path="admin/faq-questions/{faq_question}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('DELETEadmin-faq-questions--faq_question-', this);">
+<form id="form-DELETEfaq-questions--faq_question-" data-method="DELETE" data-path="faq-questions/{faq_question}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('DELETEfaq-questions--faq_question-', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-DELETEadmin-faq-questions--faq_question-" onclick="tryItOut('DELETEadmin-faq-questions--faq_question-');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-DELETEadmin-faq-questions--faq_question-" onclick="cancelTryOut('DELETEadmin-faq-questions--faq_question-');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-DELETEadmin-faq-questions--faq_question-" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-DELETEfaq-questions--faq_question-" onclick="tryItOut('DELETEfaq-questions--faq_question-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-DELETEfaq-questions--faq_question-" onclick="cancelTryOut('DELETEfaq-questions--faq_question-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-DELETEfaq-questions--faq_question-" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-red">DELETE</small>
- <b><code>admin/faq-questions/{faq_question}</code></b>
+ <b><code>faq-questions/{faq_question}</code></b>
 </p>
 <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
 <p>
 <b><code>faq_question</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="faq_question" data-endpoint="DELETEadmin-faq-questions--faq_question-" data-component="url" required  hidden>
+<input type="text" name="faq_question" data-endpoint="DELETEfaq-questions--faq_question-" data-component="url" required  hidden>
 <br>
 </p>
 </form>
@@ -11275,7 +11265,7 @@ curl -X POST \
     "https://mamma-send.herokuapp.com/profile/password" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"password":"voluptatum"}'
+    -d '{"password":"nihil"}'
 
 ```
 
@@ -11290,7 +11280,7 @@ let headers = {
 };
 
 let body = {
-    "password": "voluptatum"
+    "password": "nihil"
 }
 
 fetch(url, {
@@ -11311,7 +11301,7 @@ $response = $client->post(
             'Accept' => 'application/json',
         ],
         'json' => [
-            'password' => 'voluptatum',
+            'password' => 'nihil',
         ],
     ]
 );
@@ -11325,7 +11315,7 @@ import json
 
 url = 'https://mamma-send.herokuapp.com/profile/password'
 payload = {
-    "password": "voluptatum"
+    "password": "nihil"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -11378,7 +11368,7 @@ curl -X POST \
     "https://mamma-send.herokuapp.com/profile/profile" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"mollitia","email":"eve.orn@example.org"}'
+    -d '{"name":"omnis","email":"stephan59@example.org"}'
 
 ```
 
@@ -11393,8 +11383,8 @@ let headers = {
 };
 
 let body = {
-    "name": "mollitia",
-    "email": "eve.orn@example.org"
+    "name": "omnis",
+    "email": "stephan59@example.org"
 }
 
 fetch(url, {
@@ -11415,8 +11405,8 @@ $response = $client->post(
             'Accept' => 'application/json',
         ],
         'json' => [
-            'name' => 'mollitia',
-            'email' => 'eve.orn@example.org',
+            'name' => 'omnis',
+            'email' => 'stephan59@example.org',
         ],
     ]
 );
@@ -11430,8 +11420,8 @@ import json
 
 url = 'https://mamma-send.herokuapp.com/profile/profile'
 payload = {
-    "name": "mollitia",
-    "email": "eve.orn@example.org"
+    "name": "omnis",
+    "email": "stephan59@example.org"
 }
 headers = {
   'Content-Type': 'application/json',
