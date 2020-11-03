@@ -138,6 +138,14 @@
                 {{ trans('global.logout') }}
             </a>
         </li>
+
+        <li class="c-sidebar-nav-item">
+            <a href="/my-token" class="c-sidebar-nav-link" >
+                <i class="fa-fw fas fa-key c-sidebar-nav-icon">
+                </i>
+                Get my API Token
+            </a>
+        </li>
     </ul>
 
 </div>
