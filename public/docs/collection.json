@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "d081c218-7578-4ec1-9ce4-5bd5e40defd0",
+        "_postman_id": "75ca3d50-9d93-4225-b161-1ebdfb45b1a8",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -71,7 +71,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"title\": \"modi\"\n}"
+                            "raw": "{\n    \"title\": \"et\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -93,7 +93,7 @@
                                 {
                                     "id": "permission",
                                     "key": "permission",
-                                    "value": "autem",
+                                    "value": "est",
                                     "description": ""
                                 }
                             ]
@@ -130,7 +130,7 @@
                                 {
                                     "id": "permission",
                                     "key": "permission",
-                                    "value": "repellat",
+                                    "value": "perspiciatis",
                                     "description": ""
                                 }
                             ]
@@ -148,7 +148,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"title\": \"voluptatum\"\n}"
+                            "raw": "{\n    \"title\": \"iusto\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -170,7 +170,7 @@
                                 {
                                     "id": "permission",
                                     "key": "permission",
-                                    "value": "corrupti",
+                                    "value": "veniam",
                                     "description": ""
                                 }
                             ]
@@ -246,7 +246,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"title\": \"omnis\",\n    \"permissions\": [\n        15,\n        2\n    ]\n}"
+                            "raw": "{\n    \"title\": \"nihil\",\n    \"permissions\": [\n        8,\n        15\n    ]\n}"
                         },
                         "description": "",
                         "auth": {
@@ -268,7 +268,7 @@
                                 {
                                     "id": "role",
                                     "key": "role",
-                                    "value": "voluptatibus",
+                                    "value": "quam",
                                     "description": ""
                                 }
                             ]
@@ -305,7 +305,7 @@
                                 {
                                     "id": "role",
                                     "key": "role",
-                                    "value": "molestiae",
+                                    "value": "voluptas",
                                     "description": ""
                                 }
                             ]
@@ -323,7 +323,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"title\": \"laboriosam\",\n    \"permissions\": [\n        2,\n        1\n    ]\n}"
+                            "raw": "{\n    \"title\": \"est\",\n    \"permissions\": [\n        3,\n        11\n    ]\n}"
                         },
                         "description": "",
                         "auth": {
@@ -345,7 +345,7 @@
                                 {
                                     "id": "role",
                                     "key": "role",
-                                    "value": "provident",
+                                    "value": "iure",
                                     "description": ""
                                 }
                             ]
@@ -421,7 +421,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"veritatis\",\n    \"email\": \"illo\",\n    \"password\": \"dolores\",\n    \"roles\": [\n        5,\n        7\n    ]\n}"
+                            "raw": "{\n    \"name\": \"libero\",\n    \"email\": \"commodi\",\n    \"password\": \"eius\",\n    \"roles\": [\n        13,\n        20\n    ]\n}"
                         },
                         "description": "",
                         "auth": {
@@ -443,7 +443,7 @@
                                 {
                                     "id": "user",
                                     "key": "user",
-                                    "value": "id",
+                                    "value": "itaque",
                                     "description": ""
                                 }
                             ]
@@ -480,846 +480,146 @@
                                 {
                                     "id": "user",
                                     "key": "user",
-                                    "value": "quia",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "DELETE",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "api\/v1\/addresses",
-                    "request": {
-                        "url": {
-                            "protocol": "https",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/addresses",
-                            "query": [],
-                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/addresses"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "api\/v1\/addresses",
-                    "request": {
-                        "url": {
-                            "protocol": "https",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/addresses",
-                            "query": [],
-                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/addresses"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\n    \"street\": \"cupiditate\",\n    \"city\": \"omnis\",\n    \"state\": \"cum\",\n    \"zip_code\": \"ipsa\"\n}"
-                        },
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "api\/v1\/addresses\/{address}",
-                    "request": {
-                        "url": {
-                            "protocol": "https",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/addresses\/:address",
-                            "query": [],
-                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/addresses\/:address",
-                            "variable": [
-                                {
-                                    "id": "address",
-                                    "key": "address",
-                                    "value": "explicabo",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "api\/v1\/addresses\/{address}",
-                    "request": {
-                        "url": {
-                            "protocol": "https",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/addresses\/:address",
-                            "query": [],
-                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/addresses\/:address",
-                            "variable": [
-                                {
-                                    "id": "address",
-                                    "key": "address",
-                                    "value": "repellendus",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "PUT",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\n    \"street\": \"recusandae\",\n    \"city\": \"sit\",\n    \"state\": \"quia\",\n    \"zip_code\": \"sequi\"\n}"
-                        },
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "api\/v1\/addresses\/{address}",
-                    "request": {
-                        "url": {
-                            "protocol": "https",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/addresses\/:address",
-                            "query": [],
-                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/addresses\/:address",
-                            "variable": [
-                                {
-                                    "id": "address",
-                                    "key": "address",
-                                    "value": "officiis",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "DELETE",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "api\/v1\/rides",
-                    "request": {
-                        "url": {
-                            "protocol": "https",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/rides",
-                            "query": [],
-                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/rides"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "api\/v1\/rides",
-                    "request": {
-                        "url": {
-                            "protocol": "https",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/rides",
-                            "query": [],
-                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/rides"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\n    \"rider_id\": 3\n}"
-                        },
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "api\/v1\/rides\/{ride}",
-                    "request": {
-                        "url": {
-                            "protocol": "https",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/rides\/:ride",
-                            "query": [],
-                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/rides\/:ride",
-                            "variable": [
-                                {
-                                    "id": "ride",
-                                    "key": "ride",
-                                    "value": "dolores",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "api\/v1\/rides\/{ride}",
-                    "request": {
-                        "url": {
-                            "protocol": "https",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/rides\/:ride",
-                            "query": [],
-                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/rides\/:ride",
-                            "variable": [
-                                {
-                                    "id": "ride",
-                                    "key": "ride",
-                                    "value": "ad",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "PUT",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\n    \"rider_id\": 1\n}"
-                        },
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "api\/v1\/rides\/{ride}",
-                    "request": {
-                        "url": {
-                            "protocol": "https",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/rides\/:ride",
-                            "query": [],
-                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/rides\/:ride",
-                            "variable": [
-                                {
-                                    "id": "ride",
-                                    "key": "ride",
-                                    "value": "necessitatibus",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "DELETE",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "api\/v1\/payments",
-                    "request": {
-                        "url": {
-                            "protocol": "https",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/payments",
-                            "query": [],
-                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/payments"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "api\/v1\/payments",
-                    "request": {
-                        "url": {
-                            "protocol": "https",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/payments",
-                            "query": [],
-                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/payments"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\n    \"total_received\": \"officia\",\n    \"rider_received\": \"excepturi\",\n    \"office_received\": \"sit\",\n    \"user_id\": 16\n}"
-                        },
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "api\/v1\/payments\/{payment}",
-                    "request": {
-                        "url": {
-                            "protocol": "https",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/payments\/:payment",
-                            "query": [],
-                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/payments\/:payment",
-                            "variable": [
-                                {
-                                    "id": "payment",
-                                    "key": "payment",
-                                    "value": "quo",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "api\/v1\/payments\/{payment}",
-                    "request": {
-                        "url": {
-                            "protocol": "https",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/payments\/:payment",
-                            "query": [],
-                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/payments\/:payment",
-                            "variable": [
-                                {
-                                    "id": "payment",
-                                    "key": "payment",
-                                    "value": "quidem",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "PUT",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\n    \"total_received\": \"ullam\",\n    \"rider_received\": \"illum\",\n    \"office_received\": \"debitis\",\n    \"user_id\": 2\n}"
-                        },
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "api\/v1\/payments\/{payment}",
-                    "request": {
-                        "url": {
-                            "protocol": "https",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/payments\/:payment",
-                            "query": [],
-                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/payments\/:payment",
-                            "variable": [
-                                {
-                                    "id": "payment",
-                                    "key": "payment",
-                                    "value": "dolorum",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "DELETE",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "api\/v1\/faq-categories",
-                    "request": {
-                        "url": {
-                            "protocol": "https",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/faq-categories",
-                            "query": [],
-                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/faq-categories"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "api\/v1\/faq-categories",
-                    "request": {
-                        "url": {
-                            "protocol": "https",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/faq-categories",
-                            "query": [],
-                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/faq-categories"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\n    \"category\": \"aspernatur\"\n}"
-                        },
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "api\/v1\/faq-categories\/{faq_category}",
-                    "request": {
-                        "url": {
-                            "protocol": "https",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/faq-categories\/:faq_category",
-                            "query": [],
-                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/faq-categories\/:faq_category",
-                            "variable": [
-                                {
-                                    "id": "faq_category",
-                                    "key": "faq_category",
-                                    "value": "et",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "api\/v1\/faq-categories\/{faq_category}",
-                    "request": {
-                        "url": {
-                            "protocol": "https",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/faq-categories\/:faq_category",
-                            "query": [],
-                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/faq-categories\/:faq_category",
-                            "variable": [
-                                {
-                                    "id": "faq_category",
-                                    "key": "faq_category",
-                                    "value": "perferendis",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "PUT",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\n    \"category\": \"nemo\"\n}"
-                        },
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "api\/v1\/faq-categories\/{faq_category}",
-                    "request": {
-                        "url": {
-                            "protocol": "https",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/faq-categories\/:faq_category",
-                            "query": [],
-                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/faq-categories\/:faq_category",
-                            "variable": [
-                                {
-                                    "id": "faq_category",
-                                    "key": "faq_category",
-                                    "value": "vel",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "DELETE",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "api\/v1\/faq-questions",
-                    "request": {
-                        "url": {
-                            "protocol": "https",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/faq-questions",
-                            "query": [],
-                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/faq-questions"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "api\/v1\/faq-questions",
-                    "request": {
-                        "url": {
-                            "protocol": "https",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/faq-questions",
-                            "query": [],
-                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/faq-questions"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\n    \"category_id\": 12,\n    \"question\": \"ipsum\",\n    \"answer\": \"fugiat\"\n}"
-                        },
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "api\/v1\/faq-questions\/{faq_question}",
-                    "request": {
-                        "url": {
-                            "protocol": "https",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/faq-questions\/:faq_question",
-                            "query": [],
-                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/faq-questions\/:faq_question",
-                            "variable": [
-                                {
-                                    "id": "faq_question",
-                                    "key": "faq_question",
-                                    "value": "eum",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "api\/v1\/faq-questions\/{faq_question}",
-                    "request": {
-                        "url": {
-                            "protocol": "https",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/faq-questions\/:faq_question",
-                            "query": [],
-                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/faq-questions\/:faq_question",
-                            "variable": [
-                                {
-                                    "id": "faq_question",
-                                    "key": "faq_question",
                                     "value": "debitis",
                                     "description": ""
                                 }
                             ]
                         },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/v1\/addresses",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/addresses",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/addresses"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/v1\/addresses",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/addresses",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/addresses"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"street\": \"distinctio\",\n    \"city\": \"necessitatibus\",\n    \"state\": \"corporis\",\n    \"zip_code\": \"inventore\"\n}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/v1\/addresses\/{address}",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/addresses\/:address",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/addresses\/:address",
+                            "variable": [
+                                {
+                                    "id": "address",
+                                    "key": "address",
+                                    "value": "aut",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/v1\/addresses\/{address}",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/addresses\/:address",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/addresses\/:address",
+                            "variable": [
+                                {
+                                    "id": "address",
+                                    "key": "address",
+                                    "value": "distinctio",
+                                    "description": ""
+                                }
+                            ]
+                        },
                         "method": "PUT",
                         "header": [
                             {
@@ -1333,7 +633,630 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"category_id\": 12,\n    \"question\": \"voluptas\",\n    \"answer\": \"rerum\"\n}"
+                            "raw": "{\n    \"street\": \"quidem\",\n    \"city\": \"voluptas\",\n    \"state\": \"sit\",\n    \"zip_code\": \"aliquam\"\n}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/v1\/addresses\/{address}",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/addresses\/:address",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/addresses\/:address",
+                            "variable": [
+                                {
+                                    "id": "address",
+                                    "key": "address",
+                                    "value": "blanditiis",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/v1\/rides",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/rides",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/rides"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/v1\/rides",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/rides",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/rides"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"rider_id\": 19\n}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/v1\/rides\/{ride}",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/rides\/:ride",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/rides\/:ride",
+                            "variable": [
+                                {
+                                    "id": "ride",
+                                    "key": "ride",
+                                    "value": "voluptatem",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/v1\/rides\/{ride}",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/rides\/:ride",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/rides\/:ride",
+                            "variable": [
+                                {
+                                    "id": "ride",
+                                    "key": "ride",
+                                    "value": "omnis",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"rider_id\": 11\n}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/v1\/rides\/{ride}",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/rides\/:ride",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/rides\/:ride",
+                            "variable": [
+                                {
+                                    "id": "ride",
+                                    "key": "ride",
+                                    "value": "facere",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/v1\/payments",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/payments",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/payments"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/v1\/payments",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/payments",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/payments"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"total_received\": \"et\",\n    \"rider_received\": \"eos\",\n    \"office_received\": \"exercitationem\",\n    \"user_id\": 12\n}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/v1\/payments\/{payment}",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/payments\/:payment",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/payments\/:payment",
+                            "variable": [
+                                {
+                                    "id": "payment",
+                                    "key": "payment",
+                                    "value": "neque",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/v1\/payments\/{payment}",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/payments\/:payment",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/payments\/:payment",
+                            "variable": [
+                                {
+                                    "id": "payment",
+                                    "key": "payment",
+                                    "value": "dolores",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"total_received\": \"incidunt\",\n    \"rider_received\": \"tempora\",\n    \"office_received\": \"aut\",\n    \"user_id\": 13\n}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/v1\/payments\/{payment}",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/payments\/:payment",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/payments\/:payment",
+                            "variable": [
+                                {
+                                    "id": "payment",
+                                    "key": "payment",
+                                    "value": "saepe",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/v1\/faq-categories",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/faq-categories",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/faq-categories"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/v1\/faq-categories",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/faq-categories",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/faq-categories"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"category\": \"facilis\"\n}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/v1\/faq-categories\/{faq_category}",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/faq-categories\/:faq_category",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/faq-categories\/:faq_category",
+                            "variable": [
+                                {
+                                    "id": "faq_category",
+                                    "key": "faq_category",
+                                    "value": "reprehenderit",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/v1\/faq-categories\/{faq_category}",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/faq-categories\/:faq_category",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/faq-categories\/:faq_category",
+                            "variable": [
+                                {
+                                    "id": "faq_category",
+                                    "key": "faq_category",
+                                    "value": "vero",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"category\": \"qui\"\n}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/v1\/faq-categories\/{faq_category}",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/faq-categories\/:faq_category",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/faq-categories\/:faq_category",
+                            "variable": [
+                                {
+                                    "id": "faq_category",
+                                    "key": "faq_category",
+                                    "value": "tempore",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/v1\/faq-questions",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/faq-questions",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/faq-questions"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/v1\/faq-questions",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/faq-questions",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/faq-questions"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"category_id\": 19,\n    \"question\": \"aut\",\n    \"answer\": \"cum\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -1355,7 +1278,84 @@
                                 {
                                     "id": "faq_question",
                                     "key": "faq_question",
-                                    "value": "necessitatibus",
+                                    "value": "dolorem",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/v1\/faq-questions\/{faq_question}",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/faq-questions\/:faq_question",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/faq-questions\/:faq_question",
+                            "variable": [
+                                {
+                                    "id": "faq_question",
+                                    "key": "faq_question",
+                                    "value": "exercitationem",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"category_id\": 13,\n    \"question\": \"sunt\",\n    \"answer\": \"totam\"\n}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/v1\/faq-questions\/{faq_question}",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/faq-questions\/:faq_question",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/v1\/faq-questions\/:faq_question",
+                            "variable": [
+                                {
+                                    "id": "faq_question",
+                                    "key": "faq_question",
+                                    "value": "expedita",
                                     "description": ""
                                 }
                             ]
@@ -1653,7 +1653,7 @@
                                 {
                                     "id": "token",
                                     "key": "token",
-                                    "value": "voluptas",
+                                    "value": "distinctio",
                                     "description": ""
                                 }
                             ]
@@ -1874,7 +1874,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"title\": \"dolor\"\n}"
+                            "raw": "{\n    \"title\": \"cupiditate\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -1896,7 +1896,7 @@
                                 {
                                     "id": "permission",
                                     "key": "permission",
-                                    "value": "necessitatibus",
+                                    "value": "voluptate",
                                     "description": ""
                                 }
                             ]
@@ -1933,7 +1933,7 @@
                                 {
                                     "id": "permission",
                                     "key": "permission",
-                                    "value": "ducimus",
+                                    "value": "earum",
                                     "description": ""
                                 }
                             ]
@@ -1970,7 +1970,7 @@
                                 {
                                     "id": "permission",
                                     "key": "permission",
-                                    "value": "ratione",
+                                    "value": "mollitia",
                                     "description": ""
                                 }
                             ]
@@ -1988,7 +1988,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"title\": \"nam\"\n}"
+                            "raw": "{\n    \"title\": \"laborum\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -2010,7 +2010,7 @@
                                 {
                                     "id": "permission",
                                     "key": "permission",
-                                    "value": "sequi",
+                                    "value": "omnis",
                                     "description": ""
                                 }
                             ]
@@ -2115,7 +2115,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"title\": \"ut\",\n    \"permissions\": [\n        10,\n        12\n    ]\n}"
+                            "raw": "{\n    \"title\": \"ratione\",\n    \"permissions\": [\n        16,\n        3\n    ]\n}"
                         },
                         "description": "",
                         "auth": {
@@ -2137,7 +2137,7 @@
                                 {
                                     "id": "role",
                                     "key": "role",
-                                    "value": "corrupti",
+                                    "value": "rerum",
                                     "description": ""
                                 }
                             ]
@@ -2174,7 +2174,7 @@
                                 {
                                     "id": "role",
                                     "key": "role",
-                                    "value": "iusto",
+                                    "value": "doloribus",
                                     "description": ""
                                 }
                             ]
@@ -2211,7 +2211,7 @@
                                 {
                                     "id": "role",
                                     "key": "role",
-                                    "value": "nulla",
+                                    "value": "sunt",
                                     "description": ""
                                 }
                             ]
@@ -2229,7 +2229,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"title\": \"sed\",\n    \"permissions\": [\n        4,\n        10\n    ]\n}"
+                            "raw": "{\n    \"title\": \"aut\",\n    \"permissions\": [\n        3,\n        7\n    ]\n}"
                         },
                         "description": "",
                         "auth": {
@@ -2251,7 +2251,7 @@
                                 {
                                     "id": "role",
                                     "key": "role",
-                                    "value": "minus",
+                                    "value": "nemo",
                                     "description": ""
                                 }
                             ]
@@ -2356,7 +2356,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"consequatur\",\n    \"email\": \"quae\",\n    \"password\": \"placeat\",\n    \"roles\": [\n        11,\n        6\n    ]\n}"
+                            "raw": "{\n    \"name\": \"repellat\",\n    \"email\": \"distinctio\",\n    \"password\": \"illo\",\n    \"roles\": [\n        3,\n        10\n    ]\n}"
                         },
                         "description": "",
                         "auth": {
@@ -2378,7 +2378,7 @@
                                 {
                                     "id": "user",
                                     "key": "user",
-                                    "value": "dolorem",
+                                    "value": "dolor",
                                     "description": ""
                                 }
                             ]
@@ -2415,7 +2415,7 @@
                                 {
                                     "id": "user",
                                     "key": "user",
-                                    "value": "ut",
+                                    "value": "id",
                                     "description": ""
                                 }
                             ]
@@ -2452,7 +2452,7 @@
                                 {
                                     "id": "user",
                                     "key": "user",
-                                    "value": "est",
+                                    "value": "cumque",
                                     "description": ""
                                 }
                             ]
@@ -2557,7 +2557,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"street\": \"inventore\",\n    \"city\": \"distinctio\",\n    \"state\": \"ex\",\n    \"zip_code\": \"fugiat\"\n}"
+                            "raw": "{\n    \"street\": \"quasi\",\n    \"city\": \"fugiat\",\n    \"state\": \"omnis\",\n    \"zip_code\": \"aut\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -2579,7 +2579,7 @@
                                 {
                                     "id": "address",
                                     "key": "address",
-                                    "value": "eum",
+                                    "value": "expedita",
                                     "description": ""
                                 }
                             ]
@@ -2616,7 +2616,7 @@
                                 {
                                     "id": "address",
                                     "key": "address",
-                                    "value": "iste",
+                                    "value": "qui",
                                     "description": ""
                                 }
                             ]
@@ -2653,7 +2653,7 @@
                                 {
                                     "id": "address",
                                     "key": "address",
-                                    "value": "magni",
+                                    "value": "quis",
                                     "description": ""
                                 }
                             ]
@@ -2671,7 +2671,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"street\": \"magni\",\n    \"city\": \"reiciendis\",\n    \"state\": \"assumenda\",\n    \"zip_code\": \"deserunt\"\n}"
+                            "raw": "{\n    \"street\": \"est\",\n    \"city\": \"mollitia\",\n    \"state\": \"repudiandae\",\n    \"zip_code\": \"ipsam\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -2693,7 +2693,7 @@
                                 {
                                     "id": "address",
                                     "key": "address",
-                                    "value": "assumenda",
+                                    "value": "quasi",
                                     "description": ""
                                 }
                             ]
@@ -2798,7 +2798,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"rider_id\": 2\n}"
+                            "raw": "{\n    \"rider_id\": 10\n}"
                         },
                         "description": "",
                         "auth": {
@@ -2820,7 +2820,7 @@
                                 {
                                     "id": "ride",
                                     "key": "ride",
-                                    "value": "doloribus",
+                                    "value": "ut",
                                     "description": ""
                                 }
                             ]
@@ -2857,7 +2857,7 @@
                                 {
                                     "id": "ride",
                                     "key": "ride",
-                                    "value": "facilis",
+                                    "value": "sit",
                                     "description": ""
                                 }
                             ]
@@ -2894,7 +2894,7 @@
                                 {
                                     "id": "ride",
                                     "key": "ride",
-                                    "value": "similique",
+                                    "value": "eligendi",
                                     "description": ""
                                 }
                             ]
@@ -2912,7 +2912,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"rider_id\": 15\n}"
+                            "raw": "{\n    \"rider_id\": 5\n}"
                         },
                         "description": "",
                         "auth": {
@@ -2934,7 +2934,7 @@
                                 {
                                     "id": "ride",
                                     "key": "ride",
-                                    "value": "iure",
+                                    "value": "cum",
                                     "description": ""
                                 }
                             ]
@@ -3039,7 +3039,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"total_received\": \"labore\",\n    \"rider_received\": \"dolore\",\n    \"office_received\": \"vero\",\n    \"user_id\": 20\n}"
+                            "raw": "{\n    \"total_received\": \"repellat\",\n    \"rider_received\": \"optio\",\n    \"office_received\": \"sint\",\n    \"user_id\": 11\n}"
                         },
                         "description": "",
                         "auth": {
@@ -3061,7 +3061,7 @@
                                 {
                                     "id": "payment",
                                     "key": "payment",
-                                    "value": "reiciendis",
+                                    "value": "eveniet",
                                     "description": ""
                                 }
                             ]
@@ -3098,7 +3098,7 @@
                                 {
                                     "id": "payment",
                                     "key": "payment",
-                                    "value": "consectetur",
+                                    "value": "omnis",
                                     "description": ""
                                 }
                             ]
@@ -3135,7 +3135,7 @@
                                 {
                                     "id": "payment",
                                     "key": "payment",
-                                    "value": "modi",
+                                    "value": "sit",
                                     "description": ""
                                 }
                             ]
@@ -3153,7 +3153,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"total_received\": \"velit\",\n    \"rider_received\": \"est\",\n    \"office_received\": \"voluptas\",\n    \"user_id\": 10\n}"
+                            "raw": "{\n    \"total_received\": \"accusamus\",\n    \"rider_received\": \"repellat\",\n    \"office_received\": \"expedita\",\n    \"user_id\": 20\n}"
                         },
                         "description": "",
                         "auth": {
@@ -3175,7 +3175,7 @@
                                 {
                                     "id": "payment",
                                     "key": "payment",
-                                    "value": "voluptatem",
+                                    "value": "sed",
                                     "description": ""
                                 }
                             ]
@@ -3280,7 +3280,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"category\": \"reiciendis\"\n}"
+                            "raw": "{\n    \"category\": \"officiis\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -3302,7 +3302,7 @@
                                 {
                                     "id": "faq_category",
                                     "key": "faq_category",
-                                    "value": "aperiam",
+                                    "value": "expedita",
                                     "description": ""
                                 }
                             ]
@@ -3339,7 +3339,7 @@
                                 {
                                     "id": "faq_category",
                                     "key": "faq_category",
-                                    "value": "molestiae",
+                                    "value": "est",
                                     "description": ""
                                 }
                             ]
@@ -3376,7 +3376,7 @@
                                 {
                                     "id": "faq_category",
                                     "key": "faq_category",
-                                    "value": "enim",
+                                    "value": "adipisci",
                                     "description": ""
                                 }
                             ]
@@ -3394,7 +3394,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"category\": \"sunt\"\n}"
+                            "raw": "{\n    \"category\": \"sint\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -3416,7 +3416,7 @@
                                 {
                                     "id": "faq_category",
                                     "key": "faq_category",
-                                    "value": "rem",
+                                    "value": "sit",
                                     "description": ""
                                 }
                             ]
@@ -3521,7 +3521,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"category_id\": 13,\n    \"question\": \"esse\",\n    \"answer\": \"in\"\n}"
+                            "raw": "{\n    \"category_id\": 2,\n    \"question\": \"atque\",\n    \"answer\": \"modi\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -3543,7 +3543,7 @@
                                 {
                                     "id": "faq_question",
                                     "key": "faq_question",
-                                    "value": "nulla",
+                                    "value": "omnis",
                                     "description": ""
                                 }
                             ]
@@ -3580,7 +3580,7 @@
                                 {
                                     "id": "faq_question",
                                     "key": "faq_question",
-                                    "value": "quam",
+                                    "value": "fuga",
                                     "description": ""
                                 }
                             ]
@@ -3617,7 +3617,7 @@
                                 {
                                     "id": "faq_question",
                                     "key": "faq_question",
-                                    "value": "excepturi",
+                                    "value": "vel",
                                     "description": ""
                                 }
                             ]
@@ -3635,7 +3635,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"category_id\": 13,\n    \"question\": \"asperiores\",\n    \"answer\": \"sapiente\"\n}"
+                            "raw": "{\n    \"category_id\": 7,\n    \"question\": \"molestiae\",\n    \"answer\": \"ut\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -3657,12 +3657,41 @@
                                 {
                                     "id": "faq_question",
                                     "key": "faq_question",
-                                    "value": "libero",
+                                    "value": "repellendus",
                                     "description": ""
                                 }
                             ]
                         },
                         "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "my-token",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "my-token",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/my-token"
+                        },
+                        "method": "GET",
                         "header": [
                             {
                                 "key": "Content-Type",
@@ -3733,7 +3762,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"password\": \"nihil\"\n}"
+                            "raw": "{\n    \"password\": \"laudantium\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -3765,7 +3794,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"omnis\",\n    \"email\": \"stephan59@example.org\"\n}"
+                            "raw": "{\n    \"name\": \"qui\",\n    \"email\": \"jaida87@example.org\"\n}"
                         },
                         "description": "",
                         "auth": {
