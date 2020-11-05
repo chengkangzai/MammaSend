@@ -29,6 +29,7 @@ class StoreAddressRequest extends FormRequest
             'zip_code' => [
                 'string',
                 'required',
+                'size:5'
             ],
         ];
     }

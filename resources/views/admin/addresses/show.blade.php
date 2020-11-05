@@ -55,6 +55,14 @@
                             {{ $address->zip_code }}
                         </td>
                     </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.address.fields.full_address') }}
+                        </th>
+                        <td>
+                            {{ $fullAddress }}
+                        </td>
+                    </tr>
                     </tbody>
                 </table>
                 <div class="form-group">

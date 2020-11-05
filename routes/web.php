@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Address;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -11,7 +12,10 @@ Route::get('/home', function () {
 
     return redirect()->route('admin.home');
 });
-
+Route::get('/test',function (){
+    $a =Address::find(1);
+    echo $a->fullAddress;
+});
 
 Auth::routes();
 

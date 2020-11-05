@@ -65,8 +65,8 @@ return [
             'deleted_at_helper'        => ' ',
             'pickup_address'           => 'Pickup Address',
             'pickup_address_helper'    => ' ',
-            'dropoff_address'           => 'Drop Off Address',
-            'dropoff_address_helper'    => ' ',
+            'dropoff_address'          => 'Drop Off Address',
+            'dropoff_address_helper'   => ' ',
         ],
     ],
     'address'        => [
@@ -89,6 +89,7 @@ return [
             'deleted_at_helper' => ' ',
             'state'             => 'State',
             'state_helper'      => ' ',
+            'full_address'             => 'Full Address',
         ],
     ],
     'ride'           => [

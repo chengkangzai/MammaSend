@@ -7,6 +7,7 @@ use App\Http\Requests\MassDestroyAddressRequest;
 use App\Http\Requests\StoreAddressRequest;
 use App\Http\Requests\UpdateAddressRequest;
 use App\Models\Address;
+use App\Services\AddressService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
 use Symfony\Component\HttpFoundation\Response;
@@ -95,8 +96,9 @@ class AddressController extends Controller
     public function show(Address $address)
     {
         abort_if(Gate::denies('address_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
-
-        return view('admin.addresses.show', compact('address'));
+        $services=new AddressService();
+        $fullAddress =$services->getFullAddress($address);
+        return view('admin.addresses.show', compact('address','fullAddress'));
     }
 
     public function destroy(Address $address)
