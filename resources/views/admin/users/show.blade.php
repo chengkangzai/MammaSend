@@ -65,6 +65,15 @@
                             {{ $user->pickup_address->street ?? '' }}
                         </td>
                     </tr>
+
+                    <tr>
+                        <th>
+                            {{ trans('cruds.user.fields.dropoff_address') }}
+                        </th>
+                        <td>
+                            {{ $user->pickup_address->street ?? '' }}
+                        </td>
+                    </tr>
                     </tbody>
                 </table>
                 <div class="form-group">

@@ -151,5 +151,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="dropzone" level="application" />
+    <orderEntry type="library" name="jquery.perfect-scrollbar" level="application" />
   </component>
 </module>

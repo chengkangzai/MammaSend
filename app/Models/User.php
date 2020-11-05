@@ -102,4 +102,9 @@ class User extends Authenticatable
     {
         return $this->belongsTo(Address::class, 'pickup_address_id');
     }
+
+    public function dropoff_address()
+    {
+        return $this->belongsTo(Address::class, 'dropoff_address_id');
+    }
 }
