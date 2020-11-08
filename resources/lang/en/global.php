@@ -302,4 +302,7 @@ return [
     'team-members'                         => 'Team members',
     'calendar'                             => 'Calendar',
     'messenger'                            => 'Messenger',
+    'customer_wizard'                      => 'Customer Wizard',
+    'driver_wizard'                        => 'Driver Wizard',
+    'next'                                 => 'Next',
 ];

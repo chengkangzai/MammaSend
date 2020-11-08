@@ -13,6 +13,8 @@ class AddRelationshipFieldsToUsersTable extends Migration
             $table->foreign('pickup_address_id', 'pickup_address_fk_2502417')->references('id')->on('addresses');
             $table->unsignedInteger('dropoff_address_id')->nullable();
             $table->foreign('dropoff_address_id', 'dropoff_address_fk_2502417')->references('id')->on('addresses');
+            $table->unsignedInteger('support_address_id')->nullable();
+            $table->foreign('support_address_id', 'support_address_fk_2502417')->references('id')->on('addresses');
         });
     }
 }

@@ -1,8 +1,12 @@
 <?php
 
-use App\Models\Address;
+use App\Models\Role;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+
+
+//Auth::loginUsingId(3);
+
 
 Route::redirect('/', '/login');
 Route::get('/home', function () {
@@ -11,10 +15,6 @@ Route::get('/home', function () {
     }
 
     return redirect()->route('admin.home');
-});
-Route::get('/test',function (){
-    $a =Address::find(1);
-    echo $a->fullAddress;
 });
 
 Auth::routes();
@@ -53,9 +53,16 @@ Route::group(['as' => 'admin.', 'namespace' => 'Admin', 'middleware' => ['auth']
     Route::delete('/faq-questions/destroy', 'FaqQuestionController@massDestroy')->name('faq-questions.massDestroy');
     Route::resource('faq-questions', 'FaqQuestionController');
 
-    Route::get('/my-token',function (){
-       echo Auth::user()->api_token;
-    })->name('get.token');
+    Route::resource('children', 'ChildrenController');
+
+    Route::get('/wizard/customer', 'CustomerWizardController@showAddPickupAddressForm');
+    Route::post('/wizard/customer/pickup', 'CustomerWizardController@storePickupAddressForm');
+    Route::post('/wizard/customer/dropoff', 'CustomerWizardController@storeDropoffAddressForm');
+    Route::post('/wizard/customer/child', 'CustomerWizardController@storeChildForm');
+
+//    Route::get('/my-token', function () {
+//        echo Auth::user()->api_token;
+//    });
 });
 
 Route::group(['prefix' => 'profile', 'as' => 'profile.', 'namespace' => 'Auth', 'middleware' => ['auth']], function () {

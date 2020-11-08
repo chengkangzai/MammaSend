@@ -39,6 +39,7 @@ class User extends Authenticatable
         'api_token',
         'remember_token',
         'pickup_address_id',
+        'dropoff_address_id',
         'created_at',
         'updated_at',
         'deleted_at',

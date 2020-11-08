@@ -13,6 +13,8 @@ class AddTokenFieldToUsersTable extends Migration
                 ->unique()
                 ->nullable()
                 ->default(null);
+            $table->string('phone_number', 80)->after('api_token')
+                ->nullable();
         });
     }
 }

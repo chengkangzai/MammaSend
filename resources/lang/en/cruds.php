@@ -170,4 +170,17 @@ return [
             'deleted_at_helper' => ' ',
         ],
     ],
+    'children'    => [
+        'title'          => 'Children',
+        'title_singular' => 'Child',
+        'fields'         => [
+            'id'                => 'ID',
+            'full_name'         => 'Full Name',
+            'IC_number'         => 'IC number',
+            'school_name'       => 'School Name',
+            'created_at'        => 'Created at',
+            'updated_at'        => 'Updated At',
+            'deleted_at'        => 'Deleted At',
+        ],
+    ],
 ];

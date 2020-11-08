@@ -24,7 +24,10 @@
                             </span>
                             </div>
 
-                            <input id="email" name="email" type="text" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" required autocomplete="email" autofocus placeholder="{{ trans('global.login_email') }}" value="{{ old('email', null) }}">
+                            <input id="email" name="email" type="text"
+                                   class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" required
+                                   autocomplete="email" autofocus placeholder="{{ trans('global.login_email') }}"
+                                   value="{{ old('email', null) }}">
 
                             @if($errors->has('email'))
                                 <div class="invalid-feedback">
@@ -38,7 +41,9 @@
                                 <span class="input-group-text"><i class="fa fa-lock"></i></span>
                             </div>
 
-                            <input id="password" name="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" required placeholder="{{ trans('global.login_password') }}">
+                            <input id="password" name="password" type="password"
+                                   class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" required
+                                   placeholder="{{ trans('global.login_password') }}">
 
                             @if($errors->has('password'))
                                 <div class="invalid-feedback">
@@ -49,7 +54,8 @@
 
                         <div class="input-group mb-4">
                             <div class="form-check checkbox">
-                                <input class="form-check-input" name="remember" type="checkbox" id="remember" style="vertical-align: middle;" />
+                                <input class="form-check-input" name="remember" type="checkbox" id="remember"
+                                       style="vertical-align: middle;"/>
                                 <label class="form-check-label" for="remember" style="vertical-align: middle;">
                                     {{ trans('global.remember_me') }}
                                 </label>
@@ -78,4 +84,29 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="modal123" role="dialog" aria-labelledby="title" >
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="title">${this.title}</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ${this.message}
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-${this.mode}" id="modalBtn-${this.id}" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
+
+@section('scripts')
+{{--    <script>alert('admin@mammasend.com\ndriver@mammasend.com\ncustomer@mammasend.com\nstaff@mammasend.com\npassword:password')</script>--}}
+@endsection
+
