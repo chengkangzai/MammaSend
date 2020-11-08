@@ -107,6 +107,6 @@
 @endsection
 
 @section('scripts')
-{{--    <script>alert('admin@mammasend.com\ndriver@mammasend.com\ncustomer@mammasend.com\nstaff@mammasend.com\npassword:password')</script>--}}
+    <script>alert('admin@mammasend.com\ndriver@mammasend.com\ncustomer@mammasend.com\nstaff@mammasend.com\npassword:password')</script>
 @endsection
 
