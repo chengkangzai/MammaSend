@@ -25,9 +25,8 @@ class CustomerWizardController extends Controller
         //FALSE : Initial Set up
         abort_if(Gate::denies('wizard_customer_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        $service = new AddressService();
-        $addresses = $service->getAllFullAddress();
-        return view('admin.wizard.customer.child',compact('addresses'));
+
+        return view('admin.wizard.customer.child');
     }
 
     public function storePickupAddressForm(StoreAddressRequest $request)
@@ -50,7 +49,7 @@ class CustomerWizardController extends Controller
         return redirect()->route('admin.home');
     }
 
-    public function storeChildForm(StoreChildrenRequest $request)
+    public function storeChildForm(Request $request)
     {
         $children = Children::create($request->all());
         $children->parent_id = \auth()->id();

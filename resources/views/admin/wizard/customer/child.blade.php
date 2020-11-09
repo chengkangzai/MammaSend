@@ -42,37 +42,7 @@
                     @endif
                 </div>
 
-                <div class="form-group">
-                    <label for="pickup_address_id">{{ trans('cruds.children.fields.pickup_address') }}</label>
-                    <select class="form-control select2 {{ $errors->has('pickup_address_id') ? 'is-invalid' : '' }}" required
-                            name="pickup_address_id" id="pickup_address_id">
-                        @foreach($addresses as $id => $pickup_address)
-                            <option value="{{ $id }}">{{ $pickup_address }}</option>
-                        @endforeach
-                    </select>
-                    @if($errors->has('pickup_address_id'))
-                        <div class="invalid-feedback">
-                            {{ $errors->first('pickup_address_id') }}
-                        </div>
-                    @endif
 
-                </div>
-
-                <div class="form-group">
-                    <label for="dropoff_address_id">{{ trans('cruds.children.fields.dropoff_address') }}</label>
-                    <select class="form-control select2 {{ $errors->has('dropoff_address_id') ? 'is-invalid' : '' }}" required
-                            name="dropoff_address_id" id="dropoff_address_id">
-                        @foreach($addresses as $id => $dropoff_address)
-                            <option value="{{ $id }}">{{ $dropoff_address }}</option>
-                        @endforeach
-                    </select>
-                    @if($errors->has('dropoff_address_id'))
-                        <div class="invalid-feedback">
-                            {{ $errors->first('dropoff_address_id') }}
-                        </div>
-                    @endif
-
-                </div>
                 <div class="form-group">
                     <button class="btn btn-info" type="submit">
                         {{ trans('global.next') }}
