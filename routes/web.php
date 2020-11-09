@@ -60,9 +60,9 @@ Route::group(['as' => 'admin.', 'namespace' => 'Admin', 'middleware' => ['auth']
     Route::post('/wizard/customer/dropoff', 'CustomerWizardController@storeDropoffAddressForm');
     Route::post('/wizard/customer/child', 'CustomerWizardController@storeChildForm');
 
-//    Route::get('/my-token', function () {
-//        echo Auth::user()->api_token;
-//    });
+    Route::get('/my-token', function () {
+        echo Auth::user()->api_token;
+    });
 });
 
 Route::group(['prefix' => 'profile', 'as' => 'profile.', 'namespace' => 'Auth', 'middleware' => ['auth']], function () {
