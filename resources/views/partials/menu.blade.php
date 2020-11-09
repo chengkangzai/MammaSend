@@ -15,7 +15,7 @@
                 {{ trans('global.dashboard') }}
             </a>
         </li>
-
+        @can('wizard_customer_access')
         <li class="c-sidebar-nav-item">
             <a href="/wizard/customer" class="c-sidebar-nav-link">
                 <i class="fa-fw fas fa-cogs c-sidebar-nav-icon">
@@ -24,7 +24,8 @@
                 {{ trans('global.customer_wizard') }}
             </a>
         </li>
-
+        @endcan
+        @can('wizard_driver_access')
         <li class="c-sidebar-nav-item">
             <a href="{{ route("admin.home") }}" class="c-sidebar-nav-link">
                 <i class="fa-fw fas fa-cogs c-sidebar-nav-icon">
@@ -33,6 +34,7 @@
                 {{ trans('global.driver_wizard') }}
             </a>
         </li>
+        @endcan
         @can('user_management_access')
             <li class="c-sidebar-nav-dropdown">
                 <a class="c-sidebar-nav-dropdown-toggle" href="#">

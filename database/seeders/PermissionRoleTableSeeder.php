@@ -18,10 +18,13 @@ class PermissionRoleTableSeeder extends Seeder
         });
         Role::findOrFail(2)->permissions()->sync($staff_permissions);
 
-        $endUserPermissions = $allPermissions->filter(function ($permission) {
-            return substr($permission->title, 0, 5) != 'user_' && substr($permission->title, 0, 5) != 'role_' && substr($permission->title, 0, 11) != 'permission_';
+        $customerUserPermissions = $allPermissions->filter(function ($permission) {
+            return substr($permission->title, 0, 13) != 'payment_access' &&substr($permission->title, 0, 13) != 'wizard_driver' && substr($permission->title, 0, 5) != 'user_' && substr($permission->title, 0, 5) != 'role_' && substr($permission->title, 0, 11) != 'permission_';
         });
-        Role::findOrFail(3)->permissions()->sync($endUserPermissions);
-        Role::findOrFail(4)->permissions()->sync($endUserPermissions);
+        Role::findOrFail(3)->permissions()->sync($customerUserPermissions);
+        $driverUserPermissions = $allPermissions->filter(function ($permission) {
+            return substr($permission->title, 0, 15) != 'wizard_customer' && substr($permission->title, 0, 5) != 'user_' && substr($permission->title, 0, 5) != 'role_' && substr($permission->title, 0, 11) != 'permission_';
+        });
+        Role::findOrFail(4)->permissions()->sync($driverUserPermissions);
     }
 }

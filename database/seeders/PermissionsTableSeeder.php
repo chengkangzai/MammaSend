@@ -196,5 +196,11 @@ class PermissionsTableSeeder extends Seeder
             ['title' => 'child_delete'],
         ];
         Permission::insert($permissions);
+
+        $permissions = [
+            ['title' => 'wizard_customer_access',],
+            ['title' => 'wizard_driver_access',],
+        ];
+        Permission::insert($permissions);
     }
 }

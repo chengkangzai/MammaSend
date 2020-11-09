@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 
-//Auth::loginUsingId(3);
+Auth::loginUsingId(1);
 
 
 Route::redirect('/', '/login');

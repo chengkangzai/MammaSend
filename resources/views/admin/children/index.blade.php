@@ -32,6 +32,9 @@
                             {{ trans('cruds.children.fields.IC_number') }}
                         </th>
                         <th>
+                            {{ trans('cruds.children.fields.school_name') }}
+                        </th>
+                        <th>
                             {{ trans('cruds.children.fields.pickup_address') }}
                         </th>
                         <th>
@@ -56,6 +59,9 @@
                             </td>
                             <td>
                                 {{ $child->IC_number ?? '' }}
+                            </td>
+                            <td>
+                                {{ $child->school_name ?? '' }}
                             </td>
                             <td>
                                 @if($child->pickup_address_id !== null)
