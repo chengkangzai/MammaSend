@@ -7,6 +7,7 @@ use App\Http\Requests\StoreAddressRequest;
 use App\Http\Requests\StoreChildrenRequest;
 use App\Models\Address;
 use App\Models\Children;
+use App\Services\AddressService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
 use Symfony\Component\HttpFoundation\Response;
@@ -52,7 +53,8 @@ class CustomerWizardController extends Controller
         $children = Children::create($request->all());
         $children->parent_id = \auth()->id();
         $children->save();
-
+        $service = new AddressService();
+        $addresses = $service->getAllFullAddress();
         return view('admin.wizard.customer.pickup', compact('children'));
     }
 
