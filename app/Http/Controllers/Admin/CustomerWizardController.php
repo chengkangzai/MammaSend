@@ -55,7 +55,7 @@ class CustomerWizardController extends Controller
         $children->save();
         $service = new AddressService();
         $addresses = $service->getAllFullAddress();
-        return view('admin.wizard.customer.pickup', compact('children'));
+        return view('admin.wizard.customer.pickup', compact('children','addresses'));
     }
 
 
