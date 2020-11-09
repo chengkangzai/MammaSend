@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use Psy\Util\Json;
 
 
-Auth::loginUsingId(1);
+//Auth::loginUsingId(1);
 
 
 Route::redirect('/', '/login');
@@ -62,7 +62,7 @@ Route::group(['as' => 'admin.', 'namespace' => 'Admin', 'middleware' => ['auth']
     Route::post('/wizard/customer/child', 'CustomerWizardController@storeChildForm');
 
     Route::get('/my-token', function () {
-        return Json::encode(['token'=>Auth::user()->api_token]);
+        return Json::encode(['token' => Auth::user()->api_token]);
     });
 });
 
@@ -73,6 +73,5 @@ Route::group(['prefix' => 'profile', 'as' => 'profile.', 'namespace' => 'Auth', 
         Route::post('/password', 'ChangePasswordController@update')->name('password.update');
         Route::post('/profile', 'ChangePasswordController@updateProfile')->name('password.updateProfile');
         Route::post('/profile/destroy', 'ChangePasswordController@destroy')->name('password.destroyProfile');
-
     }
 });

@@ -7,10 +7,8 @@ use App\Http\Requests\StoreAddressRequest;
 use App\Http\Requests\StoreChildrenRequest;
 use App\Models\Address;
 use App\Models\Children;
-use App\Models\Role;
-use App\Models\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Gate;
 use Symfony\Component\HttpFoundation\Response;
 use function abort_if;
 use function compact;
@@ -24,8 +22,7 @@ class CustomerWizardController extends Controller
         //TODO Check if its initial setup is done,
         //TRUE: Bring to Child Show Page and add a button to add child
         //FALSE : Initial Set up
-        $title = Role::where('id', Auth::id())->first()->title;
-        abort_if($title != "Customer", Response::HTTP_FORBIDDEN, '403 Forbidden');
+        abort_if(Gate::denies('wizard_customer_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
         return view('admin.wizard.customer.child');
     }
@@ -37,7 +34,7 @@ class CustomerWizardController extends Controller
         $children->pickup_address_id = $address->id;
         $children->save();
 
-        return view('admin.wizard.customer.dropoff',compact('children'));
+        return view('admin.wizard.customer.dropoff', compact('children'));
     }
 
     public function storeDropoffAddressForm(StoreAddressRequest $request)
@@ -56,7 +53,7 @@ class CustomerWizardController extends Controller
         $children->parent_id = \auth()->id();
         $children->save();
 
-        return view('admin.wizard.customer.pickup',compact('children'));
+        return view('admin.wizard.customer.pickup', compact('children'));
     }
 
 
