@@ -3,13 +3,13 @@
 
     <div class="card">
         <div class="card-header">
-            {{ trans('global.show') }} {{ trans('cruds.user.title') }}
+            {{ trans('global.show') }} {{ trans('cruds.children.title') }}
         </div>
 
         <div class="card-body">
             <div class="form-group">
                 <div class="form-group">
-                    <a class="btn btn-default" href="{{ route('admin.users.index') }}">
+                    <a class="btn btn-default" href="{{ route('admin.children.index') }}">
                         {{ trans('global.back_to_list') }}
                     </a>
                 </div>
@@ -17,67 +17,58 @@
                     <tbody>
                     <tr>
                         <th>
-                            {{ trans('cruds.user.fields.id') }}
+                            {{ trans('cruds.children.fields.id') }}
                         </th>
                         <td>
-                            {{ $user->id }}
+                            {{ $child->id }}
                         </td>
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('cruds.user.fields.name') }}
+                            {{ trans('cruds.children.fields.full_name') }}
                         </th>
                         <td>
-                            {{ $user->name }}
+                            {{ $child->full_name }}
                         </td>
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('cruds.user.fields.email') }}
+                            {{ trans('cruds.children.fields.IC_number') }}
                         </th>
                         <td>
-                            {{ $user->email }}
+                            {{ $child->IC_number }}
                         </td>
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('cruds.user.fields.email_verified_at') }}
+                            {{ trans('cruds.children.fields.school_name') }}
                         </th>
                         <td>
-                            {{ $user->email_verified_at }}
+                            {{ $child->school_name }}
                         </td>
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('cruds.user.fields.roles') }}
+                            {{ trans('cruds.children.fields.pickup_address') }}
                         </th>
                         <td>
-                            @foreach($user->roles as $key => $roles)
-                                <span class="label label-info">{{ $roles->title }}</span>
-                            @endforeach
+                            {{$pickUpAddress}}
                         </td>
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('cruds.user.fields.pickup_address') }}
+                            {{ trans('cruds.children.fields.pickup_address') }}
                         </th>
                         <td>
-                            {{ $user->pickup_address->street ?? '' }}
+                            {{$dropOffAddress}}
                         </td>
                     </tr>
 
-                    <tr>
-                        <th>
-                            {{ trans('cruds.user.fields.dropoff_address') }}
-                        </th>
-                        <td>
-                            {{ $user->pickup_address->street ?? '' }}
-                        </td>
-                    </tr>
+
                     </tbody>
                 </table>
                 <div class="form-group">
-                    <a class="btn btn-default" href="{{ route('admin.users.index') }}">
+                    <a class="btn btn-default" href="{{ route('admin.children.index') }}">
                         {{ trans('global.back_to_list') }}
                     </a>
                 </div>
@@ -85,22 +76,6 @@
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            {{ trans('global.relatedData') }}
-        </div>
-        <ul class="nav nav-tabs" role="tablist" id="relationship-tabs">
-            <li class="nav-item">
-                <a class="nav-link" href="#user_payments" role="tab" data-toggle="tab">
-                    {{ trans('cruds.payment.title') }}
-                </a>
-            </li>
-        </ul>
-        <div class="tab-content">
-            <div class="tab-pane" role="tabpanel" id="user_payments">
-                @includeIf('admin.users.relationships.userPayments', ['payments' => $user->userPayments])
-            </div>
-        </div>
-    </div>
+
 
 @endsection

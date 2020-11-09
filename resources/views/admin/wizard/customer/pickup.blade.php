@@ -9,6 +9,7 @@
         <div class="card-body">
             <form method="POST" action="/wizard/customer/pickup" enctype="multipart/form-data">
                 @csrf
+                <input hidden name="child_id" type="text" value="{{$children->id}}">
                 <div class="form-group">
                     <label class="required" for="street">{{ trans('cruds.address.fields.street') }}</label>
                     <input class="form-control {{ $errors->has('street') ? 'is-invalid' : '' }}" type="text"

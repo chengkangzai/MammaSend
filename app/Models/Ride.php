@@ -20,7 +20,10 @@ class Ride extends Model
     ];
 
     protected $fillable = [
+        'price',
         'rider_id',
+        'pickup_address_id',
+        'dropoff_address_id',
         'created_at',
         'updated_at',
         'deleted_at',
@@ -35,4 +38,6 @@ class Ride extends Model
     {
         return $this->belongsTo(User::class, 'rider_id');
     }
+
+
 }

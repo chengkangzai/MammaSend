@@ -36,10 +36,9 @@ class User extends Authenticatable
         'email',
         'email_verified_at',
         'password',
+        'phone_number',
         'api_token',
         'remember_token',
-        'pickup_address_id',
-        'dropoff_address_id',
         'created_at',
         'updated_at',
         'deleted_at',
@@ -99,13 +98,5 @@ class User extends Authenticatable
         return $this->belongsToMany(Role::class);
     }
 
-    public function pickup_address()
-    {
-        return $this->belongsTo(Address::class, 'pickup_address_id');
-    }
 
-    public function dropoff_address()
-    {
-        return $this->belongsTo(Address::class, 'dropoff_address_id');
-    }
 }

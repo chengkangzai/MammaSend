@@ -63,10 +63,7 @@ return [
             'updated_at_helper'        => ' ',
             'deleted_at'               => 'Deleted at',
             'deleted_at_helper'        => ' ',
-            'pickup_address'           => 'Pickup Address',
-            'pickup_address_helper'    => ' ',
-            'dropoff_address'          => 'Drop Off Address',
-            'dropoff_address_helper'   => ' ',
+            'phone_number'             => 'Phone number',
         ],
     ],
     'address'        => [
@@ -181,6 +178,10 @@ return [
             'created_at'        => 'Created at',
             'updated_at'        => 'Updated At',
             'deleted_at'        => 'Deleted At',
+            'pickup_address'           => 'Pickup Address',
+            'dropoff_address'          => 'Drop Off Address',
+            'full_name_helper'         => 'Please Enter the full name',
+            'IC_number_helper'         => 'Please Enter the IC Number',
         ],
     ],
 ];

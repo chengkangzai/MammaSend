@@ -30,6 +30,15 @@
                             @endif
                         </div>
                         <div class="form-group">
+                            <label class="required" for="title">{{ trans('cruds.user.fields.phone_number') }}</label>
+                            <input class="form-control {{ $errors->has('phone_number') ? 'is-invalid' : '' }}" type="text" name="phone_number" id="phone_number" value="{{ old('email', auth()->user()->phone_number) }}" required>
+                            @if($errors->has('phone_number'))
+                                <div class="invalid-feedback">
+                                    {{ $errors->first('phone_number') }}
+                                </div>
+                            @endif
+                        </div>
+                        <div class="form-group">
                             <button class="btn btn-danger" type="submit">
                                 {{ trans('global.save') }}
                             </button>

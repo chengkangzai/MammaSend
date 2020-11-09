@@ -19,15 +19,27 @@ class Children extends Model
         'deleted_at',
     ];
 
-    protected $fillable = [
+    public $fillable = [
         'full_name',
         'IC_number',
         'school_name',
+        'pickup_address_id',
+        'dropoff_address_id',
     ];
 
 
     protected function serializeDate(DateTimeInterface $date)
     {
         return $date->format('Y-m-d H:i:s');
+    }
+
+    public function pickup_address()
+    {
+        return $this->hasOne(Address::class, 'pickup_address_id');
+    }
+
+    public function dropoff_address()
+    {
+        return $this->hasOne(Address::class, 'dropoff_address_id');
     }
 }

@@ -20,6 +20,7 @@ class UsersTableSeeder extends Seeder
                 'password'          => bcrypt('password'),
                 'remember_token'    => null,
                 'api_token'         => Str::random(10),
+                'phone_number'      => '0127067086',
             ],
             [
                 'id'                => 2,
@@ -28,6 +29,7 @@ class UsersTableSeeder extends Seeder
                 'password'          => bcrypt('password'),
                 'remember_token'    => null,
                 'api_token'         => Str::random(10),
+                'phone_number'      => '0127067086',
             ],
             [
                 'id'                => 3,
@@ -36,6 +38,7 @@ class UsersTableSeeder extends Seeder
                 'password'          => bcrypt('password'),
                 'remember_token'    => null,
                 'api_token'         => Str::random(10),
+                'phone_number'      => '0127067086',
             ],
             [
                 'id'                => 4,
@@ -44,6 +47,7 @@ class UsersTableSeeder extends Seeder
                 'password'          => bcrypt('password'),
                 'remember_token'    => null,
                 'api_token'         => Str::random(10),
+                'phone_number'      => '0127067086',
             ],
 
         ];

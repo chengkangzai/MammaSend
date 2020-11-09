@@ -29,8 +29,6 @@ class UsersController extends Controller
 
         $roles = Role::all()->pluck('title', 'id');
 
-        $pickup_addresses = Address::all()->pluck('street', 'id')->prepend(trans('global.pleaseSelect'), '');
-
         return view('admin.users.create', compact('roles', 'pickup_addresses'));
     }
 
@@ -48,10 +46,6 @@ class UsersController extends Controller
 
         $roles = Role::all()->pluck('title', 'id');
 
-        $pickup_addresses = Address::all()->pluck('street', 'id')->prepend(trans('global.pleaseSelect'), '');
-
-        $user->load('roles', 'pickup_address');
-
         return view('admin.users.edit', compact('roles', 'pickup_addresses', 'user'));
     }
 
@@ -67,7 +61,7 @@ class UsersController extends Controller
     {
         abort_if(Gate::denies('user_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        $user->load('roles', 'pickup_address', 'userPayments');
+        $user->load('roles', 'userPayments');
 
         return view('admin.users.show', compact('user'));
     }
