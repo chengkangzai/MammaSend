@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use Psy\Util\Json;
 
 
 Auth::loginUsingId(1);
@@ -61,7 +62,7 @@ Route::group(['as' => 'admin.', 'namespace' => 'Admin', 'middleware' => ['auth']
     Route::post('/wizard/customer/child', 'CustomerWizardController@storeChildForm');
 
     Route::get('/my-token', function () {
-        echo Auth::user()->api_token;
+        return Json::encode(['token'=>Auth::user()->api_token]);
     });
 });
 
