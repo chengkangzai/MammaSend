@@ -7,9 +7,11 @@ use App\Http\Requests\MassDestroyRideRequest;
 use App\Http\Requests\StoreRideRequest;
 use App\Http\Requests\UpdateRideRequest;
 use App\Models\Ride;
+use App\Models\Role;
 use App\Models\User;
 use Illuminate\Support\Facades\Gate;
 use Symfony\Component\HttpFoundation\Response;
+use function trans;
 
 class RideController extends Controller
 {
@@ -26,7 +28,7 @@ class RideController extends Controller
     {
         abort_if(Gate::denies('ride_create'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        $riders = User::all()->pluck('name', 'id')->prepend(trans('global.pleaseSelect'), '');
+        $riders = Role::where('title', 'Rider')->first()->users()->get()->pluck('name', 'id')->prepend(trans('global.pleaseSelect'), '');
 
         return view('admin.rides.create', compact('riders'));
     }
