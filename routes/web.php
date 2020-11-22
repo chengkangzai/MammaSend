@@ -61,6 +61,14 @@ Route::group(['as' => 'admin.', 'namespace' => 'Admin', 'middleware' => ['auth']
     Route::post('/wizard/customer/dropoff', 'CustomerWizardController@storeDropoffAddressForm');
     Route::post('/wizard/customer/child', 'CustomerWizardController@storeChildForm');
 
+    Route::get('/wizard/driver/index', 'DriverWizardController@index');
+    Route::get('/wizard/driver/licence', 'DriverWizardController@initLicence')->name('wizard.driver.index');
+    Route::post('/wizard/driver/licence', 'DriverWizardController@storeLicence');
+    Route::get('/wizard/driver/car', 'DriverWizardController@initCarInfo');
+    Route::post('/wizard/driver/car', 'DriverWizardController@storeCarInfo');
+    Route::get('/wizard/driver/address', 'DriverWizardController@initAddress');
+    Route::post('/wizard/driver/address', 'DriverWizardController@storeAddress');
+
     Route::get('/my-token', function () {
         return Json::encode(['token' => Auth::user()->api_token]);
     });
@@ -75,3 +83,4 @@ Route::group(['prefix' => 'profile', 'as' => 'profile.', 'namespace' => 'Auth', 
         Route::post('/profile/destroy', 'ChangePasswordController@destroy')->name('password.destroyProfile');
     }
 });
+

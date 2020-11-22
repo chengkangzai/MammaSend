@@ -10,10 +10,10 @@ class addRidersLicenceTable extends Migration
     {
         Schema::create('riders_licence', function (Blueprint $table) {
             $table->id();
-            $table->text('class')->default("D");
-            $table->date('start_date');
-            $table->date('end_date');
-            $table->text('IC_number');
+            $table->text('class')->default("D")->nullable();
+            $table->date('start_date')->nullable();
+            $table->date('end_date')->nullable();
+            $table->text('IC_number')->nullable();
         });
     }
 }

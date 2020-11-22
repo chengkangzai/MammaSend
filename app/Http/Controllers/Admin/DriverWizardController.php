@@ -2,11 +2,54 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Http\Requests\StoreAddressRequest;
+use App\Http\Requests\StoreLicencesRequest;
+use App\Http\Requests\StoreVehiclesRequest;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Gate;
+use Symfony\Component\HttpFoundation\Response;
+use function abort_if;
+use function redirect;
+use function view;
 
 class DriverWizardController extends Controller
 {
+
+    public function index()
+    {
+        abort_if(Gate::denies('wizard_driver_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+
+
+        return redirect()->route('admin.wizard.driver.index');
+    }
+    public function initLicence()
+    {
+        return view('admin.wizard.driver.licence');
+    }
+
+    public function storeLicence(StoreLicencesRequest $request)
+    {
+        return view('admin.wizard.driver.licence');
+    }
+
+    public function initCarInfo()
+    {
+
+    }
+    public function storeCarInfo(StoreVehiclesRequest $request)
+    {
+
+    }
+    public function initAddress()
+    {
+
+    }
+
+    public function storeAddress(StoreAddressRequest $request)
+    {
+
+    }
     //TODO
     //Initial Setup
     //1. Driving Licence??

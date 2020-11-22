@@ -3,14 +3,14 @@
 
     <div class="card">
         <div class="card-header">
-            What is your Child Information?
+            First we need make sure you have an licence
         </div>
 
         <div class="card-body">
-            <form method="POST" action="/wizard/customer/child" enctype="multipart/form-data">
+            <form method="POST" action="/wizard/driver/licence" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group">
-                    <label class="required" for="full_name">{{ trans('cruds.children.fields.full_name') }}</label>
+                    <label class="required" for="street">{{ trans('cruds.children.fields.full_name') }}</label>
                     <input class="form-control {{ $errors->has('full_name') ? 'is-invalid' : '' }}" type="text"
                            name="full_name" id="full_name" value="{{ old('full_name', '') }}" required>
                     @if($errors->has('full_name'))
@@ -21,7 +21,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="required" for="IC_number">{{ trans('cruds.children.fields.IC_number') }}</label>
+                    <label class="required" for="street">{{ trans('cruds.children.fields.IC_number') }}</label>
                     <input class="form-control {{ $errors->has('IC_number') ? 'is-invalid' : '' }}" type="text"
                            name="IC_number" id="IC_number" value="{{ old('IC_number', '') }}" required>
                     @if($errors->has('IC_number'))
@@ -32,7 +32,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="required" for="school_name">{{ trans('cruds.children.fields.school_name') }}</label>
+                    <label class="required" for="street">{{ trans('cruds.children.fields.school_name') }}</label>
                     <input class="form-control {{ $errors->has('IC_number') ? 'is-invalid' : '' }}" type="text"
                            name="school_name" id="school_name" value="{{ old('school_name', '') }}" required>
                     @if($errors->has('school_name'))
