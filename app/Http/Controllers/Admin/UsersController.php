@@ -6,7 +6,6 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\MassDestroyUserRequest;
 use App\Http\Requests\StoreUserRequest;
 use App\Http\Requests\UpdateUserRequest;
-use App\Models\Address;
 use App\Models\Role;
 use App\Models\User;
 use Illuminate\Support\Facades\Gate;
@@ -35,6 +34,7 @@ class UsersController extends Controller
     public function store(StoreUserRequest $request)
     {
         $user = User::create($request->all());
+
         $user->roles()->sync($request->input('roles', []));
 
         return redirect()->route('admin.users.index');
@@ -52,6 +52,7 @@ class UsersController extends Controller
     public function update(UpdateUserRequest $request, User $user)
     {
         $user->update($request->all());
+
         $user->roles()->sync($request->input('roles', []));
 
         return redirect()->route('admin.users.index');
@@ -63,7 +64,9 @@ class UsersController extends Controller
 
         $user->load('roles', 'userPayments');
 
-        return view('admin.users.show', compact('user'));
+        $isCustomer = $user->roles()->first()->title == "Customer";
+
+        return view('admin.users.show', compact('user','isCustomer'));
     }
 
     public function destroy(User $user)

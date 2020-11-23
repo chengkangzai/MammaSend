@@ -1,6 +1,5 @@
 <?php
 
-use App\Models\Address;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Psy\Util\Json;
@@ -17,10 +16,7 @@ Route::get('/home', function () {
 
     return redirect()->route('admin.home');
 });
-Route::get('/test', function () {
-    $address = Address::orderBy('created_at','desc')->first();
-    dd($address);
-});
+
 Auth::routes();
 
 Route::group(['as' => 'admin.', 'namespace' => 'Admin', 'middleware' => ['auth']], function () {

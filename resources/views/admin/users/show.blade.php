@@ -41,14 +41,6 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('cruds.user.fields.email_verified_at') }}
-                        </th>
-                        <td>
-                            {{ $user->email_verified_at }}
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
                             {{ trans('cruds.user.fields.roles') }}
                         </th>
                         <td>
@@ -67,7 +59,7 @@
             </div>
         </div>
     </div>
-
+    @if($isCustomer ==true)
     <div class="card">
         <div class="card-header">
             {{ trans('global.relatedData') }}
@@ -81,9 +73,11 @@
         </ul>
         <div class="tab-content">
             <div class="tab-pane" role="tabpanel" id="user_payments">
-                @includeIf('admin.users.relationships.userPayments', ['payments' => $user->userPayments])
+
+                    @includeIf('admin.users.relationships.userPayments', ['payments' => $user->userPayments])
+
             </div>
         </div>
     </div>
-
+    @endif
 @endsection
