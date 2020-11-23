@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    Hi! Nice to see you here {{App\Models\User::where('id',auth()->id())->first()->name}}
                 </div>
             </div>
         </div>

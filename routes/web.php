@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Address;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Psy\Util\Json;
@@ -16,7 +17,10 @@ Route::get('/home', function () {
 
     return redirect()->route('admin.home');
 });
-
+Route::get('/test', function () {
+    $address = Address::orderBy('created_at','desc')->first();
+    dd($address);
+});
 Auth::routes();
 
 Route::group(['as' => 'admin.', 'namespace' => 'Admin', 'middleware' => ['auth']], function () {
@@ -61,13 +65,15 @@ Route::group(['as' => 'admin.', 'namespace' => 'Admin', 'middleware' => ['auth']
     Route::post('/wizard/customer/dropoff', 'CustomerWizardController@storeDropoffAddressForm');
     Route::post('/wizard/customer/child', 'CustomerWizardController@storeChildForm');
 
-    Route::get('/wizard/driver/index', 'DriverWizardController@index');
-    Route::get('/wizard/driver/licence', 'DriverWizardController@initLicence')->name('wizard.driver.index');
+    Route::get('/wizard/driver/index', 'DriverWizardController@index')->name('wizard.driver.index');
+    Route::get('/wizard/driver/licence', 'DriverWizardController@initLicence')->name('wizard.driver.licence');
     Route::post('/wizard/driver/licence', 'DriverWizardController@storeLicence');
-    Route::get('/wizard/driver/car', 'DriverWizardController@initCarInfo');
+    Route::get('/wizard/driver/car', 'DriverWizardController@initCarInfo')->name('wizard.driver.car');
     Route::post('/wizard/driver/car', 'DriverWizardController@storeCarInfo');
-    Route::get('/wizard/driver/address', 'DriverWizardController@initAddress');
+    Route::get('/wizard/driver/address', 'DriverWizardController@initAddress')->name('wizard.driver.address');
     Route::post('/wizard/driver/address', 'DriverWizardController@storeAddress');
+    Route::get('/wizard/driver/confirm', 'DriverWizardController@showConfirm')->name('wizard.driver.confirm');
+    Route::post('/wizard/driver/confirm', 'DriverWizardController@complete');
 
     Route::get('/my-token', function () {
         return Json::encode(['token' => Auth::user()->api_token]);

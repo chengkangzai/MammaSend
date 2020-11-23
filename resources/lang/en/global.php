@@ -305,4 +305,5 @@ return [
     'customer_wizard'                      => 'Customer Wizard',
     'driver_wizard'                        => 'Driver Wizard',
     'next'                                 => 'Next',
+    'confirm'                              => 'Confirm',
 ];

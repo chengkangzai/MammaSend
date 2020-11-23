@@ -49,4 +49,9 @@ class Address extends Model
     {
         return $date->format('Y-m-d H:i:s');
     }
+
+    private function scopeLatest($query)
+    {
+        return $query->orderBy('created_at')->get();
+    }
 }

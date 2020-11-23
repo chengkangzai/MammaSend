@@ -7,10 +7,8 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Address extends Model
+class Licence extends Model
 {
-    use SoftDeletes, HasFactory;
-
     public $table = 'riders_licence';
 
     protected $dates = [
@@ -24,9 +22,9 @@ class Address extends Model
     protected $fillable = [
         'class',
         'start_date',
-        'start_date',
         'end_date',
         'IC_number',
+        'rider_id',
         'created_at',
         'updated_at',
         'deleted_at',

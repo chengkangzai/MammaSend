@@ -27,7 +27,7 @@
         @endcan
         @can('wizard_driver_access')
         <li class="c-sidebar-nav-item">
-            <a href="{{ route("admin.home") }}" class="c-sidebar-nav-link">
+            <a href="{{ route("admin.wizard.driver.index") }}" class="c-sidebar-nav-link">
                 <i class="fa-fw fas fa-cogs c-sidebar-nav-icon">
 
                 </i>

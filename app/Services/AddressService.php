@@ -9,7 +9,7 @@ use function collect;
 
 class AddressService
 {
-    public function getFullAddress(Address $address)
+    public function getFullAddress(Address $address): string
     {
         return $address->street .", ". $address->city .", ". $address->zip_code .", ". $address->state;
     }

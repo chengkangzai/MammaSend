@@ -33,7 +33,7 @@
 
                 <div class="form-group">
                     <label class="required" for="school_name">{{ trans('cruds.children.fields.school_name') }}</label>
-                    <input class="form-control {{ $errors->has('IC_number') ? 'is-invalid' : '' }}" type="text"
+                    <input class="form-control {{ $errors->has('school_name') ? 'is-invalid' : '' }}" type="text"
                            name="school_name" id="school_name" value="{{ old('school_name', '') }}" required>
                     @if($errors->has('school_name'))
                         <div class="invalid-feedback">

@@ -14,6 +14,7 @@ class addRidersLicenceTable extends Migration
             $table->date('start_date')->nullable();
             $table->date('end_date')->nullable();
             $table->text('IC_number')->nullable();
+            $table->timestamps();
         });
     }
 }
