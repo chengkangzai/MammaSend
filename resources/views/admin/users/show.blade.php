@@ -59,7 +59,7 @@
             </div>
         </div>
     </div>
-    @if($isCustomer ==true)
+    @if($role == "Customer")
     <div class="card">
         <div class="card-header">
             {{ trans('global.relatedData') }}

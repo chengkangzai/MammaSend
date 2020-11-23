@@ -64,9 +64,9 @@ class UsersController extends Controller
 
         $user->load('roles', 'userPayments');
 
-        $isCustomer = $user->roles()->first()->title == "Customer";
+        $role = $user->roles()->first()->title ;
 
-        return view('admin.users.show', compact('user','isCustomer'));
+        return view('admin.users.show', compact('user','role'));
     }
 
     public function destroy(User $user)
