@@ -64,6 +64,9 @@ return [
             'deleted_at'               => 'Deleted at',
             'deleted_at_helper'        => ' ',
             'phone_number'             => 'Phone number',
+            'IC_number'         => 'IC number',
+            'IC_number_helper'         => 'Please Enter the IC Number',
+
         ],
     ],
     'address'        => [
@@ -92,10 +95,12 @@ return [
     'ride'           => [
         'title'          => 'Ride',
         'title_singular' => 'Ride',
+        'direction' => 'Direction',
         'fields'         => [
             'id'                => 'ID',
             'id_helper'         => ' ',
             'rider'             => 'Rider',
+            'price'             => 'Price',
             'rider_helper'      => ' ',
             'created_at'        => 'Created at',
             'created_at_helper' => ' ',
@@ -103,6 +108,8 @@ return [
             'updated_at_helper' => ' ',
             'deleted_at'        => 'Deleted at',
             'deleted_at_helper' => ' ',
+            'pickup_address'           => 'Pickup Address',
+            'dropoff_address'          => 'Drop Off Address',
         ],
     ],
     'payment'        => [

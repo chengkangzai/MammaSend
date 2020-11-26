@@ -29,6 +29,16 @@
                             {{ trans('cruds.ride.fields.rider') }}
                         </th>
                         <th>
+                            {{ trans('cruds.ride.fields.price') }}
+                        </th>
+                        <th>
+                            {{ trans('cruds.ride.fields.pickup_address') }}
+                        </th>
+                        <th>
+                            {{ trans('cruds.ride.fields.dropoff_address') }}
+                        </th>
+
+                        <th>
                             &nbsp;
                         </th>
                     </tr>
@@ -46,6 +56,25 @@
                                 {{ $ride->rider->name ?? '' }}
                             </td>
                             <td>
+                                {{ $ride->price ?? '' }}
+                            </td>
+                            <td>
+                                @if($ride->pickup_address_id !== null)
+                                    <a class="btn btn-xs btn-primary"
+                                       href="{{ route('admin.addresses.show', $ride->pickup_address_id) }}">
+                                        {{ $ride->pickup_address_id ?? '' }}
+                                    </a>
+                                @endif
+                            </td>
+                            <td>
+                                @if($ride->dropoff_address_id !== null)
+                                    <a class="btn btn-xs btn-primary"
+                                       href="{{ route('admin.addresses.show', $ride->dropoff_address_id) }}">
+                                        {{ $ride->dropoff_address_id ?? '' }}
+                                    </a>
+                                @endif
+                            </td>
+                            <td>
                                 @can('ride_show')
                                     <a class="btn btn-xs btn-primary" href="{{ route('admin.rides.show', $ride->id) }}">
                                         {{ trans('global.view') }}
@@ -59,10 +88,13 @@
                                 @endcan
 
                                 @can('ride_delete')
-                                    <form action="{{ route('admin.rides.destroy', $ride->id) }}" method="POST" onsubmit="return confirm('{{ trans('global.areYouSure') }}');" style="display: inline-block;">
+                                    <form action="{{ route('admin.rides.destroy', $ride->id) }}" method="POST"
+                                          onsubmit="return confirm('{{ trans('global.areYouSure') }}');"
+                                          style="display: inline-block;">
                                         <input type="hidden" name="_method" value="DELETE">
                                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                                        <input type="submit" class="btn btn-xs btn-danger" value="{{ trans('global.delete') }}">
+                                        <input type="submit" class="btn btn-xs btn-danger"
+                                               value="{{ trans('global.delete') }}">
                                     </form>
                                 @endcan
 
@@ -91,7 +123,7 @@
                 url: "{{ route('admin.rides.massDestroy') }}",
                 className: 'btn-danger',
                 action: function (e, dt, node, config) {
-                    var ids = $.map(dt.rows({ selected: true }).nodes(), function (entry) {
+                    var ids = $.map(dt.rows({selected: true}).nodes(), function (entry) {
                         return $(entry).data('entry-id')
                     });
 
@@ -106,8 +138,11 @@
                             headers: {'x-csrf-token': _token},
                             method: 'POST',
                             url: config.url,
-                            data: { ids: ids, _method: 'DELETE' }})
-                            .done(function () { location.reload() })
+                            data: {ids: ids, _method: 'DELETE'}
+                        })
+                            .done(function () {
+                                location.reload()
+                            })
                     }
                 }
             }
@@ -116,11 +151,11 @@
 
             $.extend(true, $.fn.dataTable.defaults, {
                 orderCellsTop: true,
-                order: [[ 1, 'desc' ]],
+                order: [[1, 'desc']],
                 pageLength: 100,
             });
-            let table = $('.datatable-Ride:not(.ajaxTable)').DataTable({ buttons: dtButtons })
-            $('a[data-toggle="tab"]').on('shown.bs.tab click', function(e){
+            let table = $('.datatable-Ride:not(.ajaxTable)').DataTable({buttons: dtButtons})
+            $('a[data-toggle="tab"]').on('shown.bs.tab click', function (e) {
                 $($.fn.dataTable.tables(true)).DataTable()
                     .columns.adjust();
             });

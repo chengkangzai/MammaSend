@@ -6,11 +6,14 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\MassDestroyRideRequest;
 use App\Http\Requests\StoreRideRequest;
 use App\Http\Requests\UpdateRideRequest;
+use App\Models\Address;
 use App\Models\Ride;
 use App\Models\Role;
 use App\Models\User;
+use App\Services\AddressService;
 use Illuminate\Support\Facades\Gate;
 use Symfony\Component\HttpFoundation\Response;
+use function dd;
 use function trans;
 
 class RideController extends Controller
@@ -29,8 +32,9 @@ class RideController extends Controller
         abort_if(Gate::denies('ride_create'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
         $riders = Role::where('title', 'Rider')->first()->users()->get()->pluck('name', 'id')->prepend(trans('global.pleaseSelect'), '');
-
-        return view('admin.rides.create', compact('riders'));
+        $service = new AddressService();
+        $addresses = $service->getAllFullAddress();
+        return view('admin.rides.create', compact('riders','addresses'));
     }
 
     public function store(StoreRideRequest $request)
@@ -47,8 +51,9 @@ class RideController extends Controller
         $riders = User::all()->pluck('name', 'id')->prepend(trans('global.pleaseSelect'), '');
 
         $ride->load('rider');
-
-        return view('admin.rides.edit', compact('riders', 'ride'));
+        $service = new AddressService();
+        $addresses = $service->getAllFullAddress();
+        return view('admin.rides.edit', compact('riders', 'ride','addresses'));
     }
 
     public function update(UpdateRideRequest $request, Ride $ride)
@@ -64,7 +69,10 @@ class RideController extends Controller
 
         $ride->load('rider');
 
-        return view('admin.rides.show', compact('ride'));
+        $service = new AddressService();
+        $dropOffAddress = $ride->dropoff_address_id !== null ? $service->getFullAddress(Address::where('id', $ride->dropoff_address_id)->first()) : " ";
+        $pickUpAddress = $ride->pickup_address_id !== null ? $service->getFullAddress(Address::where('id', $ride->pickup_address_id)->first()) : " ";
+        return view('admin.rides.show', compact('ride','pickUpAddress','dropOffAddress'));
     }
 
     public function destroy(Ride $ride)

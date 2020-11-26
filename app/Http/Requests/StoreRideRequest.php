@@ -19,6 +19,9 @@ class StoreRideRequest extends FormRequest
                 'required',
                 'integer',
             ],
+            'price' => [ 'required'],
+            'pickup_address_id' => ['required'],
+            'dropoff_address_id' => ['required'],
         ];
     }
 }

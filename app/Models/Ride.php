@@ -39,5 +39,14 @@ class Ride extends Model
         return $this->belongsTo(User::class, 'rider_id');
     }
 
+    public function pickup_address()
+    {
+        return $this->hasOne(Address::class, 'pickup_address_id');
+    }
+
+    public function dropoff_address()
+    {
+        return $this->hasOne(Address::class, 'dropoff_address_id');
+    }
 
 }

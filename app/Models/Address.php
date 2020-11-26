@@ -54,4 +54,6 @@ class Address extends Model
     {
         return $query->orderBy('created_at')->get();
     }
+
+
 }

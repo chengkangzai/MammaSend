@@ -28,7 +28,7 @@ class UsersController extends Controller
 
         $roles = Role::all()->pluck('title', 'id');
 
-        return view('admin.users.create', compact('roles', 'pickup_addresses'));
+        return view('admin.users.create', compact('roles'));
     }
 
     public function store(StoreUserRequest $request)
@@ -46,7 +46,7 @@ class UsersController extends Controller
 
         $roles = Role::all()->pluck('title', 'id');
 
-        return view('admin.users.edit', compact('roles', 'pickup_addresses', 'user'));
+        return view('admin.users.edit', compact('roles', 'user'));
     }
 
     public function update(UpdateUserRequest $request, User $user)
@@ -64,9 +64,9 @@ class UsersController extends Controller
 
         $user->load('roles', 'userPayments');
 
-        $role = $user->roles()->first()->title ;
+        $role = $user->roles()->first()->title;
 
-        return view('admin.users.show', compact('user','role'));
+        return view('admin.users.show', compact('user', 'role'));
     }
 
     public function destroy(User $user)
