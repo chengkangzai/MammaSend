@@ -41,6 +41,14 @@
                     </tr>
                     <tr>
                         <th>
+                            {{ trans('cruds.user.fields.phone_number') }}
+                        </th>
+                        <td>
+                            {{$user->phone_number}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
                             {{ trans('cruds.user.fields.roles') }}
                         </th>
                         <td>
@@ -49,8 +57,18 @@
                             @endforeach
                         </td>
                     </tr>
+                    <tr>
+                        <th>Action</th>
+                        <td>
+                            <a class="btn btn-dark" target="_blank" style="border-color: #01E615;background-color:#01E615;color: white "
+                               href="https://api.whatsapp.com/send?phone=6{{$user->phone_number}}&text=Hi Greeting from mamma send !">
+                                Contact via WhatsApp
+                            </a>
+                        </td>
+                    </tr>
                     </tbody>
                 </table>
+                <small>** All Ride information is send automatically</small>
                 <div class="form-group">
                     <a class="btn btn-default" href="{{ route('admin.users.index') }}">
                         {{ trans('global.back_to_list') }}
@@ -60,24 +78,24 @@
         </div>
     </div>
     @if($role == "Customer")
-    <div class="card">
-        <div class="card-header">
-            {{ trans('global.relatedData') }}
-        </div>
-        <ul class="nav nav-tabs" role="tablist" id="relationship-tabs">
-            <li class="nav-item">
-                <a class="nav-link" href="#user_payments" role="tab" data-toggle="tab">
-                    {{ trans('cruds.payment.title') }}
-                </a>
-            </li>
-        </ul>
-        <div class="tab-content">
-            <div class="tab-pane" role="tabpanel" id="user_payments">
+        <div class="card">
+            <div class="card-header">
+                {{ trans('global.relatedData') }}
+            </div>
+            <ul class="nav nav-tabs" role="tablist" id="relationship-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" href="#user_payments" role="tab" data-toggle="tab">
+                        {{ trans('cruds.payment.title') }}
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane" role="tabpanel" id="user_payments">
 
                     @includeIf('admin.users.relationships.userPayments', ['payments' => $user->userPayments])
 
+                </div>
             </div>
         </div>
-    </div>
     @endif
 @endsection
