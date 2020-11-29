@@ -20,13 +20,23 @@ class Payment extends Model
     ];
 
     protected $fillable = [
-        'total_received',
+        'ride_id',
         'rider_received',
         'office_received',
+        'method',
         'user_id',
         'created_at',
         'updated_at',
         'deleted_at',
+    ];
+
+    const METHOD_SELECT=[
+        'card' => "Credit Card",
+        'Cash w/ Driver' => 'Cash by Driver',
+        'Cash w/ Office' => 'Cash by Office',
+        'Bank in' => 'Back in',
+        'Grab' => 'Grab',
+        'TnG' => 'TnG E-Wallet',
     ];
 
     protected function serializeDate(DateTimeInterface $date)
@@ -37,5 +47,11 @@ class Payment extends Model
     public function user()
     {
         return $this->belongsTo(User::class, 'user_id');
+    }
+
+
+    public function rides()
+    {
+        return $this->belongsTo(Ride::class, 'ride_id');
     }
 }

@@ -7,11 +7,14 @@ use App\Http\Requests\MassDestroyPaymentRequest;
 use App\Http\Requests\StorePaymentRequest;
 use App\Http\Requests\UpdatePaymentRequest;
 use App\Models\Payment;
+use App\Models\Ride;
+use App\Models\Role;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
 use Symfony\Component\HttpFoundation\Response;
 use Yajra\DataTables\Facades\DataTables;
+use function trans;
 
 class PaymentsController extends Controller
 {
@@ -44,11 +47,12 @@ class PaymentsController extends Controller
             $table->editColumn('id', function ($row) {
                 return $row->id ? $row->id : "";
             });
-            $table->editColumn('total_received', function ($row) {
-                return $row->total_received ? $row->total_received : "";
-            });
+
             $table->editColumn('rider_received', function ($row) {
                 return $row->rider_received ? $row->rider_received : "";
+            });
+            $table->editColumn('ride_id', function ($row) {
+                return $row->ride_id ? $row->ride_id : "";
             });
             $table->editColumn('office_received', function ($row) {
                 return $row->office_received ? $row->office_received : "";
@@ -69,9 +73,11 @@ class PaymentsController extends Controller
     {
         abort_if(Gate::denies('payment_create'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        $users = User::all()->pluck('name', 'id')->prepend(trans('global.pleaseSelect'), '');
+        $users = Role::where('title', 'Customer')->first()->users()->get()->pluck('name', 'id')->prepend(trans('global.pleaseSelect'), '');
 
-        return view('admin.payments.create', compact('users'));
+        $rides = Ride::all();
+
+        return view('admin.payments.create', compact('users', 'rides'));
     }
 
     public function store(StorePaymentRequest $request)
@@ -87,7 +93,7 @@ class PaymentsController extends Controller
 
         $users = User::all()->pluck('name', 'id')->prepend(trans('global.pleaseSelect'), '');
 
-        $payment->load('user');
+        $payment->load('user', 'rides');
 
         return view('admin.payments.edit', compact('users', 'payment'));
     }
@@ -105,7 +111,9 @@ class PaymentsController extends Controller
 
         $payment->load('user');
 
-        return view('admin.payments.show', compact('payment'));
+        $price= Ride::find($payment->ride_id)->price;
+
+        return view('admin.payments.show', compact('payment','price'));
     }
 
     public function destroy(Payment $payment)

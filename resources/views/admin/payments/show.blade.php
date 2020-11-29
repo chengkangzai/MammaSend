@@ -25,14 +25,6 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('cruds.payment.fields.total_received') }}
-                        </th>
-                        <td>
-                            {{ $payment->total_received }}
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
                             {{ trans('cruds.payment.fields.rider_received') }}
                         </th>
                         <td>
@@ -53,6 +45,24 @@
                         </th>
                         <td>
                             {{ $payment->user->name ?? '' }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.payment.fields.price') }}
+                        </th>
+                        <td>
+                            Rm {{ $price }}.00
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.payment.fields.ride') }}
+                        </th>
+                        <td>
+                            <a href="{{route('admin.rides.show',$payment->ride_id)}}" class="btn btn-outline-dark">
+                                View Ride
+                            </a>
                         </td>
                     </tr>
                     </tbody>
