@@ -31,7 +31,7 @@ class RideController extends Controller
     {
         abort_if(Gate::denies('ride_create'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        $riders = Role::where('title', 'Rider')->first()->users()->get()->pluck('name', 'id')->prepend(trans('global.pleaseSelect'), '');
+        $riders = Role::where('title', 'Driver')->first()->users()->get()->pluck('name', 'id')->prepend(trans('global.pleaseSelect'), '');
         $service = new AddressService();
         $addresses = $service->getAllFullAddress();
         return view('admin.rides.create', compact('riders','addresses'));
