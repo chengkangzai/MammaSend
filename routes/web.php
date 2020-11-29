@@ -19,9 +19,8 @@ Route::get('/home', function () {
 });
 
 Route::get('/test',function (){
-    dump(User::factory()
-        ->times(5)
-        ->create());
+    \App\Models\User::factory()->count(30)->create();
+
 });
 
 Auth::routes();

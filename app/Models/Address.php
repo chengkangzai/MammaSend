@@ -35,6 +35,7 @@ class Address extends Model
         'Kelantan'        => 'Kelantan',
         'Melacca'         => 'Melacca',
         'Negeri Sembilan' => 'Negeri Sembilan',
+        'Kuala Lumur'     => 'Kuala Lumpur',
         'Pahang'          => 'Pahang',
         'Penang'          => 'Penang',
         'Perak'           => 'Perak',

@@ -11,7 +11,7 @@ class AddressService
 {
     public function getFullAddress(Address $address): string
     {
-        return $address->street .", ". $address->city .", ". $address->zip_code .", ". $address->state;
+        return $address->street .", ". $address->city .", ". $address->zip_code .", ". $address->state.", Malaysia";
     }
 
     public function getAllFullAddress ():array
