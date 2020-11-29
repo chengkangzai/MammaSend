@@ -1,6 +1,5 @@
 <?php
 
-use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Psy\Util\Json;
@@ -16,11 +15,6 @@ Route::get('/home', function () {
     }
 
     return redirect()->route('admin.home');
-});
-
-Route::get('/test',function (){
-    \App\Models\User::factory()->count(30)->create();
-
 });
 
 Auth::routes();
@@ -80,6 +74,9 @@ Route::group(['as' => 'admin.', 'namespace' => 'Admin', 'middleware' => ['auth']
     Route::get('/my-token', function () {
         return Json::encode(['token' => Auth::user()->api_token]);
     });
+
+    Route::get('/select2/getRide','Select2Controller@getRide')->name('select2.getRide');
+
 });
 
 Route::group(['prefix' => 'profile', 'as' => 'profile.', 'namespace' => 'Auth', 'middleware' => ['auth']], function () {

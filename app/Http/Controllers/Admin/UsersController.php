@@ -64,7 +64,7 @@ class UsersController extends Controller
 
         $user->load('roles', 'userPayments');
 
-        $role = $user->roles()->first()->title;
+        $role = $user->roles()->first()->title ?? "";
 
         return view('admin.users.show', compact('user', 'role'));
     }

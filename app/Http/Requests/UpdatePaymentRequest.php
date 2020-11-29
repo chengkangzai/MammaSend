@@ -15,9 +15,6 @@ class UpdatePaymentRequest extends FormRequest
     public function rules()
     {
         return [
-            'total_received'  => [
-                'required',
-            ],
             'rider_received'  => [
                 'required',
             ],

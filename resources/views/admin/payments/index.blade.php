@@ -25,7 +25,7 @@
                         {{ trans('cruds.payment.fields.id') }}
                     </th>
                     <th>
-                        {{ trans('cruds.payment.fields.total_received') }}
+                        {{ trans('cruds.payment.fields.ride') }}
                     </th>
                     <th>
                         {{ trans('cruds.payment.fields.rider_received') }}
@@ -93,7 +93,7 @@
                     columns: [
                         { data: 'placeholder', name: 'placeholder' },
                         { data: 'id', name: 'id' },
-                        { data: 'total_received', name: 'total_received' },
+                        { data: 'ride_id', name: 'ride_id' },
                         { data: 'rider_received', name: 'rider_received' },
                         { data: 'office_received', name: 'office_received' },
                         { data: 'user_name', name: 'user.name' },

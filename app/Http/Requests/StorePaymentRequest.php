@@ -15,16 +15,13 @@ class StorePaymentRequest extends FormRequest
     public function rules()
     {
         return [
-            'total_received'  => [
-                'required',
-            ],
-            'rider_received'  => [
+            'rider_received' => [
                 'required',
             ],
             'office_received' => [
                 'required',
             ],
-            'user_id'         => [
+            'user_id' => [
                 'required',
                 'integer',
             ],

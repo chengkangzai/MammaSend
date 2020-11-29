@@ -33,6 +33,17 @@
                     </tr>
                     <tr>
                         <th>
+                            Contact Rider
+                        </th>
+                        <td>
+                            <a class="btn btn-dark" target="_blank" style="border-color: #01E615;background-color:#01E615;color: white "
+                               href="https://api.whatsapp.com/send?phone=6{{$ride->rider->phone_number}}&text=Hi Greeting from mamma send !">
+                                Contact via WhatsApp
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
                             {{ trans('cruds.ride.fields.price') }}
                         </th>
                         <td>
