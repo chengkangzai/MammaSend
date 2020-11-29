@@ -33,7 +33,7 @@
 
                 <div class="form-group">
                     <label class="required" for="street">{{ trans('cruds.children.fields.school_name') }}</label>
-                    <input class="form-control {{ $errors->has('IC_number') ? 'is-invalid' : '' }}" type="text"
+                    <input class="form-control {{ $errors->has('school_name') ? 'is-invalid' : '' }}" type="text"
                            name="school_name" id="school_name" value="{{ old('school_name', '') }}" required>
                     @if($errors->has('school_name'))
                         <div class="invalid-feedback">
@@ -46,6 +46,7 @@
                     <label for="pickup_address_id">{{ trans('cruds.children.fields.pickup_address') }}</label>
                     <select class="form-control select2 {{ $errors->has('pickup_address_id') ? 'is-invalid' : '' }}" required
                             name="pickup_address_id" id="pickup_address_id">
+                        <option value disabled {{ old('state', null) === null ? 'selected' : '' }}>{{ trans('global.pleaseSelect') }}</option>
                         @foreach($addresses as $id => $pickup_address)
                             <option value="{{ $id }}">{{ $pickup_address }}</option>
                         @endforeach
@@ -62,6 +63,7 @@
                     <label for="dropoff_address_id">{{ trans('cruds.children.fields.dropoff_address') }}</label>
                     <select class="form-control select2 {{ $errors->has('dropoff_address_id') ? 'is-invalid' : '' }}" required
                             name="dropoff_address_id" id="dropoff_address_id">
+                        <option value disabled {{ old('state', null) === null ? 'selected' : '' }}>{{ trans('global.pleaseSelect') }}</option>
                         @foreach($addresses as $id => $dropoff_address)
                             <option value="{{ $id }}">{{ $dropoff_address }}</option>
                         @endforeach
