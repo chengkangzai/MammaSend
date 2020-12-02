@@ -60,6 +60,7 @@ Route::group(['as' => 'admin.', 'namespace' => 'Admin', 'middleware' => ['auth']
     Route::post('/wizard/customer/pickup', 'CustomerWizardController@storePickupAddressForm');
     Route::post('/wizard/customer/dropoff', 'CustomerWizardController@storeDropoffAddressForm');
     Route::post('/wizard/customer/child', 'CustomerWizardController@storeChildForm');
+    Route::get('/wizard/customer/confirm', 'CustomerWizardController@confirm');
 
     Route::get('/wizard/driver/index', 'DriverWizardController@index')->name('wizard.driver.index');
     Route::get('/wizard/driver/licence', 'DriverWizardController@initLicence')->name('wizard.driver.licence');

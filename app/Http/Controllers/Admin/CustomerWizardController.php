@@ -6,11 +6,14 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreAddressRequest;
 use App\Models\Address;
 use App\Models\Children;
+use App\Services\AddressService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
 use Symfony\Component\HttpFoundation\Response;
 use function abort_if;
 use function compact;
+use function dd;
+use function dump;
 use function redirect;
 use function view;
 
@@ -56,7 +59,17 @@ class CustomerWizardController extends Controller
         return view('admin.wizard.customer.pickup', compact('children'));
     }
 
+    public function confirm()
+    {
+        $addresses = Address::orderBy('created_at', 'desc')->take(2)->get();
+        $child = Children::orderBy('created_at', 'desc')->first();
 
+        $temp = new AddressService();
+        $fullAddress1 = $temp->getFullAddress($addresses[0]);
+        $fullAddress2 = $temp->getFullAddress($addresses[1]);
+
+        return view('admin.wizard.customer.confirm', compact('addresses', 'child','fullAddress1','fullAddress2'));
+    }
     //TODO
     //1. Add Pickup Address
     //2. Add Drop off Address
