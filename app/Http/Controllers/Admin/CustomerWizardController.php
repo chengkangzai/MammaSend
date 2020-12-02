@@ -47,7 +47,7 @@ class CustomerWizardController extends Controller
         $user->dropoff_address_id = $address->id;
         $user->save();
 
-        return redirect()->route('admin.wizard.driver.confirm');
+        return redirect()->route('admin.wizard.customer.confirm');
     }
 
     public function storeChildForm(Request $request)

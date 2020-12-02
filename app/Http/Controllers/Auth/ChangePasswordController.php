@@ -3,10 +3,13 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreLicencesRequest;
 use App\Http\Requests\UpdatePasswordRequest;
 use App\Http\Requests\UpdateProfileRequest;
+use App\Models\Licence;
 use Illuminate\Support\Facades\Gate;
 use Symfony\Component\HttpFoundation\Response;
+use function auth;
 
 class ChangePasswordController extends Controller
 {
@@ -44,5 +47,12 @@ class ChangePasswordController extends Controller
         $user->delete();
 
         return redirect()->route('login')->with('message', __('global.delete_account_success'));
+    }
+
+    public function updateLicence(StoreLicencesRequest $request)
+    {
+        $user = auth()->user();
+
+
     }
 }
