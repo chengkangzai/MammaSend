@@ -76,7 +76,7 @@ Route::group(['as' => 'admin.', 'namespace' => 'Admin', 'middleware' => ['auth']
         return Json::encode(['token' => Auth::user()->api_token]);
     });
 
-    Route::get('/select2/getRide','Select2Controller@getRide')->name('select2.getRide');
+    Route::get('/select2/getRide', 'Select2Controller@getRide')->name('select2.getRide');
 
 });
 

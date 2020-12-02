@@ -53,7 +53,9 @@
                                 {{ $ride->id ?? '' }}
                             </td>
                             <td>
-                                {{ $ride->rider->name ?? '' }}
+                                <a href="{{route('admin.users.show',$ride->rider->id)}}" class="btn btn-xs btn-primary">
+                                    {{ $ride->rider->name ?? '' }}
+                                </a>
                             </td>
                             <td>
                                 {{ $ride->price ?? '' }}

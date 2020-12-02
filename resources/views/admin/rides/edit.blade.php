@@ -30,7 +30,7 @@
                 <div class="form-group">
                     <label class="required" for="price">{{ trans('cruds.ride.fields.price') }}</label>
                     <input class="form-control {{ $errors->has('price') ? 'is-invalid' : '' }}" type="text"
-                           name="price" id="price" value="{{ old('price', '') }}" required>
+                           name="price" id="price" value="{{ old('price', $ride->price) }}" required>
                     @if($errors->has('price'))
                         <div class="invalid-feedback">
                             {{ $errors->first('price') }}
@@ -41,10 +41,10 @@
                 <div class="form-group">
                     <label for="pickup_address_id">{{ trans('cruds.children.fields.pickup_address') }}</label>
                     <select class="form-control select2 {{ $errors->has('pickup_address_id') ? 'is-invalid' : '' }}"
-                            required
-                            name="pickup_address_id" id="pickup_address_id">
+                            required name="pickup_address_id" id="pickup_address_id">
+                        <option value disabled {{ old('pickup_address_id', null) === null ? 'selected' : '' }}>{{ trans('global.pleaseSelect') }}</option>
                         @foreach($addresses as $id => $pickup_address)
-                            <option value="{{ $id }}">{{ $pickup_address }}</option>
+                            <option value="{{ $id }}" >{{ $pickup_address }}</option>
                         @endforeach
                     </select>
                     @if($errors->has('pickup_address_id'))
@@ -58,8 +58,8 @@
                 <div class="form-group">
                     <label for="dropoff_address_id">{{ trans('cruds.children.fields.dropoff_address') }}</label>
                     <select class="form-control select2 {{ $errors->has('dropoff_address_id') ? 'is-invalid' : '' }}"
-                            required
-                            name="dropoff_address_id" id="dropoff_address_id">
+                            required name="dropoff_address_id" id="dropoff_address_id">
+                        <option value disabled {{ old('pickup_address_id', null) === null ? 'selected' : '' }}>{{ trans('global.pleaseSelect') }}</option>
                         @foreach($addresses as $id => $dropoff_address)
                             <option value="{{ $id }}">{{ $dropoff_address }}</option>
                         @endforeach

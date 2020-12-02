@@ -27,6 +27,11 @@
           rel="stylesheet"/>
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet"/>
     @yield('styles')
+    <style>
+        .phpdebugbar{
+            display: none;
+        }
+    </style>
 </head>
 
 <body class="c-app">
